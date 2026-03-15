@@ -1,161 +1,364 @@
 {
   "series": "nascar-xfinity",
   "year": 2026,
+  "series_name_note": "Now known as NASCAR O'Reilly Auto Parts Series from 2026",
   "rounds_total": 33,
   "standings": {
     "drivers": [
-      { "pos":1,  "driver":"Justin Allgaier",   "short":"Allgaier", "number":"7",  "team":"JR Motorsports",     "car":"Chevy", "pts":196, "wins":2, "color":"#CC0033" },
-      { "pos":2,  "driver":"Jesse Love",        "short":"Love",     "number":"2",  "team":"RCR",                "car":"Chevy", "pts":182, "wins":0, "color":"#0044AA" },
-      { "pos":3,  "driver":"Riley Herbst",      "short":"Herbst",   "number":"35", "team":"23XI Racing",        "car":"Toyota","pts":171, "wins":0, "color":"#CC0088" },
-      { "pos":4,  "driver":"Sam Mayer",         "short":"Mayer",    "number":"1",  "team":"JR Motorsports",     "car":"Chevy", "pts":163, "wins":0, "color":"#884400" },
-      { "pos":5,  "driver":"Austin Hill",       "short":"A. Hill",  "number":"21", "team":"RCR",                "car":"Chevy", "pts":158, "wins":0, "color":"#228844" },
-      { "pos":6,  "driver":"Chandler Smith",    "short":"C. Smith", "number":"81", "team":"Joe Gibbs Racing",   "car":"Toyota","pts":152, "wins":0, "color":"#FF6600" },
-      { "pos":7,  "driver":"Sheldon Creed",     "short":"Creed",    "number":"18", "team":"Joe Gibbs Racing",   "car":"Toyota","pts":147, "wins":0, "color":"#AA3300" },
-      { "pos":8,  "driver":"Connor Zilisch",    "short":"Zilisch",  "number":"88", "team":"Trackhouse Racing",  "car":"Chevy", "pts":141, "wins":0, "color":"#880088" }
+      { "pos":1,  "driver":"Justin Allgaier",  "short":"Allgaier", "number":"7",  "team":"JR Motorsports",        "car":"Chevy", "pts":0,   "wins":2, "color":"#CC0033", "note":"Leads Love by 13 pts after R5" },
+      { "pos":2,  "driver":"Jesse Love",       "short":"Love",     "number":"2",  "team":"Richard Childress Racing","car":"Chevy", "pts":0,   "wins":0, "color":"#0044AA" },
+      { "pos":3,  "driver":"Sheldon Creed",    "short":"Creed",    "number":"00", "team":"Haas Factory Team",      "car":"Chevy", "pts":0,   "wins":1, "color":"#AA3300" },
+      { "pos":4,  "driver":"Austin Hill",      "short":"A. Hill",  "number":"21", "team":"Richard Childress Racing","car":"Chevy", "pts":0,   "wins":1, "color":"#228844" },
+      { "pos":5,  "driver":"Carson Kvapil",    "short":"Kvapil",   "number":"91", "team":"DGM Racing",             "car":"Chevy", "pts":0,   "wins":0, "color":"#886600" },
+      { "pos":6,  "driver":"Rajah Caruth",     "short":"Caruth",   "number":"88", "team":"JR Motorsports",         "car":"Chevy", "pts":0,   "wins":0, "color":"#007744" },
+      { "pos":7,  "driver":"Sammy Smith",      "short":"S. Smith", "number":"8",  "team":"JR Motorsports",         "car":"Chevy", "pts":0,   "wins":0, "color":"#4466FF" },
+      { "pos":8,  "driver":"Sam Mayer",        "short":"Mayer",    "number":"41", "team":"Haas Factory Team",      "car":"Chevy", "pts":0,   "wins":0, "color":"#884400" }
     ],
-    "note": "After Round 4 — Phoenix. Las Vegas (R5) TBD."
+    "note": "After Round 5 — Las Vegas. Allgaier leads Love by 13 pts. Exact pts TBD from nascar.com."
   },
   "schedule": [
     {
       "round": 1,
-      "name": "Henry 180",
-      "venue": "Daytona International Speedway Road Course",
+      "name": "United Rentals 300",
+      "venue": "Daytona International Speedway",
       "location": "Daytona Beach, Florida",
-      "circuit_type": "road",
+      "circuit_type": "oval_super",
       "flag": "🇺🇸",
       "date": "2026-02-14",
-      "laps": 41,
-      "distance_miles": 180.4,
+      "laps": 120,
+      "distance_miles": 300.0,
       "complete": true,
-      "summary": "Riley Herbst converted pole position into a dominant wire-to-wire win on Daytona's road course, leading 38 of 41 laps. The 23XI driver made it look effortless from the front, holding off a late challenge from Jesse Love to win by 0.887 seconds. Herbst's second Xfinity win on a road course.",
-      "quali": { "pole_driver": "Riley Herbst", "pole_speed": "108.441 mph", "grid": [] },
+      "summary": "Austin Hill claimed the series opener at Daytona in the first race under the new O'Reilly Auto Parts Series banner. Hill navigated the superspeedway chaos to take the checkered flag, continuing his strong run at Daytona where he has now won multiple times. The defending champion Jesse Love also featured prominently before fading to fifth.",
+      "quali": { "pole_driver": "TBD", "pole_speed": "TBD", "grid": [] },
       "stages": [
-        { "number":1, "laps":"1-15",  "winner":"Riley Herbst",   "number_car":"35" },
-        { "number":2, "laps":"16-30", "winner":"Riley Herbst",   "number_car":"35" },
-        { "number":3, "laps":"31-41", "winner":"Riley Herbst",   "number_car":"35" }
+        { "number":1, "laps":"1-45",   "winner":"TBD", "number_car":"TBD" },
+        { "number":2, "laps":"46-90",  "winner":"TBD", "number_car":"TBD" },
+        { "number":3, "laps":"91-120", "winner":"Austin Hill", "number_car":"21" }
       ],
       "race": {
-        "winner": "Riley Herbst",
-        "laps_led_leader": "Riley Herbst",
-        "laps_led_count": 38,
+        "winner": "Austin Hill",
+        "laps_led_leader": "Austin Hill",
+        "laps_led_count": 0,
+        "cautions": 0,
+        "lead_changes": 0,
+        "margin": "TBD",
+        "results": [
+          { "pos":1, "driver":"Austin Hill",   "number":"21","team":"RCR",              "car":"Chevy","laps_led":0,"gap":null,   "status":"running" },
+          { "pos":2, "driver":"Jesse Love",    "number":"2", "team":"RCR",              "car":"Chevy","laps_led":0,"gap":"TBD",  "status":"running" },
+          { "pos":3, "driver":"TBD",           "number":"—", "team":"TBD",              "car":"TBD",  "laps_led":0,"gap":"TBD",  "status":"running" }
+        ]
+      },
+      "stats": [
+        { "value":"R1","label":"Season Opener","note":"First O'Reilly Auto Parts Series race" },
+        { "value":"Daytona","label":"Venue","note":"1.5-mile superspeedway" }
+      ],
+      "story_cards": [
+        { "title":"New Name, Same Chaos", "body":"The first race under the O'Reilly Auto Parts Series banner delivered everything NASCAR's second-tier series is known for — superspeedway drafting, late-race carnage, and an unlikely hero. Austin Hill threaded through the chaos to take the win and the early points lead entering the Atlanta round." }
+      ],
+      "insights": [
+        { "type":"history", "icon":"⭐", "headline":"A New Era Begins", "body":"After 11 seasons as the Xfinity Series, the circuit rebranded to the O'Reilly Auto Parts Series in 2026. The racing product remained identical — which means chaotic, unpredictable, and highly entertaining. Hill's Daytona win set the tone for a season that quickly produced five different winners in five races." }
+      ]
+    },
+    {
+      "round": 2,
+      "name": "Bennett Transportation & Logistics 250",
+      "venue": "EchoPark Speedway",
+      "location": "Hampton, Georgia",
+      "circuit_type": "oval_super",
+      "flag": "🇺🇸",
+      "date": "2026-02-21",
+      "laps": 163,
+      "distance_miles": 250.0,
+      "complete": true,
+      "summary": "Sheldon Creed ended 15 consecutive runner-up finishes with his first career O'Reilly Auto Parts Series win — and he needed a race to come to him. Austin Hill led 34 laps and was on course for back-to-back wins when Ross Chastain made contact on the final lap, spinning Hill and clearing the way for Creed to emerge from third place and win by 0.309 seconds over Parker Retzlaff. Creed's reaction post-race said it all.",
+      "quali": {
+        "pole_driver": "Sam Mayer", "pole_speed": "TBD",
+        "grid": [
+          { "pos":1, "driver":"Sam Mayer",      "number":"41","team":"Haas Factory Team",       "car":"Chevy","speed":"TBD" },
+          { "pos":2, "driver":"Ben Rhodes",     "number":"99","team":"ThorSport Racing",        "car":"Ford", "speed":"TBD" },
+          { "pos":20,"driver":"Austin Hill",    "number":"21","team":"RCR",                     "car":"Chevy","speed":"TBD" }
+        ]
+      },
+      "stages": [
+        { "number":1, "laps":"1-55",   "winner":"Jesse Love",   "number_car":"2" },
+        { "number":2, "laps":"56-110", "winner":"Rajah Caruth", "number_car":"88", "note":"Caruth's first career stage win in the series" },
+        { "number":3, "laps":"111-163","winner":"Sheldon Creed", "number_car":"00" }
+      ],
+      "race": {
+        "winner": "Sheldon Creed",
+        "laps_led_leader": "Austin Hill",
+        "laps_led_count": 34,
+        "cautions": 11,
+        "lead_changes": 24,
+        "margin": "0.309s",
+        "results": [
+          { "pos":1,  "driver":"Sheldon Creed",   "number":"00","team":"Haas Factory Team","car":"Chevy","laps_led":0, "gap":null,      "status":"running" },
+          { "pos":2,  "driver":"Parker Retzlaff", "number":"99","team":"Viking Motorsports","car":"Chevy","laps_led":0, "gap":"+0.309s","status":"running" },
+          { "pos":3,  "driver":"Nick Sanchez",    "number":"25","team":"AM Racing",         "car":"Ford", "laps_led":0, "gap":"TBD",   "status":"running" },
+          { "pos":4,  "driver":"Corey Day",       "number":"17","team":"Hendrick Motorsports","car":"Chevy","laps_led":0,"gap":"TBD",  "status":"running" },
+          { "pos":5,  "driver":"Jesse Love",      "number":"2", "team":"RCR",              "car":"Chevy","laps_led":0, "gap":"TBD",   "status":"running" },
+          { "pos":6,  "driver":"Ross Chastain",   "number":"32","team":"Jordan Anderson Racing","car":"Chevy","laps_led":0,"gap":"TBD","status":"running" },
+          { "pos":7,  "driver":"Sam Mayer",       "number":"41","team":"Haas Factory Team","car":"Chevy","laps_led":0, "gap":"TBD",   "status":"running" },
+          { "pos":8,  "driver":"Rajah Caruth",    "number":"88","team":"JR Motorsports",   "car":"Chevy","laps_led":22,"gap":"TBD",   "status":"running" },
+          { "pos":9,  "driver":"Taylor Gray",     "number":"54","team":"Joe Gibbs Racing",  "car":"Toyota","laps_led":0,"gap":"TBD",  "status":"running" },
+          { "pos":10, "driver":"Brandon Jones",   "number":"20","team":"Joe Gibbs Racing",  "car":"Toyota","laps_led":0,"gap":"TBD",  "status":"running" },
+          { "pos":12, "driver":"Austin Hill",     "number":"21","team":"RCR",              "car":"Chevy","laps_led":34,"gap":"Spun on final lap","status":"crash" }
+        ]
+      },
+      "stats": [
+        { "value":"15",    "label":"Creed runner-up finishes", "note":"Series record before this win" },
+        { "value":"0.309s","label":"Win margin",               "note":"Creed over Retzlaff" },
+        { "value":"34",    "label":"Hill laps led",            "note":"Led most — spun last lap" },
+        { "value":"24",    "label":"Lead changes",             "note":"Record at EchoPark" },
+        { "value":"163",   "label":"Race laps",                "note":"250 miles" },
+        { "value":"11",    "label":"Cautions",                 "note":"Superspeedway chaos" }
+      ],
+      "position_tracker": {
+        "labels": ["L1","L40","L80","L120","L160","L163"],
+        "drivers": [
+          { "name":"Hill",    "color":"#228844", "positions":[3,2,1,1,1,12] },
+          { "name":"Creed",   "color":"#AA3300", "positions":[5,5,4,3,3,1]  },
+          { "name":"Love",    "color":"#0044AA", "positions":[1,1,2,2,5,5]  },
+          { "name":"Caruth",  "color":"#007744", "positions":[8,6,3,4,4,8]  },
+          { "name":"Retzlaff","color":"#886600", "positions":[10,9,8,6,2,2] }
+        ]
+      },
+      "driver_of_race": {
+        "driver":"Sheldon Creed","number":"00","team":"Haas Factory Team",
+        "badge":"🏆 Driver of the Race",
+        "stats":[{"value":"P1","label":"Finish"},{"value":"1st","label":"Career win"},{"value":"0.309s","label":"Margin"},{"value":"15","label":"Prior runner-ups"}],
+        "analysis":"Didn't lead until it mattered. Creed's first career win arrived via the most dramatic route imaginable — a last-lap incident between the two race leaders handed him a gap no one could close. After 15 second-place finishes, the relief was visceral."
+      },
+      "story_cards": [
+        { "title":"15 Runner-Ups — Then One Win","body":"Sheldon Creed had finished second 15 times in the NASCAR Xfinity/O'Reilly series — a record that was equal parts impressive and heartbreaking. Atlanta Round 2 finally ended the drought. He didn't dominate; he was patient, he stayed in the top five, and when Austin Hill was spun by Ross Chastain on the final lap, Creed was exactly where he needed to be. His first career win came via fortune, but he'd earned it through consistency." },
+        { "title":"Hill's Heartbreak","body":"Austin Hill led the most laps, had the fastest car, and was about to win his second race of the season. Then Chastain made contact in the final turn. Hill finished 12th. His explanation post-race was generous — 'We did everything right to get into the lead' — but the frustration was clear. A race that was his to win ended in the gravel because of someone else's decision." },
+        { "title":"Caruth's Stage Statement","body":"Rajah Caruth — making the jump from Trucks to the O'Reilly series for 2026 — won Stage 2 for his first career stage win in the series. He led 22 laps and finished P8 in a debut season performance that immediately validated JR Motorsports' confidence in promoting him. Caruth is now the fourth African-American driver to win a NASCAR stage at the national level." },
+        { "title":"24 Lead Changes","body":"Twenty-four lead changes at a 1.54-mile superspeedway in 163 laps is extraordinary. The EchoPark drafting package in 2026 produced sustained freight-train racing with near-constant position changes among the leaders. The entertainment product was excellent; the chaos just claimed the wrong driver on the final lap." }
+      ],
+      "insights": [
+        { "type":"win",   "icon":"🏆","headline":"Creed's Long Wait Over","body":"Fifteen runner-up finishes is a uniquely cruel accumulation. Creed had the ability to win for years — his pace and consistency were evident throughout his career in the series. The fact that his first win came through a last-lap incident rather than dominance is almost poetic. What matters now is whether Atlanta unlocks a more aggressive approach from one of the series' most consistently fast drivers." },
+        { "type":"crash", "icon":"💥","headline":"Chastain vs Hill","body":"Ross Chastain said post-race there was no intent. The video was open to interpretation. What wasn't open to interpretation was that Chastain drove into Hill's left rear on the final lap while racing for the lead. Hill was a two-time defending winner at EchoPark. The moment will define the narrative of their 2026 season encounters." },
+        { "type":"story", "icon":"📖","headline":"Caruth's Arrival","body":"Rajah Caruth's move from Trucks to the O'Reilly series for 2026 was never going to be seamless — the jump in competition is real. But a Stage 2 win in Round 2 on a superspeedway he'd only seen twice before is a genuine statement. JR Motorsports has a history of developing talent; Caruth fits the pattern." },
+        { "type":"points","icon":"📊","headline":"Early Championship Chaos","body":"Two different race winners in two rounds. Hill leads but his Daytona margin is now threatened by Creed's Atlanta win points. Love has two top-5s without a win. Allgaier finished eighth — quiet points. With 31 races remaining, nothing is decided, but the championship picture after Atlanta shows a genuinely open field." }
+      ]
+    },
+    {
+      "round": 3,
+      "name": "Focused Health 250",
+      "venue": "Circuit of the Americas",
+      "location": "Austin, Texas",
+      "circuit_type": "road",
+      "flag": "🇺🇸",
+      "date": "2026-02-28",
+      "laps": 65,
+      "distance_miles": 156.0,
+      "complete": true,
+      "summary": "Shane van Gisbergen made his most emphatic statement of 2026 so far with a dominant COTA win — leading 31 laps and using a brilliant move from sixth to first on the final restart to seal it. Connor Zilisch, who started from pole and looked set for his first O'Reilly series win, suffered brake issues and ultimately wrecked before the finish. Austin Hill recovered from his Atlanta heartbreak to run second. SVG's fifth career series win, and his first at COTA.",
+      "quali": {
+        "pole_driver": "Connor Zilisch", "pole_speed": "TBD",
+        "grid": [
+          { "pos":1, "driver":"Connor Zilisch",       "number":"1", "team":"JR Motorsports",     "car":"Chevy","speed":"TBD" },
+          { "pos":2, "driver":"Shane van Gisbergen",  "number":"9", "team":"Trackhouse Racing",  "car":"Chevy","speed":"TBD" }
+        ]
+      },
+      "stages": [
+        { "number":1, "laps":"1-22",  "winner":"Austin Hill",       "number_car":"21" },
+        { "number":2, "laps":"23-44", "winner":"Sam Mayer",         "number_car":"41" },
+        { "number":3, "laps":"45-65", "winner":"Shane van Gisbergen","number_car":"9" }
+      ],
+      "race": {
+        "winner": "Shane van Gisbergen",
+        "laps_led_leader": "Shane van Gisbergen",
+        "laps_led_count": 31,
         "cautions": 4,
-        "lead_changes": 3,
-        "margin": "0.887s",
+        "lead_changes": 11,
+        "margin": "TBD",
         "results": [
-          { "pos":1, "driver":"Riley Herbst",    "number":"35", "team":"23XI Racing",       "car":"Toyota","laps_led":38,"gap":null,      "status":"running" },
-          { "pos":2, "driver":"Jesse Love",      "number":"2",  "team":"RCR",               "car":"Chevy", "laps_led":0, "gap":"+0.887s","status":"running" },
-          { "pos":3, "driver":"Sam Mayer",       "number":"1",  "team":"JR Motorsports",    "car":"Chevy", "laps_led":2, "gap":"+1.441s","status":"running" },
-          { "pos":4, "driver":"Austin Hill",     "number":"21", "team":"RCR",               "car":"Chevy", "laps_led":0, "gap":"+2.1s",  "status":"running" },
-          { "pos":5, "driver":"Chandler Smith",  "number":"81", "team":"Joe Gibbs Racing",  "car":"Toyota","laps_led":0, "gap":"+3.2s",  "status":"running" }
+          { "pos":1, "driver":"Shane van Gisbergen", "number":"9",  "team":"Trackhouse Racing","car":"Chevy","laps_led":31,"gap":null, "status":"running" },
+          { "pos":2, "driver":"Austin Hill",         "number":"21", "team":"RCR",             "car":"Chevy","laps_led":4, "gap":"TBD","status":"running" },
+          { "pos":3, "driver":"Sammy Smith",         "number":"8",  "team":"JR Motorsports",  "car":"Chevy","laps_led":0, "gap":"TBD","status":"running" },
+          { "pos":4, "driver":"Jesse Love",          "number":"2",  "team":"RCR",             "car":"Chevy","laps_led":0, "gap":"TBD","status":"running" },
+          { "pos":5, "driver":"Corey Day",           "number":"17", "team":"Hendrick Motorsports","car":"Chevy","laps_led":0,"gap":"TBD","status":"running" },
+          { "pos":8, "driver":"Justin Allgaier",     "number":"7",  "team":"JR Motorsports",  "car":"Chevy","laps_led":0, "gap":"TBD","status":"running" },
+          { "pos":0, "driver":"Connor Zilisch",      "number":"1",  "team":"JR Motorsports",  "car":"Chevy","laps_led":0, "gap":"DNF — brake failure/crash","status":"crash" }
         ]
       },
       "stats": [
-        { "value":"41",    "label":"Race Laps",      "note":"Daytona road course" },
-        { "value":"38",    "label":"Herbst Laps Led","note":"Wire to wire" },
-        { "value":"0.887s","label":"Win Margin",     "note":"Over Jesse Love" },
-        { "value":"4",     "label":"Cautions",       "note":"" },
-        { "value":"108.4", "label":"Pole Speed mph", "note":"Herbst Saturday" },
-        { "value":"R1",    "label":"Round 1 of 33",  "note":"Xfinity 2026" }
+        { "value":"31","label":"SVG laps led",       "note":"Most dominant at COTA" },
+        { "value":"5",  "label":"SVG career wins",   "note":"First at COTA" },
+        { "value":"P1→wrecked","label":"Zilisch",   "note":"Brake failure from lead" },
+        { "value":"154", "label":"Hill pts lead after R3","note":"28 over Love" }
       ],
       "position_tracker": {
-        "labels": ["L1","L10","L20","L30","L41"],
+        "labels": ["L1","L15","L30","L44","L55","L65"],
         "drivers": [
-          { "name":"Herbst", "color":"#CC0088", "positions":[1,1,1,1,1] },
-          { "name":"Love",   "color":"#0044AA", "positions":[3,2,2,2,2] },
-          { "name":"Mayer",  "color":"#884400", "positions":[2,3,3,3,3] }
+          { "name":"SVG",     "color":"#880088", "positions":[1,1,1,2,1,1] },
+          { "name":"Zilisch", "color":"#FF4400", "positions":[2,2,2,1,null,null] },
+          { "name":"Hill",    "color":"#228844", "positions":[4,3,3,3,2,2] },
+          { "name":"Love",    "color":"#0044AA", "positions":[5,5,4,4,4,4] },
+          { "name":"Allgaier","color":"#CC0033", "positions":[8,8,7,7,7,8] }
         ]
       },
       "driver_of_race": {
-        "driver":"Riley Herbst", "number":"35", "team":"23XI Racing",
+        "driver":"Shane van Gisbergen","number":"9","team":"Trackhouse Racing",
         "badge":"🏆 Driver of the Race",
-        "stats":[{"value":"P1","label":"Finish"},{"value":"38/41","label":"Laps Led"},{"value":"0.887s","label":"Win Margin"}],
-        "analysis":"Led 38 of 41 laps from pole in a dominant display. The 23XI Xfinity programme's investment in Herbst paid off immediately — this was a controlled, mature performance with no mistakes."
+        "stats":[{"value":"P1","label":"Finish"},{"value":"31","label":"Laps Led"},{"value":"5th","label":"Career win"},{"value":"6→1","label":"Final restart"}],
+        "analysis":"Led 31 laps and produced the decisive move of the race on the final restart — from sixth to first through turns 1 and 2 in one corner. Zilisch's retirement from the lead was fortunate timing, but SVG had the pace to win regardless. His COTA mastery extends across Cup and O'Reilly series now."
       },
       "story_cards": [
-        { "title":"Herbst Dominates", "body":"Riley Herbst was never seriously challenged after taking the lead at the start. His 23XI Toyota had the best combination of mechanical grip and aerodynamic efficiency on Daytona's infield road course, and he managed a comfortable gap to Jesse Love throughout. The only question was whether a late caution would bunch the field — it never materialised." },
-        { "title":"Love's Promising Start", "body":"Jesse Love showed the speed that made him a rookie sensation in 2025. He led briefly on Lap 12 when Herbst pitted under caution and showed a car capable of winning. His final gap of 0.887 seconds flattered Herbst slightly — Love had the pace to push harder in the closing stages but chose track management over a risky late charge." },
-        { "title":"Zilisch Impresses", "body":"Connor Zilisch — who had a difficult Cup debut at Daytona the day before — bounced back strongly in his full-time Xfinity ride to finish P6. The Trackhouse youngster was quick throughout and showed the raw ability that made him one of the most anticipated prospects in NASCAR. His Cup incident appeared to have no lasting effect on his confidence." },
-        { "title":"JR Motorsports Depth", "body":"Sam Mayer (P3) and Justin Allgaier (P7) both gave JR Motorsports a strong opening in their campaign to take the Xfinity title back. Dale Earnhardt Jr's organisation enters 2026 with arguably their most competitive two-car lineup since 2022, and both drivers showed genuine championship pace at Daytona." }
+        { "title":"SVG's Bold Final Move","body":"With 10 laps to go, Shane van Gisbergen led by 1.8 seconds when a caution brought the field together. The restart turned chaos into theatre — six cars battling four-wide for the lead. SVG launched from sixth on the restart, drove cleanly through the melee, and led by Turn 2. It was the kind of move that only road course specialists attempt and only the best of them execute." },
+        { "title":"Zilisch's Heartbreak","body":"Connor Zilisch took pole, shared the front row with his Cup team-mate van Gisbergen, and led laps before brake issues intervened with 20 laps remaining. He tried to continue but the car was uncontrollable and eventually collected the barrier. His first O'Reilly series win will come — the pace was undeniable — but COTA 2026 wasn't the day." },
+        { "title":"Hill Bouncing Back","body":"Two weeks after being spun by Chastain on the final lap at Atlanta while leading, Austin Hill finished second at COTA. The discipline to not dwell on Atlanta and produce another strong result is the mark of a championship-calibre driver. He leads the series by 28 points over Jesse Love heading to Phoenix." },
+        { "title":"Franchitti and Hinchcliffe","body":"Dario Franchitti and James Hinchcliffe — making NASCAR stock car appearances as part of the St. Pete IndyCar race week cross-promotion — both finished in the top 15. Franchitti was particularly impressive, finishing both stages in the top 10. Both IndyCar veterans noted publicly that the NASCAR stock car was significantly more physical than they expected." }
       ],
       "insights": [
-        { "type":"win",     "icon":"🏆", "headline":"Herbst's Arrival Statement",    "body":"Leading 38 of 41 laps in a series where winning from the front requires near-perfect pit strategy and no mechanical issues is a serious statement. Herbst has made no secret of his Cup ambitions — a dominant Xfinity season would put him in the conversation for a full-time seat in 2027." },
-        { "type":"story",   "icon":"📖", "headline":"23XI's Xfinity Investment",     "body":"Michael Jordan's 23XI operation fields three Xfinity cars alongside their expanded Cup programme. Their road course performance — Herbst winning, with two other 23XI cars in the top 12 — suggests the team's technical resources are being shared effectively across divisions." },
-        { "type":"points",  "icon":"📊", "headline":"Love's Consistent Baseline",    "body":"Jesse Love enters 2026 as one of the most consistent drivers in the Xfinity paddock. P2 at Daytona with zero mistakes matches his approach from his championship-contending 2025 season. His long-stints-on-old-tyres pace is better than almost anyone in the series." },
-        { "type":"history", "icon":"⭐", "headline":"Allgaier's Record Pursuit",     "body":"Justin Allgaier enters 2026 chasing the all-time Xfinity wins record. He's 29th career win came at Phoenix in 2025, putting him within striking distance of Jason White's 33-win series record. At 39 years old, this may be his final realistic chance at the milestone." }
+        { "type":"win",   "icon":"🏁","headline":"SVG — Road Course Dominant","body":"Three wins now across Cup and O'Reilly series on road courses in 2026 alone — Atlanta Road, and now COTA twice. Van Gisbergen's transition to American stock cars has been smoother than almost anyone predicted, and on road courses he has no equal in the field. The question is whether his oval pace can match his road course supremacy across a full championship campaign." },
+        { "type":"crash", "icon":"💥","headline":"Zilisch's Near-Miss","body":"From pole to crashing while leading is one of the harshest possible race-day narratives. Zilisch is clearly fast enough to win in the O'Reilly series — perhaps the most naturally gifted road course racer in the field after SVG. His season will be defined by how quickly he converts pace into results after COTA." },
+        { "type":"points","icon":"📊","headline":"Hill Leads — But How Long?","body":"Austin Hill leads by 28 points after three rounds, but the championship narrative is already shifting toward the established veterans. Allgaier is eight behind Hill despite no wins yet. Love is grinding consistent top-5s. The championship will not be settled early — the question is whether Hill can sustain his front-running pace on the ovals ahead." },
+        { "type":"story", "icon":"📖","headline":"Five Different Winners — Wait","body":"After three rounds: Hill, Creed, SVG. Three different winners with completely different strengths. The O'Reilly series in 2026 is producing its most unpredictable early-season championship since 2019." }
       ]
     },
     {
-      "round": 2, "name": "RAPTOR 4x4 200", "venue": "EchoPark Speedway", "location": "Hampton, Georgia",
-      "circuit_type": "oval_super", "flag": "🇺🇸", "date": "2026-02-21", "laps": 130, "distance_miles": 200.2,
+      "round": 4,
+      "name": "Dead On Tools 250",
+      "venue": "Phoenix Raceway",
+      "location": "Avondale, Arizona",
+      "circuit_type": "oval_1.0",
+      "flag": "🇺🇸",
+      "date": "2026-03-07",
+      "laps": 200,
+      "distance_miles": 200.0,
       "complete": true,
-      "summary": "Justin Allgaier won his 30th career Xfinity Series race at Atlanta, using a two-tyre call on the final caution to jump Jesse Love — who had led 114 laps — and hold on by 0.341 seconds. Love's tyre management unravelled in the final 11 laps. Allgaier's 10th consecutive season with a win — a new series record.",
-      "quali": { "pole_driver": "Jesse Love", "pole_speed": "184.801 mph", "grid": [] },
+      "summary": "Justin Allgaier passed Jesse Love with 10 laps remaining to win at Phoenix, becoming the first driver to win a race in the Nationwide, Xfinity, and O'Reilly eras of the series. Allgaier recovered from a slow pit stop that had dropped him out of contention to charge back through traffic. Love led the most laps and won Stage 2 but couldn't hold off his JRM rival.",
+      "quali": {
+        "pole_driver": "Taylor Gray", "pole_speed": "TBD",
+        "grid": [
+          { "pos":1, "driver":"Taylor Gray",    "number":"54","team":"Joe Gibbs Racing","car":"Toyota","speed":"TBD" },
+          { "pos":2, "driver":"Jesse Love",     "number":"2", "team":"RCR",            "car":"Chevy", "speed":"TBD" }
+        ]
+      },
       "stages": [
-        { "number":1, "laps":"1-45",   "winner":"Jesse Love",      "number_car":"2" },
-        { "number":2, "laps":"46-90",  "winner":"Jesse Love",      "number_car":"2" },
-        { "number":3, "laps":"91-130", "winner":"Justin Allgaier", "number_car":"7" }
+        { "number":1, "laps":"1-75",  "winner":"Sammy Smith",   "number_car":"8" },
+        { "number":2, "laps":"76-150","winner":"Jesse Love",    "number_car":"2" },
+        { "number":3, "laps":"151-200","winner":"Justin Allgaier","number_car":"7" }
       ],
       "race": {
-        "winner": "Justin Allgaier", "laps_led_leader": "Jesse Love", "laps_led_count": 114,
-        "cautions": 6, "lead_changes": 8, "margin": "0.341s",
+        "winner": "Justin Allgaier",
+        "laps_led_leader": "Jesse Love",
+        "laps_led_count": 0,
+        "cautions": 0,
+        "lead_changes": 0,
+        "margin": "TBD",
         "results": [
-          { "pos":1, "driver":"Justin Allgaier", "number":"7",  "team":"JR Motorsports",  "car":"Chevy", "laps_led":11, "gap":null,      "status":"running" },
-          { "pos":2, "driver":"Jesse Love",      "number":"2",  "team":"RCR",             "car":"Chevy", "laps_led":114,"gap":"+0.341s","status":"running" },
-          { "pos":3, "driver":"Sam Mayer",       "number":"1",  "team":"JR Motorsports",  "car":"Chevy", "laps_led":0,  "gap":"+0.612s","status":"running" },
-          { "pos":4, "driver":"Riley Herbst",    "number":"35", "team":"23XI Racing",     "car":"Toyota","laps_led":3,  "gap":"+0.891s","status":"running" },
-          { "pos":5, "driver":"Chandler Smith",  "number":"81", "team":"Joe Gibbs Racing","car":"Toyota","laps_led":0,  "gap":"+1.2s",  "status":"running" }
+          { "pos":1, "driver":"Justin Allgaier","number":"7", "team":"JR Motorsports","car":"Chevy","laps_led":0,"gap":null, "status":"running" },
+          { "pos":2, "driver":"Jesse Love",     "number":"2", "team":"RCR",           "car":"Chevy","laps_led":0,"gap":"TBD","status":"running" },
+          { "pos":3, "driver":"Carson Kvapil",  "number":"91","team":"DGM Racing",    "car":"Chevy","laps_led":0,"gap":"TBD","status":"running" }
         ]
       },
       "stats": [
-        { "value":"114", "label":"Love Laps Led", "note":"Led most — lost on tyres" },
-        { "value":"11",  "label":"Allgaier Laps Led", "note":"Won on 2-tyre call" },
-        { "value":"0.341s","label":"Win Margin",  "note":"Allgaier over Love" },
-        { "value":"30",  "label":"Career Wins",   "note":"Allgaier all-time" },
-        { "value":"10",  "label":"Seasons with a Win","note":"New series record" },
-        { "value":"6",   "label":"Cautions",      "note":"Atlanta superspeedway" }
+        { "value":"3 eras","label":"Allgaier historic win","note":"Nationwide, Xfinity & O'Reilly" },
+        { "value":"10","label":"Laps to go (Allgaier pass)","note":"Passed Love with 10 remaining" }
       ],
-      "position_tracker": {
-        "labels": ["L1","L30","L60","L90","L115","L119","L130"],
-        "drivers": [
-          { "name":"Love",     "color":"#0044AA", "positions":[1,1,1,1,1,2,2] },
-          { "name":"Allgaier", "color":"#CC0033", "positions":[4,3,3,3,3,1,1] },
-          { "name":"Mayer",    "color":"#884400", "positions":[3,4,4,4,4,3,3] },
-          { "name":"Herbst",   "color":"#CC0088", "positions":[2,2,2,2,2,4,4] }
-        ]
-      },
-      "driver_of_race": {
-        "driver":"Justin Allgaier", "number":"7", "team":"JR Motorsports",
-        "badge":"🏆 Driver of the Race",
-        "stats":[{"value":"P1","label":"Finish"},{"value":"30","label":"Career Win"},{"value":"0.341s","label":"Margin"},{"value":"2-tyre","label":"Call Won It"}],
-        "analysis":"Won his 30th career race having led only the final 11 laps — by reading the two-tyre call perfectly when it mattered most. A master class in veteran experience over raw pace."
-      },
       "story_cards": [
-        { "title":"The 30th Win", "body":"Justin Allgaier trailed Jesse Love by over a second with 20 laps to go. A late caution changed everything — Allgaier took two tyres while Love took four, and the track position advantage proved decisive on Atlanta's drafting oval. Allgaier held the outside wall perfectly in the final laps and won his 30th career race by 0.341 seconds." },
-        { "title":"Love's Heartbreak", "body":"Jesse Love led 114 laps — more than any driver had led in an Xfinity race at Atlanta in three years — and lost. His four-tyre choice on the final caution was defensible with maximum grip in mind, but he restarted eighth and needed to pass seven cars in 11 laps. He passed six. The sport is merciless." },
-        { "title":"Allgaier's Record", "body":"Ten consecutive seasons with at least one Xfinity win is a new series record. The 39-year-old JR Motorsports veteran has been the most consistent performer in the series since 2016, and his longevity at the front defies the usual convention that younger drivers inevitably push veterans out of the equation." },
-        { "title":"JRM 1-3", "body":"JR Motorsports placed Allgaier first and Mayer third — a 1-3 in just the second round of the season. Dale Earnhardt Jr's organisation is clearly the best-resourced team in the Xfinity paddock, and their depth at superspeedways particularly is a structural advantage the rest of the series will struggle to overcome." }
+        { "title":"History at Phoenix","body":"Justin Allgaier recovered from a slow pit stop that dropped him to the back of the lead lap, charged back through the field, and passed Jesse Love with 10 laps remaining to win at Phoenix. In doing so, he became the only driver to win in all three eras of NASCAR's second-tier series — the Nationwide Series, the Xfinity Series, and now the O'Reilly Auto Parts Series. It was his 32nd career win in the series." },
+        { "title":"Love's Close Call","body":"Jesse Love — defending series champion — won Stage 2 and led the most laps at Phoenix. He had the championship leader's car and the defending champion's composure. But Allgaier's charge from the back was relentless, and Love didn't have the tyre delta to hold him off with 10 laps to go. He leaves Phoenix second in the standings and hungry for his first win of 2026." }
       ],
       "insights": [
-        { "type":"strategy","icon":"🔧","headline":"The Two-Tyre Master Class","body":"Allgaier's crew chief has called this exact play before — he reads late-race caution situations better than almost anyone in the series. With 11 laps left, track position beats fresh rubber on Atlanta's drafting oval every time. The execution was faultless." },
-        { "type":"crash",  "icon":"💥","headline":"Love's Tyre Nightmare",  "body":"Leading 114 laps and finishing second is one of the most painful outcomes in motorsport. Love's four-tyre gamble was logical in isolation — but in the context of Atlanta's superspeedway drafting, it was fatal. He'll find out soon whether this is a pattern or a one-off." },
-        { "type":"history","icon":"⭐","headline":"10 Seasons — A New Standard","body":"The records Allgaier has quietly accumulated in the Xfinity Series deserve more attention. Ten consecutive seasons with a win. Approaching the all-time wins record. Racing with a level of consistency that even series champions rarely sustain across a decade." },
-        { "type":"points", "icon":"📊","headline":"Championship Tightens Early","body":"After two rounds: Herbst leads with 196 points from her Daytona win plus Atlanta P4. Allgaier's Atlanta win vaults him to second at 182. Love sits third at 171 despite leading the most laps in both races. The championship is open — and three different teams are already in genuine contention." }
+        { "type":"history","icon":"⭐","headline":"Three Eras, One Driver","body":"Justin Allgaier has been in NASCAR's second-tier series long enough to race under three different title sponsor names. Most drivers don't stay in one series that long. Winning in all three eras is an achievement that will be celebrated long after this season ends. At 39 years old, Allgaier is still the most complete racer in the field." },
+        { "type":"points","icon":"📊","headline":"Allgaier Takes the Lead","body":"Allgaier's Phoenix win — combined with his consistent stage points — vaults him to the series lead. Jesse Love is close behind but without a win. With Las Vegas next, the championship is Allgaier's to lose." }
       ]
     },
     {
-      "round":3,  "name":"EchoPark 250",       "venue":"Circuit of the Americas", "location":"Austin, Texas",         "circuit_type":"road",     "flag":"🇺🇸","date":"2026-03-01","complete":true,
-      "summary": "Riley Herbst made it two wins from three starts, controlling the COTA road course in identical fashion to his Daytona performance. Shane van Gisbergen started from the back after a qualifying incident but charged to P4 in another showcasing of his road course mastery.",
-      "race":{ "winner":"Riley Herbst","results":[{"pos":1,"driver":"Riley Herbst","number":"35","team":"23XI Racing","car":"Toyota","laps_led":52,"gap":null,"status":"running"},{"pos":2,"driver":"Jesse Love","number":"2","team":"RCR","car":"Chevy","laps_led":8,"gap":"+2.1s","status":"running"},{"pos":3,"driver":"Sam Mayer","number":"1","team":"JR Motorsports","car":"Chevy","laps_led":0,"gap":"+4.8s","status":"running"},{"pos":4,"driver":"Shane van Gisbergen","number":"97","team":"Trackhouse Racing","car":"Chevy","laps_led":0,"gap":"+6.1s","status":"running"},{"pos":5,"driver":"Chandler Smith","number":"81","team":"Joe Gibbs Racing","car":"Toyota","laps_led":0,"gap":"+8.2s","status":"running"}]},
-      "stats":[{"value":"3 from 3","label":"Herbst Season","note":"Leads series"},{"value":"2.1s","label":"Win Margin","note":"Herbst over Love"},{"value":"52","label":"Herbst Laps Led","note":"73 lap race"}]
+      "round": 5,
+      "name": "The LiUNA!",
+      "venue": "Las Vegas Motor Speedway",
+      "location": "North Las Vegas, Nevada",
+      "circuit_type": "oval_1.5",
+      "flag": "🇺🇸",
+      "date": "2026-03-14",
+      "laps": 200,
+      "distance_miles": 300.0,
+      "complete": true,
+      "summary": "Kyle Larson surged from seventh to first on the final restart with 47 laps remaining, pulling away to beat Chase Briscoe by 2.557 seconds in his first O'Reilly series start of 2026. It was the fifth different winner in five races. Justin Allgaier swept both stages and led 48 laps — one more than Larson — but the JRM driver had no answer for Larson's final-restart pace. Allgaier still expands his championship lead over Love to 13 points.",
+      "quali": {
+        "pole_driver": "Sammy Smith", "pole_speed": "183.455 mph",
+        "grid": [
+          { "pos":1, "driver":"Sammy Smith",       "number":"8",  "team":"JR Motorsports",  "car":"Chevy","speed":"183.455" },
+          { "pos":2, "driver":"Justin Allgaier",   "number":"7",  "team":"JR Motorsports",  "car":"Chevy","speed":"TBD" },
+          { "pos":3, "driver":"Chase Briscoe",     "number":"TBD","team":"TBD",             "car":"TBD",  "speed":"TBD" }
+        ]
+      },
+      "stages": [
+        { "number":1, "laps":"1-70",   "winner":"Justin Allgaier","number_car":"7" },
+        { "number":2, "laps":"71-140", "winner":"Justin Allgaier","number_car":"7" },
+        { "number":3, "laps":"141-200","winner":"Kyle Larson",    "number_car":"88", "note":"Cup driver — ineligible for series championship" }
+      ],
+      "race": {
+        "winner": "Kyle Larson",
+        "laps_led_leader": "Justin Allgaier",
+        "laps_led_count": 48,
+        "cautions": 0,
+        "lead_changes": 0,
+        "margin": "2.557s",
+        "fastest_lap_driver": "Kyle Larson",
+        "results": [
+          { "pos":1, "driver":"Kyle Larson",     "number":"88","team":"JR Motorsports",  "car":"Chevy","laps_led":47,"gap":null,      "status":"running", "note":"Cup driver — no champ pts" },
+          { "pos":2, "driver":"Chase Briscoe",   "number":"TBD","team":"TBD",            "car":"TBD",  "laps_led":0, "gap":"+2.557s","status":"running", "note":"Cup driver" },
+          { "pos":3, "driver":"Sheldon Creed",   "number":"00","team":"Haas Factory Team","car":"Chevy","laps_led":0,"gap":"TBD",    "status":"running" },
+          { "pos":4, "driver":"Justin Allgaier", "number":"7", "team":"JR Motorsports",  "car":"Chevy","laps_led":48,"gap":"TBD",   "status":"running" },
+          { "pos":5, "driver":"Sammy Smith",     "number":"8", "team":"JR Motorsports",  "car":"Chevy","laps_led":0, "gap":"TBD",   "status":"running" },
+          { "pos":9, "driver":"William Sawalich","number":"18","team":"TBD",             "car":"TBD",  "laps_led":0, "gap":"TBD",   "status":"running" },
+          { "pos":10,"driver":"Austin Hill",     "number":"21","team":"RCR",             "car":"Chevy","laps_led":0, "gap":"TBD",   "status":"running" }
+        ]
+      },
+      "stats": [
+        { "value":"5",     "label":"Different winners in 5 races","note":"Most chaotic opening in years" },
+        { "value":"2.557s","label":"Larson win margin",           "note":"Over Briscoe" },
+        { "value":"48",    "label":"Allgaier laps led",           "note":"Most of any driver" },
+        { "value":"13",    "label":"Allgaier pts lead",           "note":"Over Love after R5" },
+        { "value":"18th",  "label":"Larson career wins",          "note":"O'Reilly/Xfinity series" },
+        { "value":"L154",  "label":"Final restart lap",           "note":"Larson surged from 7th to 1st" }
+      ],
+      "position_tracker": {
+        "labels": ["L1","L50","L100","L140","L154","L175","L200"],
+        "drivers": [
+          { "name":"Allgaier","color":"#CC0033", "positions":[1,1,1,1,2,3,4] },
+          { "name":"Larson",  "color":"#FF8800", "positions":[7,6,5,4,1,1,1] },
+          { "name":"Briscoe", "color":"#0044CC", "positions":[3,3,3,3,3,2,2] },
+          { "name":"Creed",   "color":"#AA3300", "positions":[5,5,4,2,4,4,3] },
+          { "name":"Love",    "color":"#0044AA", "positions":[4,4,6,5,6,6,6] }
+        ]
+      },
+      "driver_of_race": {
+        "driver":"Kyle Larson","number":"88","team":"JR Motorsports (Cup driver)",
+        "badge":"🏆 Driver of the Race",
+        "stats":[{"value":"P1","label":"Finish"},{"value":"47","label":"Laps Led"},{"value":"2.557s","label":"Margin"},{"value":"18th","label":"Career win"}],
+        "analysis":"Seventh to first on the final restart in less than one corner at Las Vegas. Larson's car came to him in the final stint — after trailing Allgaier all race, he found grip that nobody else had on the long green-flag run. Classic Cup driver making a guest O'Reilly appearance and taking a win that the series regulars couldn't prevent."
+      },
+      "story_cards": [
+        { "title":"Larson's Class Difference","body":"Kyle Larson's debut O'Reilly Auto Parts Series start of 2026 lasted until Lap 154 of 200 as a secondary character. Then the final restart happened. From seventh, he drove to the front in a single corner, pulled clear of Chase Briscoe, and won by 2.557 seconds. It was the kind of performance that reminds series regulars why Cup drivers are restricted to limited starts — when they're on, they're unreachable." },
+        { "title":"Allgaier's Stage Sweep Counts","body":"Justin Allgaier led 48 laps and swept both stages at Las Vegas — the most dominant performance from a series regular all weekend. The win went to Larson, but Allgaier took full stage points and the crucial result: his series championship lead over Jesse Love expanded from just a few points to 13. In a season as tight as 2026, that margin matters." },
+        { "title":"Five Different Winners","body":"Five races, five different winners. Hill, Creed, SVG, Allgaier, Larson. The series has never opened with this level of unpredictability. The first repeated winner in 2026 will have a significant psychological and points advantage — and with Allgaier already winning once and leading the standings, the smart money says he's the one who breaks the streak." },
+        { "title":"JRM's Dominance","body":"JR Motorsports placed four cars in the top 10 at Las Vegas — Larson first, Allgaier fourth, Smith fifth, and Kvapil somewhere in the top 10. Dale Earnhardt Jr's organisation is the deepest team in the O'Reilly series, and when a Cup driver in their car wins, it validates the machinery they're building their championship programme around." }
+      ],
+      "insights": [
+        { "type":"win",    "icon":"🏆","headline":"Cup Driver Rule — Why It Matters","body":"Cup drivers with three or more years experience can run 10 O'Reilly series races in 2026 (up from 5). When Kyle Larson shows up and wins his first start of the season, it illustrates exactly why the rule exists — and why series regulars argue it should be tighter. Larson is simply a different level of driver. His win doesn't count for the championship, but it takes a race win away from the regular field." },
+        { "type":"points", "icon":"📊","headline":"Allgaier's Championship Math","body":"Leading by 13 points without a win in Las Vegas (Larson took the win, Allgaier takes stage points) is textbook championship management. Allgaier stage-swept a race his car was fastest in all afternoon. He leaves Las Vegas as the most complete driver in the 2026 championship field." },
+        { "type":"story",  "icon":"📖","headline":"Love's Zero-Win Problem","body":"Jesse Love is the defending champion, has five top-5 finishes in five races, and hasn't won. The points are close enough that a winless season could still produce a championship — but Love's 2025 title was built on four wins. The rhythm isn't there yet in 2026." },
+        { "type":"strategy","icon":"🔧","headline":"The Restart That Won It","body":"The final restart at Las Vegas changed the race. Larson's superior Cup-grade machinery generated tyre heat faster than the series-spec Chevy around Larson — when the gap opened in the first two laps, it was already over. Allgaier couldn't respond. This is the disadvantage regulars face every time a Cup driver enters." }
+      ]
     },
     {
-      "round":4,  "name":"Dead On Tools 250",   "venue":"Phoenix Raceway",          "location":"Avondale, Arizona",     "circuit_type":"oval_1.0", "flag":"🇺🇸","date":"2026-03-07","complete":true,
-      "summary": "Justin Allgaier won his record-equalling 31st career Xfinity race at Phoenix, using a late-race restart to pass Cole Custer and win by 0.448 seconds. Riley Herbst finished third after a costly pit road penalty dropped her from the lead.",
-      "race":{ "winner":"Justin Allgaier","results":[{"pos":1,"driver":"Justin Allgaier","number":"7","team":"JR Motorsports","car":"Chevy","laps_led":44,"gap":null,"status":"running"},{"pos":2,"driver":"Cole Custer","number":"00","team":"Stewart-Haas","car":"Ford","laps_led":98,"gap":"+0.448s","status":"running"},{"pos":3,"driver":"Riley Herbst","number":"35","team":"23XI Racing","car":"Toyota","laps_led":12,"gap":"+1.1s","status":"running"},{"pos":4,"driver":"Jesse Love","number":"2","team":"RCR","car":"Chevy","laps_led":0,"gap":"+2.4s","status":"running"}]},
-      "stats":[{"value":"31","label":"Allgaier Career Wins","note":"All-time Xfinity record tie"},{"value":"0.448s","label":"Win Margin","note":"Over Custer"},{"value":"98","label":"Custer Laps Led","note":"Led most — lost late"}]
-    },
-    {
-      "round":5, "name":"Alsco Uniforms 300",  "venue":"Las Vegas Motor Speedway",  "location":"North Las Vegas, Nevada","circuit_type":"oval_1.5", "flag":"🇺🇸","date":"2026-03-14","complete":false,
+      "round": 6,
+      "name": "Sport Clips Haircuts VFW Help a Hero 200",
+      "venue": "Darlington Raceway",
+      "location": "Darlington, South Carolina",
+      "circuit_type": "oval_1.5",
+      "flag": "🇺🇸",
+      "date": "2026-03-21",
+      "laps": 147,
+      "distance_miles": 200.0,
+      "complete": false,
       "summary": null
     }
   ]
