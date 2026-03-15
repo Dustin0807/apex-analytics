@@ -4,143 +4,85 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Standings — APEX Analytics</title>
-
-  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500&family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet">
-
-  <!-- Chart.js -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
-
-  <!-- APEX Design System -->
   <link rel="stylesheet" href="assets/apex.css">
-
   <style>
-    /* ── Page-specific layout ─────────────────────────────── */
+    .standings-page { position:relative; z-index:1; }
 
-    .standings-layout {
-      display: grid;
-      grid-template-columns: 1fr 340px;
-      gap: 2px;
-      padding: var(--pad);
-      padding-top: 32px;
-      padding-bottom: 80px;
-      max-width: var(--max-w);
-      margin: 0 auto;
-    }
-
-    /* Series switcher strip above the layout */
     .series-switcher {
-      display: flex;
-      gap: 2px;
-      padding: 0 var(--pad);
-      padding-top: 24px;
-      flex-wrap: wrap;
+      display:flex; gap:2px; flex-wrap:wrap;
+      padding:20px var(--pad) 0;
     }
-
     .series-switch-btn {
-      padding: 8px 20px;
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 8px;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      color: var(--dim);
-      background: none;
-      border: 1px solid var(--border);
-      transition: all .18s;
+      padding:8px 20px;
+      font-family:'JetBrains Mono',monospace;
+      font-size:8px; letter-spacing:2px; text-transform:uppercase;
+      color:var(--dim); background:none;
+      border:1px solid var(--border);
+      transition:all .18s; cursor:pointer;
     }
-    .series-switch-btn:hover { color: var(--muted); border-color: var(--border-hi); }
+    .series-switch-btn:hover { color:var(--muted); border-color:var(--border-hi); }
     .series-switch-btn.active {
-      color: var(--accent);
-      border-color: rgba(var(--accent-rgb), .4);
-      background: rgba(var(--accent-rgb), .05);
+      color:var(--accent);
+      border-color:rgba(var(--accent-rgb),.4);
+      background:rgba(var(--accent-rgb),.05);
     }
 
-    /* Year picker */
     .year-strip {
-      display: flex;
-      gap: 2px;
-      align-items: center;
-      padding: 12px var(--pad) 0;
+      display:flex; align-items:center; gap:6px;
+      padding:12px var(--pad) 0;
     }
     .year-strip-label {
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 8px;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      color: var(--dim);
-      margin-right: 8px;
+      font-family:'JetBrains Mono',monospace;
+      font-size:8px; letter-spacing:2px; text-transform:uppercase;
+      color:var(--dim); margin-right:6px;
     }
     .year-btn {
-      padding: 5px 14px;
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 9px;
-      letter-spacing: 2px;
-      background: none;
-      border: 1px solid var(--border);
-      color: var(--dim);
-      transition: all .18s;
+      padding:5px 14px;
+      font-family:'JetBrains Mono',monospace;
+      font-size:9px; letter-spacing:2px;
+      background:none; border:1px solid var(--border);
+      color:var(--dim); transition:all .18s; cursor:pointer;
     }
-    .year-btn:hover  { color: var(--muted); border-color: var(--border-hi); }
+    .year-btn:hover { color:var(--muted); border-color:var(--border-hi); }
     .year-btn.active {
-      color: var(--accent);
-      border-color: rgba(var(--accent-rgb), .4);
-      background: rgba(var(--accent-rgb), .05);
+      color:var(--accent);
+      border-color:rgba(var(--accent-rgb),.4);
+      background:rgba(var(--accent-rgb),.05);
     }
 
-    /* Standings table overrides */
-    .standings-full { width: 100%; border-collapse: collapse; }
-    .standings-full th {
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 8px; letter-spacing: 2px;
-      text-transform: uppercase;
-      color: var(--dim);
-      padding: 8px 12px;
-      text-align: left;
-      border-bottom: 1px solid var(--border);
+    .standings-layout {
+      display:grid;
+      grid-template-columns:1fr 320px;
+      gap:2px;
+      padding:var(--pad);
+      padding-top:28px;
+      padding-bottom:80px;
+      max-width:var(--max-w);
+      margin:0 auto;
     }
-    .standings-full td {
-      padding: 10px 12px;
-      border-bottom: 1px solid rgba(255,255,255,.02);
-      vertical-align: middle;
-    }
-    .standings-full tr:hover td { background: rgba(255,255,255,.014); }
-    .standings-full tr.leader td { background: rgba(var(--accent-rgb), .04); }
-
-    .sf-pos  { font-family: 'Bebas Neue', display; font-size: 22px; color: var(--dim); width: 32px; }
-    .sf-pos.p1 { color: var(--accent); }
-    .sf-num  { font-family: 'JetBrains Mono', monospace; font-size: 10px; color: var(--dim); }
-    .sf-name { font-family: 'Bebas Neue', display; font-size: 16px; letter-spacing: .5px; }
-    .sf-team { font-family: 'JetBrains Mono', monospace; font-size: 9px; color: var(--muted); }
-    .sf-pts  { font-family: 'Bebas Neue', display; font-size: 24px; letter-spacing: 1px; color: var(--accent); text-align: right; }
-    .sf-gap  { font-family: 'JetBrains Mono', monospace; font-size: 9px; color: var(--dim); text-align: right; }
-    .sf-wins { font-family: 'JetBrains Mono', monospace; font-size: 10px; color: var(--muted); text-align: center; }
-    .sf-bar-cell { width: 120px; padding-right: 8px; }
-    .sf-bar  { height: 3px; border-radius: 1px; }
-
-    /* Sidebar */
     .standings-sidebar {}
     .sidebar-sticky {
-      position: sticky;
-      top: calc(var(--nav-h) + 16px);
+      position:sticky;
+      top:calc(var(--nav-h) + 16px);
     }
 
-    @media (max-width: 900px) {
-      .standings-layout { grid-template-columns: 1fr; }
-      .standings-sidebar { order: -1; }
-      .sidebar-sticky { position: static; }
+    @media(max-width:900px) {
+      .standings-layout { grid-template-columns:1fr; }
+      .sidebar-sticky { position:static; }
     }
   </style>
 </head>
 <body>
 
-  <div class="bg-radial-acc"></div>
+  <div class="bg-radial-acc" style="--accent-rgb:39,244,210"></div>
   <div class="bg-checker"></div>
 
-  <!-- ── NAV ─────────────────────────────────────────────── -->
+  <!-- NAV -->
   <nav class="apex-nav">
-    <a class="nav-logo" href="index.html">APEX<span class="dot">.</span></a>
+    <a class="nav-logo" href="index.html">APEX<span class="dot">.</span>ANALYTICS</a>
     <div id="nav-breadcrumb" class="nav-breadcrumb">
       <a href="index.html">Home</a>
     </div>
@@ -151,67 +93,70 @@
     </div>
   </nav>
 
-  <!-- ── SERIES SWITCHER ───────────────────────────────────── -->
-  <div class="series-switcher relative">
-    <button class="series-switch-btn" data-series="f1">Formula 1</button>
-    <button class="series-switch-btn" data-series="nascar-cup">Cup Series</button>
-    <button class="series-switch-btn" data-series="nascar-xfinity">Xfinity</button>
-    <button class="series-switch-btn" data-series="nascar-trucks">Trucks</button>
-  </div>
+  <div class="standings-page">
 
-  <!-- ── YEAR PICKER ───────────────────────────────────────── -->
-  <div class="year-strip relative" id="year-strip">
-    <span class="year-strip-label">Season</span>
-    <!-- Populated by apex.js -->
-  </div>
-
-  <!-- ── MAIN LAYOUT ───────────────────────────────────────── -->
-  <div class="standings-layout relative">
-
-    <!-- Left: standings tables -->
-    <div>
-      <div id="standings-main">
-        <!-- Populated by apex.js: initStandingsPage() -->
-        <div style="padding:40px 0;opacity:.3;font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--dim)">Loading…</div>
-      </div>
-      <div id="constructor-content"></div>
+    <!-- SERIES SWITCHER -->
+    <div class="series-switcher">
+      <button class="series-switch-btn" data-series="f1">Formula 1</button>
+      <button class="series-switch-btn" data-series="nascar-cup">Cup Series</button>
+      <button class="series-switch-btn" data-series="nascar-xfinity">Xfinity</button>
+      <button class="series-switch-btn" data-series="nascar-trucks">Trucks</button>
     </div>
 
-    <!-- Right: schedule sidebar -->
-    <div class="standings-sidebar">
-      <div class="sidebar-sticky">
-        <div id="standings-schedule">
-          <!-- Populated by apex.js: initStandingsPage() -->
+    <!-- YEAR PICKER -->
+    <div class="year-strip" id="year-strip">
+      <span class="year-strip-label">Season</span>
+    </div>
+
+    <!-- MAIN LAYOUT -->
+    <div class="standings-layout">
+
+      <!-- Left: tables -->
+      <div>
+        <div id="standings-main">
+          <div style="padding:40px 0;opacity:.25;font-family:'JetBrains Mono',monospace;font-size:9px;color:var(--dim)">Loading…</div>
         </div>
       </div>
-    </div>
 
+      <!-- Right: schedule -->
+      <div class="standings-sidebar">
+        <div class="sidebar-sticky">
+          <div id="standings-schedule"></div>
+        </div>
+      </div>
+
+    </div>
   </div>
 
-  <!-- ── FOOTER ────────────────────────────────────────────── -->
-  <footer class="apex-footer relative">
-    <div class="foot-logo">APEX<span class="dot">.</span></div>
+  <!-- FOOTER -->
+  <footer class="apex-footer" style="position:relative;z-index:1">
+    <div class="foot-logo">APEX<span class="dot">.</span>ANALYTICS</div>
     <div class="foot-copy" id="footer-copy">APEX Analytics</div>
   </footer>
 
-  <!-- ── RENDERER ──────────────────────────────────────────── -->
   <script src="assets/apex.js"></script>
   <script>
     (async () => {
-      // Load config to know which years exist per series
       const config = await loadJSON('data/config.json');
       if (!config) return;
 
       const p    = params();
       const year = p.year || config.site.current_year;
 
-      // Mark active series button
+      // Mark active series button and set accent colour immediately
+      const seriesCfg = config.series[p.series];
+      if (seriesCfg) {
+        const accent = seriesCfg.accent || seriesCfg.color || '#FFFFFF';
+        document.documentElement.style.setProperty('--accent', accent);
+        document.documentElement.style.setProperty('--accent-rgb',
+          accent.replace('#','').match(/.{2}/g).map(x=>parseInt(x,16)).join(','));
+      }
+
       document.querySelectorAll('.series-switch-btn').forEach(btn => {
         btn.classList.toggle('active', btn.dataset.series === p.series);
       });
 
-      // Build year picker from config
-      const seriesCfg = config.series[p.series];
+      // Year picker
       const years     = seriesCfg?.years || [year];
       const yearStrip = document.getElementById('year-strip');
       years.forEach(y => {
@@ -222,15 +167,11 @@
         yearStrip.appendChild(btn);
       });
 
-      // Render the page
       await initStandingsPage();
 
-      // Footer
       const foot = document.getElementById('footer-copy');
-      if (foot && seriesCfg)
-        foot.textContent = `${seriesCfg.name} · ${year} Standings`;
+      if (foot && seriesCfg) foot.textContent = `${seriesCfg.name} · ${year} Standings`;
     })();
   </script>
-
 </body>
 </html>

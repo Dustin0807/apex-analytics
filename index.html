@@ -9,146 +9,194 @@
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500&family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/apex.css">
   <style>
-    .hub-grid{display:grid;grid-template-columns:1fr 340px;gap:2px;padding:var(--pad);padding-top:24px;padding-bottom:80px;}
-    .hub-divider{border:none;border-top:1px solid var(--border);margin:24px 0 20px;}
-    .hub-section-label{font-family:'JetBrains Mono',monospace;font-size:8px;letter-spacing:3px;text-transform:uppercase;color:var(--dim);margin-bottom:12px;display:flex;align-items:center;gap:10px;}
-    .hub-section-label::after{content:'';flex:1;height:1px;background:var(--border);}
-    .series-content{display:none;}
-    .hub-aside{display:flex;flex-direction:column;gap:2px;}
-    .aside-link{display:flex;align-items:center;justify-content:space-between;padding:9px 12px;background:var(--bg-2);border:1px solid var(--border);font-family:'JetBrains Mono',monospace;font-size:9px;color:var(--muted);transition:border-color .18s;text-decoration:none;}
-    .aside-link:hover{border-color:var(--border-hi);}
-    @media(max-width:1100px){.hub-grid{grid-template-columns:1fr;}.hub-aside{order:2;}}
+    /* Hub-specific layout */
+    .hub-outer { position:relative; z-index:1; }
+
+    .hub-grid {
+      display:grid;
+      grid-template-columns:1fr 300px;
+      gap:2px;
+      padding:var(--pad);
+      padding-top:24px;
+      padding-bottom:80px;
+      max-width:var(--max-w);
+      margin:0 auto;
+    }
+    .hub-aside { display:flex; flex-direction:column; gap:2px; }
+
+    .hub-divider { border:none; border-top:1px solid var(--border); margin:24px 0 16px; }
+
+    .hub-section-label {
+      font-family:'JetBrains Mono',monospace;
+      font-size:8px; letter-spacing:3px; text-transform:uppercase;
+      color:var(--dim); margin-bottom:12px;
+      display:flex; align-items:center; gap:10px;
+    }
+    .hub-section-label::after { content:''; flex:1; height:1px; background:var(--border); }
+
+    .series-detail-grid { display:grid; grid-template-columns:1fr 1fr; gap:2px; }
+
+    .aside-link {
+      display:flex; align-items:center; justify-content:space-between;
+      padding:9px 14px;
+      background:var(--bg-2); border:1px solid var(--border);
+      font-family:'JetBrains Mono',monospace; font-size:9px; color:var(--muted);
+      text-decoration:none; transition:border-color .18s;
+    }
+    .aside-link:hover { border-color:var(--border-hi); }
+
+    @media(max-width:1100px) {
+      .hub-grid { grid-template-columns:1fr; }
+      .hub-aside { order:2; }
+    }
+    @media(max-width:700px) {
+      .series-detail-grid { grid-template-columns:1fr; }
+    }
   </style>
 </head>
 <body>
 
-<div class="bg-radial-acc" style="--accent-rgb:39,244,210"></div>
-<div class="bg-checker"></div>
+  <!-- Background with F1 teal as default until a lead story is found -->
+  <div class="bg-radial-acc" style="--accent-rgb:39,244,210"></div>
+  <div class="bg-checker"></div>
 
-<!-- NAV -->
-<nav class="apex-nav">
-  <a class="nav-logo" href="index.html">APEX<span class="dot">.</span></a>
-  <div class="nav-links">
-    <a class="nav-link active" href="index.html">Hub</a>
-    <a class="nav-link" href="standings.html?series=f1">F1</a>
-    <a class="nav-link" href="standings.html?series=nascar-cup">Cup</a>
-    <a class="nav-link" href="standings.html?series=nascar-xfinity">Xfinity</a>
-    <a class="nav-link" href="standings.html?series=nascar-trucks">Trucks</a>
-  </div>
-</nav>
-
-<!-- MASTHEAD -->
-<div class="hub-masthead relative">
-  <div>
-    <div class="masthead-week" id="masthead-week">Loading…</div>
-    <h1 class="masthead-h1">This Week<br>in <span class="acc">Racing</span></h1>
-    <p class="masthead-tagline">F1 · NASCAR Cup · Xfinity · Trucks</p>
-  </div>
-  <div class="masthead-stats">
-    <div>
-      <div class="mstat-v" id="races-done-count">—</div>
-      <div class="mstat-l">Races Analysed</div>
+  <!-- NAV -->
+  <nav class="apex-nav">
+    <a class="nav-logo" href="index.html">APEX<span class="dot">.</span>ANALYTICS</a>
+    <div class="nav-links">
+      <a class="nav-link active" href="index.html">Hub</a>
+      <a class="nav-link" href="standings.html?series=f1">F1</a>
+      <a class="nav-link" href="standings.html?series=nascar-cup">Cup</a>
+      <a class="nav-link" href="standings.html?series=nascar-xfinity">Xfinity</a>
+      <a class="nav-link" href="standings.html?series=nascar-trucks">Trucks</a>
     </div>
-    <div>
-      <div class="mstat-v">4</div>
-      <div class="mstat-l">Series Covered</div>
-    </div>
-  </div>
-</div>
+  </nav>
 
-<!-- SERIES TABS -->
-<div class="series-tabs relative" style="padding-top:8px">
-  <button class="series-tab active" data-series="f1">Formula 1</button>
-  <button class="series-tab" data-series="nascar-cup">Cup Series</button>
-  <button class="series-tab" data-series="nascar-xfinity">Xfinity</button>
-  <button class="series-tab" data-series="nascar-trucks">Trucks</button>
-</div>
+  <div class="hub-outer">
 
-<!-- HUB GRID -->
-<div class="hub-grid relative">
-
-  <!-- MAIN FEED -->
-  <div>
-    <!-- Lead story -->
-    <div id="lead-story" style="margin-bottom:2px">
-      <div style="height:200px;background:var(--surface);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;">
-        <span style="font-family:'JetBrains Mono',monospace;font-size:9px;color:var(--dim)">Loading…</span>
+    <!-- MASTHEAD -->
+    <div class="hub-masthead">
+      <div>
+        <div class="masthead-week" id="masthead-week">Loading…</div>
+        <h1 class="masthead-h1">This Week<br>in <span class="acc">Racing</span></h1>
+        <p class="masthead-tagline">F1 · NASCAR Cup · Xfinity · Trucks</p>
+      </div>
+      <div class="masthead-stats">
+        <div>
+          <div class="mstat-v" id="races-done-count">—</div>
+          <div class="mstat-l">Races Analysed</div>
+        </div>
+        <div>
+          <div class="mstat-v">4</div>
+          <div class="mstat-l">Series</div>
+        </div>
       </div>
     </div>
 
-    <!-- Story grid -->
-    <div id="story-grid" class="story-grid"></div>
-
-    <hr class="hub-divider">
-
-    <!-- F1 series panel -->
-    <div class="series-content" data-series-panel="f1">
-      <div class="hub-section-label">Formula 1 · Season Overview</div>
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:2px">
-        <div id="mini-standings-f1"></div>
-        <div id="schedule-list-f1"></div>
-      </div>
+    <!-- SERIES TABS -->
+    <div class="series-tabs">
+      <button class="series-tab active" data-series="f1">Formula 1</button>
+      <button class="series-tab" data-series="nascar-cup">Cup Series</button>
+      <button class="series-tab" data-series="nascar-xfinity">Xfinity</button>
+      <button class="series-tab" data-series="nascar-trucks">Trucks</button>
     </div>
 
-    <!-- Cup series panel -->
-    <div class="series-content" data-series-panel="nascar-cup">
-      <div class="hub-section-label">NASCAR Cup Series · Season Overview</div>
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:2px">
-        <div id="mini-standings-nascar-cup"></div>
-        <div id="schedule-list-nascar-cup"></div>
-      </div>
-    </div>
+    <!-- MAIN GRID -->
+    <div class="hub-grid">
 
-    <!-- Xfinity series panel -->
-    <div class="series-content" data-series-panel="nascar-xfinity">
-      <div class="hub-section-label">NASCAR Xfinity Series · Season Overview</div>
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:2px">
-        <div id="mini-standings-nascar-xfinity"></div>
-        <div id="schedule-list-nascar-xfinity"></div>
-      </div>
-    </div>
+      <!-- LEFT: feed + series overview -->
+      <div>
 
-    <!-- Trucks series panel -->
-    <div class="series-content" data-series-panel="nascar-trucks">
-      <div class="hub-section-label">NASCAR Craftsman Truck Series · Season Overview</div>
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:2px">
-        <div id="mini-standings-nascar-trucks"></div>
-        <div id="schedule-list-nascar-trucks"></div>
-      </div>
-    </div>
+        <!-- Lead story -->
+        <div id="lead-story" style="margin-bottom:2px">
+          <div style="height:180px;background:var(--surface);border:1px solid var(--border);
+                      display:flex;align-items:center;justify-content:center;">
+            <span style="font-family:'JetBrains Mono',monospace;font-size:9px;color:var(--dim)">Loading…</span>
+          </div>
+        </div>
 
-  </div><!-- /main feed -->
+        <!-- Story grid -->
+        <div id="story-grid" class="story-grid"></div>
 
-  <!-- ASIDE -->
-  <div class="hub-aside">
+        <hr class="hub-divider">
 
-    <div style="background:var(--surface);border:1px solid var(--border);padding:18px 20px">
-      <div style="font-family:'Bebas Neue',display;font-size:14px;letter-spacing:2px;margin-bottom:12px">Series</div>
-      <div style="display:flex;flex-direction:column;gap:2px">
-        <a class="aside-link" href="standings.html?series=f1"><span>F1 Standings</span><span style="color:var(--f1-acc)">→</span></a>
-        <a class="aside-link" href="standings.html?series=nascar-cup"><span>Cup Standings</span><span style="color:var(--cup)">→</span></a>
-        <a class="aside-link" href="standings.html?series=nascar-xfinity"><span>Xfinity Standings</span><span style="color:var(--xfinity)">→</span></a>
-        <a class="aside-link" href="standings.html?series=nascar-trucks"><span>Trucks Standings</span><span style="color:var(--trucks)">→</span></a>
-      </div>
-    </div>
+        <!-- Per-series panels (tab-controlled) -->
+        <div data-series-panel="f1">
+          <div class="hub-section-label">Formula 1 · 2026</div>
+          <div class="series-detail-grid">
+            <div id="mini-standings-f1"></div>
+            <div id="schedule-list-f1"></div>
+          </div>
+        </div>
 
-    <div style="background:var(--surface);border:1px solid var(--border);padding:18px 20px">
-      <div style="font-family:'Bebas Neue',display;font-size:14px;letter-spacing:2px;margin-bottom:10px">About APEX</div>
-      <p style="font-size:12px;color:var(--muted);line-height:1.75;font-weight:300">Deep race analysis across Formula 1 and all three NASCAR national series. Full field results, strategy breakdowns, championship tracking, and season archives — updated after every event.</p>
-    </div>
+        <div data-series-panel="nascar-cup">
+          <div class="hub-section-label">NASCAR Cup Series · 2026</div>
+          <div class="series-detail-grid">
+            <div id="mini-standings-nascar-cup"></div>
+            <div id="schedule-list-nascar-cup"></div>
+          </div>
+        </div>
 
-  </div>
+        <div data-series-panel="nascar-xfinity">
+          <div class="hub-section-label">NASCAR Xfinity Series · 2026</div>
+          <div class="series-detail-grid">
+            <div id="mini-standings-nascar-xfinity"></div>
+            <div id="schedule-list-nascar-xfinity"></div>
+          </div>
+        </div>
 
-</div><!-- /hub-grid -->
+        <div data-series-panel="nascar-trucks">
+          <div class="hub-section-label">NASCAR Craftsman Truck Series · 2026</div>
+          <div class="series-detail-grid">
+            <div id="mini-standings-nascar-trucks"></div>
+            <div id="schedule-list-nascar-trucks"></div>
+          </div>
+        </div>
 
-<!-- FOOTER -->
-<footer class="apex-footer relative">
-  <div class="foot-logo">APEX<span class="dot">.</span></div>
-  <div class="foot-copy">Motorsport Intelligence · F1 · NASCAR Cup · Xfinity · Trucks</div>
-</footer>
+      </div><!-- /left -->
 
-<script src="assets/apex.js"></script>
-<script>initHubPage();</script>
+      <!-- RIGHT: aside -->
+      <div class="hub-aside">
+
+        <div style="background:var(--surface);border:1px solid var(--border);padding:18px 20px">
+          <div style="font-family:'Bebas Neue',display;font-size:14px;letter-spacing:2px;margin-bottom:12px;color:var(--text)">Series Standings</div>
+          <div style="display:flex;flex-direction:column;gap:2px">
+            <a class="aside-link" href="standings.html?series=f1">
+              <span>Formula 1</span><span style="color:var(--f1-acc)">→</span>
+            </a>
+            <a class="aside-link" href="standings.html?series=nascar-cup">
+              <span>Cup Series</span><span style="color:var(--cup)">→</span>
+            </a>
+            <a class="aside-link" href="standings.html?series=nascar-xfinity">
+              <span>Xfinity</span><span style="color:var(--xfinity)">→</span>
+            </a>
+            <a class="aside-link" href="standings.html?series=nascar-trucks">
+              <span>Trucks</span><span style="color:var(--trucks)">→</span>
+            </a>
+          </div>
+        </div>
+
+        <div style="background:var(--surface);border:1px solid var(--border);padding:18px 20px">
+          <div style="font-family:'Bebas Neue',display;font-size:14px;letter-spacing:2px;margin-bottom:10px;color:var(--text)">About APEX</div>
+          <p style="font-size:12px;color:var(--muted);line-height:1.75;font-weight:300">
+            Deep race analysis across Formula 1 and all three NASCAR national series. Full field results, strategy breakdowns, championship tracking, and season archives — updated after every event.
+          </p>
+        </div>
+
+      </div><!-- /aside -->
+
+    </div><!-- /hub-grid -->
+
+  </div><!-- /hub-outer -->
+
+  <!-- FOOTER -->
+  <footer class="apex-footer" style="position:relative;z-index:1">
+    <div class="foot-logo">APEX<span class="dot">.</span>ANALYTICS</div>
+    <div class="foot-copy">Motorsport Intelligence · F1 · NASCAR Cup · Xfinity · Trucks</div>
+  </footer>
+
+  <script src="assets/apex.js"></script>
+  <script>initHubPage();</script>
 
 </body>
 </html>

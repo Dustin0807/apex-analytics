@@ -199,7 +199,7 @@ button{cursor:pointer;font-family:inherit;}
 @keyframes blink{0%,100%{opacity:1}50%{opacity:.2}}
 
 /* ── HUB ─────────────────────────────────────────────────── */
-.hub-masthead{padding:56px var(--pad) 44px;border-bottom:1px solid var(--border);display:grid;grid-template-columns:1fr auto;gap:40px;align-items:end;}
+.hub-masthead{position:relative;z-index:1;padding:56px var(--pad) 44px;border-bottom:1px solid var(--border);display:grid;grid-template-columns:1fr auto;gap:40px;align-items:end;max-width:var(--max-w);margin:0 auto;}
 .masthead-week{font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:3px;text-transform:uppercase;color:var(--accent);opacity:.7;margin-bottom:10px;}
 .masthead-h1{font-family:'Bebas Neue',display;font-size:clamp(52px,7vw,96px);letter-spacing:2px;line-height:.9;margin-bottom:12px;}
 .masthead-h1 .acc{color:var(--f1);}
@@ -208,7 +208,7 @@ button{cursor:pointer;font-family:inherit;}
 .mstat-v{font-family:'Bebas Neue',display;font-size:40px;letter-spacing:1px;line-height:1;}
 .mstat-l{font-family:'JetBrains Mono',monospace;font-size:8px;color:var(--dim);letter-spacing:1px;margin-top:2px;}
 
-.series-tabs{display:flex;gap:2px;padding:0 var(--pad);border-bottom:1px solid var(--border);}
+.series-tabs{position:relative;z-index:1;display:flex;gap:2px;padding:16px var(--pad) 0;border-bottom:1px solid var(--border);background:var(--bg);}
 .series-tab{padding:9px 20px;font-family:'JetBrains Mono',monospace;font-size:8px;letter-spacing:2px;text-transform:uppercase;color:var(--dim);background:none;border:1px solid transparent;border-bottom:none;transition:all .18s;}
 .series-tab:hover{color:var(--muted);}
 .series-tab.active{color:var(--text);background:var(--surface);border-color:var(--border);border-bottom-color:var(--bg);}
@@ -270,6 +270,9 @@ button{cursor:pointer;font-family:inherit;}
 .si-name{font-size:12px;}
 .si-sub{font-family:'JetBrains Mono',monospace;font-size:8px;color:var(--dim);}
 .si-date{font-family:'JetBrains Mono',monospace;font-size:9px;color:var(--muted);white-space:nowrap;}
+.si-status{font-family:'JetBrains Mono',monospace;font-size:7.5px;letter-spacing:1px;padding:2px 7px;border:1px solid;white-space:nowrap;text-transform:uppercase;}
+.si-status.done{color:var(--green);border-color:rgba(0,212,126,.28);}
+.si-status.next{color:var(--accent);border-color:rgba(var(--accent-rgb),.35);}
 
 /* ── STANDINGS PAGE ──────────────────────────────────────── */
 .standings-full{width:100%;border-collapse:collapse;}

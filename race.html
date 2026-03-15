@@ -4,27 +4,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Race Analysis — APEX Analytics</title>
-
-  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500&family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet">
-
-  <!-- Chart.js -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
-
-  <!-- APEX Design System -->
   <link rel="stylesheet" href="assets/apex.css">
 </head>
 <body>
 
-  <!-- Background layers -->
-  <div class="bg-radial-acc"></div>
+  <!-- Background — accent set by JS once series is known -->
+  <div class="bg-radial-acc" id="bg-radial" style="--accent-rgb:39,244,210"></div>
   <div class="bg-checker"></div>
 
-  <!-- ── NAV ─────────────────────────────────────────────── -->
+  <!-- NAV -->
   <nav class="apex-nav">
-    <a class="nav-logo" href="index.html">APEX<span class="dot">.</span></a>
+    <a class="nav-logo" href="index.html">APEX<span class="dot">.</span>ANALYTICS</a>
     <div id="nav-breadcrumb" class="nav-breadcrumb">
       <a href="index.html">Home</a>
     </div>
@@ -35,38 +29,27 @@
     </div>
   </nav>
 
-  <!-- ── HERO ─────────────────────────────────────────────── -->
-  <div class="race-hero relative" id="race-hero">
-    <!-- Rendered by apex.js: renderHero() -->
-    <div style="padding:20px 0;opacity:.3;font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--dim)">Loading…</div>
+  <!-- HERO — populated by apex.js -->
+  <div class="race-hero" id="race-hero" style="min-height:260px;position:relative;z-index:1">
+    <div style="opacity:.25;font-family:'JetBrains Mono',monospace;font-size:9px;color:var(--dim);padding:20px 0">Loading race data…</div>
   </div>
 
-  <!-- ── STATS BAR ─────────────────────────────────────────── -->
-  <div class="stats-bar relative" id="stats-bar">
-    <!-- Rendered by apex.js: renderStatsBar() -->
-  </div>
+  <!-- STATS BAR — populated by apex.js -->
+  <div class="stats-bar" id="stats-bar" style="position:relative;z-index:1"></div>
 
-  <!-- ── TAB BAR ───────────────────────────────────────────── -->
-  <div class="tab-bar relative" id="tab-bar">
-    <!-- Rendered by apex.js: initRacePage() -->
-  </div>
+  <!-- TAB BAR — built by apex.js -->
+  <div class="tab-bar" id="tab-bar" style="position:relative;z-index:2"></div>
 
-  <!-- ── TAB PANELS ────────────────────────────────────────── -->
-  <main class="relative" id="tab-content">
-    <!-- Rendered by apex.js: one .panel per tab -->
-  </main>
+  <!-- TAB PANELS — built by apex.js -->
+  <main id="tab-content" style="position:relative;z-index:1"></main>
 
-  <!-- ── FOOTER ────────────────────────────────────────────── -->
-  <footer class="apex-footer relative">
-    <div class="foot-logo">APEX<span class="dot">.</span></div>
+  <!-- FOOTER -->
+  <footer class="apex-footer" style="position:relative;z-index:1">
+    <div class="foot-logo">APEX<span class="dot">.</span>ANALYTICS</div>
     <div class="foot-copy" id="footer-copy">APEX Analytics</div>
   </footer>
 
-  <!-- ── RENDERER ──────────────────────────────────────────── -->
   <script src="assets/apex.js"></script>
-  <script>
-    initRacePage();
-  </script>
-
+  <script>initRacePage();</script>
 </body>
 </html>

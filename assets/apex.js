@@ -52,8 +52,12 @@ function hexToRgb(hex) {
 }
 
 function setAccent(color) {
+  const rgb = hexToRgb(color);
   document.documentElement.style.setProperty('--accent', color);
-  document.documentElement.style.setProperty('--accent-rgb', hexToRgb(color));
+  document.documentElement.style.setProperty('--accent-rgb', rgb);
+  // Update bg gradient element if present
+  const bg = document.getElementById('bg-radial');
+  if (bg) bg.style.setProperty('--accent-rgb', rgb);
 }
 
 /* ── RACE STATUS ─────────────────────────────────────────── */
@@ -190,7 +194,12 @@ function renderHero(race, series) {
 /* ── STATS BAR ───────────────────────────────────────────── */
 
 function renderStatsBar(race) {
-  if (!race.stats) return '';
+  const bar = document.getElementById('stats-bar');
+  if (!race.stats || !race.stats.length) {
+    if (bar) bar.style.display = 'none';
+    return '';
+  }
+  if (bar) bar.style.display = '';
   return race.stats.slice(0, 5).map(s => `
     <div class="sb-cell">
       <div class="sb-v">${s.value}</div>
@@ -1195,17 +1204,25 @@ async function initHubPage() {
   });
 
   /* series tab switcher */
-  document.querySelectorAll('.series-tab').forEach(btn => {
-    btn.addEventListener('click', () => {
-      document.querySelectorAll('.series-tab').forEach(b => b.classList.remove('active'));
-      document.querySelectorAll('[data-series-panel]').forEach(p => p.style.display = 'none');
-      btn.classList.add('active');
-      const panel = document.querySelector(`[data-series-panel="${btn.dataset.series}"]`);
-      if (panel) panel.style.display = 'block';
-    });
+  // Hide all series panels first
+  document.querySelectorAll('[data-series-panel]').forEach(p => {
+    p.style.display = 'none';
   });
 
-  /* activate first tab */
-  const firstTab = document.querySelector('.series-tab');
-  if (firstTab) firstTab.click();
+  function activateSeriesTab(seriesId) {
+    document.querySelectorAll('.series-tab').forEach(b => b.classList.remove('active'));
+    document.querySelectorAll('[data-series-panel]').forEach(p => p.style.display = 'none');
+    const btn = document.querySelector(`.series-tab[data-series="${seriesId}"]`);
+    if (btn) btn.classList.add('active');
+    const panel = document.querySelector(`[data-series-panel="${seriesId}"]`);
+    if (panel) panel.style.display = 'block';
+  }
+
+  document.querySelectorAll('.series-tab').forEach(btn => {
+    btn.addEventListener('click', () => activateSeriesTab(btn.dataset.series));
+  });
+
+  // Activate first series tab (f1 by default)
+  const firstSeriesId = seriesIds[0] || 'f1';
+  activateSeriesTab(firstSeriesId);
 }
