@@ -1,0 +1,968 @@
+{
+  "series": "f1",
+  "year": 2026,
+  "venue_type": "circuit",
+
+  "venues": [
+
+    {
+      "id": "albert-park",
+      "name": "Albert Park Circuit",
+      "short": "Albert Park",
+      "location": "Melbourne, Victoria, Australia",
+      "country": "Australia",
+      "flag": "🇦🇺",
+      "tier": 2,
+      "lap_length_km": 5.303,
+      "turns": 16,
+      "drs_zones": 4,
+      "lap_record": { "time": "1:19.813", "driver": "Charles Leclerc", "team": "Ferrari", "year": 2022 },
+      "first_f1_gp": 1996,
+      "circuit_type": "street",
+      "direction": "clockwise",
+      "characteristics": "Semi-permanent street circuit through Albert Park. Fast, smooth, with minimal overtaking opportunities in the first sector but long straights enabling DRS passes. Notorious for heavy Q1/Q2 attrition and a high safety car probability.",
+      "strategic_profile": {
+        "typical_stops": 2,
+        "key_strategy": "Two-stop medium-hard-hard or medium-medium-hard. VSC periods are common and completely reshape strategy — teams that pit under VSC gain up to 25 seconds for free.",
+        "safety_car_probability": "High — 7 of last 10 races featured SC or VSC",
+        "undercut_potential": "High — pit stop delta is significant on the main straight",
+        "tyre_behaviour": "Low degradation in dry conditions. Front-limited circuit."
+      },
+      "2026_race": {
+        "round": 1,
+        "winner": "George Russell",
+        "winning_team": "Mercedes",
+        "pole": "George Russell",
+        "fastest_lap": "Max Verstappen",
+        "margin": "2.974s",
+        "notes": "Double VSC — Ferrari stayed out both times, Mercedes pitted for free. Piastri DNS from sighting lap crash."
+      },
+      "recent_winners": [
+        { "year": 2026, "winner": "George Russell",   "team": "Mercedes",  "pole": "Russell" },
+        { "year": 2025, "winner": "George Russell",   "team": "Mercedes",  "pole": "Russell" },
+        { "year": 2024, "winner": "Carlos Sainz",     "team": "Ferrari",   "pole": "Sainz" },
+        { "year": 2023, "winner": "Max Verstappen",   "team": "Red Bull",  "pole": "Verstappen" },
+        { "year": 2022, "winner": "Charles Leclerc",  "team": "Ferrari",   "pole": "Leclerc" },
+        { "year": 2019, "winner": "Valtteri Bottas",  "team": "Mercedes",  "pole": "Hamilton" },
+        { "year": 2018, "winner": "Sebastian Vettel", "team": "Ferrari",   "pole": "Hamilton" },
+        { "year": 2017, "winner": "Sebastian Vettel", "team": "Ferrari",   "pole": "Hamilton" }
+      ],
+      "all_time": {
+        "most_wins_driver": { "driver": "Michael Schumacher", "wins": 4 },
+        "most_wins_team":   { "team": "Mercedes", "wins": 9 },
+        "total_gps_held": 28
+      }
+    },
+
+    {
+      "id": "shanghai",
+      "name": "Shanghai International Circuit",
+      "short": "Shanghai",
+      "location": "Shanghai, China",
+      "country": "China",
+      "flag": "🇨🇳",
+      "tier": 2,
+      "lap_length_km": 5.451,
+      "turns": 16,
+      "drs_zones": 2,
+      "lap_record": { "time": "1:32.238", "driver": "Michael Schumacher", "team": "Ferrari", "year": 2004 },
+      "first_f1_gp": 2004,
+      "circuit_type": "permanent",
+      "direction": "clockwise",
+      "characteristics": "Technically demanding. The long sweeping Turn 1-2 complex punishes understeer. The back straight and Turn 14 hairpin are the primary overtaking zone. Heavy on front tyres in the second sector.",
+      "strategic_profile": {
+        "typical_stops": 2,
+        "key_strategy": "Two-stop — medium start, then hard-hard. Undercut at Turn 14 is extremely powerful. Position at the restart matters more than raw pace.",
+        "safety_car_probability": "Medium — 5 of last 10 races",
+        "undercut_potential": "Very high — Turn 14 hairpin creates a large DRS window",
+        "tyre_behaviour": "Front-limited. Medium wears faster than hard relative to pace delta."
+      },
+      "2026_race": {
+        "round": 2,
+        "winner": "Kimi Antonelli",
+        "winning_team": "Mercedes",
+        "pole": "Kimi Antonelli",
+        "fastest_lap": "TBD",
+        "margin": "5.5s",
+        "notes": "Antonelli youngest ever GP polesitter and second youngest winner. McLaren double DNS. Alonso health scare DNF. Bahrain and Saudi Arabia cancelled — season reduced to 22 rounds."
+      },
+      "recent_winners": [
+        { "year": 2026, "winner": "Kimi Antonelli",  "team": "Mercedes", "pole": "Antonelli" },
+        { "year": 2025, "winner": "George Russell",  "team": "Mercedes", "pole": "Russell" },
+        { "year": 2024, "winner": "Max Verstappen",  "team": "Red Bull", "pole": "Verstappen" },
+        { "year": 2023, "winner": "Max Verstappen",  "team": "Red Bull", "pole": "Verstappen" },
+        { "year": 2019, "winner": "Lewis Hamilton",  "team": "Mercedes", "pole": "Bottas" },
+        { "year": 2018, "winner": "Daniel Ricciardo","team": "Red Bull",  "pole": "Vettel" },
+        { "year": 2017, "winner": "Lewis Hamilton",  "team": "Mercedes", "pole": "Bottas" }
+      ],
+      "all_time": {
+        "most_wins_driver": { "driver": "Lewis Hamilton", "wins": 6 },
+        "most_wins_team":   { "team": "Mercedes", "wins": 11 },
+        "total_gps_held": 19
+      }
+    },
+
+    {
+      "id": "suzuka",
+      "name": "Suzuka International Racing Course",
+      "short": "Suzuka",
+      "location": "Suzuka, Mie Prefecture, Japan",
+      "country": "Japan",
+      "flag": "🇯🇵",
+      "tier": 1,
+      "lap_length_km": 5.807,
+      "turns": 18,
+      "drs_zones": 1,
+      "lap_record": { "time": "1:30.983", "driver": "Lewis Hamilton", "team": "Mercedes", "year": 2019 },
+      "first_f1_gp": 1987,
+      "circuit_type": "permanent",
+      "direction": "clockwise",
+      "characteristics": "One of the last true driver's circuits. The figure-of-eight layout is unique in F1. Sector 1 through 130R and Spoon Curve demands raw bravery and car balance. Esses reward smooth, committed driving that no simulator fully captures. Considered by drivers the greatest circuit in the world.",
+      "strategic_profile": {
+        "typical_stops": 2,
+        "key_strategy": "Low degradation circuit — one-stop is viable in dry conditions with managed pace. Heavy rain transforms it into a lottery. Tyre warm-up on cold mornings can catch out front runners.",
+        "safety_car_probability": "Medium-high — 6 of last 10 races",
+        "undercut_potential": "Low — limited overtaking. Track position is everything.",
+        "tyre_behaviour": "Rear-limited in the high-speed sweeps. Front stable. Cold weather significantly extends tyre life."
+      },
+      "2026_race": { "round": 3, "complete": false },
+      "recent_winners": [
+        { "year": 2025, "winner": "Max Verstappen",    "team": "Red Bull",  "pole": "Verstappen" },
+        { "year": 2024, "winner": "Max Verstappen",    "team": "Red Bull",  "pole": "Verstappen" },
+        { "year": 2023, "winner": "Max Verstappen",    "team": "Red Bull",  "pole": "Verstappen" },
+        { "year": 2022, "winner": "Max Verstappen",    "team": "Red Bull",  "pole": "Leclerc" },
+        { "year": 2019, "winner": "Valtteri Bottas",   "team": "Mercedes",  "pole": "Bottas" },
+        { "year": 2018, "winner": "Lewis Hamilton",    "team": "Mercedes",  "pole": "Raikkonen" },
+        { "year": 2017, "winner": "Lewis Hamilton",    "team": "Mercedes",  "pole": "Hamilton" }
+      ],
+      "all_time": {
+        "most_wins_driver": { "driver": "Michael Schumacher", "wins": 6 },
+        "most_wins_team":   { "team": "Ferrari", "wins": 11 },
+        "total_gps_held": 35
+      },
+      "legendary_moments": [
+        {
+          "year": 1989,
+          "title": "Senna vs Prost — The Collision",
+          "summary": "Ayrton Senna and Alain Prost collided at the chicane on the final lap, handing Prost the championship. Senna was disqualified after restarting. The most controversial moment in F1 history played out at Suzuka."
+        },
+        {
+          "year": 1990,
+          "title": "Senna's Revenge",
+          "summary": "Senna took the lead going into Turn 1 on Lap 1 by running Prost off the road. He admitted premeditation years later. Senna won the title. Suzuka had witnessed both crimes in the Senna-Prost war."
+        },
+        {
+          "year": 2005,
+          "title": "Räikkönen's Flying Lap",
+          "summary": "Kimi Räikkönen produced arguably the greatest qualifying lap in F1 history — 1:46.106 in the McLaren MP4/20. Traction control, no refuelling era. A lap so fast the commentators fell silent."
+        },
+        {
+          "year": 2005,
+          "title": "The Greatest Race?",
+          "summary": "Räikkönen started 17th after a fuel pump failure in qualifying. He won, passing Fisichella on the final lap. Starting last on old tyres, he produced overtake after overtake through the esses in one of the greatest drives in the sport's history."
+        },
+        {
+          "year": 2023,
+          "title": "Verstappen's Third Title",
+          "summary": "Verstappen clinched his third consecutive World Championship with six races to spare — the earliest title in the modern era. The Red Bull RB19's dominance was complete."
+        }
+      ]
+    },
+
+    {
+      "id": "miami",
+      "name": "Miami International Autodrome",
+      "short": "Miami",
+      "location": "Miami Gardens, Florida, USA",
+      "country": "United States",
+      "flag": "🇺🇸",
+      "tier": 3,
+      "lap_length_km": 5.412,
+      "turns": 19,
+      "drs_zones": 3,
+      "lap_record": { "time": "1:29.708", "driver": "Max Verstappen", "team": "Red Bull", "year": 2023 },
+      "first_f1_gp": 2022,
+      "circuit_type": "street",
+      "direction": "anti-clockwise",
+      "characteristics": "Built around the Hard Rock Stadium parking lot. Three long straights with DRS — overtaking-friendly by design. The marina section is technical and punishing on brakes. Hot, humid conditions amplify tyre and cooling challenges.",
+      "strategic_profile": {
+        "typical_stops": 2,
+        "key_strategy": "Two-stop in standard conditions. Heat accelerates degradation significantly. Safety car probability is high enough that teams gamble on one-stop if VSC appears.",
+        "safety_car_probability": "High — 4 of 4 races",
+        "undercut_potential": "Medium — long pit lane reduces undercut window",
+        "tyre_behaviour": "High degradation. Rear-limited. Heat causes blistering on hard compound."
+      },
+      "2026_race": {
+        "round": 4,
+        "complete": false,
+        "note": "First race after five-week gap following Bahrain and Saudi cancellations. Originally Round 6."
+      },
+      "recent_winners": [
+        { "year": 2025, "winner": "Lando Norris",   "team": "McLaren",  "pole": "Norris" },
+        { "year": 2024, "winner": "Lando Norris",   "team": "McLaren",  "pole": "Verstappen" },
+        { "year": 2023, "winner": "Max Verstappen", "team": "Red Bull", "pole": "Verstappen" },
+        { "year": 2022, "winner": "Max Verstappen", "team": "Red Bull", "pole": "Leclerc" }
+      ],
+      "all_time": {
+        "most_wins_driver": { "driver": "Max Verstappen", "wins": 2 },
+        "most_wins_team":   { "team": "Red Bull", "wins": 2 },
+        "total_gps_held": 4
+      }
+    },
+
+    {
+      "id": "imola",
+      "name": "Autodromo Enzo e Dino Ferrari",
+      "short": "Imola",
+      "location": "Imola, Emilia-Romagna, Italy",
+      "country": "Italy",
+      "flag": "🇮🇹",
+      "tier": 2,
+      "lap_length_km": 4.909,
+      "turns": 19,
+      "drs_zones": 1,
+      "lap_record": { "time": "1:15.484", "driver": "Max Verstappen", "team": "Red Bull", "year": 2022 },
+      "first_f1_gp": 1980,
+      "circuit_type": "permanent",
+      "direction": "anti-clockwise",
+      "characteristics": "Narrow, old-school circuit that rewards car setup over raw pace. Almost no overtaking opportunities. Qualifying position is more decisive here than almost anywhere. Tifosi in the stands make it one of the loudest weekends of the season.",
+      "strategic_profile": {
+        "typical_stops": 1,
+        "key_strategy": "One-stop medium-hard preferred. Track position is everything — with no overtaking, pit stop timing is the only variable that changes results.",
+        "safety_car_probability": "Low-medium",
+        "undercut_potential": "Low — pitlane delta small, no overtaking zones to capitalise",
+        "tyre_behaviour": "Low degradation. Medium and hard both viable strategies."
+      },
+      "2026_race": { "round": 5, "complete": false },
+      "recent_winners": [
+        { "year": 2025, "winner": "Max Verstappen",  "team": "Red Bull",  "pole": "Verstappen" },
+        { "year": 2024, "winner": "Max Verstappen",  "team": "Red Bull",  "pole": "Verstappen" },
+        { "year": 2022, "winner": "Max Verstappen",  "team": "Red Bull",  "pole": "Verstappen" },
+        { "year": 2020, "winner": "Lewis Hamilton",  "team": "Mercedes",  "pole": "Hamilton" }
+      ],
+      "all_time": {
+        "most_wins_driver": { "driver": "Michael Schumacher", "wins": 7 },
+        "most_wins_team":   { "team": "Ferrari", "wins": 9 },
+        "total_gps_held": 35
+      }
+    },
+
+    {
+      "id": "monaco",
+      "name": "Circuit de Monaco",
+      "short": "Monaco",
+      "location": "Monte Carlo, Monaco",
+      "country": "Monaco",
+      "flag": "🇲🇨",
+      "tier": 1,
+      "lap_length_km": 3.337,
+      "turns": 19,
+      "drs_zones": 1,
+      "lap_record": { "time": "1:10.166", "driver": "Lewis Hamilton", "team": "Mercedes", "year": 2021 },
+      "first_f1_gp": 1950,
+      "circuit_type": "street",
+      "direction": "clockwise",
+      "characteristics": "The crown jewel of Formula 1. Impossibly narrow streets, no run-off, armco barriers centimetres from the car. The slowest circuit on the calendar and the most prestigious race. Qualifying here is the purest test of a driver's ability in the entire season. Overtaking is effectively impossible.",
+      "strategic_profile": {
+        "typical_stops": 1,
+        "key_strategy": "One-stop or even zero-stop in dry conditions. Pole position wins 70% of dry races. A safety car or VSC is the only thing that can change the result. Tyre choice at the final stop in changing conditions is the one strategic lever.",
+        "safety_car_probability": "High — 7 of last 10 races",
+        "undercut_potential": "Zero — passing on track is impossible",
+        "tyre_behaviour": "Negligible degradation on the smooth surface. Tyres survive far longer than any other circuit."
+      },
+      "2026_race": { "round": 9, "complete": false },
+      "recent_winners": [
+        { "year": 2025, "winner": "Charles Leclerc",  "team": "Ferrari",  "pole": "Leclerc" },
+        { "year": 2024, "winner": "Charles Leclerc",  "team": "Ferrari",  "pole": "Leclerc" },
+        { "year": 2023, "winner": "Max Verstappen",   "team": "Red Bull", "pole": "Leclerc" },
+        { "year": 2022, "winner": "Sergio Perez",     "team": "Red Bull", "pole": "Leclerc" },
+        { "year": 2021, "winner": "Max Verstappen",   "team": "Red Bull", "pole": "Leclerc" },
+        { "year": 2019, "winner": "Lewis Hamilton",   "team": "Mercedes", "pole": "Hamilton" },
+        { "year": 2018, "winner": "Daniel Ricciardo", "team": "Red Bull", "pole": "Ricciardo" }
+      ],
+      "all_time": {
+        "most_wins_driver": { "driver": "Ayrton Senna", "wins": 6 },
+        "most_wins_team":   { "team": "McLaren", "wins": 15 },
+        "total_gps_held": 70
+      },
+      "legendary_moments": [
+        {
+          "year": 1984,
+          "title": "Senna in the Rain",
+          "summary": "Ayrton Senna, in his first full F1 season, drove a Toleman through the Monaco rain to catch Alain Prost. He was faster by over a second per lap when the race was controversially red-flagged, handing Prost the win. Senna was furious. A star was born."
+        },
+        {
+          "year": 1992,
+          "title": "Senna vs Mansell — The Last Lap",
+          "summary": "Nigel Mansell chased Senna through Monaco in a Williams that was clearly faster. Senna's pit stop gamble gave him the lead. Mansell closed at over a second per lap in the final laps and finished 0.2 seconds behind. He never passed. It remains the most dramatic final lap in Monaco history."
+        },
+        {
+          "year": 1996,
+          "title": "Schumacher's Mastery",
+          "summary": "Michael Schumacher drove through Monaco rain in conditions that eliminated everyone else to win by 50 seconds. Car after car crashed or spun. Schumacher was untouchable. It was the definitive demonstration of his wet-weather genius."
+        },
+        {
+          "year": 2022,
+          "title": "Leclerc's Monaco Curse",
+          "summary": "Charles Leclerc — the two-time Monaco pole-sitter — finally broke his Monaco curse with pole in 2024 and 2025, winning both. But in 2022 he took pole and a gearbox failure saw him start fourth, eventually finishing fourth. The cruelest circuit remained cruel."
+        }
+      ]
+    },
+
+    {
+      "id": "barcelona",
+      "name": "Circuit de Barcelona-Catalunya",
+      "short": "Barcelona",
+      "location": "Montmeló, Catalonia, Spain",
+      "country": "Spain",
+      "flag": "🇪🇸",
+      "tier": 2,
+      "lap_length_km": 4.657,
+      "turns": 16,
+      "drs_zones": 2,
+      "lap_record": { "time": "1:16.330", "driver": "Max Verstappen", "team": "Red Bull", "year": 2023 },
+      "first_f1_gp": 1991,
+      "circuit_type": "permanent",
+      "direction": "clockwise",
+      "characteristics": "The most tested circuit in the world — every team spends winter testing here, meaning the data pool is enormous and car development is most visible. Fast, technical, front-limited. The long Turn 3 complex is a key differentiator in qualifying.",
+      "strategic_profile": {
+        "typical_stops": 2,
+        "key_strategy": "Two-stop medium-hard-hard. High degradation in summer heat. Tyre management and consistency rewarded over single-lap pace.",
+        "safety_car_probability": "Low",
+        "undercut_potential": "High — main straight is long and pit entry is clean",
+        "tyre_behaviour": "High degradation especially in July heat. Front tyres vulnerable through Turn 3."
+      },
+      "2026_race": { "round": 10, "complete": false },
+      "recent_winners": [
+        { "year": 2025, "winner": "Max Verstappen",  "team": "Red Bull",  "pole": "Russell" },
+        { "year": 2024, "winner": "Max Verstappen",  "team": "Red Bull",  "pole": "Verstappen" },
+        { "year": 2023, "winner": "Max Verstappen",  "team": "Red Bull",  "pole": "Verstappen" },
+        { "year": 2022, "winner": "Max Verstappen",  "team": "Red Bull",  "pole": "Leclerc" },
+        { "year": 2021, "winner": "Lewis Hamilton",  "team": "Mercedes",  "pole": "Hamilton" },
+        { "year": 2020, "winner": "Lewis Hamilton",  "team": "Mercedes",  "pole": "Hamilton" },
+        { "year": 2019, "winner": "Lewis Hamilton",  "team": "Mercedes",  "pole": "Hamilton" }
+      ],
+      "all_time": {
+        "most_wins_driver": { "driver": "Michael Schumacher", "wins": 6 },
+        "most_wins_team":   { "team": "Mercedes", "wins": 10 },
+        "total_gps_held": 34
+      }
+    },
+
+    {
+      "id": "montreal",
+      "name": "Circuit Gilles Villeneuve",
+      "short": "Montreal",
+      "location": "Montreal, Quebec, Canada",
+      "country": "Canada",
+      "flag": "🇨🇦",
+      "tier": 2,
+      "lap_length_km": 4.361,
+      "turns": 14,
+      "drs_zones": 3,
+      "lap_record": { "time": "1:13.078", "driver": "Valtteri Bottas", "team": "Mercedes", "year": 2019 },
+      "first_f1_gp": 1978,
+      "circuit_type": "street",
+      "direction": "clockwise",
+      "characteristics": "One of the most overtaking-friendly circuits on the calendar. Three DRS zones on long straights. The Wall of Champions at the final chicane has claimed countless races — Schumacher, Damon Hill, Villeneuve all fell here. High-speed, stop-start character is punishing on brakes.",
+      "strategic_profile": {
+        "typical_stops": 1,
+        "key_strategy": "One-stop possible due to low degradation. Safety car is very likely — both a threat and an opportunity. Undercut is powerful on the straight.",
+        "safety_car_probability": "Very high — 8 of last 10 races",
+        "undercut_potential": "Very high — main straight reward is enormous",
+        "tyre_behaviour": "Low-medium degradation. Hard compound often stretches entire second half."
+      },
+      "2026_race": { "round": 11, "complete": false },
+      "recent_winners": [
+        { "year": 2025, "winner": "Max Verstappen",  "team": "Red Bull",  "pole": "Russell" },
+        { "year": 2024, "winner": "Max Verstappen",  "team": "Red Bull",  "pole": "Russell" },
+        { "year": 2023, "winner": "Max Verstappen",  "team": "Red Bull",  "pole": "Verstappen" },
+        { "year": 2022, "winner": "Max Verstappen",  "team": "Red Bull",  "pole": "Verstappen" },
+        { "year": 2019, "winner": "Lewis Hamilton",  "team": "Mercedes",  "pole": "Bottas" },
+        { "year": 2018, "winner": "Sebastian Vettel","team": "Ferrari",   "pole": "Vettel" }
+      ],
+      "all_time": {
+        "most_wins_driver": { "driver": "Michael Schumacher", "wins": 7 },
+        "most_wins_team":   { "team": "Ferrari", "wins": 13 },
+        "total_gps_held": 43
+      }
+    },
+
+    {
+      "id": "red-bull-ring",
+      "name": "Red Bull Ring",
+      "short": "Austria",
+      "location": "Spielberg, Styria, Austria",
+      "country": "Austria",
+      "flag": "🇦🇹",
+      "tier": 2,
+      "lap_length_km": 4.318,
+      "turns": 10,
+      "drs_zones": 3,
+      "lap_record": { "time": "1:05.619", "driver": "Carlos Sainz", "team": "Ferrari", "year": 2020 },
+      "first_f1_gp": 1970,
+      "circuit_type": "permanent",
+      "direction": "clockwise",
+      "characteristics": "The shortest lap on the calendar. High elevation changes. Only 10 corners but brutally demanding — the uphill Turn 1 requires maximum commitment blind. Three DRS zones produce multiple overtaking opportunities. Altitude affects car cooling and engine performance.",
+      "strategic_profile": {
+        "typical_stops": 2,
+        "key_strategy": "Two-stop due to high degradation from the kerbs and traction demands. Aggressive kerb riding essential for lap time — damages tyres faster. Sprint weekend format.",
+        "safety_car_probability": "Medium",
+        "undercut_potential": "High — three DRS zones mean fresh tyres are devastating",
+        "tyre_behaviour": "High degradation from kerb abuse. Soft compound rarely viable past lap 15."
+      },
+      "2026_race": { "round": 12, "complete": false },
+      "recent_winners": [
+        { "year": 2025, "winner": "Max Verstappen",  "team": "Red Bull", "pole": "Verstappen" },
+        { "year": 2024, "winner": "George Russell",  "team": "Mercedes", "pole": "Verstappen" },
+        { "year": 2023, "winner": "Max Verstappen",  "team": "Red Bull", "pole": "Verstappen" },
+        { "year": 2022, "winner": "Charles Leclerc", "team": "Ferrari",  "pole": "Leclerc" },
+        { "year": 2021, "winner": "Max Verstappen",  "team": "Red Bull", "pole": "Verstappen" }
+      ],
+      "all_time": {
+        "most_wins_driver": { "driver": "Max Verstappen", "wins": 5 },
+        "most_wins_team":   { "team": "Red Bull", "wins": 8 },
+        "total_gps_held": 34
+      }
+    },
+
+    {
+      "id": "silverstone",
+      "name": "Silverstone Circuit",
+      "short": "Silverstone",
+      "location": "Silverstone, Northamptonshire, United Kingdom",
+      "country": "United Kingdom",
+      "flag": "🇬🇧",
+      "tier": 1,
+      "lap_length_km": 5.891,
+      "turns": 18,
+      "drs_zones": 2,
+      "lap_record": { "time": "1:27.097", "driver": "Max Verstappen", "team": "Red Bull", "year": 2020 },
+      "first_f1_gp": 1950,
+      "circuit_type": "permanent",
+      "direction": "clockwise",
+      "characteristics": "The home of motor racing. Where it all began — the first ever World Championship Grand Prix was held here in 1950. High-speed sweeping corners require maximum downforce and driver commitment. Copse, Maggots, Becketts, Chapel — the sequence is as technically demanding as any corner complex in the world.",
+      "strategic_profile": {
+        "typical_stops": 2,
+        "key_strategy": "Two-stop medium-hard-hard. High rear-tyre degradation from the sweeping corners. The British crowd responds to aggressive strategy.",
+        "safety_car_probability": "Medium",
+        "undercut_potential": "Medium — pit entry is tight but the main straight is long",
+        "tyre_behaviour": "Rear-limited through the high-speed corners. Medium degrades fastest here of any circuit."
+      },
+      "2026_race": { "round": 14, "complete": false },
+      "recent_winners": [
+        { "year": 2025, "winner": "Lewis Hamilton",   "team": "Ferrari",   "pole": "Norris" },
+        { "year": 2024, "winner": "Lewis Hamilton",   "team": "Mercedes",  "pole": "Verstappen" },
+        { "year": 2023, "winner": "Max Verstappen",   "team": "Red Bull",  "pole": "Verstappen" },
+        { "year": 2022, "winner": "Carlos Sainz",     "team": "Ferrari",   "pole": "Sainz" },
+        { "year": 2021, "winner": "Lewis Hamilton",   "team": "Mercedes",  "pole": "Hamilton" },
+        { "year": 2020, "winner": "Lewis Hamilton",   "team": "Mercedes",  "pole": "Hamilton" },
+        { "year": 2019, "winner": "Lewis Hamilton",   "team": "Mercedes",  "pole": "Bottas" }
+      ],
+      "all_time": {
+        "most_wins_driver": { "driver": "Lewis Hamilton", "wins": 9 },
+        "most_wins_team":   { "team": "Ferrari", "wins": 17 },
+        "total_gps_held": 54
+      },
+      "legendary_moments": [
+        {
+          "year": 1950,
+          "title": "The Beginning",
+          "summary": "The 1950 British Grand Prix at Silverstone was the first round of the inaugural FIA Formula One World Championship. Giuseppe Farina won in an Alfa Romeo. A sport was born on a former RAF airfield in the English countryside."
+        },
+        {
+          "year": 1969,
+          "title": "The 200mph Club",
+          "summary": "Jackie Stewart averaged over 200km/h for the first time in a Formula 1 race at Silverstone — a milestone that symbolised how far the sport had pushed beyond what anyone thought possible just a decade earlier."
+        },
+        {
+          "year": 2008,
+          "title": "Hamilton in the Rain",
+          "summary": "Lewis Hamilton won in torrential rain by 68 seconds — the largest winning margin in the modern era. He was on a different planet. On slick tyres for the final stint while others pitted for intermediates, his pace was so superior it appeared like a different race."
+        },
+        {
+          "year": 2021,
+          "title": "Hamilton vs Verstappen — Copse",
+          "summary": "On the opening lap, Hamilton and Verstappen made contact at Copse. Verstappen's Red Bull flew into the barrier at 290km/h. Hamilton received a 10-second penalty and won the race. The incident ignited the most intense championship rivalry in a generation."
+        }
+      ]
+    },
+
+    {
+      "id": "hungaroring",
+      "name": "Hungaroring",
+      "short": "Hungary",
+      "location": "Mogyoród, Pest County, Hungary",
+      "country": "Hungary",
+      "flag": "🇭🇺",
+      "tier": 2,
+      "lap_length_km": 4.381,
+      "turns": 14,
+      "drs_zones": 1,
+      "lap_record": { "time": "1:16.627", "driver": "Lewis Hamilton", "team": "Mercedes", "year": 2020 },
+      "first_f1_gp": 1986,
+      "circuit_type": "permanent",
+      "direction": "clockwise",
+      "characteristics": "Nicknamed the Monaco of Hungary — narrow, twisty, and almost impossible to overtake on. Requires maximum downforce. The dusty, marbled track surface means the racing line is critical and going off it is immediately punishing. Hot summer heat amplifies all degradation.",
+      "strategic_profile": {
+        "typical_stops": 2,
+        "key_strategy": "Two-stop in heat. Very limited overtaking means that strategy is the primary differentiator. An unexpected one-stop can surprise in cooler conditions.",
+        "safety_car_probability": "Low-medium",
+        "undercut_potential": "Medium — pit lane exit rejoins just before Turn 1",
+        "tyre_behaviour": "High degradation in July heat. Soft compound races only 10-12 laps before cliff."
+      },
+      "2026_race": { "round": 15, "complete": false },
+      "recent_winners": [
+        { "year": 2025, "winner": "Lando Norris",    "team": "McLaren",  "pole": "Norris" },
+        { "year": 2024, "winner": "Oscar Piastri",   "team": "McLaren",  "pole": "Norris" },
+        { "year": 2023, "winner": "Max Verstappen",  "team": "Red Bull", "pole": "Verstappen" },
+        { "year": 2022, "winner": "Max Verstappen",  "team": "Red Bull", "pole": "Russell" },
+        { "year": 2021, "winner": "Esteban Ocon",    "team": "Alpine",   "pole": "Hamilton" }
+      ],
+      "all_time": {
+        "most_wins_driver": { "driver": "Lewis Hamilton", "wins": 9 },
+        "most_wins_team":   { "team": "Mercedes", "wins": 9 },
+        "total_gps_held": 39
+      }
+    },
+
+    {
+      "id": "spa",
+      "name": "Circuit de Spa-Francorchamps",
+      "short": "Spa",
+      "location": "Stavelot, Liège, Belgium",
+      "country": "Belgium",
+      "flag": "🇧🇪",
+      "tier": 1,
+      "lap_length_km": 7.004,
+      "turns": 19,
+      "drs_zones": 3,
+      "lap_record": { "time": "1:41.252", "driver": "Valtteri Bottas", "team": "Mercedes", "year": 2018 },
+      "first_f1_gp": 1950,
+      "circuit_type": "permanent",
+      "direction": "clockwise",
+      "characteristics": "The longest circuit on the calendar. Eau Rouge/Raidillon remains the most iconic corner sequence in motorsport — the blind uphill left-right at full throttle that separates the brave from the exceptional. Weather changes sector-by-sector; it can be dry on the start line and raining through Pouhon simultaneously.",
+      "strategic_profile": {
+        "typical_stops": 2,
+        "key_strategy": "Two-stop. The long lap means a stop costs less in relative terms — aggressive early stops are rewarded. Weather gambles completely reshape races.",
+        "safety_car_probability": "High — weather-related incidents frequent",
+        "undercut_potential": "High — Kemmel straight after Raidillon is the best passing zone in F1",
+        "tyre_behaviour": "Very high degradation from the sustained high-speed load. Rear tyres suffer through the Pouhon-Fagnes complex."
+      },
+      "2026_race": { "round": 16, "complete": false },
+      "recent_winners": [
+        { "year": 2025, "winner": "Max Verstappen",  "team": "Red Bull",  "pole": "Verstappen" },
+        { "year": 2024, "winner": "Lewis Hamilton",  "team": "Mercedes",  "pole": "Russell" },
+        { "year": 2023, "winner": "Max Verstappen",  "team": "Red Bull",  "pole": "Verstappen" },
+        { "year": 2022, "winner": "Max Verstappen",  "team": "Red Bull",  "pole": "Verstappen" },
+        { "year": 2021, "winner": "Max Verstappen",  "team": "Red Bull",  "pole": "Russell", "note": "Race run behind safety car, 2 laps only — no overtaking" },
+        { "year": 2020, "winner": "Lewis Hamilton",  "team": "Mercedes",  "pole": "Hamilton" }
+      ],
+      "all_time": {
+        "most_wins_driver": { "driver": "Ayrton Senna", "wins": 5 },
+        "most_wins_team":   { "team": "Ferrari", "wins": 15 },
+        "total_gps_held": 53
+      },
+      "legendary_moments": [
+        {
+          "year": 1991,
+          "title": "Senna's Benevolence",
+          "summary": "After Jordan driver Bertrand Gachot was jailed, Michael Schumacher debuted for the team at Spa. He qualified seventh. His talent announced itself immediately on a circuit that would become synonymous with his greatness."
+        },
+        {
+          "year": 1998,
+          "title": "The Pile-Up",
+          "summary": "A massive first-lap crash in the rain collected 13 cars — more than half the field. David Coulthard kept going after the safety car period ended and inadvertently drove into Michael Schumacher's car. Schumacher walked to the McLaren garage and physically confronted Coulthard. An iconic, chaotic race."
+        },
+        {
+          "year": 2021,
+          "title": "The Race That Wasn't",
+          "summary": "Max Verstappen won the 2021 Belgian GP without a wheel turning in anger. The race was red-flagged after two laps behind the safety car in heavy rain and was never restarted. The FIA awarded half points. Fans, teams and drivers were furious. The most disputed result in the modern era."
+        }
+      ]
+    },
+
+    {
+      "id": "zandvoort",
+      "name": "Circuit Zandvoort",
+      "short": "Zandvoort",
+      "location": "Zandvoort, North Holland, Netherlands",
+      "country": "Netherlands",
+      "flag": "🇳🇱",
+      "tier": 2,
+      "lap_length_km": 4.259,
+      "turns": 14,
+      "drs_zones": 2,
+      "lap_record": { "time": "1:11.097", "driver": "Max Verstappen", "team": "Red Bull", "year": 2021 },
+      "first_f1_gp": 1952,
+      "circuit_type": "permanent",
+      "direction": "clockwise",
+      "characteristics": "Returned to F1 in 2021 after a 35-year absence. Compact and technical with banked corners — Turn 3 and the final banked Arie Luyendyk corner — that generate unique load characteristics. The orange army of Dutch fans creates the most passionate atmosphere on the calendar.",
+      "strategic_profile": {
+        "typical_stops": 2,
+        "key_strategy": "Two-stop. Limited overtaking means strategy is decisive. The narrow track makes it very difficult to pass once behind a car of similar pace.",
+        "safety_car_probability": "Medium",
+        "undercut_potential": "Low — limited passing even on fresher rubber",
+        "tyre_behaviour": "Medium degradation. The banking absorbs some lateral load but the front tyres suffer through the final sector."
+      },
+      "2026_race": { "round": 17, "complete": false },
+      "recent_winners": [
+        { "year": 2025, "winner": "Lando Norris",   "team": "McLaren",  "pole": "Norris" },
+        { "year": 2024, "winner": "Lando Norris",   "team": "McLaren",  "pole": "Norris" },
+        { "year": 2023, "winner": "Max Verstappen", "team": "Red Bull", "pole": "Verstappen" },
+        { "year": 2022, "winner": "Max Verstappen", "team": "Red Bull", "pole": "Verstappen" },
+        { "year": 2021, "winner": "Max Verstappen", "team": "Red Bull", "pole": "Verstappen" }
+      ],
+      "all_time": {
+        "most_wins_driver": { "driver": "Jim Clark", "wins": 4 },
+        "most_wins_team":   { "team": "Lotus", "wins": 7 },
+        "total_gps_held": 30
+      }
+    },
+
+    {
+      "id": "monza",
+      "name": "Autodromo Nazionale Monza",
+      "short": "Monza",
+      "location": "Monza, Lombardy, Italy",
+      "country": "Italy",
+      "flag": "🇮🇹",
+      "tier": 1,
+      "lap_length_km": 5.793,
+      "turns": 11,
+      "drs_zones": 2,
+      "lap_record": { "time": "1:21.046", "driver": "Rubens Barrichello", "team": "Ferrari", "year": 2004 },
+      "first_f1_gp": 1950,
+      "circuit_type": "permanent",
+      "direction": "clockwise",
+      "characteristics": "The Temple of Speed. The fastest average speed on the calendar. Almost no downforce — teams run minimal wing to reduce drag. The historic banking at the outer loop is still visible but no longer used. The Parabolica and Lesmo complex separates those willing to commit from those who aren't. Tifosi everywhere.",
+      "strategic_profile": {
+        "typical_stops": 1,
+        "key_strategy": "One-stop or aggressive zero-stop. Low degradation at the lowest-downforce track. The undercut is extremely powerful on the main straight.",
+        "safety_car_probability": "Medium",
+        "undercut_potential": "Very high — Monza's straight rewards fresh tyres immediately and devastatingly",
+        "tyre_behaviour": "Low degradation — the low downforce reduces lateral load on tyres significantly."
+      },
+      "2026_race": { "round": 18, "complete": false },
+      "recent_winners": [
+        { "year": 2025, "winner": "Charles Leclerc",  "team": "Ferrari",  "pole": "Leclerc" },
+        { "year": 2024, "winner": "Charles Leclerc",  "team": "Ferrari",  "pole": "Leclerc" },
+        { "year": 2023, "winner": "Max Verstappen",   "team": "Red Bull", "pole": "Sainz" },
+        { "year": 2022, "winner": "Max Verstappen",   "team": "Red Bull", "pole": "Russell" },
+        { "year": 2021, "winner": "Daniel Ricciardo", "team": "McLaren",  "pole": "Ricciardo" },
+        { "year": 2020, "winner": "Pierre Gasly",     "team": "AlphaTauri","pole": "Hamilton" },
+        { "year": 2019, "winner": "Charles Leclerc",  "team": "Ferrari",  "pole": "Leclerc" }
+      ],
+      "all_time": {
+        "most_wins_driver": { "driver": "Lewis Hamilton", "wins": 5 },
+        "most_wins_team":   { "team": "Ferrari", "wins": 19 },
+        "total_gps_held": 72
+      },
+      "legendary_moments": [
+        {
+          "year": 1971,
+          "title": "The Slipstreaming Race",
+          "summary": "Five cars crossed the line separated by 0.61 seconds — the closest five-way finish in F1 history. Peter Gethin won for BRM at 150.75mph average speed — the fastest race in F1 history at the time. Pure Monza chaos."
+        },
+        {
+          "year": 2020,
+          "title": "Gasly's Miracle",
+          "summary": "Pierre Gasly, racing for the backmarker AlphaTauri team, won the Italian Grand Prix after Lewis Hamilton received a stop-go penalty for an unsafe pit stop. Gasly crossed the line in tears. The least expected winner of the modern era at the most dramatic circuit."
+        },
+        {
+          "year": 2019,
+          "title": "Leclerc's Home Win",
+          "summary": "Charles Leclerc won at Monza for Ferrari — the Tifosi's home circuit — in only his second race for the team. He defended brilliantly from Hamilton for the final 25 laps with tyres running on empty. Ferrari's first Monza win since 2010. The crowd invaded the circuit."
+        }
+      ]
+    },
+
+    {
+      "id": "baku",
+      "name": "Baku City Circuit",
+      "short": "Baku",
+      "location": "Baku, Azerbaijan",
+      "country": "Azerbaijan",
+      "flag": "🇦🇿",
+      "tier": 3,
+      "lap_length_km": 6.003,
+      "turns": 20,
+      "drs_zones": 2,
+      "lap_record": { "time": "1:43.009", "driver": "Charles Leclerc", "team": "Ferrari", "year": 2019 },
+      "first_f1_gp": 2017,
+      "circuit_type": "street",
+      "direction": "clockwise",
+      "characteristics": "The longest DRS zone in F1 at 2.2km on the main straight. The medieval city section is the tightest section on the calendar — barely wider than the cars. Safety car probability is the highest on the calendar. Bizarre, unpredictable, chaotic. Either brilliantly entertaining or appallingly processional depending on incident timing.",
+      "strategic_profile": {
+        "typical_stops": 2,
+        "key_strategy": "Two-stop but safety cars reshufle everything. One-stop with safety car assistance wins here. The long straight means fresh rubber is lethal — but so is being stuck behind a slow car with no opportunity to pass in the city section.",
+        "safety_car_probability": "Very high — 8 of last 9 races",
+        "undercut_potential": "Extreme — 2.2km DRS straight makes fresh tyres devastating",
+        "tyre_behaviour": "Low-medium degradation. The smooth surface is easy on tyres; the kerbs in the city section are dangerous."
+      },
+      "2026_race": { "round": 19, "complete": false },
+      "recent_winners": [
+        { "year": 2025, "winner": "Oscar Piastri",   "team": "McLaren",  "pole": "Norris" },
+        { "year": 2024, "winner": "Sergio Perez",    "team": "Red Bull", "pole": "Leclerc" },
+        { "year": 2023, "winner": "Sergio Perez",    "team": "Red Bull", "pole": "Leclerc" },
+        { "year": 2022, "winner": "Max Verstappen",  "team": "Red Bull", "pole": "Leclerc" },
+        { "year": 2021, "winner": "Sergio Perez",    "team": "Red Bull", "pole": "Leclerc" }
+      ],
+      "all_time": {
+        "most_wins_driver": { "driver": "Sergio Perez", "wins": 3 },
+        "most_wins_team":   { "team": "Red Bull", "wins": 5 },
+        "total_gps_held": 8
+      }
+    },
+
+    {
+      "id": "singapore",
+      "name": "Marina Bay Street Circuit",
+      "short": "Singapore",
+      "location": "Marina Bay, Singapore",
+      "country": "Singapore",
+      "flag": "🇸🇬",
+      "tier": 2,
+      "lap_length_km": 4.940,
+      "turns": 19,
+      "drs_zones": 3,
+      "lap_record": { "time": "1:35.867", "driver": "Lewis Hamilton", "team": "Mercedes", "year": 2023 },
+      "first_f1_gp": 2008,
+      "circuit_type": "street",
+      "direction": "anti-clockwise",
+      "characteristics": "The only night race on the calendar. Maximum downforce circuit — the walls are centimetres away at all times. Hot and humid even at night — physical demands are higher here than anywhere. The safety car is effectively part of the race format.",
+      "strategic_profile": {
+        "typical_stops": 2,
+        "key_strategy": "Two-stop driven by safety car timing. Low degradation track but the safety car — almost guaranteed — reshapes everything. Undercut after a safety car restart is the primary race-winning move.",
+        "safety_car_probability": "Near-certain — 9 of last 10 races",
+        "undercut_potential": "High after safety car periods",
+        "tyre_behaviour": "Low degradation but sustained high downforce strains tyres thermally rather than mechanically."
+      },
+      "2026_race": { "round": 20, "complete": false },
+      "recent_winners": [
+        { "year": 2025, "winner": "Carlos Sainz",   "team": "Williams",  "pole": "Norris" },
+        { "year": 2024, "winner": "Lando Norris",   "team": "McLaren",   "pole": "Norris" },
+        { "year": 2023, "winner": "Carlos Sainz",   "team": "Ferrari",   "pole": "Sainz" },
+        { "year": 2022, "winner": "Sergio Perez",   "team": "Red Bull",  "pole": "Leclerc" },
+        { "year": 2019, "winner": "Sebastian Vettel","team": "Ferrari",   "pole": "Leclerc" }
+      ],
+      "all_time": {
+        "most_wins_driver": { "driver": "Lewis Hamilton", "wins": 4 },
+        "most_wins_team":   { "team": "Red Bull", "wins": 6 },
+        "total_gps_held": 17
+      }
+    },
+
+    {
+      "id": "cota",
+      "name": "Circuit of the Americas",
+      "short": "Austin",
+      "location": "Austin, Texas, United States",
+      "country": "United States",
+      "flag": "🇺🇸",
+      "tier": 3,
+      "lap_length_km": 5.513,
+      "turns": 20,
+      "drs_zones": 2,
+      "lap_record": { "time": "1:36.169", "driver": "Charles Leclerc", "team": "Ferrari", "year": 2019 },
+      "first_f1_gp": 2012,
+      "circuit_type": "permanent",
+      "direction": "anti-clockwise",
+      "characteristics": "Deliberately designed as a greatest-hits collection of great F1 corners. Turn 1 — a blind uphill entry like Eau Rouge. Esses modelled after Suzuka. The stadium section is unrivalled for atmosphere in the US. A bumpy surface that has caused tyre failures and extreme bouncing.",
+      "strategic_profile": {
+        "typical_stops": 2,
+        "key_strategy": "Two-stop — medium-hard-hard standard. High rear degradation through the traction zone. Bump damage to tyres accelerates degradation unpredictably.",
+        "safety_car_probability": "Medium",
+        "undercut_potential": "High — Turn 12-15 complex has DRS and catching traffic late",
+        "tyre_behaviour": "High rear degradation. Bumpy surface accelerates wear unpredictably."
+      },
+      "2026_race": { "round": 6, "complete": false },
+      "recent_winners": [
+        { "year": 2025, "winner": "Max Verstappen",  "team": "Red Bull",  "pole": "Verstappen" },
+        { "year": 2024, "winner": "Max Verstappen",  "team": "Red Bull",  "pole": "Norris" },
+        { "year": 2023, "winner": "Max Verstappen",  "team": "Red Bull",  "pole": "Verstappen" },
+        { "year": 2022, "winner": "Max Verstappen",  "team": "Red Bull",  "pole": "Sainz" }
+      ],
+      "all_time": {
+        "most_wins_driver": { "driver": "Lewis Hamilton", "wins": 6 },
+        "most_wins_team":   { "team": "Mercedes", "wins": 7 },
+        "total_gps_held": 12
+      }
+    },
+
+    {
+      "id": "rodriguez",
+      "name": "Autodromo Hermanos Rodriguez",
+      "short": "Mexico City",
+      "location": "Mexico City, Mexico",
+      "country": "Mexico",
+      "flag": "🇲🇽",
+      "tier": 3,
+      "lap_length_km": 4.304,
+      "turns": 17,
+      "drs_zones": 3,
+      "lap_record": { "time": "1:17.774", "driver": "Valtteri Bottas", "team": "Mercedes", "year": 2021 },
+      "first_f1_gp": 1963,
+      "circuit_type": "permanent",
+      "direction": "clockwise",
+      "characteristics": "Altitude — 2,285m above sea level — reduces aerodynamic and engine performance significantly. Cars run maximum downforce but generate less of it at altitude. The Foro Sol baseball stadium section creates a unique acoustic atmosphere. The final hairpin is an aggressive overtaking point.",
+      "strategic_profile": {
+        "typical_stops": 2,
+        "key_strategy": "Reduced engine power at altitude changes tyre loading — rear degradation is lower than expected. Teams often use softer compounds successfully at altitude.",
+        "safety_car_probability": "Low-medium",
+        "undercut_potential": "High — three DRS zones but the long pitlane reduces some advantage",
+        "tyre_behaviour": "Lower degradation than expected due to reduced aerodynamic load at altitude."
+      },
+      "2026_race": { "round": 7, "complete": false },
+      "recent_winners": [
+        { "year": 2025, "winner": "Carlos Sainz",   "team": "Williams", "pole": "Russell" },
+        { "year": 2024, "winner": "Carlos Sainz",   "team": "Ferrari",  "pole": "Norris" },
+        { "year": 2023, "winner": "Max Verstappen", "team": "Red Bull", "pole": "Verstappen" },
+        { "year": 2022, "winner": "Max Verstappen", "team": "Red Bull", "pole": "Verstappen" }
+      ],
+      "all_time": {
+        "most_wins_driver": { "driver": "Michael Schumacher", "wins": 4 },
+        "most_wins_team":   { "team": "Red Bull", "wins": 8 },
+        "total_gps_held": 26
+      }
+    },
+
+    {
+      "id": "interlagos",
+      "name": "Autodromo Jose Carlos Pace",
+      "short": "Interlagos",
+      "location": "São Paulo, Brazil",
+      "country": "Brazil",
+      "flag": "🇧🇷",
+      "tier": 1,
+      "lap_length_km": 4.309,
+      "turns": 15,
+      "drs_zones": 2,
+      "lap_record": { "time": "1:10.540", "driver": "Valtteri Bottas", "team": "Mercedes", "year": 2018 },
+      "first_f1_gp": 1973,
+      "circuit_type": "permanent",
+      "direction": "anti-clockwise",
+      "characteristics": "Compact, intense, and consistently producing the best races of the season. Anti-clockwise layout. The Senna S at Turn 1 is an iconic high-speed corner. Altitude affects performance similarly to Mexico City. The weather — tropical storms appear without warning — can transform a processional race into chaos in minutes.",
+      "strategic_profile": {
+        "typical_stops": 2,
+        "key_strategy": "Two-stop in dry conditions. Weather makes everything unpredictable — teams with a weather expert on the pit wall gain a significant advantage.",
+        "safety_car_probability": "Very high — 9 of last 10 races",
+        "undercut_potential": "High — two DRS zones but the main straight is the primary passing zone",
+        "tyre_behaviour": "Medium-high degradation. Anti-clockwise loading stresses the right-front tyre unusually."
+      },
+      "2026_race": { "round": 21, "complete": false },
+      "recent_winners": [
+        { "year": 2025, "winner": "Lewis Hamilton",  "team": "Ferrari",  "pole": "Leclerc" },
+        { "year": 2024, "winner": "Max Verstappen",  "team": "Red Bull", "pole": "Norris" },
+        { "year": 2023, "winner": "Max Verstappen",  "team": "Red Bull", "pole": "Verstappen" },
+        { "year": 2022, "winner": "George Russell",  "team": "Mercedes", "pole": "Russell" },
+        { "year": 2021, "winner": "Lewis Hamilton",  "team": "Mercedes", "pole": "Verstappen" },
+        { "year": 2019, "winner": "Max Verstappen",  "team": "Red Bull", "pole": "Hamilton" }
+      ],
+      "all_time": {
+        "most_wins_driver": { "driver": "Michael Schumacher", "wins": 4 },
+        "most_wins_team":   { "team": "McLaren", "wins": 12 },
+        "total_gps_held": 37
+      },
+      "legendary_moments": [
+        {
+          "year": 1991,
+          "title": "Senna's Brazilian Win",
+          "summary": "Ayrton Senna won at his home circuit with a broken gearbox, stuck in sixth gear for the final 23 laps. He was in tears at the podium. One of the most emotionally charged victories in F1 history."
+        },
+        {
+          "year": 2008,
+          "title": "Hamilton's Heartbreaker",
+          "summary": "Lewis Hamilton needed to finish fifth or higher to win his first championship. He was sixth entering the final lap. In the rain, he passed Timo Glock on the final corner of the final lap to take fifth and the title by a single point. The most dramatic championship conclusion in the sport's history."
+        },
+        {
+          "year": 2012,
+          "title": "Senna's Ghost",
+          "summary": "The 2012 Brazilian Grand Prix on Interlagos was the last race before F1 left for two decades. In pouring rain, Jenson Button produced one of the most spectacular drives ever seen — starting 19th after a first-lap collision, he finished ninth. The Senna S at Turn 1 remained Interlagos's emotional heart."
+        },
+        {
+          "year": 2022,
+          "title": "Russell's First Win",
+          "summary": "George Russell won his first Formula 1 Grand Prix at Interlagos, just his second race for Mercedes. He beat Hamilton in a one-two for the team. A changing of the guard — symbolically, if not yet practically."
+        }
+      ]
+    },
+
+    {
+      "id": "las-vegas",
+      "name": "Las Vegas Street Circuit",
+      "short": "Las Vegas",
+      "location": "Las Vegas, Nevada, United States",
+      "country": "United States",
+      "flag": "🇺🇸",
+      "tier": 3,
+      "lap_length_km": 6.201,
+      "turns": 17,
+      "drs_zones": 3,
+      "lap_record": { "time": "1:35.490", "driver": "Oscar Piastri", "team": "McLaren", "year": 2024 },
+      "first_f1_gp": 2023,
+      "circuit_type": "street",
+      "direction": "anti-clockwise",
+      "characteristics": "Runs through the Las Vegas Strip at midnight. Three long straights with DRS. Very cold track temperatures at night (often below 10°C) cause extreme tyre warm-up challenges — the first flying lap often throws cars off the cold road surface. Visually spectacular; technically somewhat simple.",
+      "strategic_profile": {
+        "typical_stops": 2,
+        "key_strategy": "Two-stop. Cold temperatures mean tyre warm-up laps after the pit stop take longer than usual — the undercut is less powerful than the long straights suggest.",
+        "safety_car_probability": "High — cold surfaces cause accidents",
+        "undercut_potential": "Medium — long straight DRS advantage partially offset by cold tyre warm-up time",
+        "tyre_behaviour": "Cold track means extremely slow tyre warm-up. Hard compound in cold conditions can feel like driving on ice for 2-3 laps after each stop."
+      },
+      "2026_race": { "round": 22, "complete": false },
+      "recent_winners": [
+        { "year": 2025, "winner": "George Russell",  "team": "Mercedes", "pole": "Russell" },
+        { "year": 2024, "winner": "Carlos Sainz",    "team": "Ferrari",  "pole": "Leclerc" },
+        { "year": 2023, "winner": "Max Verstappen",  "team": "Red Bull", "pole": "Leclerc" }
+      ],
+      "all_time": {
+        "most_wins_driver": { "driver": "Max Verstappen", "wins": 1 },
+        "most_wins_team":   { "team": "Red Bull", "wins": 1 },
+        "total_gps_held": 3
+      }
+    },
+
+    {
+      "id": "yas-marina",
+      "name": "Yas Marina Circuit",
+      "short": "Abu Dhabi",
+      "location": "Yas Island, Abu Dhabi, United Arab Emirates",
+      "country": "UAE",
+      "flag": "🇦🇪",
+      "tier": 2,
+      "lap_length_km": 5.281,
+      "turns": 16,
+      "drs_zones": 2,
+      "lap_record": { "time": "1:26.103", "driver": "Max Verstappen", "team": "Red Bull", "year": 2021 },
+      "first_f1_gp": 2009,
+      "circuit_type": "permanent",
+      "direction": "anti-clockwise",
+      "characteristics": "The season finale. Night/day transition race under the lights of Yas Marina Hotel, which straddles the circuit. The revised 2021 layout improved overtaking significantly by removing the hotel tunnel chicane. Season-ending context always elevates the drama beyond the raw circuit characteristics.",
+      "strategic_profile": {
+        "typical_stops": 2,
+        "key_strategy": "Two-stop medium-hard-hard. Track temperature drop as the night sets in changes tyre behaviour mid-race. Safety car late in the race can produce strategic chaos — as 2021 dramatically demonstrated.",
+        "safety_car_probability": "Low-medium",
+        "undercut_potential": "High — sector 3 has good DRS potential after the revised layout",
+        "tyre_behaviour": "Medium degradation. Track evolution through the race is significant as rubber builds."
+      },
+      "2026_race": { "round": 22, "complete": false, "note": "Season finale" },
+      "recent_winners": [
+        { "year": 2025, "winner": "Lando Norris",    "team": "McLaren",  "pole": "Norris" },
+        { "year": 2024, "winner": "Lando Norris",    "team": "McLaren",  "pole": "Norris" },
+        { "year": 2023, "winner": "Max Verstappen",  "team": "Red Bull", "pole": "Verstappen" },
+        { "year": 2022, "winner": "Max Verstappen",  "team": "Red Bull", "pole": "Verstappen" },
+        { "year": 2021, "winner": "Max Verstappen",  "team": "Red Bull", "pole": "Hamilton", "note": "Championship decider — Verstappen passed Hamilton on final lap" },
+        { "year": 2020, "winner": "Max Verstappen",  "team": "Red Bull", "pole": "Hamilton" },
+        { "year": 2019, "winner": "Lewis Hamilton",  "team": "Mercedes", "pole": "Hamilton" }
+      ],
+      "all_time": {
+        "most_wins_driver": { "driver": "Max Verstappen", "wins": 7 },
+        "most_wins_team":   { "team": "Red Bull", "wins": 7 },
+        "total_gps_held": 16
+      }
+    }
+
+  ]
+}

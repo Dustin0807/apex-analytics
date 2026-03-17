@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 240" width="200" height="240">
+  <!-- Background -->
+  <rect width="200" height="240" rx="8" fill="#0F0F18"/>
+  <!-- Team colour top band -->
+  <rect width="200" height="6" rx="0" fill="#CC2200"/>
+  <!-- Large initials circle -->
+  <circle cx="100" cy="110" r="72" fill="#CC2200" opacity="0.12"/>
+  <circle cx="100" cy="110" r="68" fill="none" stroke="#CC2200" stroke-width="1.5" opacity="0.3"/>
+  <!-- Initials -->
+  <text x="100" y="128"
+        font-family="'Arial Black', sans-serif"
+        font-size="52"
+        font-weight="900"
+        fill="#CC2200"
+        text-anchor="middle"
+        letter-spacing="-2">VB</text>
+  <!-- Name strip -->
+  <rect y="198" width="200" height="42" rx="0" fill="#CC2200" opacity="0.15"/>
+  <text x="100" y="225"
+        font-family="Arial, sans-serif"
+        font-size="11"
+        font-weight="700"
+        fill="#CC2200"
+        text-anchor="middle"
+        letter-spacing="1.5">VALTTERI BOTTAS</text>
+  <!-- Photo placeholder label -->
+  <text x="100" y="180"
+        font-family="Arial, sans-serif"
+        font-size="8"
+        fill="#CC2200"
+        text-anchor="middle"
+        opacity="0.4"
+        letter-spacing="1">PHOTO PENDING</text>
+</svg>

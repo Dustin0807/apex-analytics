@@ -1,0 +1,1023 @@
+{
+  "series": "f1",
+  "year": 2026,
+  "competitor_type": "driver",
+
+  "competitors": [
+
+    {
+      "id": "russell-george",
+      "name": "George Russell",
+      "short": "Russell",
+      "code": "RUS",
+      "number": 63,
+      "nationality": "British",
+      "flag": "🇬🇧",
+      "dob": "1998-02-15",
+      "team": "mercedes",
+      "team_name": "Mercedes-AMG Petronas",
+      "color": "27F4D2",
+      "assets": {
+        "photo": "russell-george.jpg",
+        "number_logo": "63.svg",
+        "helmet": "russell-george-helmet.png"
+      },
+      "bio": "The 2025 World Champion. Methodical, technically brilliant, relentless in his approach to race craft. Graduated from Williams after three seasons to replace Hamilton at Mercedes in 2022. Has become the benchmark against which his team-mates are measured.",
+      "season_2026": {
+        "pts": 51,
+        "wins": 1,
+        "podiums": 2,
+        "poles": 1,
+        "fastest_laps": 0,
+        "dnfs": 0,
+        "avg_qualifying_pos": 1.5,
+        "avg_finish_pos": 1.5,
+        "rounds_completed": 2,
+        "sprint_pts": 8,
+        "positions_gained_season": -1,
+        "results_by_round": [
+          { "round": 1, "venue": "Australia",  "grid": 1, "finish": 1, "pts": 25, "status": "running", "fastest_lap": false },
+          { "round": 2, "venue": "China",       "grid": 2, "finish": 2, "pts": 18, "status": "running", "fastest_lap": false }
+        ],
+        "teammate_quali_record": { "ahead": 1, "behind": 1, "teammate": "antonelli-kimi" },
+        "teammate_race_record":  { "ahead": 1, "behind": 1, "teammate": "antonelli-kimi" }
+      },
+      "career": {
+        "seasons": 8,
+        "wins": 8,
+        "podiums": 32,
+        "poles": 14,
+        "fastest_laps": 12,
+        "championships": 1,
+        "championship_years": [2025],
+        "first_race": "2020 Austrian Grand Prix",
+        "first_win":  "2022 Brazilian Grand Prix",
+        "teams": ["williams", "mercedes"]
+      }
+    },
+
+    {
+      "id": "antonelli-kimi",
+      "name": "Kimi Antonelli",
+      "short": "Antonelli",
+      "code": "ANT",
+      "number": 12,
+      "nationality": "Italian",
+      "flag": "🇮🇹",
+      "dob": "2006-08-25",
+      "team": "mercedes",
+      "team_name": "Mercedes-AMG Petronas",
+      "color": "1BE0C0",
+      "assets": {
+        "photo": "antonelli-kimi.jpg",
+        "number_logo": "12.svg",
+        "helmet": "antonelli-kimi-helmet.png"
+      },
+      "bio": "The most anticipated F1 debut in years. Youngest ever GP polesitter and second youngest race winner in F1 history. Promoted directly from F2 to replace Hamilton at Mercedes aged 18. Fast, composed beyond his years, and still learning.",
+      "season_2026": {
+        "pts": 47,
+        "wins": 1,
+        "podiums": 2,
+        "poles": 1,
+        "fastest_laps": 0,
+        "dnfs": 0,
+        "avg_qualifying_pos": 1.5,
+        "avg_finish_pos": 1.5,
+        "rounds_completed": 2,
+        "sprint_pts": 4,
+        "positions_gained_season": 0,
+        "results_by_round": [
+          { "round": 1, "venue": "Australia", "grid": 2, "finish": 2, "pts": 18, "status": "running", "fastest_lap": false },
+          { "round": 2, "venue": "China",     "grid": 1, "finish": 1, "pts": 25, "status": "running", "fastest_lap": false }
+        ],
+        "teammate_quali_record": { "ahead": 1, "behind": 1, "teammate": "russell-george" },
+        "teammate_race_record":  { "ahead": 1, "behind": 1, "teammate": "russell-george" }
+      },
+      "career": {
+        "seasons": 1,
+        "wins": 1,
+        "podiums": 2,
+        "poles": 1,
+        "fastest_laps": 0,
+        "championships": 0,
+        "championship_years": [],
+        "first_race": "2026 Australian Grand Prix",
+        "first_win":  "2026 Chinese Grand Prix",
+        "teams": ["mercedes"]
+      }
+    },
+
+    {
+      "id": "leclerc-charles",
+      "name": "Charles Leclerc",
+      "short": "Leclerc",
+      "code": "LEC",
+      "number": 16,
+      "nationality": "Monégasque",
+      "flag": "🇲🇨",
+      "dob": "1997-10-16",
+      "team": "ferrari",
+      "team_name": "Scuderia Ferrari",
+      "color": "E8002D",
+      "assets": {
+        "photo": "leclerc-charles.jpg",
+        "number_logo": "16.svg",
+        "helmet": "leclerc-charles-helmet.png"
+      },
+      "bio": "Ferrari's lead driver since 2019. Two-time pole record holder at Monaco. Brilliant on a single lap, occasionally prone to costly errors under pressure. The championship he hasn't won yet remains the story of his career so far.",
+      "season_2026": {
+        "pts": 34,
+        "wins": 0,
+        "podiums": 1,
+        "poles": 0,
+        "fastest_laps": 0,
+        "dnfs": 0,
+        "avg_qualifying_pos": 3.5,
+        "avg_finish_pos": 3.5,
+        "rounds_completed": 2,
+        "sprint_pts": 7,
+        "positions_gained_season": 1,
+        "results_by_round": [
+          { "round": 1, "venue": "Australia", "grid": 4, "finish": 3, "pts": 15, "status": "running", "fastest_lap": false },
+          { "round": 2, "venue": "China",     "grid": 4, "finish": 4, "pts": 12, "status": "running", "fastest_lap": false }
+        ],
+        "teammate_quali_record": { "ahead": 0, "behind": 2, "teammate": "hamilton-lewis" },
+        "teammate_race_record":  { "ahead": 0, "behind": 2, "teammate": "hamilton-lewis" }
+      },
+      "career": {
+        "seasons": 9,
+        "wins": 11,
+        "podiums": 48,
+        "poles": 26,
+        "fastest_laps": 8,
+        "championships": 0,
+        "first_race": "2018 Australian Grand Prix",
+        "first_win":  "2019 Belgian Grand Prix",
+        "teams": ["sauber", "ferrari"]
+      }
+    },
+
+    {
+      "id": "hamilton-lewis",
+      "name": "Lewis Hamilton",
+      "short": "Hamilton",
+      "code": "HAM",
+      "number": 44,
+      "nationality": "British",
+      "flag": "🇬🇧",
+      "dob": "1985-01-07",
+      "team": "ferrari",
+      "team_name": "Scuderia Ferrari",
+      "color": "CC0025",
+      "assets": {
+        "photo": "hamilton-lewis.jpg",
+        "number_logo": "44.svg",
+        "helmet": "hamilton-lewis-helmet.png"
+      },
+      "bio": "The most decorated driver in Formula 1 history. Seven World Championships, 103 race wins. Moved to Ferrari in 2025 after 12 seasons at Mercedes. Finally took his first Ferrari podium at the 2026 Chinese Grand Prix at the 26th attempt.",
+      "season_2026": {
+        "pts": 33,
+        "wins": 0,
+        "podiums": 2,
+        "poles": 0,
+        "fastest_laps": 0,
+        "dnfs": 0,
+        "avg_qualifying_pos": 4.5,
+        "avg_finish_pos": 3.5,
+        "rounds_completed": 2,
+        "sprint_pts": 6,
+        "positions_gained_season": 3,
+        "results_by_round": [
+          { "round": 1, "venue": "Australia", "grid": 7, "finish": 4, "pts": 12, "status": "running", "fastest_lap": false },
+          { "round": 2, "venue": "China",     "grid": 3, "finish": 3, "pts": 15, "status": "running", "fastest_lap": false, "note": "First Ferrari podium — 26th start" }
+        ],
+        "teammate_quali_record": { "ahead": 2, "behind": 0, "teammate": "leclerc-charles" },
+        "teammate_race_record":  { "ahead": 2, "behind": 0, "teammate": "leclerc-charles" }
+      },
+      "career": {
+        "seasons": 20,
+        "wins": 103,
+        "podiums": 197,
+        "poles": 104,
+        "fastest_laps": 67,
+        "championships": 7,
+        "championship_years": [2008, 2014, 2015, 2017, 2018, 2019, 2020],
+        "first_race": "2007 Australian Grand Prix",
+        "first_win":  "2007 Canadian Grand Prix",
+        "teams": ["mclaren", "mercedes", "ferrari"]
+      }
+    },
+
+    {
+      "id": "norris-lando",
+      "name": "Lando Norris",
+      "short": "Norris",
+      "code": "NOR",
+      "number": 4,
+      "nationality": "British",
+      "flag": "🇬🇧",
+      "dob": "1999-11-13",
+      "team": "mclaren",
+      "team_name": "McLaren Formula 1 Team",
+      "color": "FF8000",
+      "assets": {
+        "photo": "norris-lando.jpg",
+        "number_logo": "4.svg",
+        "helmet": "norris-lando-helmet.png"
+      },
+      "bio": "The 2025 World Champion runner-up. Electrifying on raw pace. McLaren's talisman since 2019. Suffered a nightmare double DNS with team-mate Piastri at the 2026 Chinese Grand Prix before recovering to score points in the Sprint.",
+      "season_2026": {
+        "pts": 15,
+        "wins": 0,
+        "podiums": 0,
+        "poles": 0,
+        "fastest_laps": 0,
+        "dnfs": 1,
+        "avg_qualifying_pos": 5.5,
+        "avg_finish_pos": null,
+        "rounds_completed": 1,
+        "sprint_pts": 5,
+        "positions_gained_season": 1,
+        "results_by_round": [
+          { "round": 1, "venue": "Australia", "grid": 6,  "finish": 5,   "pts": 10, "status": "running" },
+          { "round": 2, "venue": "China",     "grid": 6,  "finish": "DNS","pts": 0,  "status": "dns", "note": "Electrical failure before race" }
+        ],
+        "teammate_quali_record": { "ahead": 1, "behind": 1, "teammate": "piastri-oscar" },
+        "teammate_race_record":  { "ahead": 1, "behind": 0, "teammate": "piastri-oscar" }
+      },
+      "career": {
+        "seasons": 8,
+        "wins": 4,
+        "podiums": 24,
+        "poles": 6,
+        "fastest_laps": 9,
+        "championships": 0,
+        "first_race": "2019 Australian Grand Prix",
+        "first_win":  "2024 Miami Grand Prix",
+        "teams": ["mclaren"]
+      }
+    },
+
+    {
+      "id": "piastri-oscar",
+      "name": "Oscar Piastri",
+      "short": "Piastri",
+      "code": "PIA",
+      "number": 81,
+      "nationality": "Australian",
+      "flag": "🇦🇺",
+      "dob": "2001-04-06",
+      "team": "mclaren",
+      "team_name": "McLaren Formula 1 Team",
+      "color": "FF9520",
+      "assets": {
+        "photo": "piastri-oscar.jpg",
+        "number_logo": "81.svg",
+        "helmet": "piastri-oscar-helmet.png"
+      },
+      "bio": "Crashed on his sighting lap at his home Australian Grand Prix before the race began. Followed it with a DNS in China from electrical failure. Three career wins. A nightmare start to 2026 that had nothing to do with driving ability.",
+      "season_2026": {
+        "pts": 3,
+        "wins": 0,
+        "podiums": 0,
+        "poles": 0,
+        "fastest_laps": 0,
+        "dnfs": 2,
+        "avg_qualifying_pos": 5.0,
+        "avg_finish_pos": null,
+        "rounds_completed": 0,
+        "sprint_pts": 3,
+        "positions_gained_season": null,
+        "results_by_round": [
+          { "round": 1, "venue": "Australia", "grid": 5,  "finish": "DNS", "pts": 0, "status": "dns", "note": "Sighting lap crash T4" },
+          { "round": 2, "venue": "China",     "grid": 5,  "finish": "DNS", "pts": 0, "status": "dns", "note": "Electrical failure" }
+        ],
+        "teammate_quali_record": { "ahead": 1, "behind": 1, "teammate": "norris-lando" },
+        "teammate_race_record":  { "ahead": 0, "behind": 0, "teammate": "norris-lando" }
+      },
+      "career": {
+        "seasons": 4,
+        "wins": 3,
+        "podiums": 14,
+        "poles": 3,
+        "fastest_laps": 4,
+        "championships": 0,
+        "first_race": "2023 Australian Grand Prix",
+        "first_win":  "2024 Hungarian Grand Prix",
+        "teams": ["mclaren"]
+      }
+    },
+
+    {
+      "id": "verstappen-max",
+      "name": "Max Verstappen",
+      "short": "Verstappen",
+      "code": "VER",
+      "number": 1,
+      "nationality": "Dutch",
+      "flag": "🇳🇱",
+      "dob": "1997-09-30",
+      "team": "red-bull",
+      "team_name": "Oracle Red Bull Racing",
+      "color": "3671C6",
+      "assets": {
+        "photo": "verstappen-max.jpg",
+        "number_logo": "1.svg",
+        "helmet": "verstappen-max-helmet.png"
+      },
+      "bio": "Four-time World Champion. The dominant force in F1 from 2022–2024. 2026 has been a different story — a Q1 crash in Australia and a late retirement in China have left him ninth in the championship. Red Bull appears to have fallen behind.",
+      "season_2026": {
+        "pts": 8,
+        "wins": 0,
+        "podiums": 0,
+        "poles": 0,
+        "fastest_laps": 1,
+        "dnfs": 1,
+        "avg_qualifying_pos": 14.0,
+        "avg_finish_pos": null,
+        "rounds_completed": 1,
+        "sprint_pts": 0,
+        "positions_gained_season": 5,
+        "results_by_round": [
+          { "round": 1, "venue": "Australia", "grid": 20, "finish": 6,   "pts": 9, "status": "running", "fastest_lap": true, "note": "Q1 crash — started last" },
+          { "round": 2, "venue": "China",     "grid": 8,  "finish": "DNF","pts": 0, "status": "mech",    "note": "Retirement Lap 46" }
+        ],
+        "teammate_quali_record": { "ahead": 1, "behind": 1, "teammate": "hadjar-isack" },
+        "teammate_race_record":  { "ahead": 1, "behind": 1, "teammate": "hadjar-isack" }
+      },
+      "career": {
+        "seasons": 11,
+        "wins": 63,
+        "podiums": 110,
+        "poles": 40,
+        "fastest_laps": 31,
+        "championships": 4,
+        "championship_years": [2021, 2022, 2023, 2024],
+        "first_race": "2015 Australian Grand Prix",
+        "first_win":  "2016 Spanish Grand Prix",
+        "teams": ["toro-rosso", "red-bull"]
+      }
+    },
+
+    {
+      "id": "hadjar-isack",
+      "name": "Isack Hadjar",
+      "short": "Hadjar",
+      "code": "HAD",
+      "number": 23,
+      "nationality": "French-Algerian",
+      "flag": "🇫🇷",
+      "dob": "2004-02-28",
+      "team": "red-bull",
+      "team_name": "Oracle Red Bull Racing",
+      "color": "4488DD",
+      "assets": {
+        "photo": "hadjar-isack.jpg",
+        "number_logo": "23.svg",
+        "helmet": "hadjar-isack-helmet.png"
+      },
+      "bio": "2025 F2 Champion. Promoted to the Red Bull senior team for 2026 alongside Verstappen. Qualified an impressive P3 in Australia before a technical failure under VSC. A crash with Antonelli in the China Sprint complicated his weekend further.",
+      "season_2026": {
+        "pts": 4,
+        "wins": 0,
+        "podiums": 0,
+        "poles": 0,
+        "fastest_laps": 0,
+        "dnfs": 1,
+        "rounds_completed": 1,
+        "sprint_pts": 0,
+        "results_by_round": [
+          { "round": 1, "venue": "Australia", "grid": 3, "finish": "DNF", "pts": 0, "status": "mech", "note": "VSC 1 — technical failure" },
+          { "round": 2, "venue": "China",     "grid": 9, "finish": 8,    "pts": 4, "status": "running", "note": "Recovered from early incident" }
+        ],
+        "teammate_quali_record": { "ahead": 1, "behind": 1, "teammate": "verstappen-max" },
+        "teammate_race_record":  { "ahead": 1, "behind": 1, "teammate": "verstappen-max" }
+      },
+      "career": {
+        "seasons": 1,
+        "wins": 0,
+        "podiums": 0,
+        "poles": 0,
+        "fastest_laps": 0,
+        "championships": 0,
+        "first_race": "2026 Australian Grand Prix",
+        "teams": ["red-bull"]
+      }
+    },
+
+    {
+      "id": "bearman-oliver",
+      "name": "Oliver Bearman",
+      "short": "Bearman",
+      "code": "BEA",
+      "number": 87,
+      "nationality": "British",
+      "flag": "🇬🇧",
+      "dob": "2005-05-08",
+      "team": "haas",
+      "team_name": "MoneyGram Haas F1 Team",
+      "color": "B6BABD",
+      "assets": {
+        "photo": "bearman-oliver.jpg",
+        "number_logo": "87.svg",
+        "helmet": "bearman-oliver-helmet.png"
+      },
+      "bio": "The standout performer of the 2026 season so far in a midfield car. P7 in Australia and P5 in China — consistently extracting the maximum from the Haas. Made his F1 debut replacing Ferrari's Sainz at the 2024 Saudi Arabian GP.",
+      "season_2026": {
+        "pts": 17,
+        "wins": 0,
+        "podiums": 0,
+        "poles": 0,
+        "fastest_laps": 0,
+        "dnfs": 0,
+        "avg_qualifying_pos": 9.0,
+        "avg_finish_pos": 6.0,
+        "rounds_completed": 2,
+        "sprint_pts": 1,
+        "positions_gained_season": 3,
+        "results_by_round": [
+          { "round": 1, "venue": "Australia", "grid": 8, "finish": 7, "pts": 6,  "status": "running" },
+          { "round": 2, "venue": "China",     "grid": 10,"finish": 5, "pts": 10, "status": "running", "note": "Best result of career" }
+        ],
+        "teammate_quali_record": { "ahead": 2, "behind": 0, "teammate": "ocon-esteban" },
+        "teammate_race_record":  { "ahead": 2, "behind": 0, "teammate": "ocon-esteban" }
+      },
+      "career": {
+        "seasons": 2,
+        "wins": 0,
+        "podiums": 0,
+        "poles": 0,
+        "fastest_laps": 0,
+        "championships": 0,
+        "first_race": "2024 Saudi Arabian Grand Prix",
+        "teams": ["ferrari", "haas"]
+      }
+    },
+
+    {
+      "id": "gasly-pierre",
+      "name": "Pierre Gasly",
+      "short": "Gasly",
+      "code": "GAS",
+      "number": 10,
+      "nationality": "French",
+      "flag": "🇫🇷",
+      "dob": "1996-02-07",
+      "team": "alpine",
+      "team_name": "BWT Alpine F1 Team",
+      "color": "0090FF",
+      "assets": {
+        "photo": "gasly-pierre.jpg",
+        "number_logo": "10.svg",
+        "helmet": "gasly-pierre-helmet.png"
+      },
+      "bio": "P7 qualifier in China — the fastest Alpine has qualified since 2022. One of F1's most underrated talents, perpetually racing machinery not worthy of his ability. Has managed 9 points through two rounds of 2026.",
+      "season_2026": {
+        "pts": 9,
+        "wins": 0,
+        "podiums": 0,
+        "poles": 0,
+        "fastest_laps": 0,
+        "dnfs": 0,
+        "rounds_completed": 2,
+        "sprint_pts": 0,
+        "results_by_round": [
+          { "round": 1, "venue": "Australia", "grid": 9,  "finish": 10, "pts": 1, "status": "running" },
+          { "round": 2, "venue": "China",     "grid": 7,  "finish": 6,  "pts": 8, "status": "running" }
+        ],
+        "teammate_quali_record": { "ahead": 2, "behind": 0, "teammate": "colapinto-franco" },
+        "teammate_race_record":  { "ahead": 2, "behind": 0, "teammate": "colapinto-franco" }
+      },
+      "career": {
+        "seasons": 9,
+        "wins": 1,
+        "podiums": 4,
+        "poles": 0,
+        "fastest_laps": 4,
+        "championships": 0,
+        "first_race": "2017 Malaysian Grand Prix",
+        "first_win":  "2020 Italian Grand Prix",
+        "teams": ["toro-rosso", "red-bull", "alphatauri", "alpine"]
+      }
+    },
+
+    {
+      "id": "colapinto-franco",
+      "name": "Franco Colapinto",
+      "short": "Colapinto",
+      "code": "COL",
+      "number": 31,
+      "nationality": "Argentine",
+      "flag": "🇦🇷",
+      "dob": "2003-05-27",
+      "team": "alpine",
+      "team_name": "BWT Alpine F1 Team",
+      "color": "4499FF",
+      "assets": {
+        "photo": "colapinto-franco.jpg",
+        "number_logo": "31.svg",
+        "helmet": "colapinto-franco-helmet.png"
+      },
+      "bio": "Replaced Doohan at Alpine mid-2025 and never looked back. P10 at the Chinese GP — his first points finish as a full-time Alpine driver — after recovering from a first lap collision with team-mate Ocon.",
+      "season_2026": {
+        "pts": 1,
+        "wins": 0,
+        "podiums": 0,
+        "poles": 0,
+        "fastest_laps": 0,
+        "dnfs": 0,
+        "rounds_completed": 2,
+        "sprint_pts": 0,
+        "results_by_round": [
+          { "round": 1, "venue": "Australia", "grid": null, "finish": null, "pts": 0, "status": "running", "note": "Outside points" },
+          { "round": 2, "venue": "China",     "grid": null, "finish": 10,   "pts": 1, "status": "running", "note": "Recovered from Ocon collision" }
+        ],
+        "teammate_quali_record": { "ahead": 0, "behind": 2, "teammate": "gasly-pierre" },
+        "teammate_race_record":  { "ahead": 0, "behind": 2, "teammate": "gasly-pierre" }
+      },
+      "career": {
+        "seasons": 2,
+        "wins": 0,
+        "podiums": 0,
+        "poles": 0,
+        "fastest_laps": 0,
+        "championships": 0,
+        "first_race": "2024 Italian Grand Prix",
+        "teams": ["williams", "alpine"]
+      }
+    },
+
+    {
+      "id": "lawson-liam",
+      "name": "Liam Lawson",
+      "short": "Lawson",
+      "code": "LAW",
+      "number": 30,
+      "nationality": "New Zealander",
+      "flag": "🇳🇿",
+      "dob": "2002-02-11",
+      "team": "racing-bulls",
+      "team_name": "Visa Cash App Racing Bulls",
+      "color": "4488DD",
+      "assets": {
+        "photo": "lawson-liam.jpg",
+        "number_logo": "30.svg",
+        "helmet": "lawson-liam-helmet.png"
+      },
+      "bio": "P7 in China — best result of his full-time F1 career so far. Promoted alongside Hadjar as part of Red Bull's 2026 junior graduation. Measured and consistent in what has been a strong opening two rounds.",
+      "season_2026": {
+        "pts": 8,
+        "wins": 0,
+        "podiums": 0,
+        "poles": 0,
+        "fastest_laps": 0,
+        "dnfs": 0,
+        "rounds_completed": 2,
+        "sprint_pts": 2,
+        "results_by_round": [
+          { "round": 1, "venue": "Australia", "grid": null, "finish": null, "pts": 0, "status": "running", "note": "Outside points" },
+          { "round": 2, "venue": "China",     "grid": null, "finish": 7,   "pts": 6, "status": "running" }
+        ],
+        "teammate_quali_record": { "ahead": 1, "behind": 1, "teammate": "lindblad-arvid" },
+        "teammate_race_record":  { "ahead": 1, "behind": 1, "teammate": "lindblad-arvid" }
+      },
+      "career": {
+        "seasons": 3,
+        "wins": 0,
+        "podiums": 0,
+        "poles": 0,
+        "fastest_laps": 0,
+        "championships": 0,
+        "first_race": "2023 Dutch Grand Prix",
+        "teams": ["alphatauri", "red-bull", "racing-bulls"]
+      }
+    },
+
+    {
+      "id": "lindblad-arvid",
+      "name": "Arvid Lindblad",
+      "short": "Lindblad",
+      "code": "LIN",
+      "number": 6,
+      "nationality": "British-Swedish",
+      "flag": "🇸🇪",
+      "dob": "2006-09-12",
+      "team": "racing-bulls",
+      "team_name": "Visa Cash App Racing Bulls",
+      "color": "6692FF",
+      "assets": {
+        "photo": "lindblad-arvid.jpg",
+        "number_logo": "6.svg",
+        "helmet": "lindblad-arvid-helmet.png"
+      },
+      "bio": "P8 on debut in Australia — collected four points before being caught in Hadjar and Antonelli's China Sprint collision as an innocent bystander. Still found points in the race itself. One of the most impressive F1 debuts in recent memory.",
+      "season_2026": {
+        "pts": 4,
+        "wins": 0,
+        "podiums": 0,
+        "poles": 0,
+        "fastest_laps": 0,
+        "dnfs": 0,
+        "rounds_completed": 2,
+        "sprint_pts": 0,
+        "results_by_round": [
+          { "round": 1, "venue": "Australia", "grid": 10, "finish": 8,  "pts": 4, "status": "running" },
+          { "round": 2, "venue": "China",     "grid": null,"finish": 12,"pts": 0, "status": "running" }
+        ],
+        "teammate_quali_record": { "ahead": 1, "behind": 1, "teammate": "lawson-liam" },
+        "teammate_race_record":  { "ahead": 1, "behind": 1, "teammate": "lawson-liam" }
+      },
+      "career": {
+        "seasons": 1,
+        "wins": 0,
+        "podiums": 0,
+        "poles": 0,
+        "fastest_laps": 0,
+        "championships": 0,
+        "first_race": "2026 Australian Grand Prix",
+        "teams": ["racing-bulls"]
+      }
+    },
+
+    {
+      "id": "sainz-carlos",
+      "name": "Carlos Sainz",
+      "short": "Sainz",
+      "code": "SAI",
+      "number": 55,
+      "nationality": "Spanish",
+      "flag": "🇪🇸",
+      "dob": "1994-09-01",
+      "team": "williams",
+      "team_name": "Williams Racing",
+      "color": "005AFF",
+      "assets": {
+        "photo": "sainz-carlos.jpg",
+        "number_logo": "55.svg",
+        "helmet": "sainz-carlos-helmet.png"
+      },
+      "bio": "Joined Williams for 2025 after losing his Ferrari seat to Hamilton. P9 in China was Williams' first points finish of 2026 — his natural pace constantly fighting machinery that shouldn't be in the top 10.",
+      "season_2026": {
+        "pts": 2,
+        "wins": 0,
+        "podiums": 0,
+        "poles": 0,
+        "fastest_laps": 0,
+        "dnfs": 0,
+        "rounds_completed": 2,
+        "sprint_pts": 0,
+        "results_by_round": [
+          { "round": 1, "venue": "Australia", "grid": 11, "finish": null, "pts": 0, "status": "running", "note": "Outside points" },
+          { "round": 2, "venue": "China",     "grid": 14, "finish": 9,   "pts": 2, "status": "running", "note": "Williams first 2026 points" }
+        ],
+        "teammate_quali_record": { "ahead": 1, "behind": 1, "teammate": "albon-alex" },
+        "teammate_race_record":  { "ahead": 1, "behind": 1, "teammate": "albon-alex" }
+      },
+      "career": {
+        "seasons": 10,
+        "wins": 4,
+        "podiums": 25,
+        "poles": 6,
+        "fastest_laps": 6,
+        "championships": 0,
+        "first_race": "2015 Australian Grand Prix",
+        "first_win":  "2023 Singapore Grand Prix",
+        "teams": ["toro-rosso", "mclaren", "renault", "ferrari", "williams"]
+      }
+    },
+
+    {
+      "id": "albon-alex",
+      "name": "Alexander Albon",
+      "short": "Albon",
+      "code": "ALB",
+      "number": 23,
+      "nationality": "Thai-British",
+      "flag": "🇹🇭",
+      "dob": "1996-03-23",
+      "team": "williams",
+      "team_name": "Williams Racing",
+      "color": "0044DD",
+      "assets": {
+        "photo": "albon-alex.jpg",
+        "number_logo": "23.svg",
+        "helmet": "albon-alex-helmet.png"
+      },
+      "bio": "DNS in Australia after a power unit failure in Q1. Reliable and technically precise — the kind of driver who extracts maximum value from limited machinery. A frustrating start to 2026 with no points from two rounds.",
+      "season_2026": {
+        "pts": 0,
+        "wins": 0,
+        "podiums": 0,
+        "poles": 0,
+        "fastest_laps": 0,
+        "dnfs": 1,
+        "rounds_completed": 0,
+        "results_by_round": [
+          { "round": 1, "venue": "Australia", "grid": null, "finish": "DNS", "pts": 0, "status": "dns", "note": "PU failure in Q1" },
+          { "round": 2, "venue": "China",     "grid": null, "finish": "DNS", "pts": 0, "status": "dns", "note": "Suspension problem" }
+        ],
+        "teammate_quali_record": { "ahead": 0, "behind": 2, "teammate": "sainz-carlos" },
+        "teammate_race_record":  { "ahead": 0, "behind": 0, "teammate": "sainz-carlos" }
+      },
+      "career": {
+        "seasons": 7,
+        "wins": 0,
+        "podiums": 2,
+        "poles": 0,
+        "fastest_laps": 2,
+        "championships": 0,
+        "first_race": "2019 Australian Grand Prix",
+        "teams": ["toro-rosso", "red-bull", "williams"]
+      }
+    },
+
+    {
+      "id": "bortoleto-gabriel",
+      "name": "Gabriel Bortoleto",
+      "short": "Bortoleto",
+      "code": "BOR",
+      "number": 5,
+      "nationality": "Brazilian",
+      "flag": "🇧🇷",
+      "dob": "2004-10-14",
+      "team": "audi",
+      "team_name": "Audi Formula Racing",
+      "color": "00CC00",
+      "assets": {
+        "photo": "bortoleto-gabriel.jpg",
+        "number_logo": "5.svg",
+        "helmet": "bortoleto-gabriel-helmet.png"
+      },
+      "bio": "2025 F2 champion alongside Hadjar. Joined Audi (formerly Sauber) as the marque makes its full F1 debut. P9 in Australia on debut — then a Q2 spin at China that brought yellow flags for everyone, followed by a DNS from hydraulics.",
+      "season_2026": {
+        "pts": 2,
+        "wins": 0,
+        "podiums": 0,
+        "poles": 0,
+        "fastest_laps": 0,
+        "dnfs": 1,
+        "rounds_completed": 1,
+        "results_by_round": [
+          { "round": 1, "venue": "Australia", "grid": 12, "finish": 9,    "pts": 2, "status": "running" },
+          { "round": 2, "venue": "China",     "grid": null,"finish": "DNS","pts": 0, "status": "dns", "note": "Hydraulic issue; Q2 spin caused yellow flags" }
+        ],
+        "teammate_quali_record": { "ahead": 1, "behind": 1, "teammate": "hulkenberg-nico" },
+        "teammate_race_record":  { "ahead": 1, "behind": 0, "teammate": "hulkenberg-nico" }
+      },
+      "career": {
+        "seasons": 1,
+        "wins": 0,
+        "podiums": 0,
+        "poles": 0,
+        "fastest_laps": 0,
+        "championships": 0,
+        "first_race": "2026 Australian Grand Prix",
+        "teams": ["audi"]
+      }
+    },
+
+    {
+      "id": "hulkenberg-nico",
+      "name": "Nico Hülkenberg",
+      "short": "Hülkenberg",
+      "code": "HUL",
+      "number": 27,
+      "nationality": "German",
+      "flag": "🇩🇪",
+      "dob": "1987-08-19",
+      "team": "audi",
+      "team_name": "Audi Formula Racing",
+      "color": "009900",
+      "assets": {
+        "photo": "hulkenberg-nico.jpg",
+        "number_logo": "27.svg",
+        "helmet": "hulkenberg-nico-helmet.png"
+      },
+      "bio": "The most experienced active F1 driver with no podium to his name — a statistical anomaly for a driver of his pace. Partnering Bortoleto at Audi. DNF in the China Sprint before recovering to P11 in the Grand Prix.",
+      "season_2026": {
+        "pts": 0,
+        "wins": 0,
+        "podiums": 0,
+        "poles": 0,
+        "fastest_laps": 0,
+        "dnfs": 0,
+        "rounds_completed": 2,
+        "results_by_round": [
+          { "round": 1, "venue": "Australia", "grid": null, "finish": null, "pts": 0, "status": "running" },
+          { "round": 2, "venue": "China",     "grid": null, "finish": 11,  "pts": 0, "status": "running" }
+        ],
+        "teammate_quali_record": { "ahead": 1, "behind": 1, "teammate": "bortoleto-gabriel" },
+        "teammate_race_record":  { "ahead": 1, "behind": 1, "teammate": "bortoleto-gabriel" }
+      },
+      "career": {
+        "seasons": 14,
+        "wins": 0,
+        "podiums": 0,
+        "poles": 1,
+        "fastest_laps": 2,
+        "championships": 0,
+        "first_race": "2010 Bahrain Grand Prix",
+        "teams": ["williams", "force-india", "sauber", "renault", "haas", "audi"]
+      }
+    },
+
+    {
+      "id": "bottas-valtteri",
+      "name": "Valtteri Bottas",
+      "short": "Bottas",
+      "code": "BOT",
+      "number": 77,
+      "nationality": "Finnish",
+      "flag": "🇫🇮",
+      "dob": "1989-08-28",
+      "team": "cadillac",
+      "team_name": "Cadillac F1 Team",
+      "color": "CC2200",
+      "assets": {
+        "photo": "bottas-valtteri.jpg",
+        "number_logo": "77.svg",
+        "helmet": "bottas-valtteri-helmet.png"
+      },
+      "bio": "The veteran anchor for Cadillac's F1 debut. Retired from the Australian GP under VSC 2, then finished 13th in China. His experience makes him invaluable to a new team learning the sport from scratch.",
+      "season_2026": {
+        "pts": 0,
+        "wins": 0,
+        "podiums": 0,
+        "poles": 0,
+        "fastest_laps": 0,
+        "dnfs": 1,
+        "rounds_completed": 1,
+        "results_by_round": [
+          { "round": 1, "venue": "Australia", "grid": 18, "finish": "DNF", "pts": 0, "status": "mech", "note": "Retired — VSC 2" },
+          { "round": 2, "venue": "China",     "grid": null,"finish": 13,  "pts": 0, "status": "running" }
+        ],
+        "teammate_quali_record": { "ahead": 0, "behind": 0, "teammate": null },
+        "teammate_race_record":  { "ahead": 0, "behind": 0, "teammate": null }
+      },
+      "career": {
+        "seasons": 15,
+        "wins": 10,
+        "podiums": 67,
+        "poles": 20,
+        "fastest_laps": 19,
+        "championships": 0,
+        "first_race": "2013 Australian Grand Prix",
+        "first_win":  "2017 Russian Grand Prix",
+        "teams": ["williams", "mercedes", "sauber", "cadillac"]
+      }
+    },
+
+    {
+      "id": "alonso-fernando",
+      "name": "Fernando Alonso",
+      "short": "Alonso",
+      "code": "ALO",
+      "number": 14,
+      "nationality": "Spanish",
+      "flag": "🇪🇸",
+      "dob": "1981-07-29",
+      "team": "aston-martin",
+      "team_name": "Aston Martin Aramco F1 Team",
+      "color": "358C75",
+      "assets": {
+        "photo": "alonso-fernando.jpg",
+        "number_logo": "14.svg",
+        "helmet": "alonso-fernando-helmet.png"
+      },
+      "bio": "Two-time World Champion at 44 years old, still racing at the highest level. Retired from the China GP at Lap 35 due to vibrations — later revealed as a health scare. DNS in Australia (PU failure in Q1). A difficult start to what may be one of his final seasons.",
+      "season_2026": {
+        "pts": 0,
+        "wins": 0,
+        "podiums": 0,
+        "poles": 0,
+        "fastest_laps": 0,
+        "dnfs": 2,
+        "rounds_completed": 0,
+        "results_by_round": [
+          { "round": 1, "venue": "Australia", "grid": 15, "finish": null,  "pts": 0, "status": "running", "note": "Q2 elimination" },
+          { "round": 2, "venue": "China",     "grid": null,"finish": "DNF","pts": 0, "status": "mech",    "note": "Retired Lap 35 — vibrations / health scare" }
+        ],
+        "teammate_quali_record": { "ahead": 0, "behind": 0, "teammate": "stroll-lance" },
+        "teammate_race_record":  { "ahead": 0, "behind": 0, "teammate": "stroll-lance" }
+      },
+      "career": {
+        "seasons": 23,
+        "wins": 32,
+        "podiums": 106,
+        "poles": 22,
+        "fastest_laps": 23,
+        "championships": 2,
+        "championship_years": [2005, 2006],
+        "first_race": "2001 Australian Grand Prix",
+        "first_win":  "2003 Hungarian Grand Prix",
+        "teams": ["minardi", "renault", "mclaren", "ferrari", "alpine", "aston-martin"]
+      }
+    },
+
+    {
+      "id": "stroll-lance",
+      "name": "Lance Stroll",
+      "short": "Stroll",
+      "code": "STR",
+      "number": 18,
+      "nationality": "Canadian",
+      "flag": "🇨🇦",
+      "dob": "1998-10-29",
+      "team": "aston-martin",
+      "team_name": "Aston Martin Aramco F1 Team",
+      "color": "2A7A5E",
+      "assets": {
+        "photo": "stroll-lance.jpg",
+        "number_logo": "18.svg",
+        "helmet": "stroll-lance-helmet.png"
+      },
+      "bio": "DNS in Australia from a power unit failure. Retired in China from a suspected battery issue. Zero points from two rounds for Aston Martin. The team that ran second in the 2023 constructors' championship is now struggling in the lower midfield.",
+      "season_2026": {
+        "pts": 0,
+        "wins": 0,
+        "podiums": 0,
+        "poles": 0,
+        "fastest_laps": 0,
+        "dnfs": 2,
+        "rounds_completed": 0,
+        "results_by_round": [
+          { "round": 1, "venue": "Australia", "grid": 17, "finish": "DNS", "pts": 0, "status": "dns", "note": "PU failure in Q1" },
+          { "round": 2, "venue": "China",     "grid": null,"finish": "DNF","pts": 0, "status": "mech","note": "Retired Lap 28 — suspected battery" }
+        ],
+        "teammate_quali_record": { "ahead": 0, "behind": 0, "teammate": "alonso-fernando" },
+        "teammate_race_record":  { "ahead": 0, "behind": 0, "teammate": "alonso-fernando" }
+      },
+      "career": {
+        "seasons": 10,
+        "wins": 0,
+        "podiums": 3,
+        "poles": 1,
+        "fastest_laps": 0,
+        "championships": 0,
+        "first_race": "2017 Australian Grand Prix",
+        "teams": ["williams", "racing-point", "aston-martin"]
+      }
+    },
+
+    {
+      "id": "ocon-esteban",
+      "name": "Esteban Ocon",
+      "short": "Ocon",
+      "code": "OCO",
+      "number": 31,
+      "nationality": "French",
+      "flag": "🇫🇷",
+      "dob": "1996-09-17",
+      "team": "haas",
+      "team_name": "MoneyGram Haas F1 Team",
+      "color": "999999",
+      "assets": {
+        "photo": "ocon-esteban.jpg",
+        "number_logo": "31.svg",
+        "helmet": "ocon-esteban-helmet.png"
+      },
+      "bio": "Moved from Alpine to Haas for 2026. Involved in a first-lap collision with team-mate Colapinto in China. Consistently in the midfield but yet to score points in 2026's opening two rounds.",
+      "season_2026": {
+        "pts": 0,
+        "wins": 0,
+        "podiums": 0,
+        "poles": 0,
+        "fastest_laps": 0,
+        "dnfs": 0,
+        "rounds_completed": 2,
+        "results_by_round": [
+          { "round": 1, "venue": "Australia", "grid": 16, "finish": null, "pts": 0, "status": "running" },
+          { "round": 2, "venue": "China",     "grid": null,"finish": null,"pts": 0, "status": "running", "note": "Collided with Colapinto L1" }
+        ],
+        "teammate_quali_record": { "ahead": 0, "behind": 2, "teammate": "bearman-oliver" },
+        "teammate_race_record":  { "ahead": 0, "behind": 2, "teammate": "bearman-oliver" }
+      },
+      "career": {
+        "seasons": 9,
+        "wins": 1,
+        "podiums": 3,
+        "poles": 0,
+        "fastest_laps": 1,
+        "championships": 0,
+        "first_race": "2016 Belgian Grand Prix",
+        "first_win":  "2021 Hungarian Grand Prix",
+        "teams": ["force-india", "racing-point", "renault", "alpine", "haas"]
+      }
+    }
+
+  ],
+
+  "teams": {
+    "mercedes":      { "id": "mercedes",      "name": "Mercedes-AMG Petronas",     "short": "Mercedes",     "color": "27F4D2", "base": "Brackley, UK",      "principal": "Toto Wolff"         },
+    "ferrari":       { "id": "ferrari",        "name": "Scuderia Ferrari",           "short": "Ferrari",      "color": "E8002D", "base": "Maranello, Italy",  "principal": "Frédéric Vasseur"   },
+    "mclaren":       { "id": "mclaren",        "name": "McLaren Formula 1 Team",     "short": "McLaren",      "color": "FF8000", "base": "Woking, UK",        "principal": "Andrea Stella"      },
+    "red-bull":      { "id": "red-bull",       "name": "Oracle Red Bull Racing",     "short": "Red Bull",     "color": "3671C6", "base": "Milton Keynes, UK", "principal": "Christian Horner"   },
+    "haas":          { "id": "haas",           "name": "MoneyGram Haas F1 Team",     "short": "Haas",         "color": "B6BABD", "base": "Kannapolis, USA",   "principal": "Ayao Komatsu"       },
+    "alpine":        { "id": "alpine",         "name": "BWT Alpine F1 Team",         "short": "Alpine",       "color": "0090FF", "base": "Enstone, UK",       "principal": "Oliver Oakes"       },
+    "racing-bulls":  { "id": "racing-bulls",   "name": "Visa Cash App Racing Bulls", "short": "Racing Bulls", "color": "6692FF", "base": "Faenza, Italy",     "principal": "Laurent Mekies"     },
+    "williams":      { "id": "williams",       "name": "Williams Racing",            "short": "Williams",     "color": "005AFF", "base": "Grove, UK",         "principal": "James Vowles"       },
+    "audi":          { "id": "audi",           "name": "Audi Formula Racing",        "short": "Audi",         "color": "00CC00", "base": "Hinwil, Switzerland","principal": "Mattia Binotto"     },
+    "cadillac":      { "id": "cadillac",       "name": "Cadillac F1 Team",           "short": "Cadillac",     "color": "CC2200", "base": "Banbury, UK",       "principal": "TBD"                },
+    "aston-martin":  { "id": "aston-martin",   "name": "Aston Martin Aramco F1 Team","short": "Aston Martin", "color": "358C75", "base": "Silverstone, UK",   "principal": "Mike Krack"         }
+  }
+}

@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 240" width="200" height="240">
+  <!-- Background -->
+  <rect width="200" height="240" rx="8" fill="#0F0F18"/>
+  <!-- Team colour top band -->
+  <rect width="200" height="6" rx="0" fill="#E8002D"/>
+  <!-- Large initials circle -->
+  <circle cx="100" cy="110" r="72" fill="#E8002D" opacity="0.12"/>
+  <circle cx="100" cy="110" r="68" fill="none" stroke="#E8002D" stroke-width="1.5" opacity="0.3"/>
+  <!-- Initials -->
+  <text x="100" y="128"
+        font-family="'Arial Black', sans-serif"
+        font-size="52"
+        font-weight="900"
+        fill="#E8002D"
+        text-anchor="middle"
+        letter-spacing="-2">CL</text>
+  <!-- Name strip -->
+  <rect y="198" width="200" height="42" rx="0" fill="#E8002D" opacity="0.15"/>
+  <text x="100" y="225"
+        font-family="Arial, sans-serif"
+        font-size="11"
+        font-weight="700"
+        fill="#E8002D"
+        text-anchor="middle"
+        letter-spacing="1.5">CHARLES LECLERC</text>
+  <!-- Photo placeholder label -->
+  <text x="100" y="180"
+        font-family="Arial, sans-serif"
+        font-size="8"
+        fill="#E8002D"
+        text-anchor="middle"
+        opacity="0.4"
+        letter-spacing="1">PHOTO PENDING</text>
+</svg>

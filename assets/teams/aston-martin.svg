@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <rect width="100" height="100" rx="4" fill="#021209"/>
+  <rect width="100" height="4" rx="0" fill="#358C75"/>
+  <rect y="96" width="100" height="4" rx="0" fill="#358C75" opacity="0.3"/>
+  
+    <text x="50" y="38" font-family="'Arial Black', sans-serif" font-size="15"
+          font-weight="900" fill="#358C75" text-anchor="middle" letter-spacing="2">ASTON</text>
+    <text x="50" y="62" font-family="'Arial Black', sans-serif" font-size="15"
+          font-weight="900" fill="#358C75" text-anchor="middle" letter-spacing="2">MARTIN</text>
+</svg>

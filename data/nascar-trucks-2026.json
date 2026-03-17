@@ -1,0 +1,232 @@
+{
+  "series": "nascar-trucks",
+  "year": 2026,
+  "rounds_total": 25,
+  "standings": {
+    "note": "After Round 3 — St. Petersburg. Exact standings from nascar.com pending. After R2: Smith led by 28 pts over Ruggiero.",
+    "drivers": [
+      { "pos":1,  "driver":"Chandler Smith",  "short":"C. Smith",  "number":"38", "team":"DGM Racing",              "car":"Ford",   "pts":0,   "wins":1, "color":"#CC4400" },
+      { "pos":2,  "driver":"Gio Ruggiero",    "short":"Ruggiero",  "number":"17", "team":"DGM Racing",              "car":"Ford",   "pts":0,   "wins":0, "color":"#447700" },
+      { "pos":3,  "driver":"Ben Rhodes",      "short":"Rhodes",    "number":"99", "team":"ThorSport Racing",         "car":"Ford",   "pts":0,   "wins":0, "color":"#558800" },
+      { "pos":4,  "driver":"Ty Majeski",      "short":"Majeski",   "number":"88", "team":"ThorSport Racing",         "car":"Ford",   "pts":0,   "wins":0, "color":"#4466AA" },
+      { "pos":5,  "driver":"Stewart Friesen", "short":"Friesen",   "number":"52", "team":"Halmar Friesen Racing",    "car":"Chevy",  "pts":0,   "wins":0, "color":"#884499" },
+      { "pos":6,  "driver":"Layne Riggs",     "short":"Riggs",     "number":"41", "team":"TRICON Garage",            "car":"Toyota", "pts":0,   "wins":1, "color":"#CC5500" },
+      { "pos":7,  "driver":"Christian Eckes", "short":"Eckes",     "number":"91", "team":"McAnally-Hilgemann Racing","car":"Chevy",  "pts":0,   "wins":0, "color":"#0044AA" },
+      { "pos":8,  "driver":"Tyler Ankrum",    "short":"Ankrum",    "number":"18", "team":"TBD",                      "car":"Chevy",  "pts":0,   "wins":0, "color":"#336688" }
+    ]
+  },
+  "schedule": [
+    {
+      "round": 1,
+      "name": "Fresh From Florida 250",
+      "venue": "Daytona International Speedway",
+      "location": "Daytona Beach, Florida",
+      "circuit_type": "oval_super",
+      "flag": "🇺🇸",
+      "date": "2026-02-13",
+      "laps": 101,
+      "distance_miles": 252.5,
+      "complete": true,
+      "summary": "Chandler Smith made a breathtaking four-wide move in the tri-oval on the final lap to win the Daytona opener. Smith had won Stage 2 and been a consistent presence at the front all night — but the race was far from settled until that final corner, where he threaded between three other trucks to take the lead and the win. Tony Stewart made his Trucks comeback at 54 years old. Ram returned to NASCAR for the first time since 2012.",
+      "quali": {
+        "pole_driver": "Ty Majeski", "pole_speed": "TBD",
+        "grid": [
+          { "pos":1, "driver":"Ty Majeski",     "number":"88","team":"ThorSport Racing","car":"Ford",  "speed":"TBD" },
+          { "pos":2, "driver":"TBD",            "number":"TBD","team":"TBD",           "car":"TBD",   "speed":"TBD" }
+        ]
+      },
+      "stages": [
+        { "number":1, "laps":"1-35",   "winner":"Carson Hocevar",  "number_car":"77", "note":"Hocevar driving Spire Motorsports" },
+        { "number":2, "laps":"36-70",  "winner":"Chandler Smith",  "number_car":"38" },
+        { "number":3, "laps":"71-101", "winner":"Chandler Smith",  "number_car":"38" }
+      ],
+      "race": {
+        "winner": "Chandler Smith",
+        "laps_led_leader": "Chandler Smith",
+        "laps_led_count": 0,
+        "cautions": 0,
+        "lead_changes": 0,
+        "margin": "TBD",
+        "results": [
+          { "pos":1, "driver":"Chandler Smith",  "number":"38","team":"DGM Racing",            "car":"Ford", "laps_led":0,"gap":null, "status":"running" },
+          { "pos":2, "driver":"TBD",             "number":"TBD","team":"TBD",                 "car":"TBD",  "laps_led":0,"gap":"TBD","status":"running" },
+          { "pos":3, "driver":"TBD",             "number":"TBD","team":"TBD",                 "car":"TBD",  "laps_led":0,"gap":"TBD","status":"running" }
+        ]
+      },
+      "stats": [
+        { "value":"4-wide","label":"Winning move",   "note":"Final lap, tri-oval" },
+        { "value":"101",   "label":"Race laps",      "note":"252.5 miles" },
+        { "value":"2026",  "label":"Ram returns",    "note":"First Ram since 2012" },
+        { "value":"54",    "label":"Tony Stewart age","note":"Series return after 21 years" }
+      ],
+      "story_cards": [
+        { "title":"Four-Wide for the Win","body":"Chandler Smith's winning move at Daytona was the kind of moment that gets replayed for years. Leading into the tri-oval on the final lap with trucks stacked three-wide, Smith dove to the inside of the fourth lane and threaded the needle between three trucks to emerge first. It was audacious, precise, and perfectly timed. His first win of 2026 earned from pure opportunism at 185mph." },
+        { "title":"Stewart's Return","body":"Tony Stewart, 54 years old and more than two decades removed from his last Trucks start, made his return at Daytona for the series' season opener. He ran the Daytona race for the occasion of Ram's return to NASCAR — a manufacturer he was involved with before their departure in 2012. He finished respectably and absorbed the nostalgia of a packed Daytona grandstand watching a Hall of Famer take another lap." },
+        { "title":"Ram Is Back","body":"Kaulig Racing debuted as Ram's flagship team for 2026 — the manufacturer's first appearance in NASCAR since their withdrawal in 2012. The Ram trucks, prepared by Kaulig's new Truck Series programme, showed genuine early-season competitiveness. The return of a third manufacturer in a series that had been a Ford-Toyota-Chevrolet battle for 14 years changes the competitive dynamic significantly." },
+        { "title":"Heim Part-Time","body":"Corey Heim — the reigning 2025 Trucks Series champion — chose to run a part-time schedule with TRICON Garage in 2026 rather than defend his title full-time. His Daytona entry showed pace before the late-race superspeedway chaos. The decision to step back rather than defend is unusual for a reigning champion and opens the door for a new champion in a wide-open 2026 field." }
+      ],
+      "insights": [
+        { "type":"win",    "icon":"🏆","headline":"Smith's Statement Opening","body":"Winning the Daytona opener via a four-wide move on the final lap is about as high-profile as a Trucks season can start. Chandler Smith enters 2026 as one of DGM Racing's primary title contenders, and a Daytona win immediately puts him in the conversation. The early-season points lead means every other team is now chasing." },
+        { "type":"history","icon":"⭐","headline":"Ram + Stewart — An Era Returns","body":"The last time Ram was in NASCAR and Tony Stewart was a Trucks regular was a different era of the sport. Both returned to Daytona in 2026, creating a genuine nostalgia moment at the sport's most iconic venue. The TV numbers for this race were the best for a Trucks Daytona since 2018." },
+        { "type":"points", "icon":"📊","headline":"25-Race Season — Who Benefits?","body":"The 2026 Trucks season runs 25 races, down from the recent range of 22-23. Heim's part-time schedule means the championship is genuinely open. Smith leads, but with Riggs, Rhodes, Majeski and Eckes all capable of winning multiple races, the 2026 title chase could go to the final race." }
+      ]
+    },
+    {
+      "round": 2,
+      "name": "Fr8 Racing 208",
+      "venue": "EchoPark Speedway",
+      "location": "Hampton, Georgia",
+      "circuit_type": "oval_super",
+      "flag": "🇺🇸",
+      "date": "2026-02-21",
+      "laps": 125,
+      "distance_miles": 192.5,
+      "complete": true,
+      "summary": "Kyle Busch drove to his record 68th career Trucks win at Atlanta — and his ninth at the track — winning by 0.114 seconds over Carson Hocevar after a race shortened 10 laps by adverse weather and time constraints. Ben Rhodes led 70 laps and was the dominant force until running out of fuel two laps before the end of Stage 2, dropping a lap down before recovering to fourth. The race encapsulated everything that makes the Trucks series at Atlanta unpredictable.",
+      "quali": {
+        "pole_driver": "Jake Garcia", "pole_speed": "TBD",
+        "grid": [
+          { "pos":1, "driver":"Jake Garcia",    "number":"TBD","team":"TBD",              "car":"TBD",  "speed":"TBD" },
+          { "pos":2, "driver":"Ben Rhodes",     "number":"99", "team":"ThorSport Racing", "car":"Ford", "speed":"TBD" },
+          { "pos":3, "driver":"Kyle Busch",     "number":"7",  "team":"Spire Motorsports","car":"Chevy","speed":"TBD", "note":"Cup driver" }
+        ]
+      },
+      "stages": [
+        { "number":1, "laps":"1-45",  "winner":"Ben Rhodes",  "number_car":"99" },
+        { "number":2, "laps":"46-80", "winner":"TBD",         "number_car":"TBD", "note":"Rhodes ran out of fuel before stage end" },
+        { "number":3, "laps":"81-125","winner":"Kyle Busch",  "number_car":"7",   "note":"Race shortened 10 laps from 135" }
+      ],
+      "race": {
+        "winner": "Kyle Busch",
+        "laps_led_leader": "Ben Rhodes",
+        "laps_led_count": 70,
+        "cautions": 0,
+        "lead_changes": 0,
+        "margin": "0.114s",
+        "results": [
+          { "pos":1, "driver":"Kyle Busch",      "number":"7",  "team":"Spire Motorsports", "car":"Chevy","laps_led":37,"gap":null,      "status":"running", "note":"Cup driver — no champ pts" },
+          { "pos":2, "driver":"Carson Hocevar",  "number":"77", "team":"Spire Motorsports", "car":"Chevy","laps_led":0, "gap":"+0.114s","status":"running" },
+          { "pos":3, "driver":"Gio Ruggiero",    "number":"17", "team":"DGM Racing",         "car":"Ford", "laps_led":0, "gap":"TBD",   "status":"running" },
+          { "pos":4, "driver":"Ben Rhodes",      "number":"99", "team":"ThorSport Racing",   "car":"Ford", "laps_led":70,"gap":"TBD",   "status":"running", "note":"Ran out of fuel, went a lap down, recovered" },
+          { "pos":5, "driver":"Corey Heim",      "number":"11", "team":"TRICON Garage",      "car":"Toyota","laps_led":6,"gap":"TBD",   "status":"running", "note":"Part-time Cup driver" },
+          { "pos":6, "driver":"Chandler Smith",  "number":"38", "team":"DGM Racing",         "car":"Ford", "laps_led":0, "gap":"TBD",   "status":"running" }
+        ]
+      },
+      "stats": [
+        { "value":"68",    "label":"Busch career wins",  "note":"All-time record" },
+        { "value":"9",     "label":"Busch Atlanta wins", "note":"Also a record" },
+        { "value":"70",    "label":"Rhodes laps led",    "note":"Ran out of fuel" },
+        { "value":"0.114s","label":"Win margin",         "note":"Busch over Hocevar" },
+        { "value":"125",   "label":"Laps run",           "note":"Shortened from 135" },
+        { "value":"28",    "label":"Smith pts lead",     "note":"Over Ruggiero after R2" }
+      ],
+      "position_tracker": {
+        "labels": ["L1","L30","L60","L80","L100","L125"],
+        "drivers": [
+          { "name":"Rhodes",  "color":"#558800", "positions":[2,1,1,null,4,4] },
+          { "name":"Busch",   "color":"#FF6600", "positions":[3,2,2,1,1,1] },
+          { "name":"Hocevar", "color":"#888888", "positions":[18,10,6,3,2,2] },
+          { "name":"Ruggiero","color":"#447700", "positions":[10,7,5,4,3,3] },
+          { "name":"C. Smith","color":"#CC4400", "positions":[22,18,14,8,6,6] }
+        ]
+      },
+      "driver_of_race": {
+        "driver":"Kyle Busch","number":"7","team":"Spire Motorsports (Cup driver)",
+        "badge":"🏆 Driver of the Race",
+        "stats":[{"value":"P1","label":"Finish"},{"value":"68th","label":"Career win"},{"value":"9","label":"Atlanta wins"},{"value":"0.114s","label":"Margin"}],
+        "analysis":"Won his record 68th career Trucks race — and ninth at Atlanta specifically — with the calm of a driver who has been here before. Busch started third, built his way to the front during the second half, and held on as weather shortened the race. A Cup driver taking a win the series regulars needed, but a genuinely historic moment for the all-time wins record."
+      },
+      "story_cards": [
+        { "title":"The Record 68th","body":"Kyle Busch arrived at Atlanta having won more Trucks races than any driver in series history — 67. He left with 68. The record-setting win came on the 1.54-mile superspeedway he has made his personal domain, winning nine times. The margin was 0.114 seconds over Carson Hocevar after a race shortened by weather. Busch described it as 'typical Atlanta' — anything but simple." },
+        { "title":"Rhodes Runs Dry","body":"Ben Rhodes led 70 laps and had the dominant truck. Then, two laps before the end of Stage 2, his fuel ran out. He went a lap down, fell as far back as P15, and then — with the raw pace he'd shown all race — charged back to fourth. It was the most painful way to lose a race you dominated: not by being overtaken, but by running out of petrol with 55 laps still remaining." },
+        { "title":"Hocevar Close","body":"Carson Hocevar started 18th and finished second — a reminder of just how talented the 23-year-old is at superspeedway drafting. His Spire Motorsports Chevy found positions through traffic that his starting spot made extremely difficult, and he was half a truck-length from beating a future Hall of Famer at Atlanta. His Trucks career stats at 1.5-mile tracks are already among the best in the series." },
+        { "title":"Shortened by Weather","body":"The race was cut 10 laps short due to weather approaching and time constraints around the O'Reilly Auto Parts Series race also using EchoPark. 125 laps instead of 135 changed nothing at the front — Busch had it covered — but it may have cost Rhodes a chance at recovery. With 10 more laps of green-flag racing, his fuel strategy would have been reset under a caution and the result could have looked very different." }
+      ],
+      "insights": [
+        { "type":"history","icon":"⭐","headline":"Record 68 — By Far the Most","body":"Kyle Busch's 68th career Trucks win is so far beyond anyone else's total that it barely registers how dominant the number is. The second-highest active total is Ben Rhodes at around 12. Busch has won more Trucks races than the next three drivers combined. When he enters a race, he wins it at a 37% rate at Atlanta specifically." },
+        { "type":"crash",  "icon":"💥","headline":"Rhodes' Cruel Fuel Miscalculation","body":"Running out of fuel while leading with 55 laps to go is a crew chief error, not a driver error. The miscalculation cost ThorSport a potential win and dropped Rhodes from first to a lap down in seconds. He recovered to fourth — showing his pace was real — but the result was preventable." },
+        { "type":"points", "icon":"📊","headline":"Smith Leads — But Not From This Race","body":"Chandler Smith finished sixth and left Atlanta still leading the championship by 28 points over Ruggiero. Busch's win doesn't affect the championship (Cup driver, no points eligible). The series regulars' best performances were from Ruggiero (P3), Rhodes (P4) and Heim (P5)." }
+      ]
+    },
+    {
+      "round": 3,
+      "name": "OnlyBulls Green Flag 150",
+      "venue": "Streets of St. Petersburg",
+      "location": "St. Petersburg, Florida",
+      "circuit_type": "street",
+      "flag": "🇺🇸",
+      "date": "2026-02-28",
+      "laps": 51,
+      "distance_miles": 92.0,
+      "complete": true,
+      "summary": "Layne Riggs coasted to the finish line on fumes to win the Truck Series' first ever street circuit race at St. Petersburg — holding on by enough fuel to claim victory and keep the Trucks series' remarkable streak of variety intact. Ben Rhodes dominated Stage 1, Tyler Ankrum led 39 laps, but Riggs managed his fuel and tyres over the final stretch to emerge ahead of them both. Heat exhaustion, IndyCar legends, and a historically close finish defined the day.",
+      "quali": {
+        "pole_driver": "Connor Mosack", "pole_speed": "TBD",
+        "grid": [
+          { "pos":1, "driver":"Connor Mosack", "number":"TBD","team":"TBD","car":"TBD","speed":"TBD" }
+        ]
+      },
+      "stages": [
+        { "number":1, "laps":"1-17",  "winner":"Ben Rhodes",   "number_car":"99", "note":"Rhodes led 23 laps total in the race" },
+        { "number":2, "laps":"18-34", "winner":"Chandler Smith","number_car":"38", "note":"Smith led 3 laps; Ankrum led 7 laps in Stage 2" },
+        { "number":3, "laps":"35-51", "winner":"Layne Riggs",   "number_car":"41", "note":"Won on fuel strategy" }
+      ],
+      "race": {
+        "winner": "Layne Riggs",
+        "laps_led_leader": "Tyler Ankrum",
+        "laps_led_count": 39,
+        "cautions": 0,
+        "lead_changes": 0,
+        "margin": "TBD",
+        "results": [
+          { "pos":1, "driver":"Layne Riggs",     "number":"41","team":"TRICON Garage",       "car":"Toyota","laps_led":0, "gap":null, "status":"running", "note":"Won on fuel strategy" },
+          { "pos":2, "driver":"TBD",             "number":"TBD","team":"TBD",               "car":"TBD",   "laps_led":0, "gap":"TBD","status":"running" },
+          { "pos":3, "driver":"TBD",             "number":"TBD","team":"TBD",               "car":"TBD",   "laps_led":0, "gap":"TBD","status":"running" },
+          { "pos":4, "driver":"Ben Rhodes",      "number":"99","team":"ThorSport Racing",    "car":"Ford",  "laps_led":23,"gap":"TBD","status":"running" },
+          { "pos":10,"driver":"Tyler Ankrum",    "number":"18","team":"TBD",                "car":"TBD",   "laps_led":39,"gap":"TBD","status":"running", "note":"Led most laps, hit wall L83" }
+        ]
+      },
+      "stats": [
+        { "value":"1st","label":"Trucks street race ever",     "note":"Historic milestone" },
+        { "value":"39", "label":"Ankrum laps led",             "note":"Hit wall L83, finished 10th" },
+        { "value":"6",  "label":"Riggs career wins",           "note":"First at a street circuit" },
+        { "value":"Fuel","label":"How Riggs won",              "note":"Coasted to the line on fumes" }
+      ],
+      "story_cards": [
+        { "title":"History on the Streets","body":"The Trucks series had never raced on a street circuit in its 32-year history. St. Petersburg ended that. Connor Mosack won pole — a significant achievement on a circuit none of the Trucks regulars had ever driven. The race itself was precisely what the series organisers hoped for: messy, strategic, and wildly entertaining for the IndyCar fans already in town for their season opener." },
+        { "title":"Riggs on Fumes","body":"Layne Riggs won by managing fuel across the final stint so carefully that he crossed the finish line with essentially nothing left in the tank. His TRICON Garage Toyota was fast but not the fastest truck — his win was a crew chief masterclass in fuel strategy on a circuit where the expected pace was unknown. The sixth career win was arguably his most strategic." },
+        { "title":"Ankrum's Misfortune","body":"Tyler Ankrum led 39 laps — the most of anyone — won Stage 2, and was on course for his first career win. A lap 83 scrape with the barrier at the tight final hairpin damaged his truck and ended his challenge for the win. He finished 10th in a race that was his to lose until the wall intervened." },
+        { "title":"Franchitti and Hinchcliffe","body":"Four-time IndyCar champion Dario Franchitti and 2012 Indianapolis 500 pole-sitter James Hinchcliffe both entered the inaugural Trucks street race as part of IndyCar's St. Petersburg race week. Franchitti finished both stages in the top 10 and was genuinely competitive. Hinchcliffe described the stock car as 'a totally different physical experience' to the IndyCar. Both were received warmly by the NASCAR paddock." }
+      ],
+      "insights": [
+        { "type":"history","icon":"🏙️","headline":"32 Years — Finally a Street Race","body":"The Trucks series began in 1995 and had never run a temporary street circuit. St. Petersburg changed that in 2026 as part of NASCAR's broader push to bring the series to non-traditional venues. The race delivered and the circuit will almost certainly return to the schedule. The IndyCar crossover element — Franchitti and Hinchcliffe — gave the event mainstream coverage beyond the traditional NASCAR audience." },
+        { "type":"strategy","icon":"🔧","headline":"Fuel Strategy on an Unknown Circuit","body":"Nobody had data. No team had run their truck for 51 laps around the 1.8-mile St. Pete layout before race day. Riggs' crew chief made the fuel calculation correctly; Ankrum's didn't quite survive the length and a wall scrape. On a new circuit, fuel management is the first strategic lever any team can pull — Riggs' crew pulled it perfectly." },
+        { "type":"points","icon":"📊","headline":"Three Races, Three Winners","body":"Smith, Busch (Cup driver), Riggs. Only Smith's win counts for the championship. Three rounds in, the series stands wide open. No driver has demonstrated the consistency to run away with the title yet — which sets up an absorbing mid-season battle once the regular 25-race schedule picks up pace after Darlington." }
+      ]
+    },
+    {
+      "round": 4,
+      "name": "Buckle Up South Carolina 200",
+      "venue": "Darlington Raceway",
+      "location": "Darlington, South Carolina",
+      "circuit_type": "oval_1.5",
+      "flag": "🇺🇸",
+      "date": "2026-03-20",
+      "laps": 147,
+      "distance_miles": 200.0,
+      "complete": false,
+      "summary": null
+    },
+    {
+      "round": 5,
+      "name": "Black's Tire 200",
+      "venue": "Rockingham Speedway",
+      "location": "Rockingham, North Carolina",
+      "circuit_type": "oval_1.0",
+      "flag": "🇺🇸",
+      "date": "2026-04-03",
+      "complete": false,
+      "summary": null
+    }
+  ]
+}

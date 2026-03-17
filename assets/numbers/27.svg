@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 80" width="120" height="80">
+  <defs>
+    <filter id="glow-27">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+  <!-- Background -->
+  <rect width="120" height="80" rx="6" fill="#07070B"/>
+  <!-- Accent border left -->
+  <rect width="4" height="80" rx="0" fill="#009900"/>
+  <!-- Number -->
+  <text x="65" y="62"
+        font-family="'Arial Black', Impact, sans-serif"
+        font-size="54"
+        font-weight="900"
+        fill="#009900"
+        text-anchor="middle"
+        filter="url(#glow-27)"
+        opacity="0.15">27</text>
+  <text x="65" y="62"
+        font-family="'Arial Black', Impact, sans-serif"
+        font-size="54"
+        font-weight="900"
+        fill="#009900"
+        text-anchor="middle">27</text>
+</svg>

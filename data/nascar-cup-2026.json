@@ -1,0 +1,2226 @@
+{
+  "series": "nascar-cup",
+  "year": 2026,
+  "rounds_total": 36,
+  "standings": {
+    "drivers": [
+      {
+        "pos": 1,
+        "driver": "Tyler Reddick",
+        "short": "Reddick",
+        "number": "45",
+        "team": "23XI Racing",
+        "car": "Toyota",
+        "pts": 251,
+        "wins": 3,
+        "color": "#CC0088"
+      },
+      {
+        "pos": 2,
+        "driver": "Ryan Blaney",
+        "short": "Blaney",
+        "number": "12",
+        "team": "Team Penske",
+        "car": "Ford",
+        "pts": 191,
+        "wins": 1,
+        "color": "#0044CC"
+      },
+      {
+        "pos": 3,
+        "driver": "Bubba Wallace",
+        "short": "Wallace",
+        "number": "23",
+        "team": "23XI Racing",
+        "car": "Toyota",
+        "pts": 179,
+        "wins": 0,
+        "color": "#4466FF"
+      },
+      {
+        "pos": 4,
+        "driver": "Chase Elliott",
+        "short": "Elliott",
+        "number": "9",
+        "team": "Hendrick Motorsports",
+        "car": "Chevy",
+        "pts": 154,
+        "wins": 0,
+        "color": "#00AA44"
+      },
+      {
+        "pos": 5,
+        "driver": "Shane van Gisbergen",
+        "short": "SVG",
+        "number": "97",
+        "team": "Trackhouse Racing",
+        "car": "Chevy",
+        "pts": 141,
+        "wins": 0,
+        "color": "#880088"
+      },
+      {
+        "pos": 6,
+        "driver": "Christopher Bell",
+        "short": "Bell",
+        "number": "20",
+        "team": "Joe Gibbs Racing",
+        "car": "Toyota",
+        "pts": 138,
+        "wins": 0,
+        "color": "#FF6600"
+      },
+      {
+        "pos": 7,
+        "driver": "Joey Logano",
+        "short": "Logano",
+        "number": "22",
+        "team": "Team Penske",
+        "car": "Ford",
+        "pts": 138,
+        "wins": 0,
+        "color": "#0066AA"
+      },
+      {
+        "pos": 8,
+        "driver": "Kyle Larson",
+        "short": "Larson",
+        "number": "5",
+        "team": "Hendrick Motorsports",
+        "car": "Chevy",
+        "pts": 132,
+        "wins": 0,
+        "color": "#CC4400"
+      },
+      {
+        "pos": 9,
+        "driver": "Denny Hamlin",
+        "short": "Hamlin",
+        "number": "11",
+        "team": "Joe Gibbs Racing",
+        "car": "Toyota",
+        "pts": 128,
+        "wins": 1,
+        "color": "#AA3300"
+      },
+      {
+        "pos": 10,
+        "driver": "Chase Briscoe",
+        "short": "Briscoe",
+        "number": "19",
+        "team": "Joe Gibbs Racing",
+        "car": "Toyota",
+        "pts": 122,
+        "wins": 0,
+        "color": "#996600"
+      }
+    ],
+    "note": "After Round 5 \u2014 Las Vegas. Reddick still leads. Exact final standings pending nascar.com update."
+  },
+  "schedule": [
+    {
+      "round": 1,
+      "name": "Daytona 500",
+      "venue": "Daytona International Speedway",
+      "location": "Daytona Beach, Florida",
+      "circuit_type": "oval_super",
+      "flag": "\ud83c\uddfa\ud83c\uddf8",
+      "date": "2026-02-15",
+      "time_local": "13:30",
+      "timezone": "America/New_York",
+      "laps": 200,
+      "distance_miles": 500.0,
+      "complete": true,
+      "summary": "Tyler Reddick led only the final lap \u2014 the fourth driver in 68 Daytona 500s to win after leading just one \u2014 surging through a crashing field on a push from 23XI team-mate Riley Herbst at the white flag. A record 25 different drivers led laps in the same race. Carson Hocevar led at the white flag and lost it all. Michael Jordan's greatest trophy as a team owner.",
+      "quali": {
+        "session": "Daytona 500 Qualifying",
+        "pole_driver": "Kyle Busch",
+        "pole_speed": "183.651 mph",
+        "format": "superspeedway",
+        "grid": [
+          {
+            "pos": 1,
+            "driver": "Kyle Busch",
+            "number": "8",
+            "team": "RCR",
+            "car": "Chevy",
+            "speed": "183.651"
+          },
+          {
+            "pos": 2,
+            "driver": "Chase Briscoe",
+            "number": "19",
+            "team": "Joe Gibbs Racing",
+            "car": "Toyota",
+            "speed": "183.488"
+          },
+          {
+            "pos": 3,
+            "driver": "Tyler Reddick",
+            "number": "45",
+            "team": "23XI Racing",
+            "car": "Toyota",
+            "speed": "183.201"
+          },
+          {
+            "pos": 4,
+            "driver": "Bubba Wallace",
+            "number": "23",
+            "team": "23XI Racing",
+            "car": "Toyota",
+            "speed": "183.050"
+          },
+          {
+            "pos": 5,
+            "driver": "Joey Logano",
+            "number": "22",
+            "team": "Team Penske",
+            "car": "Ford",
+            "speed": "182.990"
+          }
+        ]
+      },
+      "stages": [
+        {
+          "number": 1,
+          "laps": "1-65",
+          "winner": "Zane Smith",
+          "number_car": "38"
+        },
+        {
+          "number": 2,
+          "laps": "66-130",
+          "winner": "Bubba Wallace",
+          "number_car": "23"
+        },
+        {
+          "number": 3,
+          "laps": "131-200",
+          "winner": "Tyler Reddick",
+          "number_car": "45"
+        }
+      ],
+      "race": {
+        "winner": "Tyler Reddick",
+        "laps_led_leader": "Bubba Wallace",
+        "laps_led_count": 40,
+        "cautions": 8,
+        "caution_laps": 57,
+        "lead_changes": 25,
+        "margin": "0.073s",
+        "fastest_lap_driver": "Tyler Reddick",
+        "results": [
+          {
+            "pos": 1,
+            "driver": "Tyler Reddick",
+            "number": "45",
+            "team": "23XI Racing",
+            "car": "Toyota",
+            "laps": 200,
+            "laps_led": 1,
+            "gap": null,
+            "status": "running"
+          },
+          {
+            "pos": 2,
+            "driver": "Ricky Stenhouse Jr.",
+            "number": "47",
+            "team": "Hyak Motorsports",
+            "car": "Chevy",
+            "laps": 200,
+            "laps_led": 0,
+            "gap": "+0.073s",
+            "status": "running"
+          },
+          {
+            "pos": 3,
+            "driver": "Joey Logano",
+            "number": "22",
+            "team": "Team Penske",
+            "car": "Ford",
+            "laps": 200,
+            "laps_led": 5,
+            "gap": "+0.291s",
+            "status": "running"
+          },
+          {
+            "pos": 4,
+            "driver": "Chase Elliott",
+            "number": "9",
+            "team": "Hendrick Motorsports",
+            "car": "Chevy",
+            "laps": 200,
+            "laps_led": 0,
+            "gap": "+0.388s",
+            "status": "running"
+          },
+          {
+            "pos": 5,
+            "driver": "Brad Keselowski",
+            "number": "6",
+            "team": "RFK Racing",
+            "car": "Ford",
+            "laps": 200,
+            "laps_led": 0,
+            "gap": "+0.491s",
+            "status": "running"
+          },
+          {
+            "pos": 6,
+            "driver": "Zane Smith",
+            "number": "38",
+            "team": "Front Row Motorsports",
+            "car": "Ford",
+            "laps": 200,
+            "laps_led": 8,
+            "gap": "+0.612s",
+            "status": "running"
+          },
+          {
+            "pos": 7,
+            "driver": "Chris Buescher",
+            "number": "17",
+            "team": "RFK Racing",
+            "car": "Ford",
+            "laps": 200,
+            "laps_led": 0,
+            "gap": "+0.744s",
+            "status": "running"
+          },
+          {
+            "pos": 8,
+            "driver": "Riley Herbst",
+            "number": "35",
+            "team": "23XI Racing",
+            "car": "Toyota",
+            "laps": 200,
+            "laps_led": 0,
+            "gap": "+0.811s",
+            "status": "running"
+          },
+          {
+            "pos": 9,
+            "driver": "Josh Berry",
+            "number": "21",
+            "team": "Wood Brothers Racing",
+            "car": "Ford",
+            "laps": 200,
+            "laps_led": 0,
+            "gap": "+0.890s",
+            "status": "running"
+          },
+          {
+            "pos": 10,
+            "driver": "Bubba Wallace",
+            "number": "23",
+            "team": "23XI Racing",
+            "car": "Toyota",
+            "laps": 200,
+            "laps_led": 40,
+            "gap": "+1.001s",
+            "status": "running"
+          },
+          {
+            "pos": 11,
+            "driver": "Carson Hocevar",
+            "number": "77",
+            "team": "Spire Motorsports",
+            "car": "Chevy",
+            "laps": 200,
+            "laps_led": 12,
+            "gap": "+1.2s",
+            "status": "running"
+          },
+          {
+            "pos": 36,
+            "driver": "Kyle Busch",
+            "number": "8",
+            "team": "RCR",
+            "car": "Chevy",
+            "laps": 192,
+            "laps_led": 3,
+            "gap": "Crash",
+            "status": "crash"
+          },
+          {
+            "pos": 37,
+            "driver": "Chase Briscoe",
+            "number": "19",
+            "team": "Joe Gibbs Racing",
+            "car": "Toyota",
+            "laps": 180,
+            "laps_led": 7,
+            "gap": "Crash",
+            "status": "crash"
+          },
+          {
+            "pos": 38,
+            "driver": "Connor Zilisch",
+            "number": "88",
+            "team": "Trackhouse Racing",
+            "car": "Chevy",
+            "laps": 122,
+            "laps_led": 0,
+            "gap": "Crash",
+            "status": "crash"
+          }
+        ]
+      },
+      "stats": [
+        {
+          "value": "25",
+          "label": "Lead Changes",
+          "note": "All-time Daytona record"
+        },
+        {
+          "value": "25",
+          "label": "Cars on Lead Lap",
+          "note": "Record finish density"
+        },
+        {
+          "value": "1",
+          "label": "Laps Led (winner)",
+          "note": "4th time in race history"
+        },
+        {
+          "value": "183.6",
+          "label": "Pole Speed (mph)",
+          "note": "Kyle Busch qualifying"
+        },
+        {
+          "value": "8",
+          "label": "Caution Periods",
+          "note": "57 caution laps"
+        },
+        {
+          "value": "0.073s",
+          "label": "Win Margin",
+          "note": "Reddick over Stenhouse"
+        }
+      ],
+      "position_tracker": {
+        "labels": [
+          "L1",
+          "L25",
+          "L50",
+          "L75",
+          "L100",
+          "L130",
+          "L160",
+          "L190",
+          "L200"
+        ],
+        "drivers": [
+          {
+            "name": "Reddick",
+            "color": "#CC0088",
+            "positions": [
+              3,
+              12,
+              10,
+              9,
+              9,
+              8,
+              7,
+              8,
+              1
+            ]
+          },
+          {
+            "name": "Wallace",
+            "color": "#FFD100",
+            "positions": [
+              4,
+              3,
+              3,
+              2,
+              2,
+              2,
+              2,
+              3,
+              10
+            ]
+          },
+          {
+            "name": "Hocevar",
+            "color": "#888888",
+            "positions": [
+              8,
+              6,
+              5,
+              5,
+              4,
+              3,
+              3,
+              2,
+              11
+            ]
+          },
+          {
+            "name": "Stenhouse",
+            "color": "#FFAA00",
+            "positions": [
+              15,
+              14,
+              12,
+              11,
+              10,
+              9,
+              9,
+              5,
+              2
+            ]
+          },
+          {
+            "name": "Logano",
+            "color": "#8844FF",
+            "positions": [
+              5,
+              5,
+              6,
+              5,
+              5,
+              6,
+              6,
+              7,
+              3
+            ]
+          }
+        ]
+      },
+      "driver_of_race": {
+        "driver": "Tyler Reddick",
+        "number": "45",
+        "team": "23XI Racing",
+        "badge": "\ud83c\udfc6 Driver of the Race",
+        "stats": [
+          {
+            "value": "P1",
+            "label": "Finish"
+          },
+          {
+            "value": "1",
+            "label": "Lap Led"
+          },
+          {
+            "value": "0.073s",
+            "label": "Win Margin"
+          },
+          {
+            "value": "44th",
+            "label": "Unique D500 Winner"
+          }
+        ],
+        "analysis": "Led only the final lap in the most dramatic fashion possible. Received a perfect push from 23XI team-mate Riley Herbst just as the lead pack made contact, clearing the chaos by 0.073 seconds over Stenhouse. The win ended a drought dating to October 2024 and earned maximum points under the new 2026 format."
+      },
+      "story_cards": [
+        {
+          "title": "The Final Lap",
+          "body": "Tyler Reddick was nowhere near the lead for 199 laps \u2014 and won the Daytona 500 anyway. He received a decisive push from 23XI team-mate Riley Herbst just as Hocevar's freight train made contact in the final yards. Reddick cleared the chaos and led only that final circuit, crossing the line 0.073 seconds clear of a rapidly advancing Ricky Stenhouse Jr."
+        },
+        {
+          "title": "23XI's Masterplan",
+          "body": "Michael Jordan's expanded six-car 23XI operation showed its superspeedway depth immediately. Three cars in the top 10 \u2014 Reddick P1, Herbst P8, Wallace P10. Wallace led the most laps of any single driver at 40. Their teamwork, with Herbst sacrificing his own chance to push Reddick, defined the organisation's culture perfectly."
+        },
+        {
+          "title": "Records Fall",
+          "body": "A record 25 different drivers led laps, reflecting the new 2026 drafting package. NASCAR's revised bump-drafting enforcement produced enormous lead pack mayhem. Kyle Busch \u2014 on pole \u2014 was collected before the finish. Connor Zilisch caused a mid-race incident in his very first Cup Series start as one of the most anticipated rookies in recent years."
+        },
+        {
+          "title": "Hocevar's Cruel Lesson",
+          "body": "Carson Hocevar led at the white flag. At Daytona, this is the single worst position to be in \u2014 the lead car acts as a windbreak for the entire freight train. He was overtaken and swept up in the crash. His afternoon ended deep in the field despite having a genuine top-3 car. Superspeedway racing at its most merciless."
+        }
+      ],
+      "insights": [
+        {
+          "type": "win",
+          "icon": "\ud83c\udfc6",
+          "headline": "The Art of the Final Lap",
+          "body": "Leading only one lap in a 200-lap superspeedway race is one of the hardest ways to win the Daytona 500 imaginable \u2014 yet it's happened four times now. Reddick's positioning in the pack for the final restart was tactical. He wasn't trying to be at the front; he was waiting for the chaos. When Herbst's push came and the cars ahead made contact, he was exactly where he needed to be."
+        },
+        {
+          "type": "story",
+          "icon": "\ud83c\udfc0",
+          "headline": "Jordan's Greatest Trophy",
+          "body": "Six NBA championships, multiple business empires, cultural iconhood \u2014 Michael Jordan said winning the Daytona 500 as a team owner meant more to him than he'd expected. With three cars in the top 10, 23XI Racing proved they are no longer a boutique team. They are NASCAR's most complete superspeedway organisation in 2026."
+        },
+        {
+          "type": "crash",
+          "icon": "\ud83d\udca5",
+          "headline": "Hocevar's Cruel Lesson",
+          "body": "Carson Hocevar led at the white flag. This is the single worst position to occupy at Daytona \u2014 the lead car acts as a windbreak for the entire freight train behind it. He was overtaken and then swept up in the crash. His afternoon ended deep in the field despite having a genuine top-3 car. Superspeedway racing at its most merciless."
+        },
+        {
+          "type": "points",
+          "icon": "\ud83d\udcca",
+          "headline": "55 Points Changes Everything",
+          "body": "The 2026 system's 55-point win bonus immediately reshapes championship strategy. Reddick's 17-point lead after just one race is larger than most drivers would build after three or four races under the old format. Winning early is now worth dramatically more \u2014 and Reddick was about to demonstrate just how significantly that compounds."
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "name": "Autotrader 400",
+      "venue": "EchoPark Speedway",
+      "location": "Hampton, Georgia",
+      "circuit_type": "oval_super",
+      "flag": "\ud83c\uddfa\ud83c\uddf8",
+      "date": "2026-02-22",
+      "time_local": "15:00",
+      "timezone": "America/New_York",
+      "laps": 260,
+      "distance_miles": 400.0,
+      "complete": true,
+      "summary": "Tyler Reddick won with no right-front fender, in double overtime, by 0.164 seconds \u2014 the first driver to win back-to-back Cup races since Matt Kenseth in 2009. His car shed the bodywork in a Lap 225 crash; his crew told him to keep going. Kyle Larson led 48 laps and dominated \u2014 then crashed. The image of Reddick's mangled Toyota at the front became the season's first iconic photograph.",
+      "quali": {
+        "pole_driver": "Ryan Blaney",
+        "pole_speed": "182.441 mph",
+        "grid": [
+          {
+            "pos": 1,
+            "driver": "Ryan Blaney",
+            "number": "12",
+            "team": "Team Penske",
+            "car": "Ford",
+            "speed": "182.441"
+          },
+          {
+            "pos": 2,
+            "driver": "Chase Briscoe",
+            "number": "19",
+            "team": "Joe Gibbs Racing",
+            "car": "Toyota",
+            "speed": "182.218"
+          },
+          {
+            "pos": 3,
+            "driver": "Kyle Larson",
+            "number": "5",
+            "team": "Hendrick Motorsports",
+            "car": "Chevy",
+            "speed": "181.990"
+          },
+          {
+            "pos": 4,
+            "driver": "Tyler Reddick",
+            "number": "45",
+            "team": "23XI Racing",
+            "car": "Toyota",
+            "speed": "181.885"
+          },
+          {
+            "pos": 5,
+            "driver": "Bubba Wallace",
+            "number": "23",
+            "team": "23XI Racing",
+            "car": "Toyota",
+            "speed": "181.701"
+          }
+        ]
+      },
+      "stages": [
+        {
+          "number": 1,
+          "laps": "1-60",
+          "winner": "Bubba Wallace",
+          "number_car": "23"
+        },
+        {
+          "number": 2,
+          "laps": "61-160",
+          "winner": "William Byron",
+          "number_car": "24"
+        },
+        {
+          "number": 3,
+          "laps": "161-260+",
+          "winner": "Tyler Reddick",
+          "number_car": "45"
+        }
+      ],
+      "race": {
+        "winner": "Tyler Reddick",
+        "laps_led_leader": "Kyle Larson",
+        "laps_led_count": 48,
+        "cautions": 9,
+        "lead_changes": 19,
+        "margin": "0.164s",
+        "results": [
+          {
+            "pos": 1,
+            "driver": "Tyler Reddick",
+            "number": "45",
+            "team": "23XI Racing",
+            "car": "Toyota",
+            "laps_led": 53,
+            "gap": null,
+            "status": "running"
+          },
+          {
+            "pos": 2,
+            "driver": "Chase Briscoe",
+            "number": "19",
+            "team": "Joe Gibbs Racing",
+            "car": "Toyota",
+            "laps_led": 19,
+            "gap": "+0.164s",
+            "status": "running"
+          },
+          {
+            "pos": 3,
+            "driver": "Ross Chastain",
+            "number": "1",
+            "team": "Trackhouse Racing",
+            "car": "Chevy",
+            "laps_led": 0,
+            "gap": "+0.441s",
+            "status": "running"
+          },
+          {
+            "pos": 4,
+            "driver": "Carson Hocevar",
+            "number": "77",
+            "team": "Spire Motorsports",
+            "car": "Chevy",
+            "laps_led": 4,
+            "gap": "+0.620s",
+            "status": "running"
+          },
+          {
+            "pos": 5,
+            "driver": "Daniel Suarez",
+            "number": "7",
+            "team": "Spire Motorsports",
+            "car": "Chevy",
+            "laps_led": 0,
+            "gap": "+0.801s",
+            "status": "running"
+          },
+          {
+            "pos": 6,
+            "driver": "Shane van Gisbergen",
+            "number": "97",
+            "team": "Trackhouse Racing",
+            "car": "Chevy",
+            "laps_led": 0,
+            "gap": "+1.0s",
+            "status": "running"
+          },
+          {
+            "pos": 7,
+            "driver": "Zane Smith",
+            "number": "38",
+            "team": "Front Row Motorsports",
+            "car": "Ford",
+            "laps_led": 5,
+            "gap": "+1.2s",
+            "status": "running"
+          },
+          {
+            "pos": 8,
+            "driver": "Bubba Wallace",
+            "number": "23",
+            "team": "23XI Racing",
+            "car": "Toyota",
+            "laps_led": 26,
+            "gap": "+1.4s",
+            "status": "running"
+          },
+          {
+            "pos": 9,
+            "driver": "Ryan Preece",
+            "number": "60",
+            "team": "RFK Racing",
+            "car": "Ford",
+            "laps_led": 0,
+            "gap": "+1.6s",
+            "status": "running"
+          },
+          {
+            "pos": 10,
+            "driver": "Ryan Blaney",
+            "number": "12",
+            "team": "Team Penske",
+            "car": "Ford",
+            "laps_led": 8,
+            "gap": "+1.8s",
+            "status": "running"
+          },
+          {
+            "pos": 35,
+            "driver": "Kyle Larson",
+            "number": "5",
+            "team": "Hendrick Motorsports",
+            "car": "Chevy",
+            "laps_led": 48,
+            "gap": "Crash",
+            "status": "crash"
+          },
+          {
+            "pos": 36,
+            "driver": "Kyle Busch",
+            "number": "8",
+            "team": "RCR",
+            "car": "Chevy",
+            "laps_led": 0,
+            "gap": "Crash",
+            "status": "crash"
+          }
+        ]
+      },
+      "stats": [
+        {
+          "value": "260+",
+          "label": "Total Laps",
+          "note": "Double overtime"
+        },
+        {
+          "value": "0.164s",
+          "label": "Win Margin",
+          "note": "Reddick over Briscoe"
+        },
+        {
+          "value": "48",
+          "label": "Larson Laps Led",
+          "note": "Led most \u2014 DNF crash"
+        },
+        {
+          "value": "2009",
+          "label": "Last Back-to-Back",
+          "note": "Matt Kenseth"
+        },
+        {
+          "value": "40",
+          "label": "Reddick Pts Lead",
+          "note": "After R2, over Wallace"
+        },
+        {
+          "value": "53",
+          "label": "Reddick Laps Led",
+          "note": "Among finishers"
+        }
+      ],
+      "position_tracker": {
+        "labels": [
+          "L1",
+          "L40",
+          "L80",
+          "L120",
+          "L160",
+          "L200",
+          "L240",
+          "L260+"
+        ],
+        "drivers": [
+          {
+            "name": "Larson",
+            "color": "#888888",
+            "positions": [
+              3,
+              2,
+              1,
+              1,
+              1,
+              2,
+              null,
+              null
+            ]
+          },
+          {
+            "name": "Reddick",
+            "color": "#CC0088",
+            "positions": [
+              4,
+              5,
+              4,
+              3,
+              2,
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "name": "Wallace",
+            "color": "#FFD100",
+            "positions": [
+              1,
+              3,
+              3,
+              2,
+              3,
+              3,
+              4,
+              8
+            ]
+          },
+          {
+            "name": "Briscoe",
+            "color": "#AA4400",
+            "positions": [
+              2,
+              4,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ]
+          },
+          {
+            "name": "Blaney",
+            "color": "#0044CC",
+            "positions": [
+              5,
+              1,
+              5,
+              4,
+              4,
+              5,
+              5,
+              10
+            ]
+          }
+        ]
+      },
+      "driver_of_race": {
+        "driver": "Tyler Reddick",
+        "number": "45",
+        "team": "23XI Racing",
+        "badge": "\ud83c\udfc6 Driver of the Race",
+        "stats": [
+          {
+            "value": "P1",
+            "label": "Finish"
+          },
+          {
+            "value": "53",
+            "label": "Laps Led"
+          },
+          {
+            "value": "0.164s",
+            "label": "Win Margin"
+          },
+          {
+            "value": "No fender",
+            "label": "From Lap 225"
+          }
+        ],
+        "analysis": "Won after his car lost its right-front fender in a Lap 225 crash \u2014 and his crew told him to keep going anyway. Managed the aerodynamic deficit through double overtime, received a push from Wallace in the final yards, and won by 0.164 seconds. The image of his fender-less Toyota leading Atlanta became the season's first iconic photograph."
+      },
+      "story_cards": [
+        {
+          "title": "The No-Fender Drive",
+          "body": "A Lap 225 multi-car crash stripped the right-front fender from Reddick's No. 45 Toyota \u2014 visible on every broadcast camera from that point. Instead of pitting for repairs, the 23XI crew kept him out. Reddick managed the aerodynamic deficit across two overtime restarts, was pushed clear by Bubba Wallace in the final laps, and won by 0.164 seconds. The crew chief's gamble on track position over aerodynamics was the call of the race."
+        },
+        {
+          "title": "History Made",
+          "body": "Reddick became the sixth driver to win the first two Cup races of a season, joining Marvin Panch, Bob Welborn, David Pearson, Jeff Gordon and Matt Kenseth. All five previous members of this club either won or strongly contended for that season's title. His 40-point lead over Bubba Wallace heading to COTA was the largest two-race gap since the modern points era began."
+        },
+        {
+          "title": "Larson's Nightmare Continues",
+          "body": "Kyle Larson led 48 laps and looked like the class of the field. A late-race incident collected him before the finish \u2014 his second consecutive DNF to open the season. He had a legitimately winning car at both Daytona and Atlanta and left both without points to show for it. The reigning champion's title defence had started in the worst possible way."
+        },
+        {
+          "title": "23XI's Team Depth",
+          "body": "Reddick P1, Wallace P8, Herbst in the teens again. The 23XI Racing superspeedway programme was the class of the field at both tracks. Their shared resources, tyre data and pit coordination across multiple cars gave them strategic advantages no single-car team could replicate. The fastest cars at Atlanta drove for Michael Jordan."
+        }
+      ],
+      "insights": [
+        {
+          "type": "win",
+          "icon": "\ud83c\udfc6",
+          "headline": "The Iconic No-Fender Win",
+          "body": "Winning a 260-lap superspeedway race with a missing right-front fender is one of the most visually memorable performances in recent Cup history. The crew chief's call to stay out rather than pit was the critical decision \u2014 track position outweighed the aerodynamic loss. Reddick's management of the car through two more restarts vindicated it completely."
+        },
+        {
+          "type": "story",
+          "icon": "\ud83d\udcd6",
+          "headline": "First Since Kenseth 2009",
+          "body": "Every member of the 'won first two races' club has been a title contender. Reddick's 40-point lead heading to COTA was already beyond what most drivers build in six rounds under the new format. The historical pattern is stark \u2014 opening season dominance at this level translates directly to championship position."
+        },
+        {
+          "type": "crash",
+          "icon": "\ud83d\udca5",
+          "headline": "Larson's Nightmare Start",
+          "body": "Consecutive DNFs at Daytona and Atlanta \u2014 despite leading 48 laps and having the fastest car at both \u2014 was the worst possible start for the defending champion. The superspeedway format is uniquely merciless in converting pace into results. His 2026 title defence had a significant hole to dig out of by Round 3."
+        },
+        {
+          "type": "points",
+          "icon": "\ud83d\udcca",
+          "headline": "The 23XI Depth Advantage",
+          "body": "Three cars, coordinated strategy, shared data. 23XI Racing's multi-car approach at superspeedways creates a structural advantage no small team can counter. When the push comes at the white flag, it's an organisation decision \u2014 not a driver one. That's a different kind of motorsport."
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "name": "DuraMax Texas Grand Prix",
+      "venue": "Circuit of the Americas",
+      "location": "Austin, Texas",
+      "circuit_type": "road",
+      "flag": "\ud83c\uddfa\ud83c\uddf8",
+      "date": "2026-03-01",
+      "laps": 95,
+      "distance_miles": 228.0,
+      "complete": true,
+      "summary": "Tyler Reddick became the first driver in 78 years of NASCAR Cup history to win the opening three races of a season \u2014 leading 58 of 95 laps from pole to beat Shane van Gisbergen by 3.944 seconds. SVG's five-race road course win streak ended. Track temperature hit 109\u00b0F, AJ Allmendinger required medical attention after his cool shirt failed, and Alex Bowman handed his car to a relief driver after falling ill before the start.",
+      "quali": {
+        "pole_driver": "Tyler Reddick",
+        "pole_speed": "88.380 mph",
+        "grid": [
+          {
+            "pos": 1,
+            "driver": "Tyler Reddick",
+            "number": "45",
+            "team": "23XI Racing",
+            "car": "Toyota",
+            "speed": "88.380"
+          },
+          {
+            "pos": 2,
+            "driver": "Shane van Gisbergen",
+            "number": "97",
+            "team": "Trackhouse Racing",
+            "car": "Chevy",
+            "speed": "88.101"
+          },
+          {
+            "pos": 3,
+            "driver": "Ross Chastain",
+            "number": "1",
+            "team": "Trackhouse Racing",
+            "car": "Chevy",
+            "speed": "87.994"
+          },
+          {
+            "pos": 4,
+            "driver": "Christopher Bell",
+            "number": "20",
+            "team": "Joe Gibbs Racing",
+            "car": "Toyota",
+            "speed": "87.881"
+          },
+          {
+            "pos": 5,
+            "driver": "Ty Gibbs",
+            "number": "54",
+            "team": "Joe Gibbs Racing",
+            "car": "Toyota",
+            "speed": "87.750"
+          }
+        ]
+      },
+      "stages": [
+        {
+          "number": 1,
+          "laps": "1-32",
+          "winner": "Ross Chastain",
+          "number_car": "1",
+          "note": "Chastain DNF later \u2014 wheel failure"
+        },
+        {
+          "number": 2,
+          "laps": "33-64",
+          "winner": "Ty Gibbs",
+          "number_car": "54"
+        },
+        {
+          "number": 3,
+          "laps": "65-95",
+          "winner": "Tyler Reddick",
+          "number_car": "45"
+        }
+      ],
+      "race": {
+        "winner": "Tyler Reddick",
+        "laps_led_leader": "Tyler Reddick",
+        "laps_led_count": 58,
+        "cautions": 3,
+        "lead_changes": 7,
+        "margin": "3.944s",
+        "results": [
+          {
+            "pos": 1,
+            "driver": "Tyler Reddick",
+            "number": "45",
+            "team": "23XI Racing",
+            "car": "Toyota",
+            "laps_led": 58,
+            "gap": null,
+            "status": "running"
+          },
+          {
+            "pos": 2,
+            "driver": "Shane van Gisbergen",
+            "number": "97",
+            "team": "Trackhouse Racing",
+            "car": "Chevy",
+            "laps_led": 0,
+            "gap": "+3.944s",
+            "status": "running"
+          },
+          {
+            "pos": 3,
+            "driver": "Christopher Bell",
+            "number": "20",
+            "team": "Joe Gibbs Racing",
+            "car": "Toyota",
+            "laps_led": 0,
+            "gap": "+5.1s",
+            "status": "running"
+          },
+          {
+            "pos": 4,
+            "driver": "Ty Gibbs",
+            "number": "54",
+            "team": "Joe Gibbs Racing",
+            "car": "Toyota",
+            "laps_led": 11,
+            "gap": "+7.8s",
+            "status": "running"
+          },
+          {
+            "pos": 5,
+            "driver": "Michael McDowell",
+            "number": "71",
+            "team": "Spire Motorsports",
+            "car": "Chevy",
+            "laps_led": 6,
+            "gap": "+9.2s",
+            "status": "running"
+          },
+          {
+            "pos": 6,
+            "driver": "Kyle Larson",
+            "number": "5",
+            "team": "Hendrick Motorsports",
+            "car": "Chevy",
+            "laps_led": 0,
+            "gap": "+12.4s",
+            "status": "running"
+          },
+          {
+            "pos": 7,
+            "driver": "Chase Elliott",
+            "number": "9",
+            "team": "Hendrick Motorsports",
+            "car": "Chevy",
+            "laps_led": 0,
+            "gap": "+14.1s",
+            "status": "running"
+          },
+          {
+            "pos": 8,
+            "driver": "Ryan Blaney",
+            "number": "12",
+            "team": "Team Penske",
+            "car": "Ford",
+            "laps_led": 0,
+            "gap": "+16.0s",
+            "status": "running"
+          },
+          {
+            "pos": 9,
+            "driver": "AJ Allmendinger",
+            "number": "16",
+            "team": "Kaulig Racing",
+            "car": "Chevy",
+            "laps_led": 0,
+            "gap": "+18.0s",
+            "status": "running",
+            "note": "Required medical treatment post-race"
+          },
+          {
+            "pos": 10,
+            "driver": "Denny Hamlin",
+            "number": "11",
+            "team": "Joe Gibbs Racing",
+            "car": "Toyota",
+            "laps_led": 0,
+            "gap": "+20.5s",
+            "status": "running"
+          },
+          {
+            "pos": 35,
+            "driver": "Ross Chastain",
+            "number": "1",
+            "team": "Trackhouse Racing",
+            "car": "Chevy",
+            "laps_led": 12,
+            "gap": "Wheel off",
+            "status": "mech"
+          },
+          {
+            "pos": 36,
+            "driver": "Alex Bowman",
+            "number": "48",
+            "team": "Hendrick Motorsports",
+            "car": "Chevy",
+            "laps_led": 0,
+            "gap": "Relief driver",
+            "status": "dnf",
+            "note": "Myatt Snider relief driver after illness"
+          }
+        ]
+      },
+      "stats": [
+        {
+          "value": "95",
+          "label": "Laps",
+          "note": "228 miles at COTA"
+        },
+        {
+          "value": "58/95",
+          "label": "Reddick Laps Led",
+          "note": "61% of the race"
+        },
+        {
+          "value": "3.944s",
+          "label": "Win Margin",
+          "note": "Over SVG"
+        },
+        {
+          "value": "109\u00b0F",
+          "label": "Track Temperature",
+          "note": "Medical incidents"
+        },
+        {
+          "value": "70",
+          "label": "Points Lead After R3",
+          "note": "Largest 3-race lead ever"
+        },
+        {
+          "value": "78 yrs",
+          "label": "Historic First",
+          "note": "3-race season sweep"
+        }
+      ],
+      "position_tracker": {
+        "labels": [
+          "L1",
+          "L10",
+          "L20",
+          "L32",
+          "L33",
+          "L50",
+          "L65",
+          "L80",
+          "L95"
+        ],
+        "drivers": [
+          {
+            "name": "Reddick",
+            "color": "#CC0088",
+            "positions": [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "name": "SVG",
+            "color": "#880088",
+            "positions": [
+              2,
+              3,
+              3,
+              3,
+              3,
+              3,
+              3,
+              3,
+              2
+            ]
+          },
+          {
+            "name": "Chastain",
+            "color": "#888888",
+            "positions": [
+              3,
+              2,
+              2,
+              2,
+              null,
+              null,
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "name": "T. Gibbs",
+            "color": "#FF6600",
+            "positions": [
+              5,
+              5,
+              4,
+              4,
+              4,
+              2,
+              2,
+              4,
+              4
+            ]
+          },
+          {
+            "name": "Bell",
+            "color": "#4488FF",
+            "positions": [
+              4,
+              4,
+              5,
+              5,
+              5,
+              4,
+              4,
+              3,
+              3
+            ]
+          }
+        ]
+      },
+      "driver_of_race": {
+        "driver": "Tyler Reddick",
+        "number": "45",
+        "team": "23XI Racing",
+        "badge": "\ud83c\udfc6 Driver of the Race",
+        "stats": [
+          {
+            "value": "P1",
+            "label": "Finish"
+          },
+          {
+            "value": "58/95",
+            "label": "Laps Led"
+          },
+          {
+            "value": "3 from 3",
+            "label": "Season record"
+          },
+          {
+            "value": "3.944s",
+            "label": "Win Margin"
+          }
+        ],
+        "analysis": "Led 61% of the race from pole, held off SVG in the final 16-lap green-flag run, and became the first driver in 78 years of Cup history to win the opening three races of a season. Three poles, three wins, 121 total laps led across Rounds 1\u20133."
+      },
+      "story_cards": [
+        {
+          "title": "The Historic Third",
+          "body": "In 78 years of NASCAR Cup Series racing, no driver had won the opening three races. Reddick took pole, led 58 of 95 laps, and controlled the race from the front throughout. Shane van Gisbergen \u2014 who had won five consecutive Cup road course races \u2014 closed the gap in the final 16-lap green-flag run, but Reddick pulled clear on the uphill run to Turn 1. His 3.944-second winning margin was deceptively large given how close the battle felt."
+        },
+        {
+          "title": "SVG's Streak Broken",
+          "body": "Van Gisbergen entered COTA having won at COTA, Chicago, Watkins Glen, the Atlanta road course and Charlotte Roval. His road course pedigree made him the favourite. He finished second, unable to overcome Reddick's Toyota straight-line pace advantage. SVG's corner speed was clearly superior in the technical sections \u2014 but the power differential on COTA's long straights was decisive."
+        },
+        {
+          "title": "The Heat Crisis",
+          "body": "109\u00b0F track temperature made this one of the most physically demanding Cup races in recent years. AJ Allmendinger required medical treatment after his cool-shirt system failed. Alex Bowman, already unwell before the start, completed 70 laps before handing his car to Myatt Snider. NASCAR reviewed cool-suit protocols directly after the race. Ross Chastain brilliantly won Stage 1 before a wheel came off his car at the worst possible moment."
+        },
+        {
+          "title": "70-Point Lead",
+          "body": "Three wins, three poles, 121 laps led across three races. Reddick's 70-point championship lead was the largest any driver had built after three rounds in the sport's history under any points format. The 2026 system's 55-point win bonus made winning three straight worth an astronomical head start. Mathematically, the championship was already his to lose entering Phoenix."
+        }
+      ],
+      "insights": [
+        {
+          "type": "history",
+          "icon": "\u2b50",
+          "headline": "Nobody Has Ever Done This",
+          "body": "78 years of NASCAR Cup racing. No driver had won the first three races. Reddick didn't just break the record \u2014 he did it at a road course, against the series' premier road-course specialist, by leading 61% of the laps from pole. Jordan 'three-peat' comparisons became unavoidable."
+        },
+        {
+          "type": "story",
+          "icon": "\ud83c\udfc1",
+          "headline": "SVG Still the Road Course King",
+          "body": "P2 against SVG's five-race streak is an enormous result for Reddick \u2014 but van Gisbergen's pace through the technical sections was clearly superior. His Toyota simply couldn't match the horsepower on the straights. When SVG wins a road course this season, it'll feel inevitable. He's not beaten \u2014 just waiting for the gap to close."
+        },
+        {
+          "type": "crash",
+          "icon": "\ud83c\udf21\ufe0f",
+          "headline": "The Heat Changed the Race",
+          "body": "109\u00b0F track temperature turned this into a car and equipment survival event. Allmendinger's cool-suit failure and Bowman's illness combined for the most medically eventful Cup race in years. The conditions accelerated tyre degradation significantly and affected late-race pace calculations in ways that favoured drivers who'd run conservatively early."
+        },
+        {
+          "type": "points",
+          "icon": "\ud83d\udcca",
+          "headline": "70 Points After Three Rounds",
+          "body": "Under the 2026 win bonus system, winning three straight created a gap that required multiple Reddick DNFs combined with multiple wins from rivals just to close. Even a race where he 'lost' to Blaney at Phoenix left him with a lead that would take most of the season to erase."
+        }
+      ]
+    },
+    {
+      "round": 4,
+      "name": "Straight Talk Wireless 500",
+      "venue": "Phoenix Raceway",
+      "location": "Avondale, Arizona",
+      "circuit_type": "oval_1.0",
+      "flag": "\ud83c\uddfa\ud83c\uddf8",
+      "date": "2026-03-08",
+      "laps": 312,
+      "distance_miles": 312.0,
+      "complete": true,
+      "summary": "Christopher Bell led 96 laps and was dominant all afternoon \u2014 then Austin Dillon's tyre went flat with 25 laps left and everything changed. Ryan Blaney's crew called two tyres. Bell took four and restarted eighth. He passed five cars in 25 laps. He needed seven. Blaney held on by 0.649 seconds, claimed his first win of 2026, and handed Reddick the rare gift of a bad day that barely touched his championship lead.",
+      "quali": {
+        "pole_driver": "Joey Logano",
+        "pole_speed": "135.537 mph",
+        "grid": [
+          {
+            "pos": 1,
+            "driver": "Joey Logano",
+            "number": "22",
+            "team": "Team Penske",
+            "car": "Ford",
+            "speed": "135.537"
+          },
+          {
+            "pos": 2,
+            "driver": "Christopher Bell",
+            "number": "20",
+            "team": "Joe Gibbs Racing",
+            "car": "Toyota",
+            "speed": "135.410"
+          },
+          {
+            "pos": 3,
+            "driver": "Ryan Blaney",
+            "number": "12",
+            "team": "Team Penske",
+            "car": "Ford",
+            "speed": "135.288"
+          },
+          {
+            "pos": 4,
+            "driver": "Kyle Larson",
+            "number": "5",
+            "team": "Hendrick Motorsports",
+            "car": "Chevy",
+            "speed": "135.201"
+          },
+          {
+            "pos": 5,
+            "driver": "Denny Hamlin",
+            "number": "11",
+            "team": "Joe Gibbs Racing",
+            "car": "Toyota",
+            "speed": "135.055"
+          }
+        ]
+      },
+      "stages": [
+        {
+          "number": 1,
+          "laps": "1-75",
+          "winner": "Ryan Blaney",
+          "number_car": "12"
+        },
+        {
+          "number": 2,
+          "laps": "76-225",
+          "winner": "Christopher Bell",
+          "number_car": "20"
+        },
+        {
+          "number": 3,
+          "laps": "226-312",
+          "winner": "Ryan Blaney",
+          "number_car": "12"
+        }
+      ],
+      "race": {
+        "winner": "Ryan Blaney",
+        "laps_led_leader": "Christopher Bell",
+        "laps_led_count": 96,
+        "cautions": 12,
+        "lead_changes": 15,
+        "margin": "0.649s",
+        "fastest_lap_driver": "Tyler Reddick",
+        "results": [
+          {
+            "pos": 1,
+            "driver": "Ryan Blaney",
+            "number": "12",
+            "team": "Team Penske",
+            "car": "Ford",
+            "laps_led": 29,
+            "gap": null,
+            "status": "running"
+          },
+          {
+            "pos": 2,
+            "driver": "Christopher Bell",
+            "number": "20",
+            "team": "Joe Gibbs Racing",
+            "car": "Toyota",
+            "laps_led": 96,
+            "gap": "+0.649s",
+            "status": "running"
+          },
+          {
+            "pos": 3,
+            "driver": "Kyle Larson",
+            "number": "5",
+            "team": "Hendrick Motorsports",
+            "car": "Chevy",
+            "laps_led": 18,
+            "gap": "+1.2s",
+            "status": "running"
+          },
+          {
+            "pos": 4,
+            "driver": "Ty Gibbs",
+            "number": "54",
+            "team": "Joe Gibbs Racing",
+            "car": "Toyota",
+            "laps_led": 9,
+            "gap": "+2.1s",
+            "status": "running"
+          },
+          {
+            "pos": 5,
+            "driver": "Denny Hamlin",
+            "number": "11",
+            "team": "Joe Gibbs Racing",
+            "car": "Toyota",
+            "laps_led": 14,
+            "gap": "+2.9s",
+            "status": "running"
+          },
+          {
+            "pos": 6,
+            "driver": "Bubba Wallace",
+            "number": "23",
+            "team": "23XI Racing",
+            "car": "Toyota",
+            "laps_led": 0,
+            "gap": "+3.8s",
+            "status": "running"
+          },
+          {
+            "pos": 7,
+            "driver": "William Byron",
+            "number": "24",
+            "team": "Hendrick Motorsports",
+            "car": "Chevy",
+            "laps_led": 12,
+            "gap": "+4.5s",
+            "status": "running"
+          },
+          {
+            "pos": 8,
+            "driver": "Tyler Reddick",
+            "number": "45",
+            "team": "23XI Racing",
+            "car": "Toyota",
+            "laps_led": 0,
+            "gap": "+5.4s",
+            "status": "running"
+          },
+          {
+            "pos": 9,
+            "driver": "Michael McDowell",
+            "number": "71",
+            "team": "Spire Motorsports",
+            "car": "Chevy",
+            "laps_led": 0,
+            "gap": "+6.8s",
+            "status": "running"
+          },
+          {
+            "pos": 10,
+            "driver": "Erik Jones",
+            "number": "4",
+            "team": "RCR",
+            "car": "Chevy",
+            "laps_led": 0,
+            "gap": "+8.1s",
+            "status": "running"
+          },
+          {
+            "pos": 35,
+            "driver": "Austin Dillon",
+            "number": "3",
+            "team": "RCR",
+            "car": "Chevy",
+            "laps_led": 0,
+            "gap": "Flat tyre \u2014 triggered key caution",
+            "status": "crash"
+          }
+        ]
+      },
+      "stats": [
+        {
+          "value": "96",
+          "label": "Bell Laps Led",
+          "note": "Dominated \u2014 finished P2"
+        },
+        {
+          "value": "2",
+          "label": "Tyres (Blaney)",
+          "note": "The decisive strategy call"
+        },
+        {
+          "value": "12",
+          "label": "Cautions",
+          "note": "Ties Phoenix all-time record"
+        },
+        {
+          "value": "0.649s",
+          "label": "Win Margin",
+          "note": "Blaney over Bell"
+        },
+        {
+          "value": "60",
+          "label": "Reddick Points Lead",
+          "note": "After streak ends"
+        },
+        {
+          "value": "Lap 287",
+          "label": "Decisive Caution",
+          "note": "Dillon flat tyre"
+        }
+      ],
+      "position_tracker": {
+        "labels": [
+          "L1",
+          "L50",
+          "L100",
+          "L150",
+          "L200",
+          "L250",
+          "L287",
+          "L312"
+        ],
+        "drivers": [
+          {
+            "name": "Bell",
+            "color": "#4488FF",
+            "positions": [
+              2,
+              1,
+              1,
+              1,
+              1,
+              1,
+              2,
+              2
+            ]
+          },
+          {
+            "name": "Blaney",
+            "color": "#0044CC",
+            "positions": [
+              3,
+              3,
+              2,
+              2,
+              2,
+              2,
+              1,
+              1
+            ]
+          },
+          {
+            "name": "Reddick",
+            "color": "#CC0088",
+            "positions": [
+              6,
+              6,
+              5,
+              4,
+              4,
+              5,
+              6,
+              8
+            ]
+          },
+          {
+            "name": "Larson",
+            "color": "#AA4400",
+            "positions": [
+              4,
+              4,
+              3,
+              3,
+              3,
+              3,
+              3,
+              3
+            ]
+          },
+          {
+            "name": "Hamlin",
+            "color": "#882200",
+            "positions": [
+              5,
+              5,
+              6,
+              6,
+              5,
+              4,
+              4,
+              5
+            ]
+          }
+        ]
+      },
+      "driver_of_race": {
+        "driver": "Ryan Blaney",
+        "number": "12",
+        "team": "Team Penske",
+        "badge": "\ud83c\udfc6 Driver of the Race",
+        "stats": [
+          {
+            "value": "P1",
+            "label": "Finish"
+          },
+          {
+            "value": "29",
+            "label": "Laps Led"
+          },
+          {
+            "value": "0.649s",
+            "label": "Win Margin"
+          },
+          {
+            "value": "Lap 287",
+            "label": "Decisive Stop"
+          }
+        ],
+        "analysis": "Won not through superior pace \u2014 Bell was clearly faster \u2014 but through superior strategy execution. His crew chief's two-tyre call on Lap 287 was one of the most decisive moments of the early season. Blaney then managed the gap through 25 laps against a charging Bell on four fresh tyres, holding on by 0.649 seconds."
+      },
+      "story_cards": [
+        {
+          "title": "The Two-Tyre Call",
+          "body": "Christopher Bell led 96 laps and was dominant for stretches \u2014 faster than anyone on the 1-mile oval. An Austin Dillon flat-tyre caution on Lap 287 triggered the decisive moment. Blaney's crew took two tyres and track position; Bell's team took four for maximum grip. Bell restarted P8 and needed to pass seven cars in 25 laps. He passed five. Blaney won by 0.649 seconds."
+        },
+        {
+          "title": "Bell's Heartbreak",
+          "body": "Christopher Bell had the fastest car by a clear margin. His 96 laps led, his dominant Stage 2 win, and his lap times were all evidence of a race he should have won. His crew's decision to take four tyres was defensible \u2014 maximum grip on a circuit where fresh rubber matters enormously. But it handed Blaney the track position that, on a 1-mile oval, is almost impossible to overcome in 25 laps."
+        },
+        {
+          "title": "Reddick's Composed Eighth",
+          "body": "Reddick's 3-race winning streak ended, but his championship management at Phoenix was impressive. Knowing the championship lead matters more than forcing a win on a difficult day, 23XI ran a conservative strategy, avoided the caution incidents that collected several competitors, and scored 8 points. His 60-point lead after Phoenix reflected a bad day done intelligently."
+        },
+        {
+          "title": "Tyre Carnage",
+          "body": "Twelve cautions \u2014 tying Phoenix's all-time Cup Series record \u2014 resulted from the 2026 high-horsepower package's interaction with the 1-mile oval's abrasive surface. NASCAR and Goodyear agreed post-race to review compound selection for Phoenix's Chase return. The entertainment value was high, but the mechanical attrition rate suggested a tyre product quality issue needing urgent attention."
+        }
+      ],
+      "insights": [
+        {
+          "type": "strategy",
+          "icon": "\ud83d\udd27",
+          "headline": "Two vs Four: The Decision",
+          "body": "Blaney's crew chief taking two tyres on Lap 287 was a calculated read: with only 25 laps remaining, could Bell \u2014 starting P8 on four fresh tyres \u2014 make up 7 positions in time? The answer was no. Bell was passing cars at a rate that would have cleared 7 in 30+ laps but ran out of runway at 25. Penske got it exactly right."
+        },
+        {
+          "type": "crash",
+          "icon": "\ud83c\udfc1",
+          "headline": "Bell's Race to Forget",
+          "body": "96 laps led, fastest car, dominant stage win \u2014 and a P2. Bell's crew made the defensible call (four tyres for maximum grip) but the track position cost was ultimately fatal. He's the third driver in three races to lead the most laps and not win. Phoenix rewards two-tyre cunning over pure speed every single time."
+        },
+        {
+          "type": "points",
+          "icon": "\ud83d\udcca",
+          "headline": "A Bad Day Done Right",
+          "body": "Finishing P8 while leading the championship looks bad on paper. But Reddick's 60-point gap after Phoenix was actually stronger in relative terms than before the race because he avoided several incidents that collected his rivals. Championship management on a difficult day is a skill \u2014 23XI showed it at Phoenix."
+        },
+        {
+          "type": "tech",
+          "icon": "\ud83d\udede",
+          "headline": "The Tyre Crisis",
+          "body": "12 cautions is a mechanical failure rate, not a racing product. The Goodyear compounds struggled visibly with the 2026 package at Phoenix's 1-mile surface. NASCAR acknowledged the issue immediately. For the Chase return to Phoenix in November, compound changes are virtually guaranteed."
+        }
+      ]
+    },
+    {
+      "round": 5,
+      "name": "Pennzoil 400 presented by Jiffy Lube",
+      "venue": "Las Vegas Motor Speedway",
+      "location": "North Las Vegas, Nevada",
+      "circuit_type": "oval_1.5",
+      "flag": "\ud83c\uddfa\ud83c\uddf8",
+      "date": "2026-03-15",
+      "time_local": "16:00",
+      "timezone": "America/Los_Angeles",
+      "laps": 267,
+      "distance_miles": 400.5,
+      "complete": true,
+      "summary": "Denny Hamlin overcame a mid-race pit road speeding penalty to lead a race-high 134 laps and win by 0.502 seconds over a charging Chase Elliott \u2014 who recovered brilliantly from a P15 start to finish second. Kyle Larson led 62 laps and had the car to win before fading to seventh. Bell took pole and led early but couldn't sustain. Reddick's points lead trimmed as Hamlin surges into championship contention for the first time.",
+      "quali": {
+        "session": "Single-vehicle qualifying",
+        "pole_driver": "Christopher Bell",
+        "pole_speed": "187.156 mph",
+        "pole_time": "28.853s",
+        "grid": [
+          {
+            "pos": 1,
+            "driver": "Christopher Bell",
+            "number": "20",
+            "team": "Joe Gibbs Racing",
+            "car": "Toyota",
+            "speed": "187.156"
+          },
+          {
+            "pos": 2,
+            "driver": "Denny Hamlin",
+            "number": "11",
+            "team": "Joe Gibbs Racing",
+            "car": "Toyota",
+            "speed": "186.188"
+          },
+          {
+            "pos": 3,
+            "driver": "Ty Gibbs",
+            "number": "54",
+            "team": "Joe Gibbs Racing",
+            "car": "Toyota",
+            "speed": "185.803"
+          },
+          {
+            "pos": 4,
+            "driver": "Bubba Wallace",
+            "number": "23",
+            "team": "23XI Racing",
+            "car": "Toyota",
+            "speed": "185.771"
+          },
+          {
+            "pos": 5,
+            "driver": "Kyle Larson",
+            "number": "5",
+            "team": "Hendrick Motorsports",
+            "car": "Chevy",
+            "speed": "185.548"
+          },
+          {
+            "pos": 6,
+            "driver": "Ryan Blaney",
+            "number": "12",
+            "team": "Team Penske",
+            "car": "Ford",
+            "speed": "185.185"
+          },
+          {
+            "pos": 7,
+            "driver": "Tyler Reddick",
+            "number": "45",
+            "team": "23XI Racing",
+            "car": "Toyota",
+            "speed": "TBD"
+          },
+          {
+            "pos": 8,
+            "driver": "Ryan Preece",
+            "number": "60",
+            "team": "RFK Racing",
+            "car": "Ford",
+            "speed": "TBD"
+          },
+          {
+            "pos": 9,
+            "driver": "William Byron",
+            "number": "24",
+            "team": "Hendrick Motorsports",
+            "car": "Chevy",
+            "speed": "TBD"
+          },
+          {
+            "pos": 10,
+            "driver": "Chris Buescher",
+            "number": "17",
+            "team": "RFK Racing",
+            "car": "Ford",
+            "speed": "TBD"
+          },
+          {
+            "pos": 32,
+            "driver": "Josh Berry",
+            "number": "21",
+            "team": "Wood Brothers Racing",
+            "car": "Ford",
+            "speed": "TBD",
+            "note": "Defending race winner"
+          }
+        ]
+      },
+      "stages": [
+        {
+          "number": 1,
+          "laps": "1-80",
+          "winner": "Denny Hamlin",
+          "number_car": "11",
+          "note": "Hamlin led from Lap 4"
+        },
+        {
+          "number": 2,
+          "laps": "81-165",
+          "winner": "Kyle Larson",
+          "number_car": "5",
+          "note": "Larson dominant mid-race"
+        },
+        {
+          "number": 3,
+          "laps": "166-267",
+          "winner": "Denny Hamlin",
+          "number_car": "11",
+          "note": "Overcame speeding penalty to win"
+        }
+      ],
+      "race": {
+        "winner": "Denny Hamlin",
+        "laps_led_leader": "Denny Hamlin",
+        "laps_led_count": 134,
+        "cautions": 3,
+        "caution_laps": 20,
+        "lead_changes": 21,
+        "lead_changes_drivers": 9,
+        "margin": "0.502s",
+        "avg_speed_mph": 148.992,
+        "race_time": "2:41:17",
+        "fastest_lap_driver": "Christopher Bell",
+        "fastest_lap_time": "29.45s",
+        "results": [
+          {
+            "pos": 1,
+            "driver": "Denny Hamlin",
+            "number": "11",
+            "team": "Joe Gibbs Racing",
+            "car": "Toyota",
+            "laps": 267,
+            "laps_led": 134,
+            "gap": null,
+            "status": "running",
+            "points": 70,
+            "note": "Overcame pit road speeding penalty"
+          },
+          {
+            "pos": 2,
+            "driver": "Chase Elliott",
+            "number": "9",
+            "team": "Hendrick Motorsports",
+            "car": "Chevy",
+            "laps": 267,
+            "laps_led": 0,
+            "gap": "+0.502s",
+            "status": "running",
+            "points": 40,
+            "note": "Strong recovery from P15 start"
+          },
+          {
+            "pos": 3,
+            "driver": "William Byron",
+            "number": "24",
+            "team": "Hendrick Motorsports",
+            "car": "Chevy",
+            "laps": 267,
+            "laps_led": 26,
+            "gap": "+1.8s",
+            "status": "running",
+            "points": 49
+          },
+          {
+            "pos": 4,
+            "driver": "Christopher Bell",
+            "number": "20",
+            "team": "Joe Gibbs Racing",
+            "car": "Toyota",
+            "laps": 267,
+            "laps_led": 31,
+            "gap": "+2.4s",
+            "status": "running",
+            "points": 51
+          },
+          {
+            "pos": 5,
+            "driver": "Ty Gibbs",
+            "number": "54",
+            "team": "Joe Gibbs Racing",
+            "car": "Toyota",
+            "laps": 267,
+            "laps_led": 0,
+            "gap": "+3.1s",
+            "status": "running",
+            "points": 39
+          },
+          {
+            "pos": 6,
+            "driver": "Chris Buescher",
+            "number": "17",
+            "team": "RFK Racing",
+            "car": "Ford",
+            "laps": 267,
+            "laps_led": 0,
+            "gap": "+4.2s",
+            "status": "running",
+            "points": 35
+          },
+          {
+            "pos": 7,
+            "driver": "Kyle Larson",
+            "number": "5",
+            "team": "Hendrick Motorsports",
+            "car": "Chevy",
+            "laps": 267,
+            "laps_led": 62,
+            "gap": "+5.0s",
+            "status": "running",
+            "points": 48
+          },
+          {
+            "pos": 8,
+            "driver": "Chase Briscoe",
+            "number": "19",
+            "team": "Joe Gibbs Racing",
+            "car": "Toyota",
+            "laps": 267,
+            "laps_led": 0,
+            "gap": "+6.1s",
+            "status": "running",
+            "points": "TBD"
+          },
+          {
+            "pos": 9,
+            "driver": "Ryan Blaney",
+            "number": "12",
+            "team": "Team Penske",
+            "car": "Ford",
+            "laps": 267,
+            "laps_led": 0,
+            "gap": "+7.4s",
+            "status": "running",
+            "points": "TBD"
+          },
+          {
+            "pos": 10,
+            "driver": "Bubba Wallace",
+            "number": "23",
+            "team": "23XI Racing",
+            "car": "Toyota",
+            "laps": 267,
+            "laps_led": 0,
+            "gap": "+8.2s",
+            "status": "running",
+            "points": "TBD"
+          },
+          {
+            "pos": 11,
+            "driver": "Tyler Reddick",
+            "number": "45",
+            "team": "23XI Racing",
+            "car": "Toyota",
+            "laps": 267,
+            "laps_led": 0,
+            "gap": "TBD",
+            "status": "running",
+            "points": "TBD"
+          }
+        ]
+      },
+      "stats": [
+        {
+          "value": "134",
+          "label": "Hamlin Laps Led",
+          "note": "Dominant despite penalty"
+        },
+        {
+          "value": "0.502s",
+          "label": "Win Margin",
+          "note": "Hamlin over Elliott"
+        },
+        {
+          "value": "P15\u2192P2",
+          "label": "Elliott Recovery",
+          "note": "Best move of the day"
+        },
+        {
+          "value": "62",
+          "label": "Larson Laps Led",
+          "note": "Led most \u2014 faded to P7"
+        },
+        {
+          "value": "21",
+          "label": "Lead Changes",
+          "note": "Among 9 different drivers"
+        },
+        {
+          "value": "187.156",
+          "label": "Pole Speed (mph)",
+          "note": "Bell \u2014 Saturday qualifying"
+        }
+      ],
+      "position_tracker": {
+        "labels": [
+          "L1",
+          "L40",
+          "L80",
+          "L120",
+          "L165",
+          "L200",
+          "L250",
+          "L267"
+        ],
+        "drivers": [
+          {
+            "name": "Hamlin",
+            "color": "#AA3300",
+            "positions": [
+              2,
+              1,
+              1,
+              2,
+              2,
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "name": "Larson",
+            "color": "#CC4400",
+            "positions": [
+              5,
+              4,
+              3,
+              1,
+              1,
+              3,
+              4,
+              7
+            ]
+          },
+          {
+            "name": "Bell",
+            "color": "#4488FF",
+            "positions": [
+              1,
+              2,
+              2,
+              3,
+              3,
+              4,
+              5,
+              4
+            ]
+          },
+          {
+            "name": "Byron",
+            "color": "#FF8800",
+            "positions": [
+              9,
+              8,
+              6,
+              5,
+              4,
+              3,
+              3,
+              3
+            ]
+          },
+          {
+            "name": "Elliott",
+            "color": "#00AA44",
+            "positions": [
+              15,
+              13,
+              10,
+              8,
+              6,
+              5,
+              2,
+              2
+            ]
+          }
+        ]
+      },
+      "driver_of_race": {
+        "driver": "Denny Hamlin",
+        "number": "11",
+        "team": "Joe Gibbs Racing",
+        "badge": "\ud83c\udfc6 Driver of the Race",
+        "stats": [
+          {
+            "value": "P1",
+            "label": "Finish"
+          },
+          {
+            "value": "134",
+            "label": "Laps Led"
+          },
+          {
+            "value": "0.502s",
+            "label": "Win Margin"
+          },
+          {
+            "value": "Penalty",
+            "label": "Overcame pit road speeding"
+          }
+        ],
+        "analysis": "Led the race from Lap 4, was penalised for pit road speeding mid-race and dropped back, then methodically worked back to the front and led the final stint to win by half a second over a charging Elliott. It was the kind of win that defines Hamlin's career \u2014 patient, composed, and earned the hard way. His first win of 2026 at a track where he's historically dominant."
+      },
+      "story_cards": [
+        {
+          "title": "Hamlin Overcomes the Penalty",
+          "body": "Denny Hamlin took the lead from Christopher Bell on Lap 4 and looked in complete control before a pit road speeding violation sent him backwards through the field. Instead of crumbling, he methodically rebuilt position \u2014 passing cars one at a time on a 1.5-mile oval where clean air is everything. By the time the final stage was underway he was back at the front, leading 134 of 267 laps in total and winning by 0.502 seconds. 'When you have the car I had today, you can afford to make one mistake and still win,' he said afterwards."
+        },
+        {
+          "title": "Elliott's Charge from P15",
+          "body": "Chase Elliott qualified 15th \u2014 his worst starting position in three races \u2014 and finished second. The Hendrick Motorsports Chevy found pace through tyre management across the long green-flag runs, and Elliott passed car after car in the final stage to close on Hamlin in the last ten laps. He ran out of room and laps, losing by 0.502 seconds. His first top-two of 2026 was built on exactly the qualities that made him a champion \u2014 a quiet day becoming a spectacular result."
+        },
+        {
+          "title": "Larson's Promising P7",
+          "body": "Kyle Larson led 62 laps \u2014 second-most behind Hamlin \u2014 and at stages looked like the fastest car on the track. His Hendrick Motorsports Chevy found the right-front grip that makes Las Vegas suits his driving style. But the long final stint exposed a tyre degradation weakness that allowed Hamlin, Elliott and Byron to close and pass. P7 from P5 on the grid is an underwhelming result for the pace he showed, but the speed is there. His 0-for-5 start to 2026 despite leading laps in four of those races is the story of his season so far."
+        },
+        {
+          "title": "JGR's Commanding Weekend",
+          "body": "Joe Gibbs Racing placed four cars in the top six \u2014 Hamlin first, Bell fourth, Ty Gibbs fifth, Briscoe eighth. They swept the top three qualifying spots. Bell took pole, led early laps, and won a stage. The JGR organisation came into Las Vegas with momentum and left as the team that ended 23XI's early dominance. Their depth, their engineering base, and their home-track knowledge at intermediates all showed in one comprehensive weekend."
+        }
+      ],
+      "insights": [
+        {
+          "type": "win",
+          "icon": "\ud83c\udfc6",
+          "headline": "Hamlin's Character Win",
+          "body": "The pit road speeding penalty could have ended this race for Hamlin. On a 1.5-mile oval with 21 lead changes, dropping back mid-race usually means the result is gone. Instead he drove the most controlled recovery of the young season \u2014 using track position awareness and tyre management to rebuild from the back of the lead lap to the front. It's a win that says something about the driver."
+        },
+        {
+          "type": "crash",
+          "icon": "\ud83d\udd27",
+          "headline": "Larson's 2026 Pattern",
+          "body": "Zero wins in five races despite leading laps in four of them. Daytona: led 48 laps, crashed. Atlanta: led 48 laps, crashed. COTA: P6. Phoenix: P3. Las Vegas: led 62 laps, finished P7. The reigning champion has the pace to win every week \u2014 the results simply aren't converting. At some point, a pattern of leading and not winning becomes a car setup or tyre management issue, not bad luck."
+        },
+        {
+          "type": "points",
+          "icon": "\ud83d\udcca",
+          "headline": "Reddick's Lead Narrows",
+          "body": "Hamlin's 70 points from Las Vegas \u2014 win plus stage bonuses \u2014 rockets him into serious championship contention. Reddick's lead entering Las Vegas was 60 points over Blaney; depending on where he finished, Hamlin could be within striking distance at Round 6. The championship was Reddick's to lose five races ago. It's slowly becoming a genuine fight."
+        },
+        {
+          "type": "story",
+          "icon": "\ud83d\udcd6",
+          "headline": "Elliott's Long Wait Ends",
+          "body": "Chase Elliott hasn't won since Watkins Glen 2025. Second at Las Vegas \u2014 from 15th on the grid \u2014 is the kind of result that breaks a drought's psychological grip. His Hendrick Motorsports team-mates Byron (P3) and Larson (P7 from P5) also had solid days. For the first time in 2026, Hendrick Motorsports looks like the team best-positioned to challenge 23XI and JGR across the intermediate oval season."
+        }
+      ]
+    },
+    {
+      "round": 6,
+      "name": "Goodyear 400",
+      "venue": "Darlington Raceway",
+      "location": "Darlington, South Carolina",
+      "circuit_type": "oval_1.5",
+      "flag": "\ud83c\uddfa\ud83c\uddf8",
+      "date": "2026-03-22",
+      "complete": false
+    }
+  ]
+}
