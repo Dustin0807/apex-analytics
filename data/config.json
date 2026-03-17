@@ -2,14 +2,18 @@
   "site": {
     "name": "APEX Analytics",
     "tagline": "Motorsport Intelligence",
-    "description": "Deep race analysis across every major motorsport series — results, strategy, championship tracking and season archives.",
+    "description": "Deep race analysis across every major motorsport series \u2014 results, strategy, championship tracking and season archives.",
     "current_year": 2026,
-    "active_series": ["f1"],
-    "coming_soon": ["indycar", "motogp", "wec", "nascar-cup", "nascar-xfinity", "nascar-trucks"]
+    "active_series": [
+      "f1"
+    ],
+    "coming_soon": [
+      "indycar",
+      "motogp",
+      "wec"
+    ]
   },
-
   "series": {
-
     "f1": {
       "id": "f1",
       "name": "Formula 1",
@@ -19,7 +23,6 @@
       "color": "E8002D",
       "accent": "27F4D2",
       "accent_rgb": "39,244,210",
-
       "competitor": {
         "type": "driver",
         "plural": "drivers",
@@ -30,53 +33,75 @@
         "plural": "constructors",
         "label": "Constructor"
       },
-
-      "championships": ["competitors", "teams"],
+      "championships": [
+        "competitors",
+        "teams"
+      ],
       "has_team_championship": true,
-
       "qualifying": {
         "format": "knockout_3session",
-        "sessions": ["Q1", "Q2", "Q3"],
+        "sessions": [
+          "Q1",
+          "Q2",
+          "Q3"
+        ],
         "pole_metric": "time",
         "label": "Qualifying"
       },
-
       "secondary_event": {
         "enabled": true,
         "name": "Sprint",
         "label": "Sprint Race",
         "not_every_round": true
       },
-
       "strategy": {
         "type": "tyre_compounds",
         "compounds": {
-          "S": { "name": "Soft",   "color": "FF4040" },
-          "M": { "name": "Medium", "color": "FFD100" },
-          "H": { "name": "Hard",   "color": "E8E8E8" },
-          "I": { "name": "Inter",  "color": "39B54A" },
-          "W": { "name": "Wet",    "color": "0099FF" }
+          "S": {
+            "name": "Soft",
+            "color": "FF4040"
+          },
+          "M": {
+            "name": "Medium",
+            "color": "FFD100"
+          },
+          "H": {
+            "name": "Hard",
+            "color": "E8E8E8"
+          },
+          "I": {
+            "name": "Inter",
+            "color": "39B54A"
+          },
+          "W": {
+            "name": "Wet",
+            "color": "0099FF"
+          }
         }
       },
-
       "segments": {
         "enabled": false,
         "type": null
       },
-
       "result_extras": {
         "fastest_lap_point": true,
         "fastest_lap_label": "Fastest Lap",
         "gap_type": "time",
         "position_label": "P",
-        "dnf_types": ["crash", "mech", "dnf", "dns", "dsq"]
+        "dnf_types": [
+          "crash",
+          "mech",
+          "dnf",
+          "dns",
+          "dsq"
+        ]
       },
-
       "venue_type": "circuit",
-      "years": [2026],
+      "years": [
+        2026
+      ],
       "current": 2026
     },
-
     "indycar": {
       "id": "indycar",
       "name": "IndyCar Series",
@@ -87,28 +112,41 @@
       "accent": "0088FF",
       "accent_rgb": "0,136,255",
       "coming_soon_label": "IndyCar analysis coming soon.",
-
-      "competitor": { "type": "driver", "plural": "drivers", "label": "Driver" },
-      "team": { "type": "entrant", "plural": "entrants", "label": "Entrant" },
-
-      "championships": ["competitors"],
+      "competitor": {
+        "type": "driver",
+        "plural": "drivers",
+        "label": "Driver"
+      },
+      "team": {
+        "type": "entrant",
+        "plural": "entrants",
+        "label": "Entrant"
+      },
+      "championships": [
+        "competitors"
+      ],
       "has_team_championship": false,
-
       "qualifying": {
         "format": "mixed",
-        "sessions": ["Fast Six"],
+        "sessions": [
+          "Fast Six"
+        ],
         "pole_metric": "speed",
         "label": "Qualifying"
       },
-
-      "secondary_event": { "enabled": false },
-      "strategy": { "type": "pit_cycles" },
-      "segments": { "enabled": false },
+      "secondary_event": {
+        "enabled": false
+      },
+      "strategy": {
+        "type": "pit_cycles"
+      },
+      "segments": {
+        "enabled": false
+      },
       "venue_type": "mixed",
       "years": [],
       "current": null
     },
-
     "motogp": {
       "id": "motogp",
       "name": "MotoGP",
@@ -119,34 +157,47 @@
       "accent": "FF4400",
       "accent_rgb": "212,0,10",
       "coming_soon_label": "MotoGP analysis coming soon.",
-
-      "competitor": { "type": "rider", "plural": "riders", "label": "Rider" },
-      "team": { "type": "manufacturer", "plural": "manufacturers", "label": "Manufacturer" },
-
-      "championships": ["competitors", "teams", "manufacturers"],
+      "competitor": {
+        "type": "rider",
+        "plural": "riders",
+        "label": "Rider"
+      },
+      "team": {
+        "type": "manufacturer",
+        "plural": "manufacturers",
+        "label": "Manufacturer"
+      },
+      "championships": [
+        "competitors",
+        "teams",
+        "manufacturers"
+      ],
       "has_team_championship": true,
-
       "qualifying": {
         "format": "knockout_2session",
-        "sessions": ["Q1", "Q2"],
+        "sessions": [
+          "Q1",
+          "Q2"
+        ],
         "pole_metric": "time",
         "label": "Qualifying"
       },
-
       "secondary_event": {
         "enabled": true,
         "name": "Sprint",
         "label": "Sprint Race",
         "not_every_round": false
       },
-
-      "strategy": { "type": "tyre_compounds" },
-      "segments": { "enabled": false },
+      "strategy": {
+        "type": "tyre_compounds"
+      },
+      "segments": {
+        "enabled": false
+      },
       "venue_type": "circuit",
       "years": [],
       "current": null
     },
-
     "wec": {
       "id": "wec",
       "name": "FIA World Endurance Championship",
@@ -157,145 +208,141 @@
       "accent": "00FF88",
       "accent_rgb": "0,168,89",
       "coming_soon_label": "WEC analysis coming soon.",
-
-      "competitor": { "type": "driver", "plural": "drivers", "label": "Driver" },
-      "team": { "type": "manufacturer", "plural": "manufacturers", "label": "Manufacturer" },
-
-      "championships": ["competitors", "teams", "manufacturers"],
+      "competitor": {
+        "type": "driver",
+        "plural": "drivers",
+        "label": "Driver"
+      },
+      "team": {
+        "type": "manufacturer",
+        "plural": "manufacturers",
+        "label": "Manufacturer"
+      },
+      "championships": [
+        "competitors",
+        "teams",
+        "manufacturers"
+      ],
       "has_team_championship": true,
-
       "qualifying": {
         "format": "hyperpole",
-        "sessions": ["Qualifying", "Hyperpole"],
+        "sessions": [
+          "Qualifying",
+          "Hyperpole"
+        ],
         "pole_metric": "time",
         "label": "Hyperpole"
       },
-
-      "secondary_event": { "enabled": false },
-      "strategy": { "type": "multi_class" },
-      "segments": { "enabled": false },
+      "secondary_event": {
+        "enabled": false
+      },
+      "strategy": {
+        "type": "multi_class"
+      },
+      "segments": {
+        "enabled": false
+      },
       "venue_type": "circuit",
       "years": [],
       "current": null
-    },
-
-    "nascar-cup": {
-      "id": "nascar-cup",
-      "name": "NASCAR Cup Series",
-      "short": "Cup",
-      "full_name": "NASCAR Cup Series",
-      "status": "coming_soon",
-      "color": "FFD100",
-      "accent": "FFD100",
-      "accent_rgb": "255,209,0",
-      "coming_soon_label": "NASCAR Cup analysis coming soon.",
-
-      "competitor": { "type": "driver", "plural": "drivers", "label": "Driver" },
-      "team": { "type": "owner", "plural": "owners", "label": "Team Owner" },
-
-      "championships": ["competitors", "manufacturers"],
-      "has_team_championship": false,
-
-      "qualifying": {
-        "format": "single_lap",
-        "sessions": ["Qualifying"],
-        "pole_metric": "speed",
-        "label": "Qualifying"
-      },
-
-      "secondary_event": { "enabled": false },
-      "strategy": { "type": "tyre_cycles" },
-
-      "segments": {
-        "enabled": true,
-        "type": "stages",
-        "label": "Stages",
-        "count": 3
-      },
-
-      "venue_type": "mixed",
-      "years": [],
-      "current": null
-    },
-
-    "nascar-xfinity": {
-      "id": "nascar-xfinity",
-      "name": "NASCAR O'Reilly Auto Parts Series",
-      "short": "O'Reilly",
-      "status": "coming_soon",
-      "color": "00AAFF",
-      "accent": "00AAFF",
-      "accent_rgb": "0,170,255",
-      "coming_soon_label": "O'Reilly Series analysis coming soon.",
-      "competitor": { "type": "driver", "plural": "drivers", "label": "Driver" },
-      "team": { "type": "owner", "plural": "owners", "label": "Team Owner" },
-      "championships": ["competitors"],
-      "qualifying": { "format": "single_lap", "pole_metric": "speed" },
-      "secondary_event": { "enabled": false },
-      "strategy": { "type": "tyre_cycles" },
-      "segments": { "enabled": true, "type": "stages", "label": "Stages", "count": 3 },
-      "venue_type": "mixed",
-      "years": [],
-      "current": null
-    },
-
-    "nascar-trucks": {
-      "id": "nascar-trucks",
-      "name": "NASCAR Craftsman Truck Series",
-      "short": "Trucks",
-      "status": "coming_soon",
-      "color": "FF6B00",
-      "accent": "FF6B00",
-      "accent_rgb": "255,107,0",
-      "coming_soon_label": "Trucks Series analysis coming soon.",
-      "competitor": { "type": "driver", "plural": "drivers", "label": "Driver" },
-      "team": { "type": "owner", "plural": "owners", "label": "Team Owner" },
-      "championships": ["competitors"],
-      "qualifying": { "format": "single_lap", "pole_metric": "speed" },
-      "secondary_event": { "enabled": false },
-      "strategy": { "type": "tyre_cycles" },
-      "segments": { "enabled": true, "type": "stages", "label": "Stages", "count": 3 },
-      "venue_type": "mixed",
-      "years": [],
-      "current": null
     }
-
   },
-
   "result_status": {
-    "running": { "label": "Running",       "class": "status-run"   },
-    "crash":   { "label": "Accident",      "class": "status-crash" },
-    "mech":    { "label": "Mechanical",    "class": "status-mech"  },
-    "dnf":     { "label": "DNF",           "class": "status-dnf"   },
-    "dns":     { "label": "Did Not Start", "class": "status-dns"   },
-    "dsq":     { "label": "Disqualified",  "class": "status-dsq"   }
+    "running": {
+      "label": "Running",
+      "class": "status-run"
+    },
+    "crash": {
+      "label": "Accident",
+      "class": "status-crash"
+    },
+    "mech": {
+      "label": "Mechanical",
+      "class": "status-mech"
+    },
+    "dnf": {
+      "label": "DNF",
+      "class": "status-dnf"
+    },
+    "dns": {
+      "label": "Did Not Start",
+      "class": "status-dns"
+    },
+    "dsq": {
+      "label": "Disqualified",
+      "class": "status-dsq"
+    }
   },
-
   "insight_types": {
-    "win":      { "color": "FFD700", "icon": "🏆" },
-    "strategy": { "color": "00C878", "icon": "🔧" },
-    "crash":    { "color": "FF4040", "icon": "💥" },
-    "story":    { "color": "8B66FF", "icon": "📖" },
-    "points":   { "color": "00D4FF", "icon": "📊" },
-    "history":  { "color": "FFD100", "icon": "⭐" },
-    "tech":     { "color": "FF8800", "icon": "⚙️" }
+    "win": {
+      "color": "FFD700",
+      "icon": "\ud83c\udfc6"
+    },
+    "strategy": {
+      "color": "00C878",
+      "icon": "\ud83d\udd27"
+    },
+    "crash": {
+      "color": "FF4040",
+      "icon": "\ud83d\udca5"
+    },
+    "story": {
+      "color": "8B66FF",
+      "icon": "\ud83d\udcd6"
+    },
+    "points": {
+      "color": "00D4FF",
+      "icon": "\ud83d\udcca"
+    },
+    "history": {
+      "color": "FFD100",
+      "icon": "\u2b50"
+    },
+    "tech": {
+      "color": "FF8800",
+      "icon": "\u2699\ufe0f"
+    }
   },
-
   "circuit_tiers": {
     "1": {
       "label": "Iconic",
       "description": "Circuits with deep F1 history and cultural significance",
-      "circuits": ["monaco", "monza", "spa", "silverstone", "suzuka", "interlagos"]
+      "circuits": [
+        "monaco",
+        "monza",
+        "spa",
+        "silverstone",
+        "suzuka",
+        "interlagos"
+      ]
     },
     "2": {
       "label": "Established",
       "description": "Long-running venues with solid historical records",
-      "circuits": ["albert-park", "barcelona", "bahrain", "zandvoort", "singapore", "shanghai", "hungaroring", "red-bull-ring", "yas-marina"]
+      "circuits": [
+        "albert-park",
+        "barcelona",
+        "bahrain",
+        "zandvoort",
+        "singapore",
+        "shanghai",
+        "hungaroring",
+        "red-bull-ring",
+        "yas-marina"
+      ]
     },
     "3": {
       "label": "Modern",
       "description": "Newer or rotating venues with limited historical depth",
-      "circuits": ["miami", "las-vegas", "losail", "jeddah", "baku", "cota", "rodriguez"]
+      "circuits": [
+        "miami",
+        "las-vegas",
+        "losail",
+        "jeddah",
+        "baku",
+        "cota",
+        "rodriguez"
+      ]
     }
   }
 }

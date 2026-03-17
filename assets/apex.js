@@ -24,6 +24,9 @@ function params() {
     series : p.get('series') || 'f1',
     round  : parseInt(p.get('round'))  || null,
     year   : parseInt(p.get('year'))   || null,
+    id     : p.get('id')     || null,
+    a      : p.get('a')      || null,
+    b      : p.get('b')      || null,
   };
 }
 
@@ -866,9 +869,10 @@ async function initStandingsPage() {
   const p    = params();
   const year = p.year || new Date().getFullYear();
 
-  const [config, seriesData] = await Promise.all([
+  const [config, seriesData, competitorsData] = await Promise.all([
     loadJSON('data/config.json'),
     loadJSON(`data/${p.series}-${year}.json`),
+    loadJSON(`data/competitors-${p.series}-${year}.json`),
   ]);
   if (!config || !seriesData) return;
 
@@ -878,7 +882,16 @@ async function initStandingsPage() {
   setAccent(series.accent || series.color || '#FFFFFF');
   document.title = `${series.name} ${year} Standings — APEX Analytics`;
 
-  const isF1   = series.id === 'f1';
+  // Build ID lookup from competitors data (name → id)
+  const idMap = {};
+  if (competitorsData?.competitors) {
+    competitorsData.competitors.forEach(c => { idMap[c.name] = c.id; });
+  }
+
+  // Helper: strip # from color if present
+  const cleanColor = (c) => c ? c.replace('#','') : null;
+
+  const isF1    = series.id === 'f1';
   const drivers = seriesData.standings?.drivers || [];
   const maxPts  = drivers[0]?.pts || 1;
 
@@ -891,28 +904,38 @@ async function initStandingsPage() {
     <table class="standings-full">
       <thead><tr>
         <th>Pos</th>
-        ${!isF1 ? '<th>#</th>' : ''}
         <th>Driver</th>
         <th style="width:120px"></th>
         <th style="text-align:right">Pts</th>
         <th style="text-align:right">Gap</th>
         <th style="text-align:center">Wins</th>
+        <th></th>
       </tr></thead>
       <tbody>
-        ${drivers.map((d, i) => `<tr class="${i === 0 ? 'leader' : ''}">
-          <td><span class="sf-pos${i === 0 ? ' p1' : ''}">${d.pos}</span></td>
-          ${!isF1 ? `<td class="sf-num">${d.number || ''}</td>` : ''}
-          <td>
-            <div class="sf-name">${d.driver}</div>
-            <div class="sf-team">${d.team}</div>
-          </td>
-          <td class="sf-bar-cell">
-            <div class="sf-bar" style="width:${Math.round((d.pts / maxPts) * 100)}%;background:${d.color || 'var(--accent)'}"></div>
-          </td>
-          <td class="sf-pts">${d.pts}</td>
-          <td class="sf-gap">${i === 0 ? 'Leader' : '−' + (maxPts - d.pts)}</td>
-          <td class="sf-wins">${d.wins ?? '—'}</td>
-        </tr>`).join('')}
+        ${drivers.map((d, i) => {
+          const driverId  = idMap[d.driver];
+          const barColor  = '#' + cleanColor(d.color);
+          const profileLink = driverId
+            ? `<a href="competitor.html?series=${p.series}&id=${driverId}&year=${year}"
+                  style="font-family:'JetBrains Mono',monospace;font-size:8px;letter-spacing:1.5px;
+                         text-transform:uppercase;color:var(--accent);text-decoration:none;
+                         opacity:.6;white-space:nowrap">Profile →</a>`
+            : '';
+          return `<tr class="${i === 0 ? 'leader' : ''}">
+            <td><span class="sf-pos${i === 0 ? ' p1' : ''}">${d.pos}</span></td>
+            <td>
+              <div class="sf-name">${d.driver}</div>
+              <div class="sf-team">${d.team}</div>
+            </td>
+            <td class="sf-bar-cell">
+              <div class="sf-bar" style="width:${Math.round((d.pts / maxPts) * 100)}%;background:${barColor}"></div>
+            </td>
+            <td class="sf-pts">${d.pts}</td>
+            <td class="sf-gap">${i === 0 ? 'Leader' : '−' + (maxPts - d.pts)}</td>
+            <td class="sf-wins">${d.wins ?? '—'}</td>
+            <td>${profileLink}</td>
+          </tr>`;
+        }).join('')}
       </tbody>
     </table>`;
 
@@ -926,13 +949,17 @@ async function initStandingsPage() {
         <div class="sec-title">Constructor Championship</div>
       </div>
       <table class="standings-full">
-        <thead><tr><th>Pos</th><th>Constructor</th><th style="width:120px"></th><th style="text-align:right">Pts</th></tr></thead>
+        <thead><tr>
+          <th>Pos</th><th>Constructor</th>
+          <th style="width:120px"></th>
+          <th style="text-align:right">Pts</th>
+        </tr></thead>
         <tbody>
           ${cons.map((c, i) => `<tr class="${i === 0 ? 'leader' : ''}">
             <td><span class="sf-pos${i === 0 ? ' p1' : ''}">${c.pos}</span></td>
             <td><div class="sf-name">${c.team}</div></td>
             <td class="sf-bar-cell">
-              <div class="sf-bar" style="width:${Math.round((c.pts / maxCons) * 100)}%;background:${c.color || 'var(--accent)'}"></div>
+              <div class="sf-bar" style="width:${Math.round((c.pts / maxCons) * 100)}%;background:#${cleanColor(c.color) || 'var(--accent)'}"></div>
             </td>
             <td class="sf-pts">${c.pts}</td>
           </tr>`).join('')}
@@ -940,14 +967,14 @@ async function initStandingsPage() {
       </table>`;
   }
 
-  /* schedule column */
+  /* schedule sidebar */
   const scheduleItems = seriesData.schedule.map(r => {
-    const st     = raceStatus(r);
-    const cls    = r.complete ? 'done' : st === 'analyzing' ? 'analyzing' : st === 'today' ? 'next' : '';
-    const link   = r.complete || st !== 'upcoming'
+    const st   = raceStatus(r);
+    const cls  = r.complete ? 'done' : st === 'analyzing' ? 'analyzing' : st === 'today' ? 'next' : '';
+    const link = r.complete || st !== 'upcoming'
       ? `onclick="location.href='race.html?series=${p.series}&round=${r.round}&year=${year}'" style="cursor:pointer"`
       : '';
-    const badge  = r.complete
+    const badge = r.complete
       ? `<span class="si-status done">Done</span>`
       : st === 'analyzing'
       ? `<span class="analyzing-badge"><span class="analyzing-dot"></span>Live</span>`
@@ -1771,6 +1798,9 @@ async function initCompetitorPage() {
   const venues  = venuesData?.venues || [];
   const teams   = competitorsData.teams || {};
 
+  // Populate name→ID cache
+  buildNameIdCache(competitorsData.competitors);
+
   if (!driver) {
     document.getElementById('comp-page').innerHTML =
       `<div style="padding:80px;color:var(--dim);font-family:'JetBrains Mono',monospace">
@@ -1839,16 +1869,20 @@ async function initVenuePage() {
   const p    = params();
   const year = p.year || new Date().getFullYear();
 
-  const [config, venuesData, seriesData] = await Promise.all([
+  const [config, venuesData, seriesData, competitorsData] = await Promise.all([
     loadJSON('data/config.json'),
     loadJSON(`data/venues-${p.series}-${year}.json`),
     loadJSON(`data/${p.series}-${year}.json`),
+    loadJSON(`data/competitors-${p.series}-${year}.json`),
   ]);
   if (!config || !venuesData) return;
 
   const series = config.series[p.series];
   const venue  = venuesData.venues.find(v => v.id === p.id);
   if (!venue) { document.getElementById('venue-page').innerHTML = `<div style="padding:80px;color:var(--dim);font-family:'JetBrains Mono',monospace">Circuit not found: ${p.id}</div>`; return; }
+
+  // Populate name→ID cache for driver links
+  buildNameIdCache(competitorsData?.competitors);
 
   setAccent(series.accent || '#27F4D2');
   document.title = `${venue.name} — APEX Analytics`;
@@ -1950,7 +1984,7 @@ async function initVenuePage() {
     <tr>
       <td><span class="wt-year ${w.year === 2026 ? 'current' : ''}">${w.year}</span></td>
       <td>
-        <a href="competitor.html?series=${p.series}&id=${w.winner.toLowerCase().replace(/\s+/g,'-')}"
+        <a href="competitor.html?series=${p.series}&id=${nameToId(w.winner)}"
            style="text-decoration:none;color:inherit">
           <div class="wt-winner">${w.winner}</div>
           <div class="wt-team">${w.team}</div>
@@ -2590,9 +2624,16 @@ function switchView(id, btn) {
 
 function toggleTraj(id, el) {
   el.classList.toggle('active');
-  const chart = Chart.getChart('chart-trajectories');
+  const ctx   = document.getElementById('chart-trajectories');
+  const chart = ctx ? Chart.getChart(ctx) : null;
   if (!chart) return;
-  const ds = chart.data.datasets.find(d => d.label === id.split('-').pop());
+  // Dataset label is set to driver.name.split(' ').pop() (surname)
+  const surname = id.split('-').slice(0, -1).reverse().join(' ').split(' ').pop()
+               || id.split('-')[0];
+  const ds = chart.data.datasets.find(d =>
+    d.label.toLowerCase().includes(id.split('-')[0]) ||
+    id.includes(d.label.toLowerCase().replace(/\s+/g,'-'))
+  );
   if (ds) { ds.hidden = !el.classList.contains('active'); chart.update(); }
 }
 
@@ -2860,4 +2901,36 @@ async function initHubPageV2() {
 
       </div>
     </div>`;
+}
+
+/* ── nameToId helper ─────────────────────────────────────
+   Converts a display name like "Lewis Hamilton" to a
+   competitor ID like "hamilton-lewis". Uses a loaded
+   competitors dataset when available, falls back to
+   reverse-split with accent stripping.
+── */
+const _nameIdCache = {};
+
+function buildNameIdCache(competitors) {
+  if (!competitors) return;
+  competitors.forEach(c => {
+    _nameIdCache[c.name]       = c.id;
+    _nameIdCache[c.name.toLowerCase()] = c.id;
+    // Also map short name (surname only)
+    const surname = c.name.split(' ').pop();
+    _nameIdCache[surname]              = c.id;
+    _nameIdCache[surname.toLowerCase()]= c.id;
+  });
+}
+
+function nameToId(name) {
+  if (!name) return null;
+  // Check cache first
+  if (_nameIdCache[name]) return _nameIdCache[name];
+  if (_nameIdCache[name.toLowerCase()]) return _nameIdCache[name.toLowerCase()];
+  // Fallback: reverse split + strip accents
+  return name.toLowerCase()
+    .normalize('NFD').replace(/[\u0300-\u036f]/g, '') // strip accents
+    .split(' ').reverse().join('-')
+    .replace(/[^a-z0-9-]/g, '');
 }

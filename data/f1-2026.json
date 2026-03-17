@@ -5,35 +5,202 @@
   "rounds_total_note": "Originally 24 rounds. Bahrain and Saudi Arabian GPs cancelled on 15 Mar 2026 due to Middle East conflict (Iran war). No replacement races scheduled. Season runs to 22 rounds.",
   "standings": {
     "drivers": [
-      { "pos": 1,  "driver": "George Russell",     "short": "Russell",    "team": "Mercedes",      "pts": 51, "wins": 1, "color": "#27F4D2" },
-      { "pos": 2,  "driver": "Kimi Antonelli",     "short": "Antonelli",  "team": "Mercedes",      "pts": 47, "wins": 1, "color": "#1BE0C0" },
-      { "pos": 3,  "driver": "Charles Leclerc",    "short": "Leclerc",    "team": "Ferrari",       "pts": 34, "wins": 0, "color": "#E8002D" },
-      { "pos": 4,  "driver": "Lewis Hamilton",     "short": "Hamilton",   "team": "Ferrari",       "pts": 33, "wins": 0, "color": "#CC0025" },
-      { "pos": 5,  "driver": "Oliver Bearman",     "short": "Bearman",    "team": "Haas",          "pts": 17, "wins": 0, "color": "#B6BABD" },
-      { "pos": 6,  "driver": "Lando Norris",       "short": "Norris",     "team": "McLaren",       "pts": 15, "wins": 0, "color": "#FF8000" },
-      { "pos": 7,  "driver": "Pierre Gasly",       "short": "Gasly",      "team": "Alpine",        "pts": 9,  "wins": 0, "color": "#0090FF" },
-      { "pos": 8,  "driver": "Max Verstappen",     "short": "Verstappen", "team": "Red Bull",      "pts": 8,  "wins": 0, "color": "#3671C6" },
-      { "pos": 8,  "driver": "Liam Lawson",        "short": "Lawson",     "team": "Racing Bulls",  "pts": 8,  "wins": 0, "color": "#4488DD" },
-      { "pos": 10, "driver": "Isack Hadjar",       "short": "Hadjar",     "team": "Red Bull",      "pts": 4,  "wins": 0, "color": "#2255BB" },
-      { "pos": 10, "driver": "Arvid Lindblad",     "short": "Lindblad",   "team": "Racing Bulls",  "pts": 4,  "wins": 0, "color": "#6692FF" },
-      { "pos": 12, "driver": "Oscar Piastri",      "short": "Piastri",    "team": "McLaren",       "pts": 3,  "wins": 0, "color": "#FF9520" },
-      { "pos": 13, "driver": "Carlos Sainz",       "short": "Sainz",      "team": "Williams",      "pts": 2,  "wins": 0, "color": "#005AFF" },
-      { "pos": 14, "driver": "Franco Colapinto",   "short": "Colapinto",  "team": "Alpine",        "pts": 1,  "wins": 0, "color": "#4499FF" }
+      {
+        "pos": 1,
+        "driver": "George Russell",
+        "short": "Russell",
+        "team": "Mercedes",
+        "pts": 51,
+        "wins": 1,
+        "color": "27F4D2"
+      },
+      {
+        "pos": 2,
+        "driver": "Kimi Antonelli",
+        "short": "Antonelli",
+        "team": "Mercedes",
+        "pts": 47,
+        "wins": 1,
+        "color": "1BE0C0"
+      },
+      {
+        "pos": 3,
+        "driver": "Charles Leclerc",
+        "short": "Leclerc",
+        "team": "Ferrari",
+        "pts": 34,
+        "wins": 0,
+        "color": "E8002D"
+      },
+      {
+        "pos": 4,
+        "driver": "Lewis Hamilton",
+        "short": "Hamilton",
+        "team": "Ferrari",
+        "pts": 33,
+        "wins": 0,
+        "color": "CC0025"
+      },
+      {
+        "pos": 5,
+        "driver": "Oliver Bearman",
+        "short": "Bearman",
+        "team": "Haas",
+        "pts": 17,
+        "wins": 0,
+        "color": "B6BABD"
+      },
+      {
+        "pos": 6,
+        "driver": "Lando Norris",
+        "short": "Norris",
+        "team": "McLaren",
+        "pts": 15,
+        "wins": 0,
+        "color": "FF8000"
+      },
+      {
+        "pos": 7,
+        "driver": "Pierre Gasly",
+        "short": "Gasly",
+        "team": "Alpine",
+        "pts": 9,
+        "wins": 0,
+        "color": "0090FF"
+      },
+      {
+        "pos": 8,
+        "driver": "Max Verstappen",
+        "short": "Verstappen",
+        "team": "Red Bull",
+        "pts": 8,
+        "wins": 0,
+        "color": "3671C6"
+      },
+      {
+        "pos": 8,
+        "driver": "Liam Lawson",
+        "short": "Lawson",
+        "team": "Racing Bulls",
+        "pts": 8,
+        "wins": 0,
+        "color": "4488DD"
+      },
+      {
+        "pos": 10,
+        "driver": "Isack Hadjar",
+        "short": "Hadjar",
+        "team": "Red Bull",
+        "pts": 4,
+        "wins": 0,
+        "color": "2255BB"
+      },
+      {
+        "pos": 10,
+        "driver": "Arvid Lindblad",
+        "short": "Lindblad",
+        "team": "Racing Bulls",
+        "pts": 4,
+        "wins": 0,
+        "color": "6692FF"
+      },
+      {
+        "pos": 12,
+        "driver": "Oscar Piastri",
+        "short": "Piastri",
+        "team": "McLaren",
+        "pts": 3,
+        "wins": 0,
+        "color": "FF9520"
+      },
+      {
+        "pos": 13,
+        "driver": "Carlos Sainz",
+        "short": "Sainz",
+        "team": "Williams",
+        "pts": 2,
+        "wins": 0,
+        "color": "005AFF"
+      },
+      {
+        "pos": 14,
+        "driver": "Franco Colapinto",
+        "short": "Colapinto",
+        "team": "Alpine",
+        "pts": 1,
+        "wins": 0,
+        "color": "4499FF"
+      }
     ],
     "constructors": [
-      { "pos": 1, "team": "Mercedes",      "pts": 98, "color": "#27F4D2" },
-      { "pos": 2, "team": "Ferrari",       "pts": 67, "color": "#E8002D" },
-      { "pos": 3, "team": "McLaren",       "pts": 18, "color": "#FF8000" },
-      { "pos": 4, "team": "Haas",          "pts": 17, "color": "#B6BABD" },
-      { "pos": 5, "team": "Red Bull",      "pts": 12, "color": "#3671C6" },
-      { "pos": 5, "team": "Racing Bulls",  "pts": 12, "color": "#6692FF" },
-      { "pos": 7, "team": "Alpine",        "pts": 10, "color": "#0090FF" },
-      { "pos": 8, "team": "Williams",      "pts": 2,  "color": "#005AFF" },
-      { "pos": 9, "team": "Audi",          "pts": 0,  "color": "#00CC00" },
-      { "pos": 9, "team": "Cadillac",      "pts": 0,  "color": "#CC2200" },
-      { "pos": 9, "team": "Aston Martin",  "pts": 0,  "color": "#358C75" }
+      {
+        "pos": 1,
+        "team": "Mercedes",
+        "pts": 98,
+        "color": "27F4D2"
+      },
+      {
+        "pos": 2,
+        "team": "Ferrari",
+        "pts": 67,
+        "color": "E8002D"
+      },
+      {
+        "pos": 3,
+        "team": "McLaren",
+        "pts": 18,
+        "color": "FF8000"
+      },
+      {
+        "pos": 4,
+        "team": "Haas",
+        "pts": 17,
+        "color": "B6BABD"
+      },
+      {
+        "pos": 5,
+        "team": "Red Bull",
+        "pts": 12,
+        "color": "3671C6"
+      },
+      {
+        "pos": 5,
+        "team": "Racing Bulls",
+        "pts": 12,
+        "color": "6692FF"
+      },
+      {
+        "pos": 7,
+        "team": "Alpine",
+        "pts": 10,
+        "color": "0090FF"
+      },
+      {
+        "pos": 8,
+        "team": "Williams",
+        "pts": 2,
+        "color": "005AFF"
+      },
+      {
+        "pos": 9,
+        "team": "Audi",
+        "pts": 0,
+        "color": "00CC00"
+      },
+      {
+        "pos": 9,
+        "team": "Cadillac",
+        "pts": 0,
+        "color": "CC2200"
+      },
+      {
+        "pos": 9,
+        "team": "Aston Martin",
+        "pts": 0,
+        "color": "358C75"
+      }
     ],
-    "note": "After Round 2 — Chinese Grand Prix. Russell leads Antonelli by 4 points."
+    "note": "After Round 2 \u2014 Chinese Grand Prix. Russell leads Antonelli by 4 points."
   },
   "schedule": [
     {
@@ -42,45 +209,206 @@
       "venue": "Albert Park Circuit",
       "location": "Melbourne, Australia",
       "circuit_type": "street",
-      "flag": "🇦🇺",
+      "flag": "\ud83c\udde6\ud83c\uddfa",
       "date": "2026-03-16",
       "time_utc": "05:00",
       "laps": 58,
       "distance_km": 307.6,
       "complete": true,
       "sprint_weekend": false,
-
-      "summary": "George Russell led every lap that mattered — but Ferrari handed him the race. Both VSC periods gave Mercedes free pit stops; Ferrari stayed out both times and watched the lead disappear into the pit lane. Russell converted pole into a dominant lights-to-flag victory, Kimi Antonelli took a serene P2 on his F1 debut at 18 years old, and Verstappen carved from 20th to 6th having crashed out of qualifying entirely. Oscar Piastri never made the grid — a sighting lap crash at Turn 4 ended his home race before it began.",
-
+      "summary": "George Russell led every lap that mattered \u2014 but Ferrari handed him the race. Both VSC periods gave Mercedes free pit stops; Ferrari stayed out both times and watched the lead disappear into the pit lane. Russell converted pole into a dominant lights-to-flag victory, Kimi Antonelli took a serene P2 on his F1 debut at 18 years old, and Verstappen carved from 20th to 6th having crashed out of qualifying entirely. Oscar Piastri never made the grid \u2014 a sighting lap crash at Turn 4 ended his home race before it began.",
       "quali": {
         "session": "Grand Prix Qualifying",
         "date": "2026-03-15",
         "pole_driver": "George Russell",
         "pole_time": "1:18.518",
         "grid": [
-          { "pos":1,  "driver":"George Russell",    "number":"63","team":"Mercedes",     "team_color":"#27F4D2","q3":"1:18.518","gap":null },
-          { "pos":2,  "driver":"Kimi Antonelli",    "number":"12","team":"Mercedes",     "team_color":"#1BE0C0","q3":"1:18.811","gap":"+0.293" },
-          { "pos":3,  "driver":"Isack Hadjar",      "number":"23","team":"Red Bull",     "team_color":"#3671C6","q3":"1:19.012","gap":"+0.494" },
-          { "pos":4,  "driver":"Charles Leclerc",   "number":"16","team":"Ferrari",      "team_color":"#E8002D","q3":"1:19.087","gap":"+0.569" },
-          { "pos":5,  "driver":"Oscar Piastri",     "number":"81","team":"McLaren",      "team_color":"#FF8000","q3":"1:19.153","gap":"+0.635","note":"DNS — sighting lap crash T4" },
-          { "pos":6,  "driver":"Lando Norris",      "number":"4", "team":"McLaren",      "team_color":"#FF9520","q3":"1:19.229","gap":"+0.711" },
-          { "pos":7,  "driver":"Lewis Hamilton",    "number":"44","team":"Ferrari",      "team_color":"#CC0025","q3":"1:19.301","gap":"+0.783" },
-          { "pos":8,  "driver":"Oliver Bearman",    "number":"87","team":"Haas",         "team_color":"#B6BABD","q3":"1:19.488","gap":"+0.970" },
-          { "pos":9,  "driver":"Pierre Gasly",      "number":"10","team":"Alpine",       "team_color":"#0090FF","q3":"1:19.552","gap":"+1.034" },
-          { "pos":10, "driver":"Arvid Lindblad",    "number":"6", "team":"Racing Bulls", "team_color":"#6692FF","q3":"1:19.601","gap":"+1.083" },
-          { "pos":11, "driver":"Carlos Sainz",      "number":"55","team":"Williams",     "team_color":"#005AFF","q2":"1:20.144","eliminated":"Q2" },
-          { "pos":12, "driver":"Gabriel Bortoleto", "number":"5", "team":"Audi",         "team_color":"#00CC00","q2":"1:20.287","eliminated":"Q2" },
-          { "pos":13, "driver":"Liam Lawson",       "number":"30","team":"Racing Bulls",  "team_color":"#4488DD","q2":"1:20.391","eliminated":"Q2" },
-          { "pos":14, "driver":"Yuki Tsunoda",      "number":"22","team":"Racing Bulls",  "team_color":"#3366CC","q2":"1:20.445","eliminated":"Q2" },
-          { "pos":15, "driver":"Fernando Alonso",   "number":"14","team":"Aston Martin",  "team_color":"#358C75","q2":"1:20.680","eliminated":"Q2" },
-          { "pos":16, "driver":"Esteban Ocon",      "number":"31","team":"Haas",          "team_color":"#999999","q1":"1:20.881","eliminated":"Q1" },
-          { "pos":17, "driver":"Lance Stroll",      "number":"18","team":"Aston Martin",  "team_color":"#2A7A5E","q1":"DNS","eliminated":"Q1","note":"PU failure" },
-          { "pos":18, "driver":"Valtteri Bottas",   "number":"77","team":"Cadillac",      "team_color":"#CC2200","q1":"1:21.103","eliminated":"Q1" },
-          { "pos":19, "driver":"Alex Albon",        "number":"23","team":"Williams",      "team_color":"#0044DD","q1":"DNS","eliminated":"Q1","note":"PU failure" },
-          { "pos":20, "driver":"Max Verstappen",    "number":"1", "team":"Red Bull",      "team_color":"#2255BB","q1":"No time","eliminated":"Q1","note":"Crashed T1 — starts last" }
+          {
+            "pos": 1,
+            "driver": "George Russell",
+            "number": "63",
+            "team": "Mercedes",
+            "team_color": "#27F4D2",
+            "q3": "1:18.518",
+            "gap": null
+          },
+          {
+            "pos": 2,
+            "driver": "Kimi Antonelli",
+            "number": "12",
+            "team": "Mercedes",
+            "team_color": "#1BE0C0",
+            "q3": "1:18.811",
+            "gap": "+0.293"
+          },
+          {
+            "pos": 3,
+            "driver": "Isack Hadjar",
+            "number": "23",
+            "team": "Red Bull",
+            "team_color": "#3671C6",
+            "q3": "1:19.012",
+            "gap": "+0.494"
+          },
+          {
+            "pos": 4,
+            "driver": "Charles Leclerc",
+            "number": "16",
+            "team": "Ferrari",
+            "team_color": "#E8002D",
+            "q3": "1:19.087",
+            "gap": "+0.569"
+          },
+          {
+            "pos": 5,
+            "driver": "Oscar Piastri",
+            "number": "81",
+            "team": "McLaren",
+            "team_color": "#FF8000",
+            "q3": "1:19.153",
+            "gap": "+0.635",
+            "note": "DNS \u2014 sighting lap crash T4"
+          },
+          {
+            "pos": 6,
+            "driver": "Lando Norris",
+            "number": "4",
+            "team": "McLaren",
+            "team_color": "#FF9520",
+            "q3": "1:19.229",
+            "gap": "+0.711"
+          },
+          {
+            "pos": 7,
+            "driver": "Lewis Hamilton",
+            "number": "44",
+            "team": "Ferrari",
+            "team_color": "#CC0025",
+            "q3": "1:19.301",
+            "gap": "+0.783"
+          },
+          {
+            "pos": 8,
+            "driver": "Oliver Bearman",
+            "number": "87",
+            "team": "Haas",
+            "team_color": "#B6BABD",
+            "q3": "1:19.488",
+            "gap": "+0.970"
+          },
+          {
+            "pos": 9,
+            "driver": "Pierre Gasly",
+            "number": "10",
+            "team": "Alpine",
+            "team_color": "#0090FF",
+            "q3": "1:19.552",
+            "gap": "+1.034"
+          },
+          {
+            "pos": 10,
+            "driver": "Arvid Lindblad",
+            "number": "6",
+            "team": "Racing Bulls",
+            "team_color": "#6692FF",
+            "q3": "1:19.601",
+            "gap": "+1.083"
+          },
+          {
+            "pos": 11,
+            "driver": "Carlos Sainz",
+            "number": "55",
+            "team": "Williams",
+            "team_color": "#005AFF",
+            "q2": "1:20.144",
+            "eliminated": "Q2"
+          },
+          {
+            "pos": 12,
+            "driver": "Gabriel Bortoleto",
+            "number": "5",
+            "team": "Audi",
+            "team_color": "#00CC00",
+            "q2": "1:20.287",
+            "eliminated": "Q2"
+          },
+          {
+            "pos": 13,
+            "driver": "Liam Lawson",
+            "number": "30",
+            "team": "Racing Bulls",
+            "team_color": "#4488DD",
+            "q2": "1:20.391",
+            "eliminated": "Q2"
+          },
+          {
+            "pos": 14,
+            "driver": "Yuki Tsunoda",
+            "number": "22",
+            "team": "Racing Bulls",
+            "team_color": "#3366CC",
+            "q2": "1:20.445",
+            "eliminated": "Q2"
+          },
+          {
+            "pos": 15,
+            "driver": "Fernando Alonso",
+            "number": "14",
+            "team": "Aston Martin",
+            "team_color": "#358C75",
+            "q2": "1:20.680",
+            "eliminated": "Q2"
+          },
+          {
+            "pos": 16,
+            "driver": "Esteban Ocon",
+            "number": "31",
+            "team": "Haas",
+            "team_color": "#999999",
+            "q1": "1:20.881",
+            "eliminated": "Q1"
+          },
+          {
+            "pos": 17,
+            "driver": "Lance Stroll",
+            "number": "18",
+            "team": "Aston Martin",
+            "team_color": "#2A7A5E",
+            "q1": "DNS",
+            "eliminated": "Q1",
+            "note": "PU failure"
+          },
+          {
+            "pos": 18,
+            "driver": "Valtteri Bottas",
+            "number": "77",
+            "team": "Cadillac",
+            "team_color": "#CC2200",
+            "q1": "1:21.103",
+            "eliminated": "Q1"
+          },
+          {
+            "pos": 19,
+            "driver": "Alex Albon",
+            "number": "23",
+            "team": "Williams",
+            "team_color": "#0044DD",
+            "q1": "DNS",
+            "eliminated": "Q1",
+            "note": "PU failure"
+          },
+          {
+            "pos": 20,
+            "driver": "Max Verstappen",
+            "number": "1",
+            "team": "Red Bull",
+            "team_color": "#2255BB",
+            "q1": "No time",
+            "eliminated": "Q1",
+            "note": "Crashed T1 \u2014 starts last"
+          }
         ]
       },
-
       "race": {
         "winner": "George Russell",
         "laps_led_leader": "George Russell",
@@ -93,147 +421,761 @@
         "fastest_lap_time": "1:22.091",
         "fastest_lap_lap": 43,
         "results": [
-          { "pos":1,    "driver":"George Russell",    "number":"63","team":"Mercedes",     "laps":58,"gap":null,       "laps_led":48,"status":"running","points":25 },
-          { "pos":2,    "driver":"Kimi Antonelli",    "number":"12","team":"Mercedes",     "laps":58,"gap":"+2.974s",  "laps_led":6, "status":"running","points":18 },
-          { "pos":3,    "driver":"Charles Leclerc",   "number":"16","team":"Ferrari",      "laps":58,"gap":"+15.519s", "laps_led":3, "status":"running","points":15 },
-          { "pos":4,    "driver":"Lewis Hamilton",    "number":"44","team":"Ferrari",      "laps":58,"gap":"+16.144s", "laps_led":0, "status":"running","points":12 },
-          { "pos":5,    "driver":"Lando Norris",      "number":"4", "team":"McLaren",      "laps":58,"gap":"+51.741s", "laps_led":0, "status":"running","points":10 },
-          { "pos":6,    "driver":"Max Verstappen",    "number":"1", "team":"Red Bull",     "laps":58,"gap":"+54.617s", "laps_led":0, "status":"running","points":9, "note":"Fastest Lap +1pt" },
-          { "pos":7,    "driver":"Oliver Bearman",    "number":"87","team":"Haas",         "laps":57,"gap":"+1 lap",   "laps_led":0, "status":"running","points":6 },
-          { "pos":8,    "driver":"Arvid Lindblad",    "number":"6", "team":"Racing Bulls", "laps":57,"gap":"+1 lap",   "laps_led":0, "status":"running","points":4 },
-          { "pos":9,    "driver":"Gabriel Bortoleto", "number":"5", "team":"Audi",         "laps":57,"gap":"+1 lap",   "laps_led":0, "status":"running","points":2 },
-          { "pos":10,   "driver":"Pierre Gasly",      "number":"10","team":"Alpine",       "laps":57,"gap":"+1 lap",   "laps_led":0, "status":"running","points":1 },
-          { "pos":19,   "driver":"Isack Hadjar",      "number":"23","team":"Red Bull",     "laps":19,"gap":"VSC 1 — technical","laps_led":1,"status":"mech","points":0 },
-          { "pos":20,   "driver":"Valtteri Bottas",   "number":"77","team":"Cadillac",     "laps":34,"gap":"VSC 2 — retirement","laps_led":0,"status":"mech","points":0 },
-          { "pos":"DNS","driver":"Oscar Piastri",      "number":"81","team":"McLaren",     "laps":0, "gap":"Sighting lap crash T4","laps_led":0,"status":"dns","points":0 }
+          {
+            "pos": 1,
+            "driver": "George Russell",
+            "number": "63",
+            "team": "Mercedes",
+            "laps": 58,
+            "gap": null,
+            "laps_led": 48,
+            "status": "running",
+            "points": 25
+          },
+          {
+            "pos": 2,
+            "driver": "Kimi Antonelli",
+            "number": "12",
+            "team": "Mercedes",
+            "laps": 58,
+            "gap": "+2.974s",
+            "laps_led": 6,
+            "status": "running",
+            "points": 18
+          },
+          {
+            "pos": 3,
+            "driver": "Charles Leclerc",
+            "number": "16",
+            "team": "Ferrari",
+            "laps": 58,
+            "gap": "+15.519s",
+            "laps_led": 3,
+            "status": "running",
+            "points": 15
+          },
+          {
+            "pos": 4,
+            "driver": "Lewis Hamilton",
+            "number": "44",
+            "team": "Ferrari",
+            "laps": 58,
+            "gap": "+16.144s",
+            "laps_led": 0,
+            "status": "running",
+            "points": 12
+          },
+          {
+            "pos": 5,
+            "driver": "Lando Norris",
+            "number": "4",
+            "team": "McLaren",
+            "laps": 58,
+            "gap": "+51.741s",
+            "laps_led": 0,
+            "status": "running",
+            "points": 10
+          },
+          {
+            "pos": 6,
+            "driver": "Max Verstappen",
+            "number": "1",
+            "team": "Red Bull",
+            "laps": 58,
+            "gap": "+54.617s",
+            "laps_led": 0,
+            "status": "running",
+            "points": 9,
+            "note": "Fastest Lap +1pt"
+          },
+          {
+            "pos": 7,
+            "driver": "Oliver Bearman",
+            "number": "87",
+            "team": "Haas",
+            "laps": 57,
+            "gap": "+1 lap",
+            "laps_led": 0,
+            "status": "running",
+            "points": 6
+          },
+          {
+            "pos": 8,
+            "driver": "Arvid Lindblad",
+            "number": "6",
+            "team": "Racing Bulls",
+            "laps": 57,
+            "gap": "+1 lap",
+            "laps_led": 0,
+            "status": "running",
+            "points": 4
+          },
+          {
+            "pos": 9,
+            "driver": "Gabriel Bortoleto",
+            "number": "5",
+            "team": "Audi",
+            "laps": 57,
+            "gap": "+1 lap",
+            "laps_led": 0,
+            "status": "running",
+            "points": 2
+          },
+          {
+            "pos": 10,
+            "driver": "Pierre Gasly",
+            "number": "10",
+            "team": "Alpine",
+            "laps": 57,
+            "gap": "+1 lap",
+            "laps_led": 0,
+            "status": "running",
+            "points": 1
+          },
+          {
+            "pos": 19,
+            "driver": "Isack Hadjar",
+            "number": "23",
+            "team": "Red Bull",
+            "laps": 19,
+            "gap": "VSC 1 \u2014 technical",
+            "laps_led": 1,
+            "status": "mech",
+            "points": 0
+          },
+          {
+            "pos": 20,
+            "driver": "Valtteri Bottas",
+            "number": "77",
+            "team": "Cadillac",
+            "laps": 34,
+            "gap": "VSC 2 \u2014 retirement",
+            "laps_led": 0,
+            "status": "mech",
+            "points": 0
+          },
+          {
+            "pos": "DNS",
+            "driver": "Oscar Piastri",
+            "number": "81",
+            "team": "McLaren",
+            "laps": 0,
+            "gap": "Sighting lap crash T4",
+            "laps_led": 0,
+            "status": "dns",
+            "points": 0
+          }
         ]
       },
-
       "strategy": {
-        "vsc_laps": [19, 34],
+        "vsc_laps": [
+          19,
+          34
+        ],
         "sc_laps": [],
-        "key_narrative": "Ferrari's fatal error: staying out under both VSC periods while Mercedes pitted for free stops each time. Russell (M→H→H) and Antonelli (M→H→H) emerged with fresh tyres at zero time cost. Ferrari pitted under green both times, paying the full delta. Leclerc dropped from the lead to third.",
+        "key_narrative": "Ferrari's fatal error: staying out under both VSC periods while Mercedes pitted for free stops each time. Russell (M\u2192H\u2192H) and Antonelli (M\u2192H\u2192H) emerged with fresh tyres at zero time cost. Ferrari pitted under green both times, paying the full delta. Leclerc dropped from the lead to third.",
         "stints": [
-          { "driver":"Russell",    "compounds":["M","H","H"],"laps":[19,15,24] },
-          { "driver":"Antonelli",  "compounds":["M","H","H"],"laps":[19,15,24] },
-          { "driver":"Leclerc",    "compounds":["M","H","H"],"laps":[22,18,18] },
-          { "driver":"Hamilton",   "compounds":["M","H","H"],"laps":[22,18,18] },
-          { "driver":"Norris",     "compounds":["M","H","H"],"laps":[20,20,18] },
-          { "driver":"Verstappen", "compounds":["S","S","H"], "laps":[18,22,18] }
+          {
+            "driver": "Russell",
+            "compounds": [
+              "M",
+              "H",
+              "H"
+            ],
+            "laps": [
+              19,
+              15,
+              24
+            ]
+          },
+          {
+            "driver": "Antonelli",
+            "compounds": [
+              "M",
+              "H",
+              "H"
+            ],
+            "laps": [
+              19,
+              15,
+              24
+            ]
+          },
+          {
+            "driver": "Leclerc",
+            "compounds": [
+              "M",
+              "H",
+              "H"
+            ],
+            "laps": [
+              22,
+              18,
+              18
+            ]
+          },
+          {
+            "driver": "Hamilton",
+            "compounds": [
+              "M",
+              "H",
+              "H"
+            ],
+            "laps": [
+              22,
+              18,
+              18
+            ]
+          },
+          {
+            "driver": "Norris",
+            "compounds": [
+              "M",
+              "H",
+              "H"
+            ],
+            "laps": [
+              20,
+              20,
+              18
+            ]
+          },
+          {
+            "driver": "Verstappen",
+            "compounds": [
+              "S",
+              "S",
+              "H"
+            ],
+            "laps": [
+              18,
+              22,
+              18
+            ]
+          }
         ]
       },
-
       "stats": [
-        { "value":"1:18.518", "label":"Pole Position",    "note":"Russell — Saturday Q3" },
-        { "value":"1:22.091", "label":"Fastest Lap",      "note":"Verstappen · Lap 43" },
-        { "value":"2.974s",   "label":"Win Margin",       "note":"Russell over Antonelli" },
-        { "value":"2",        "label":"VSC Periods",      "note":"Hadjar + Bottas DNFs" },
-        { "value":"58",       "label":"Race Laps",        "note":"307.6 km total" },
-        { "value":"P20→P6",   "label":"Verstappen Gain",  "note":"14 positions from last" }
+        {
+          "value": "1:18.518",
+          "label": "Pole Position",
+          "note": "Russell \u2014 Saturday Q3"
+        },
+        {
+          "value": "1:22.091",
+          "label": "Fastest Lap",
+          "note": "Verstappen \u00b7 Lap 43"
+        },
+        {
+          "value": "2.974s",
+          "label": "Win Margin",
+          "note": "Russell over Antonelli"
+        },
+        {
+          "value": "2",
+          "label": "VSC Periods",
+          "note": "Hadjar + Bottas DNFs"
+        },
+        {
+          "value": "58",
+          "label": "Race Laps",
+          "note": "307.6 km total"
+        },
+        {
+          "value": "P20\u2192P6",
+          "label": "Verstappen Gain",
+          "note": "14 positions from last"
+        }
       ],
-
       "position_tracker": {
-        "labels": ["L1","L5","L10","L19","L20","L25","L34","L35","L40","L50","L58"],
+        "labels": [
+          "L1",
+          "L5",
+          "L10",
+          "L19",
+          "L20",
+          "L25",
+          "L34",
+          "L35",
+          "L40",
+          "L50",
+          "L58"
+        ],
         "drivers": [
-          { "name":"Russell",    "color":"#27F4D2", "positions":[2,1,1,1,1,1,1,1,1,1,1] },
-          { "name":"Antonelli",  "color":"#1BE0C0", "positions":[3,3,2,2,2,2,2,2,2,2,2] },
-          { "name":"Leclerc",    "color":"#E8002D", "positions":[1,2,3,3,4,4,4,4,3,3,3] },
-          { "name":"Hamilton",   "color":"#CC0025", "positions":[7,4,4,4,3,3,3,3,4,4,4] },
-          { "name":"Norris",     "color":"#FF8000", "positions":[6,6,5,5,5,5,5,5,5,5,5] },
-          { "name":"Verstappen", "color":"#3671C6", "positions":[20,18,15,12,11,9,8,7,7,6,6] }
+          {
+            "name": "Russell",
+            "color": "#27F4D2",
+            "positions": [
+              2,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "name": "Antonelli",
+            "color": "#1BE0C0",
+            "positions": [
+              3,
+              3,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ]
+          },
+          {
+            "name": "Leclerc",
+            "color": "#E8002D",
+            "positions": [
+              1,
+              2,
+              3,
+              3,
+              4,
+              4,
+              4,
+              4,
+              3,
+              3,
+              3
+            ]
+          },
+          {
+            "name": "Hamilton",
+            "color": "#CC0025",
+            "positions": [
+              7,
+              4,
+              4,
+              4,
+              3,
+              3,
+              3,
+              3,
+              4,
+              4,
+              4
+            ]
+          },
+          {
+            "name": "Norris",
+            "color": "#FF8000",
+            "positions": [
+              6,
+              6,
+              5,
+              5,
+              5,
+              5,
+              5,
+              5,
+              5,
+              5,
+              5
+            ]
+          },
+          {
+            "name": "Verstappen",
+            "color": "#3671C6",
+            "positions": [
+              20,
+              18,
+              15,
+              12,
+              11,
+              9,
+              8,
+              7,
+              7,
+              6,
+              6
+            ]
+          }
         ]
       },
-
       "driver_of_race": {
-        "driver":"George Russell","number":"63","team":"Mercedes-AMG Petronas",
-        "badge":"🏆 Driver of the Race",
-        "stats":[{"value":"P1","label":"Finish"},{"value":"Pole","label":"Qualifying"},{"value":"2.974s","label":"Margin"},{"value":"25","label":"Points"}],
-        "analysis":"Pole-to-flag control with perfect execution of the double VSC pit strategy. Never attacked, never under pressure — Ferrari's strategy errors handed him clean air from Lap 20 onward. His 2026 season started exactly as Mercedes planned: fastest, dominant, maximum points."
+        "driver": "George Russell",
+        "number": "63",
+        "team": "Mercedes-AMG Petronas",
+        "badge": "\ud83c\udfc6 Driver of the Race",
+        "stats": [
+          {
+            "value": "P1",
+            "label": "Finish"
+          },
+          {
+            "value": "Pole",
+            "label": "Qualifying"
+          },
+          {
+            "value": "2.974s",
+            "label": "Margin"
+          },
+          {
+            "value": "25",
+            "label": "Points"
+          }
+        ],
+        "analysis": "Pole-to-flag control with perfect execution of the double VSC pit strategy. Never attacked, never under pressure \u2014 Ferrari's strategy errors handed him clean air from Lap 20 onward. His 2026 season started exactly as Mercedes planned: fastest, dominant, maximum points."
       },
-
       "story_cards": [
-        { "title":"Russell Controls",      "body":"George Russell converted pole into a composed lights-to-flag victory. He managed both VSC periods perfectly — pitting on Lap 19 and Lap 34 for free stops onto the hard compound. The second set of hards gave him the pace to pull clear of Antonelli in the final stint. Never truly challenged, never under pressure." },
-        { "title":"Antonelli's Historic P2","body":"Kimi Antonelli, 18, became the youngest driver in Formula 1 history to finish on the podium on their race debut. Starting second, he led briefly when Russell pitted under VSC 1 before pitting himself. His pace on the hard tyre in the final stint was strong but not quite Russell-level. Crucially, he made no mistakes at a circuit where rookies routinely find the barriers." },
-        { "title":"Ferrari's VSC Disaster", "body":"Leclerc led through Turn 1 and looked set to pressure Mercedes. Then both VSC periods arrived — and Ferrari stayed out both times while Mercedes pitted for free stops. It was a catastrophic call, handing Russell fresh tyres at zero cost. Leclerc dropped from the lead to P3. 'We made the wrong call both times,' he said post-race." },
-        { "title":"Verstappen's Recovery",  "body":"Verstappen started 20th after crashing at Turn 1 in Q1 — the same barrier that has caught him repeatedly at Albert Park. He set the fastest lap of the race on Lap 43 and charged from the back to P6, passing multiple cars on a circuit notorious for its inability to facilitate overtaking. Piastri couldn't start at all — a Turn 4 crash on the sighting lap made him the fourth driver in F1 history to retire before the formation lap." }
+        {
+          "title": "Russell Controls",
+          "body": "George Russell converted pole into a composed lights-to-flag victory. He managed both VSC periods perfectly \u2014 pitting on Lap 19 and Lap 34 for free stops onto the hard compound. The second set of hards gave him the pace to pull clear of Antonelli in the final stint. Never truly challenged, never under pressure."
+        },
+        {
+          "title": "Antonelli's Historic P2",
+          "body": "Kimi Antonelli, 18, became the youngest driver in Formula 1 history to finish on the podium on their race debut. Starting second, he led briefly when Russell pitted under VSC 1 before pitting himself. His pace on the hard tyre in the final stint was strong but not quite Russell-level. Crucially, he made no mistakes at a circuit where rookies routinely find the barriers."
+        },
+        {
+          "title": "Ferrari's VSC Disaster",
+          "body": "Leclerc led through Turn 1 and looked set to pressure Mercedes. Then both VSC periods arrived \u2014 and Ferrari stayed out both times while Mercedes pitted for free stops. It was a catastrophic call, handing Russell fresh tyres at zero cost. Leclerc dropped from the lead to P3. 'We made the wrong call both times,' he said post-race."
+        },
+        {
+          "title": "Verstappen's Recovery",
+          "body": "Verstappen started 20th after crashing at Turn 1 in Q1 \u2014 the same barrier that has caught him repeatedly at Albert Park. He set the fastest lap of the race on Lap 43 and charged from the back to P6, passing multiple cars on a circuit notorious for its inability to facilitate overtaking. Piastri couldn't start at all \u2014 a Turn 4 crash on the sighting lap made him the fourth driver in F1 history to retire before the formation lap."
+        }
       ],
-
       "insights": [
-        { "type":"win",     "icon":"🏆","headline":"The W17 Is a Different Machine",    "body":"Russell's 2.974-second victory against the fastest qualifying grid in recent F1 history was a statement of intent. The W17 clearly has strong raw pace over a single lap (pole by 0.293s) and race pace visibly superior to Ferrari and McLaren on the hard compound. Mercedes' winter development has produced the benchmark car for 2026." },
-        { "type":"strategy","icon":"📋","headline":"Ferrari's VSC Paralysis",             "body":"Staying out under a VSC period when the race leader pits is almost never correct in modern F1. The VSC delta eliminates the pit stop time loss, making the stop effectively free. Ferrari did it twice in the same race. That kind of double strategic failure at Round 1 suggests structural issues in decision-making that go beyond one bad afternoon." },
-        { "type":"history", "icon":"⭐","headline":"Antonelli's Instant Impact",          "body":"P2 on debut at 18 years old isn't just a headline — it's a statement. Hamilton took until Round 3 to reach the podium. Leclerc scored P5 on debut. Antonelli navigated traffic, tyre management, and a direct comparison with Russell in the same car. He looked like a driver in his fifth season, not his first grand prix." },
-        { "type":"crash",   "icon":"🔴","headline":"Piastri's Cruel DNS",                "body":"Oscar Piastri crashed at Turn 4 on the sighting lap — before the race had even started — becoming only the fourth driver in F1 history to retire before reaching the grid. At his home race, in front of his home crowd, with McLaren having a legitimate top-5 car. He scored zero points while team-mate Norris scored 10. The championship deficit had nothing to do with racing." }
+        {
+          "type": "win",
+          "icon": "\ud83c\udfc6",
+          "headline": "The W17 Is a Different Machine",
+          "body": "Russell's 2.974-second victory against the fastest qualifying grid in recent F1 history was a statement of intent. The W17 clearly has strong raw pace over a single lap (pole by 0.293s) and race pace visibly superior to Ferrari and McLaren on the hard compound. Mercedes' winter development has produced the benchmark car for 2026."
+        },
+        {
+          "type": "strategy",
+          "icon": "\ud83d\udccb",
+          "headline": "Ferrari's VSC Paralysis",
+          "body": "Staying out under a VSC period when the race leader pits is almost never correct in modern F1. The VSC delta eliminates the pit stop time loss, making the stop effectively free. Ferrari did it twice in the same race. That kind of double strategic failure at Round 1 suggests structural issues in decision-making that go beyond one bad afternoon."
+        },
+        {
+          "type": "history",
+          "icon": "\u2b50",
+          "headline": "Antonelli's Instant Impact",
+          "body": "P2 on debut at 18 years old isn't just a headline \u2014 it's a statement. Hamilton took until Round 3 to reach the podium. Leclerc scored P5 on debut. Antonelli navigated traffic, tyre management, and a direct comparison with Russell in the same car. He looked like a driver in his fifth season, not his first grand prix."
+        },
+        {
+          "type": "crash",
+          "icon": "\ud83d\udd34",
+          "headline": "Piastri's Cruel DNS",
+          "body": "Oscar Piastri crashed at Turn 4 on the sighting lap \u2014 before the race had even started \u2014 becoming only the fourth driver in F1 history to retire before reaching the grid. At his home race, in front of his home crowd, with McLaren having a legitimate top-5 car. He scored zero points while team-mate Norris scored 10. The championship deficit had nothing to do with racing."
+        }
       ]
     },
-
     {
       "round": 2,
       "name": "Chinese Grand Prix",
       "venue": "Shanghai International Circuit",
       "location": "Shanghai, China",
       "circuit_type": "road",
-      "flag": "🇨🇳",
+      "flag": "\ud83c\udde8\ud83c\uddf3",
       "date": "2026-03-15",
       "time_utc": "07:00",
       "laps": 56,
       "distance_km": 306.1,
       "complete": true,
       "sprint_weekend": true,
-
-      "summary": "Kimi Antonelli led only briefly before losing to Hamilton at the start — then retook the lead before the end of Lap 2 and never looked back, winning his maiden Formula 1 Grand Prix and becoming the second youngest winner in F1 history. He survived a nervous lock-up at Turn 14 hairpin with four laps remaining but still finished 5.5 seconds clear of Russell. Hamilton took his first Ferrari podium in third — 26 attempts to get there. Leclerc fourth. McLaren's double DNS before the race and four retirements during it created the strangest pre-race atmosphere in years.",
-
+      "summary": "Kimi Antonelli led only briefly before losing to Hamilton at the start \u2014 then retook the lead before the end of Lap 2 and never looked back, winning his maiden Formula 1 Grand Prix and becoming the second youngest winner in F1 history. He survived a nervous lock-up at Turn 14 hairpin with four laps remaining but still finished 5.5 seconds clear of Russell. Hamilton took his first Ferrari podium in third \u2014 26 attempts to get there. Leclerc fourth. McLaren's double DNS before the race and four retirements during it created the strangest pre-race atmosphere in years.",
       "sprint": {
         "complete": true,
         "date": "2026-03-14",
         "laps": 19,
         "pole_driver": "George Russell",
         "pole_time": "1:31.520",
-        "notes": "Hamilton led Laps 1–5 in battle with Russell before Russell's decisive T14 move on Lap 7. Safety Car Laps 12–14 (Hulkenberg retirement). Late crash: Hadjar and Antonelli made contact — Lindblad also collected. Antonelli pitted, recovered to P5 and served a 10-second penalty for causing the collision with Hadjar.",
+        "notes": "Hamilton led Laps 1\u20135 in battle with Russell before Russell's decisive T14 move on Lap 7. Safety Car Laps 12\u201314 (Hulkenberg retirement). Late crash: Hadjar and Antonelli made contact \u2014 Lindblad also collected. Antonelli pitted, recovered to P5 and served a 10-second penalty for causing the collision with Hadjar.",
         "results": [
-          { "pos":1,   "driver":"George Russell",   "number":"63","team":"Mercedes",     "gap":null,       "points":8 },
-          { "pos":2,   "driver":"Charles Leclerc",  "number":"16","team":"Ferrari",      "gap":"+0.674s",  "points":7 },
-          { "pos":3,   "driver":"Lewis Hamilton",   "number":"44","team":"Ferrari",      "gap":"+2.554s",  "points":6 },
-          { "pos":4,   "driver":"Lando Norris",     "number":"4", "team":"McLaren",      "gap":"+4.433s",  "points":5 },
-          { "pos":5,   "driver":"Kimi Antonelli",   "number":"12","team":"Mercedes",     "gap":"+5.688s",  "points":4, "note":"10-second penalty served, recovered from crash" },
-          { "pos":6,   "driver":"Oscar Piastri",    "number":"81","team":"McLaren",      "gap":"+6.809s",  "points":3 },
-          { "pos":7,   "driver":"Liam Lawson",      "number":"30","team":"Racing Bulls", "gap":"+10.900s", "points":2 },
-          { "pos":8,   "driver":"Oliver Bearman",   "number":"87","team":"Haas",         "gap":"+11.271s", "points":1 },
-          { "pos":9,   "driver":"Max Verstappen",   "number":"1", "team":"Red Bull",     "gap":"+11.619s", "points":0 },
-          { "pos":10,  "driver":"Esteban Ocon",     "number":"31","team":"Haas",         "gap":"+13.887s", "points":0 },
-          { "pos":11,  "driver":"Pierre Gasly",     "number":"10","team":"Alpine",       "gap":"+14.780s", "points":0 },
-          { "pos":"DNF","driver":"Nico Hulkenberg", "number":"27","team":"Audi",         "gap":"Retirement — triggered SC","status":"mech","points":0 },
-          { "pos":"DNF","driver":"Isack Hadjar",    "number":"23","team":"Red Bull",     "gap":"Crash with Antonelli","status":"crash","points":0 },
-          { "pos":"DNF","driver":"Arvid Lindblad",  "number":"6", "team":"Racing Bulls", "gap":"Crash with Hadjar","status":"crash","points":0 }
+          {
+            "pos": 1,
+            "driver": "George Russell",
+            "number": "63",
+            "team": "Mercedes",
+            "gap": null,
+            "points": 8
+          },
+          {
+            "pos": 2,
+            "driver": "Charles Leclerc",
+            "number": "16",
+            "team": "Ferrari",
+            "gap": "+0.674s",
+            "points": 7
+          },
+          {
+            "pos": 3,
+            "driver": "Lewis Hamilton",
+            "number": "44",
+            "team": "Ferrari",
+            "gap": "+2.554s",
+            "points": 6
+          },
+          {
+            "pos": 4,
+            "driver": "Lando Norris",
+            "number": "4",
+            "team": "McLaren",
+            "gap": "+4.433s",
+            "points": 5
+          },
+          {
+            "pos": 5,
+            "driver": "Kimi Antonelli",
+            "number": "12",
+            "team": "Mercedes",
+            "gap": "+5.688s",
+            "points": 4,
+            "note": "10-second penalty served, recovered from crash"
+          },
+          {
+            "pos": 6,
+            "driver": "Oscar Piastri",
+            "number": "81",
+            "team": "McLaren",
+            "gap": "+6.809s",
+            "points": 3
+          },
+          {
+            "pos": 7,
+            "driver": "Liam Lawson",
+            "number": "30",
+            "team": "Racing Bulls",
+            "gap": "+10.900s",
+            "points": 2
+          },
+          {
+            "pos": 8,
+            "driver": "Oliver Bearman",
+            "number": "87",
+            "team": "Haas",
+            "gap": "+11.271s",
+            "points": 1
+          },
+          {
+            "pos": 9,
+            "driver": "Max Verstappen",
+            "number": "1",
+            "team": "Red Bull",
+            "gap": "+11.619s",
+            "points": 0
+          },
+          {
+            "pos": 10,
+            "driver": "Esteban Ocon",
+            "number": "31",
+            "team": "Haas",
+            "gap": "+13.887s",
+            "points": 0
+          },
+          {
+            "pos": 11,
+            "driver": "Pierre Gasly",
+            "number": "10",
+            "team": "Alpine",
+            "gap": "+14.780s",
+            "points": 0
+          },
+          {
+            "pos": "DNF",
+            "driver": "Nico Hulkenberg",
+            "number": "27",
+            "team": "Audi",
+            "gap": "Retirement \u2014 triggered SC",
+            "status": "mech",
+            "points": 0
+          },
+          {
+            "pos": "DNF",
+            "driver": "Isack Hadjar",
+            "number": "23",
+            "team": "Red Bull",
+            "gap": "Crash with Antonelli",
+            "status": "crash",
+            "points": 0
+          },
+          {
+            "pos": "DNF",
+            "driver": "Arvid Lindblad",
+            "number": "6",
+            "team": "Racing Bulls",
+            "gap": "Crash with Hadjar",
+            "status": "crash",
+            "points": 0
+          }
         ]
       },
-
       "quali": {
         "session": "Grand Prix Qualifying",
         "date": "2026-03-14",
         "pole_driver": "Kimi Antonelli",
         "pole_time": "1:32.064",
-        "pole_note": "Youngest ever F1 GP polesitter — 19 years, 6 months, 17 days (beat Vettel's 2008 record)",
-        "session_note": "Russell suffered power and battery failure on his Q3 out-lap — stuck in first gear, Mercedes repaired and sent him out for one final run only. Bortoleto spun at the final corner in Q2 bringing yellow flags that deleted times for Lindblad, Lawson and others.",
+        "pole_note": "Youngest ever F1 GP polesitter \u2014 19 years, 6 months, 17 days (beat Vettel's 2008 record)",
+        "session_note": "Russell suffered power and battery failure on his Q3 out-lap \u2014 stuck in first gear, Mercedes repaired and sent him out for one final run only. Bortoleto spun at the final corner in Q2 bringing yellow flags that deleted times for Lindblad, Lawson and others.",
         "grid": [
-          { "pos":1,  "driver":"Kimi Antonelli",    "number":"12","team":"Mercedes",     "team_color":"#1BE0C0","q3":"1:32.064","gap":null },
-          { "pos":2,  "driver":"George Russell",    "number":"63","team":"Mercedes",     "team_color":"#27F4D2","q3":"1:32.286","gap":"+0.222","note":"Car failure mid-Q3 — one lap only" },
-          { "pos":3,  "driver":"Lewis Hamilton",    "number":"44","team":"Ferrari",      "team_color":"#CC0025","q3":"1:32.489","gap":"+0.425" },
-          { "pos":4,  "driver":"Charles Leclerc",   "number":"16","team":"Ferrari",      "team_color":"#E8002D","q3":"1:32.546","gap":"+0.482" },
-          { "pos":5,  "driver":"Oscar Piastri",     "number":"81","team":"McLaren",      "team_color":"#FF8000","q3":"1:32.634","gap":"+0.570","note":"DNS race — electrical failure" },
-          { "pos":6,  "driver":"Lando Norris",      "number":"4", "team":"McLaren",      "team_color":"#FF9520","q3":"1:32.718","gap":"+0.654","note":"DNS race — electrical failure" },
-          { "pos":7,  "driver":"Pierre Gasly",      "number":"10","team":"Alpine",       "team_color":"#0090FF","q3":"1:32.889","gap":"+0.825" },
-          { "pos":8,  "driver":"Max Verstappen",    "number":"1", "team":"Red Bull",     "team_color":"#3671C6","q3":"1:32.941","gap":"+0.877" },
-          { "pos":9,  "driver":"Isack Hadjar",      "number":"23","team":"Red Bull",     "team_color":"#4488DD","q3":"1:33.018","gap":"+0.954" },
-          { "pos":10, "driver":"Oliver Bearman",    "number":"87","team":"Haas",         "team_color":"#B6BABD","q3":"1:33.264","gap":"+1.200" },
-          { "pos":11, "driver":"Arvid Lindblad",    "number":"6", "team":"Racing Bulls", "team_color":"#6692FF","q2":"1:33.262","eliminated":"Q2","note":"Yellow flag impact" },
-          { "pos":12, "driver":"Liam Lawson",       "number":"30","team":"Racing Bulls", "team_color":"#3366CC","q2":"1:33.340","eliminated":"Q2","note":"Yellow flag impact" },
-          { "pos":13, "driver":"Esteban Ocon",      "number":"31","team":"Haas",         "team_color":"#999999","q2":"1:33.448","eliminated":"Q2" },
-          { "pos":14, "driver":"Carlos Sainz",      "number":"55","team":"Williams",     "team_color":"#005AFF","q2":"1:33.520","eliminated":"Q2" },
-          { "pos":15, "driver":"Gabriel Bortoleto", "number":"5", "team":"Audi",         "team_color":"#00CC00","q2":null,       "eliminated":"Q2","note":"Spun at final corner" },
-          { "pos":16, "driver":"Nico Hulkenberg",   "number":"27","team":"Audi",         "team_color":"#009900","q1":"1:33.610","eliminated":"Q1" }
+          {
+            "pos": 1,
+            "driver": "Kimi Antonelli",
+            "number": "12",
+            "team": "Mercedes",
+            "team_color": "#1BE0C0",
+            "q3": "1:32.064",
+            "gap": null
+          },
+          {
+            "pos": 2,
+            "driver": "George Russell",
+            "number": "63",
+            "team": "Mercedes",
+            "team_color": "#27F4D2",
+            "q3": "1:32.286",
+            "gap": "+0.222",
+            "note": "Car failure mid-Q3 \u2014 one lap only"
+          },
+          {
+            "pos": 3,
+            "driver": "Lewis Hamilton",
+            "number": "44",
+            "team": "Ferrari",
+            "team_color": "#CC0025",
+            "q3": "1:32.489",
+            "gap": "+0.425"
+          },
+          {
+            "pos": 4,
+            "driver": "Charles Leclerc",
+            "number": "16",
+            "team": "Ferrari",
+            "team_color": "#E8002D",
+            "q3": "1:32.546",
+            "gap": "+0.482"
+          },
+          {
+            "pos": 5,
+            "driver": "Oscar Piastri",
+            "number": "81",
+            "team": "McLaren",
+            "team_color": "#FF8000",
+            "q3": "1:32.634",
+            "gap": "+0.570",
+            "note": "DNS race \u2014 electrical failure"
+          },
+          {
+            "pos": 6,
+            "driver": "Lando Norris",
+            "number": "4",
+            "team": "McLaren",
+            "team_color": "#FF9520",
+            "q3": "1:32.718",
+            "gap": "+0.654",
+            "note": "DNS race \u2014 electrical failure"
+          },
+          {
+            "pos": 7,
+            "driver": "Pierre Gasly",
+            "number": "10",
+            "team": "Alpine",
+            "team_color": "#0090FF",
+            "q3": "1:32.889",
+            "gap": "+0.825"
+          },
+          {
+            "pos": 8,
+            "driver": "Max Verstappen",
+            "number": "1",
+            "team": "Red Bull",
+            "team_color": "#3671C6",
+            "q3": "1:32.941",
+            "gap": "+0.877"
+          },
+          {
+            "pos": 9,
+            "driver": "Isack Hadjar",
+            "number": "23",
+            "team": "Red Bull",
+            "team_color": "#4488DD",
+            "q3": "1:33.018",
+            "gap": "+0.954"
+          },
+          {
+            "pos": 10,
+            "driver": "Oliver Bearman",
+            "number": "87",
+            "team": "Haas",
+            "team_color": "#B6BABD",
+            "q3": "1:33.264",
+            "gap": "+1.200"
+          },
+          {
+            "pos": 11,
+            "driver": "Arvid Lindblad",
+            "number": "6",
+            "team": "Racing Bulls",
+            "team_color": "#6692FF",
+            "q2": "1:33.262",
+            "eliminated": "Q2",
+            "note": "Yellow flag impact"
+          },
+          {
+            "pos": 12,
+            "driver": "Liam Lawson",
+            "number": "30",
+            "team": "Racing Bulls",
+            "team_color": "#3366CC",
+            "q2": "1:33.340",
+            "eliminated": "Q2",
+            "note": "Yellow flag impact"
+          },
+          {
+            "pos": 13,
+            "driver": "Esteban Ocon",
+            "number": "31",
+            "team": "Haas",
+            "team_color": "#999999",
+            "q2": "1:33.448",
+            "eliminated": "Q2"
+          },
+          {
+            "pos": 14,
+            "driver": "Carlos Sainz",
+            "number": "55",
+            "team": "Williams",
+            "team_color": "#005AFF",
+            "q2": "1:33.520",
+            "eliminated": "Q2"
+          },
+          {
+            "pos": 15,
+            "driver": "Gabriel Bortoleto",
+            "number": "5",
+            "team": "Audi",
+            "team_color": "#00CC00",
+            "q2": null,
+            "eliminated": "Q2",
+            "note": "Spun at final corner"
+          },
+          {
+            "pos": 16,
+            "driver": "Nico Hulkenberg",
+            "number": "27",
+            "team": "Audi",
+            "team_color": "#009900",
+            "q1": "1:33.610",
+            "eliminated": "Q1"
+          }
         ]
       },
-
       "race": {
         "winner": "Kimi Antonelli",
         "laps_led_leader": "Kimi Antonelli",
@@ -244,95 +1186,479 @@
         "margin": "5.5s",
         "fastest_lap_driver": "TBD",
         "results": [
-          { "pos":1,    "driver":"Kimi Antonelli",   "number":"12","team":"Mercedes",     "laps":56,"gap":null,      "laps_led":53,"status":"running","points":25 },
-          { "pos":2,    "driver":"George Russell",   "number":"63","team":"Mercedes",     "laps":56,"gap":"+5.5s",   "laps_led":1, "status":"running","points":18 },
-          { "pos":3,    "driver":"Lewis Hamilton",   "number":"44","team":"Ferrari",      "laps":56,"gap":"+25s",    "laps_led":2, "status":"running","points":15, "note":"First Ferrari GP podium — 26th start for team" },
-          { "pos":4,    "driver":"Charles Leclerc",  "number":"16","team":"Ferrari",      "laps":56,"gap":"+28s",    "laps_led":0, "status":"running","points":12 },
-          { "pos":5,    "driver":"Oliver Bearman",   "number":"87","team":"Haas",         "laps":56,"gap":"TBD",     "laps_led":0, "status":"running","points":10, "note":"Avoiding action on Lap 1, recovered" },
-          { "pos":6,    "driver":"Pierre Gasly",     "number":"10","team":"Alpine",       "laps":56,"gap":"TBD",     "laps_led":0, "status":"running","points":8 },
-          { "pos":7,    "driver":"Liam Lawson",      "number":"30","team":"Racing Bulls", "laps":56,"gap":"TBD",     "laps_led":0, "status":"running","points":6 },
-          { "pos":8,    "driver":"Isack Hadjar",     "number":"23","team":"Red Bull",     "laps":56,"gap":"TBD",     "laps_led":0, "status":"running","points":4, "note":"Early incident but recovered" },
-          { "pos":9,    "driver":"Carlos Sainz",     "number":"55","team":"Williams",     "laps":56,"gap":"TBD",     "laps_led":0, "status":"running","points":2, "note":"Williams' first points of 2026" },
-          { "pos":10,   "driver":"Franco Colapinto", "number":"31","team":"Alpine",       "laps":56,"gap":"TBD",     "laps_led":0, "status":"running","points":1, "note":"Recovered from collision with Ocon" },
-          { "pos":11,   "driver":"Nico Hulkenberg",  "number":"27","team":"Audi",         "laps":56,"gap":"TBD",     "laps_led":0, "status":"running","points":0 },
-          { "pos":12,   "driver":"Arvid Lindblad",   "number":"6", "team":"Racing Bulls", "laps":56,"gap":"TBD",     "laps_led":0, "status":"running","points":0 },
-          { "pos":13,   "driver":"Valtteri Bottas",  "number":"77","team":"Cadillac",     "laps":56,"gap":"TBD",     "laps_led":0, "status":"running","points":0 },
-          { "pos":"DNF","driver":"Max Verstappen",   "number":"1", "team":"Red Bull",     "laps":46,"gap":"Retirement Lap 46","laps_led":0,"status":"mech","points":0 },
-          { "pos":"DNF","driver":"Fernando Alonso",  "number":"14","team":"Aston Martin", "laps":35,"gap":"Retired Lap 35 — vibrations/health scare","laps_led":0,"status":"mech","points":0 },
-          { "pos":"DNF","driver":"Lance Stroll",     "number":"18","team":"Aston Martin", "laps":28,"gap":"Retired — suspected battery","laps_led":0,"status":"mech","points":0 },
-          { "pos":"DNS","driver":"Lando Norris",     "number":"4", "team":"McLaren",      "laps":0, "gap":"DNS — electrical failure","laps_led":0,"status":"dns","points":0 },
-          { "pos":"DNS","driver":"Oscar Piastri",    "number":"81","team":"McLaren",      "laps":0, "gap":"DNS — electrical failure","laps_led":0,"status":"dns","points":0 },
-          { "pos":"DNS","driver":"Gabriel Bortoleto","number":"5", "team":"Audi",         "laps":0, "gap":"DNS — hydraulic issue","laps_led":0,"status":"dns","points":0 },
-          { "pos":"DNS","driver":"Alex Albon",       "number":"23","team":"Williams",     "laps":0, "gap":"DNS — suspension problem","laps_led":0,"status":"dns","points":0 }
+          {
+            "pos": 1,
+            "driver": "Kimi Antonelli",
+            "number": "12",
+            "team": "Mercedes",
+            "laps": 56,
+            "gap": null,
+            "laps_led": 53,
+            "status": "running",
+            "points": 25
+          },
+          {
+            "pos": 2,
+            "driver": "George Russell",
+            "number": "63",
+            "team": "Mercedes",
+            "laps": 56,
+            "gap": "+5.5s",
+            "laps_led": 1,
+            "status": "running",
+            "points": 18
+          },
+          {
+            "pos": 3,
+            "driver": "Lewis Hamilton",
+            "number": "44",
+            "team": "Ferrari",
+            "laps": 56,
+            "gap": "+25s",
+            "laps_led": 2,
+            "status": "running",
+            "points": 15,
+            "note": "First Ferrari GP podium \u2014 26th start for team"
+          },
+          {
+            "pos": 4,
+            "driver": "Charles Leclerc",
+            "number": "16",
+            "team": "Ferrari",
+            "laps": 56,
+            "gap": "+28s",
+            "laps_led": 0,
+            "status": "running",
+            "points": 12
+          },
+          {
+            "pos": 5,
+            "driver": "Oliver Bearman",
+            "number": "87",
+            "team": "Haas",
+            "laps": 56,
+            "gap": "TBD",
+            "laps_led": 0,
+            "status": "running",
+            "points": 10,
+            "note": "Avoiding action on Lap 1, recovered"
+          },
+          {
+            "pos": 6,
+            "driver": "Pierre Gasly",
+            "number": "10",
+            "team": "Alpine",
+            "laps": 56,
+            "gap": "TBD",
+            "laps_led": 0,
+            "status": "running",
+            "points": 8
+          },
+          {
+            "pos": 7,
+            "driver": "Liam Lawson",
+            "number": "30",
+            "team": "Racing Bulls",
+            "laps": 56,
+            "gap": "TBD",
+            "laps_led": 0,
+            "status": "running",
+            "points": 6
+          },
+          {
+            "pos": 8,
+            "driver": "Isack Hadjar",
+            "number": "23",
+            "team": "Red Bull",
+            "laps": 56,
+            "gap": "TBD",
+            "laps_led": 0,
+            "status": "running",
+            "points": 4,
+            "note": "Early incident but recovered"
+          },
+          {
+            "pos": 9,
+            "driver": "Carlos Sainz",
+            "number": "55",
+            "team": "Williams",
+            "laps": 56,
+            "gap": "TBD",
+            "laps_led": 0,
+            "status": "running",
+            "points": 2,
+            "note": "Williams' first points of 2026"
+          },
+          {
+            "pos": 10,
+            "driver": "Franco Colapinto",
+            "number": "31",
+            "team": "Alpine",
+            "laps": 56,
+            "gap": "TBD",
+            "laps_led": 0,
+            "status": "running",
+            "points": 1,
+            "note": "Recovered from collision with Ocon"
+          },
+          {
+            "pos": 11,
+            "driver": "Nico Hulkenberg",
+            "number": "27",
+            "team": "Audi",
+            "laps": 56,
+            "gap": "TBD",
+            "laps_led": 0,
+            "status": "running",
+            "points": 0
+          },
+          {
+            "pos": 12,
+            "driver": "Arvid Lindblad",
+            "number": "6",
+            "team": "Racing Bulls",
+            "laps": 56,
+            "gap": "TBD",
+            "laps_led": 0,
+            "status": "running",
+            "points": 0
+          },
+          {
+            "pos": 13,
+            "driver": "Valtteri Bottas",
+            "number": "77",
+            "team": "Cadillac",
+            "laps": 56,
+            "gap": "TBD",
+            "laps_led": 0,
+            "status": "running",
+            "points": 0
+          },
+          {
+            "pos": "DNF",
+            "driver": "Max Verstappen",
+            "number": "1",
+            "team": "Red Bull",
+            "laps": 46,
+            "gap": "Retirement Lap 46",
+            "laps_led": 0,
+            "status": "mech",
+            "points": 0
+          },
+          {
+            "pos": "DNF",
+            "driver": "Fernando Alonso",
+            "number": "14",
+            "team": "Aston Martin",
+            "laps": 35,
+            "gap": "Retired Lap 35 \u2014 vibrations/health scare",
+            "laps_led": 0,
+            "status": "mech",
+            "points": 0
+          },
+          {
+            "pos": "DNF",
+            "driver": "Lance Stroll",
+            "number": "18",
+            "team": "Aston Martin",
+            "laps": 28,
+            "gap": "Retired \u2014 suspected battery",
+            "laps_led": 0,
+            "status": "mech",
+            "points": 0
+          },
+          {
+            "pos": "DNS",
+            "driver": "Lando Norris",
+            "number": "4",
+            "team": "McLaren",
+            "laps": 0,
+            "gap": "DNS \u2014 electrical failure",
+            "laps_led": 0,
+            "status": "dns",
+            "points": 0
+          },
+          {
+            "pos": "DNS",
+            "driver": "Oscar Piastri",
+            "number": "81",
+            "team": "McLaren",
+            "laps": 0,
+            "gap": "DNS \u2014 electrical failure",
+            "laps_led": 0,
+            "status": "dns",
+            "points": 0
+          },
+          {
+            "pos": "DNS",
+            "driver": "Gabriel Bortoleto",
+            "number": "5",
+            "team": "Audi",
+            "laps": 0,
+            "gap": "DNS \u2014 hydraulic issue",
+            "laps_led": 0,
+            "status": "dns",
+            "points": 0
+          },
+          {
+            "pos": "DNS",
+            "driver": "Alex Albon",
+            "number": "23",
+            "team": "Williams",
+            "laps": 0,
+            "gap": "DNS \u2014 suspension problem",
+            "laps_led": 0,
+            "status": "dns",
+            "points": 0
+          }
         ]
       },
-
       "strategy": {
         "vsc_laps": [],
-        "sc_laps": ["early"],
+        "sc_laps": [
+          "early"
+        ],
         "key_narrative": "One Safety Car period early in the race allowed Antonelli to pit for a free stop and retain the lead over a dominant one-stop strategy. Hamilton led briefly at the start before Antonelli retook by the end of Lap 2. Russell dropped behind both Ferraris at mid-race before recovering to P2. The Ferrari intra-team battle between Hamilton and Leclerc provided the race's mid-section entertainment.",
         "stints": [
-          { "driver":"Antonelli",  "compounds":["M","H"],"laps":["~10","46"] },
-          { "driver":"Russell",    "compounds":["M","H"],"laps":["~10","46"] },
-          { "driver":"Hamilton",   "compounds":["M","H"],"laps":["~20","36"] },
-          { "driver":"Leclerc",    "compounds":["M","H"],"laps":["~20","36"] }
+          {
+            "driver": "Antonelli",
+            "compounds": [
+              "M",
+              "H"
+            ],
+            "laps": [
+              "~10",
+              "46"
+            ]
+          },
+          {
+            "driver": "Russell",
+            "compounds": [
+              "M",
+              "H"
+            ],
+            "laps": [
+              "~10",
+              "46"
+            ]
+          },
+          {
+            "driver": "Hamilton",
+            "compounds": [
+              "M",
+              "H"
+            ],
+            "laps": [
+              "~20",
+              "36"
+            ]
+          },
+          {
+            "driver": "Leclerc",
+            "compounds": [
+              "M",
+              "H"
+            ],
+            "laps": [
+              "~20",
+              "36"
+            ]
+          }
         ]
       },
-
       "stats": [
-        { "value":"1:32.064","label":"GP Pole (Antonelli)", "note":"Youngest ever F1 GP polesitter" },
-        { "value":"5.5s",    "label":"Win Margin",          "note":"Antonelli over Russell" },
-        { "value":"2nd",     "label":"Youngest GP winner",  "note":"Behind only Verstappen" },
-        { "value":"4",       "label":"DNS before race",     "note":"McLaren x2, Audi, Williams" },
-        { "value":"3",       "label":"Race retirements",    "note":"Verstappen, Alonso, Stroll" },
-        { "value":"22",      "label":"Season total rounds", "note":"Bahrain + Saudi cancelled" }
+        {
+          "value": "1:32.064",
+          "label": "GP Pole (Antonelli)",
+          "note": "Youngest ever F1 GP polesitter"
+        },
+        {
+          "value": "5.5s",
+          "label": "Win Margin",
+          "note": "Antonelli over Russell"
+        },
+        {
+          "value": "2nd",
+          "label": "Youngest GP winner",
+          "note": "Behind only Verstappen"
+        },
+        {
+          "value": "4",
+          "label": "DNS before race",
+          "note": "McLaren x2, Audi, Williams"
+        },
+        {
+          "value": "3",
+          "label": "Race retirements",
+          "note": "Verstappen, Alonso, Stroll"
+        },
+        {
+          "value": "22",
+          "label": "Season total rounds",
+          "note": "Bahrain + Saudi cancelled"
+        }
       ],
-
       "position_tracker": {
-        "labels": ["L1","L2","L10","L20","L30","L40","L52","L56"],
+        "labels": [
+          "L1",
+          "L2",
+          "L10",
+          "L20",
+          "L30",
+          "L40",
+          "L52",
+          "L56"
+        ],
         "drivers": [
-          { "name":"Antonelli","color":"#1BE0C0","positions":[2,1,1,1,1,1,1,1] },
-          { "name":"Hamilton", "color":"#CC0025","positions":[1,2,2,2,3,3,3,3] },
-          { "name":"Leclerc",  "color":"#E8002D","positions":[4,3,3,3,2,2,4,4] },
-          { "name":"Russell",  "color":"#27F4D2","positions":[3,4,4,4,4,2,2,2] },
-          { "name":"Bearman",  "color":"#B6BABD","positions":[8,7,5,5,5,5,5,5] }
+          {
+            "name": "Antonelli",
+            "color": "#1BE0C0",
+            "positions": [
+              2,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "name": "Hamilton",
+            "color": "#CC0025",
+            "positions": [
+              1,
+              2,
+              2,
+              2,
+              3,
+              3,
+              3,
+              3
+            ]
+          },
+          {
+            "name": "Leclerc",
+            "color": "#E8002D",
+            "positions": [
+              4,
+              3,
+              3,
+              3,
+              2,
+              2,
+              4,
+              4
+            ]
+          },
+          {
+            "name": "Russell",
+            "color": "#27F4D2",
+            "positions": [
+              3,
+              4,
+              4,
+              4,
+              4,
+              2,
+              2,
+              2
+            ]
+          },
+          {
+            "name": "Bearman",
+            "color": "#B6BABD",
+            "positions": [
+              8,
+              7,
+              5,
+              5,
+              5,
+              5,
+              5,
+              5
+            ]
+          }
         ]
       },
-
       "driver_of_race": {
-        "driver":"Kimi Antonelli","number":"12","team":"Mercedes-AMG Petronas",
-        "badge":"🏆 Driver of the Race",
-        "stats":[
-          { "value":"P1",   "label":"Finish" },
-          { "value":"1st",  "label":"Career win" },
-          { "value":"5.5s", "label":"Margin" },
-          { "value":"2nd",  "label":"Youngest winner ever" }
+        "driver": "Kimi Antonelli",
+        "number": "12",
+        "team": "Mercedes-AMG Petronas",
+        "badge": "\ud83c\udfc6 Driver of the Race",
+        "stats": [
+          {
+            "value": "P1",
+            "label": "Finish"
+          },
+          {
+            "value": "1st",
+            "label": "Career win"
+          },
+          {
+            "value": "5.5s",
+            "label": "Margin"
+          },
+          {
+            "value": "2nd",
+            "label": "Youngest winner ever"
+          }
         ],
-        "analysis":"Lost the lead at Turn 9 on Lap 1 to Hamilton's surge from P3, then drove one of the most composed recovery laps imaginable to retake it before Lap 2 was done. Pitted under the early Safety Car, built a margin, briefly locked up at Turn 14 with four laps to go — then calmly brought it home. 'I'm speechless. I'm about to cry,' he said in parc fermé."
+        "analysis": "Lost the lead at Turn 9 on Lap 1 to Hamilton's surge from P3, then drove one of the most composed recovery laps imaginable to retake it before Lap 2 was done. Pitted under the early Safety Car, built a margin, briefly locked up at Turn 14 with four laps to go \u2014 then calmly brought it home. 'I'm speechless. I'm about to cry,' he said in parc ferm\u00e9."
       },
-
       "story_cards": [
-        { "title":"Antonelli Makes History",    "body":"Kimi Antonelli led before the end of Lap 2 and never looked back, winning his first Formula 1 Grand Prix and becoming the second youngest winner in the sport's history — behind only Verstappen. He briefly lost the lead when Hamilton surged from P3 at the Turn 9 run-off, but retook it within a lap and proceeded to build a gap at half a second per lap. A lock-up at Turn 14 with four laps left caused a brief heart-in-mouth moment — then calm, measured, perfect. Italy's newest Formula 1 winner." },
-        { "title":"Hamilton's Ferrari Podium", "body":"Lewis Hamilton took his first Grand Prix podium in Ferrari red at the 26th attempt — at the same circuit where, in the 2025 Sprint, he won his first race for the Scuderia. He led briefly at the start from P3 on the grid, fought a genuinely entertaining intra-team battle with Leclerc through the middle stint, and finished 25 seconds behind Antonelli but more than three clear of his team-mate. 'One of the most enjoyable races I've had in a long, long time,' he said. 'That battle with Charles at the end was awesome.'" },
-        { "title":"McLaren's Nightmare",       "body":"Neither McLaren even made the starting grid. Norris' car had an electrical problem identified an hour before the start; Piastri's wheeled back into the pit lane with a separate power unit electrical failure minutes before the formation lap. Two different issues, two DNS. The reigning champion and his team-mate watching from the garage while every other competitor raced. Norris called it 'bitter disappointment at an F1 career first.' McLaren fell to 70 points behind Mercedes in the constructors' with zero laps driven on Sunday." },
-        { "title":"Season Shrunken",           "body":"The announcement came before the race: Bahrain and Saudi Arabia were off. Both countries struck by Iranian retaliation to US-Israeli air strikes, F1 and the FIA confirmed no races in April and no replacement events. A five-week gap from Japan (March 29) to Miami (May 3) now marks the longest stretch of the 2026 season without racing. The calendar shrinks from 24 to 22 rounds — the shortest since 2023." }
+        {
+          "title": "Antonelli Makes History",
+          "body": "Kimi Antonelli led before the end of Lap 2 and never looked back, winning his first Formula 1 Grand Prix and becoming the second youngest winner in the sport's history \u2014 behind only Verstappen. He briefly lost the lead when Hamilton surged from P3 at the Turn 9 run-off, but retook it within a lap and proceeded to build a gap at half a second per lap. A lock-up at Turn 14 with four laps left caused a brief heart-in-mouth moment \u2014 then calm, measured, perfect. Italy's newest Formula 1 winner."
+        },
+        {
+          "title": "Hamilton's Ferrari Podium",
+          "body": "Lewis Hamilton took his first Grand Prix podium in Ferrari red at the 26th attempt \u2014 at the same circuit where, in the 2025 Sprint, he won his first race for the Scuderia. He led briefly at the start from P3 on the grid, fought a genuinely entertaining intra-team battle with Leclerc through the middle stint, and finished 25 seconds behind Antonelli but more than three clear of his team-mate. 'One of the most enjoyable races I've had in a long, long time,' he said. 'That battle with Charles at the end was awesome.'"
+        },
+        {
+          "title": "McLaren's Nightmare",
+          "body": "Neither McLaren even made the starting grid. Norris' car had an electrical problem identified an hour before the start; Piastri's wheeled back into the pit lane with a separate power unit electrical failure minutes before the formation lap. Two different issues, two DNS. The reigning champion and his team-mate watching from the garage while every other competitor raced. Norris called it 'bitter disappointment at an F1 career first.' McLaren fell to 70 points behind Mercedes in the constructors' with zero laps driven on Sunday."
+        },
+        {
+          "title": "Season Shrunken",
+          "body": "The announcement came before the race: Bahrain and Saudi Arabia were off. Both countries struck by Iranian retaliation to US-Israeli air strikes, F1 and the FIA confirmed no races in April and no replacement events. A five-week gap from Japan (March 29) to Miami (May 3) now marks the longest stretch of the 2026 season without racing. The calendar shrinks from 24 to 22 rounds \u2014 the shortest since 2023."
+        }
       ],
-
       "insights": [
-        { "type":"history","icon":"⭐","headline":"Antonelli — History Repeating",      "body":"Two races, two records: youngest ever debut podium (Australia), youngest ever GP polesitter and winner (China). The records Antonelli is accumulating are not incremental — they are era-defining. Hamilton waited 26 starts for his first Ferrari podium. Antonelli got his first win in two. The generation gap in this paddock has never felt so visible." },
-        { "type":"story",  "icon":"🔴","headline":"McLaren's Double Disaster",          "body":"Two separate electrical failures on two separate cars before a single lap was driven. The probability of this happening by chance is extremely low — which means there's something systemic to find. Norris goes from championship leader to watching from a garage. Two DNSs in two races for Piastri. From a constructors' championship perspective, McLaren is already 70 points behind Mercedes having scored 18 total across two weekends." },
-        { "type":"points", "icon":"📊","headline":"Russell Leads — But Only Just",     "body":"Russell 51, Antonelli 47. A four-point gap after two rounds with a sprint is extraordinarily tight between team-mates. If Antonelli keeps winning and Russell keeps finishing second, the championship will swap by Japan. The intra-Mercedes battle — combined with Hamilton and Leclerc being in genuine striking distance — is the most compelling title narrative of the early season." },
-        { "type":"crash",  "icon":"🌍","headline":"War on the Calendar",               "body":"The cancellation of Bahrain and Saudi Arabia is the most significant geopolitical impact on Formula 1 since Russia 2022. Both events typically generate combined hosting fees of approximately $100 million — money that will not flow in 2026. For the teams, each loses several million in prize money distribution. The sport confirmed it would not return to either until circumstances allow, without specifying a timeline." }
+        {
+          "type": "history",
+          "icon": "\u2b50",
+          "headline": "Antonelli \u2014 History Repeating",
+          "body": "Two races, two records: youngest ever debut podium (Australia), youngest ever GP polesitter and winner (China). The records Antonelli is accumulating are not incremental \u2014 they are era-defining. Hamilton waited 26 starts for his first Ferrari podium. Antonelli got his first win in two. The generation gap in this paddock has never felt so visible."
+        },
+        {
+          "type": "story",
+          "icon": "\ud83d\udd34",
+          "headline": "McLaren's Double Disaster",
+          "body": "Two separate electrical failures on two separate cars before a single lap was driven. The probability of this happening by chance is extremely low \u2014 which means there's something systemic to find. Norris goes from championship leader to watching from a garage. Two DNSs in two races for Piastri. From a constructors' championship perspective, McLaren is already 70 points behind Mercedes having scored 18 total across two weekends."
+        },
+        {
+          "type": "points",
+          "icon": "\ud83d\udcca",
+          "headline": "Russell Leads \u2014 But Only Just",
+          "body": "Russell 51, Antonelli 47. A four-point gap after two rounds with a sprint is extraordinarily tight between team-mates. If Antonelli keeps winning and Russell keeps finishing second, the championship will swap by Japan. The intra-Mercedes battle \u2014 combined with Hamilton and Leclerc being in genuine striking distance \u2014 is the most compelling title narrative of the early season."
+        },
+        {
+          "type": "crash",
+          "icon": "\ud83c\udf0d",
+          "headline": "War on the Calendar",
+          "body": "The cancellation of Bahrain and Saudi Arabia is the most significant geopolitical impact on Formula 1 since Russia 2022. Both events typically generate combined hosting fees of approximately $100 million \u2014 money that will not flow in 2026. For the teams, each loses several million in prize money distribution. The sport confirmed it would not return to either until circumstances allow, without specifying a timeline."
+        }
       ]
     },
-
     {
       "round": 3,
       "name": "Japanese Grand Prix",
       "venue": "Suzuka International Racing Course",
       "location": "Suzuka, Japan",
       "circuit_type": "road",
-      "flag": "🇯🇵",
+      "flag": "\ud83c\uddef\ud83c\uddf5",
       "date": "2026-03-29",
       "time_utc": "05:00",
       "laps": 53,
@@ -346,7 +1672,7 @@
       "venue": "Miami International Autodrome",
       "location": "Miami, Florida",
       "circuit_type": "street",
-      "flag": "🇺🇸",
+      "flag": "\ud83c\uddfa\ud83c\uddf8",
       "date": "2026-05-03",
       "time_utc": "20:00",
       "complete": false,
