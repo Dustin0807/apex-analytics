@@ -9,55 +9,257 @@
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500&family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/apex.css">
   <style>
-    /* Hub-specific layout */
-    .hub-outer { position:relative; z-index:1; }
+    /* ── HUB LAYOUT ───────────────────────────────────────── */
+    .hub { position:relative; z-index:1; }
 
-    .hub-grid {
-      display:grid;
-      grid-template-columns:1fr 300px;
-      gap:2px;
-      padding:var(--pad);
-      padding-top:24px;
-      padding-bottom:80px;
-      max-width:var(--max-w);
-      margin:0 auto;
+    /* Cinematic hero */
+    .hub-hero {
+      padding: 56px var(--pad) 52px;
+      border-bottom: 1px solid var(--border);
+      display: grid;
+      grid-template-columns: 1fr 420px;
+      gap: 48px;
+      align-items: end;
+      position: relative;
+      overflow: hidden;
     }
+    .hub-hero-bg-word {
+      position:absolute; right:-24px; top:-16px;
+      font-family:'Bebas Neue',display; font-size:340px;
+      color:rgba(255,255,255,.014); pointer-events:none;
+      letter-spacing:-12px; line-height:1;
+    }
+    .hub-hero-left { position:relative; z-index:1; }
+    .hub-hero-eyebrow {
+      font-family:'JetBrains Mono',monospace; font-size:8px;
+      letter-spacing:3px; text-transform:uppercase; color:var(--accent);
+      opacity:.7; margin-bottom:12px;
+    }
+    .hub-hero-h1 {
+      font-family:'Bebas Neue',display;
+      font-size:clamp(56px,8vw,120px);
+      letter-spacing:2px; line-height:.88; margin-bottom:14px;
+    }
+    .hub-hero-h1 .acc { color:var(--accent); }
+    .hub-hero-deck {
+      font-size:14px; color:var(--muted); line-height:1.75;
+      font-weight:300; max-width:480px; margin-bottom:20px;
+    }
+    .hub-series-dots { display:flex; gap:10px; align-items:center; }
+    .hub-series-dot {
+      display:flex; align-items:center; gap:6px;
+      font-family:'JetBrains Mono',monospace; font-size:8px;
+      letter-spacing:1.5px; text-transform:uppercase; color:var(--dim);
+    }
+    .hub-series-dot::before {
+      content:''; display:block; width:8px; height:8px; border-radius:50%;
+      background:var(--dot-color, var(--dim));
+    }
+
+    /* Championship strip */
+    .hub-hero-right { position:relative; z-index:1; }
+    .champ-strip-title {
+      font-family:'JetBrains Mono',monospace; font-size:8px;
+      letter-spacing:3px; text-transform:uppercase; color:var(--dim);
+      margin-bottom:10px;
+    }
+    .champ-strip { display:flex; flex-direction:column; gap:2px; }
+    .champ-row {
+      display:grid; grid-template-columns:80px 1fr auto;
+      align-items:center; gap:12px;
+      background:var(--surface); border:1px solid var(--border);
+      padding:10px 14px; cursor:pointer; transition:border-color .18s;
+      text-decoration:none; color:inherit;
+    }
+    .champ-row:hover { border-color:var(--border-hi); }
+    .champ-row-series {
+      font-family:'JetBrains Mono',monospace; font-size:7.5px;
+      letter-spacing:2px; text-transform:uppercase;
+    }
+    .champ-row-leader { font-weight:500; font-size:13px; }
+    .champ-row-gap {
+      font-family:'JetBrains Mono',monospace; font-size:9px;
+      color:var(--dim); text-align:right;
+    }
+
+    /* Weekend timeline */
+    .hub-timeline {
+      padding:20px var(--pad);
+      border-bottom:1px solid var(--border);
+      background:var(--bg-2);
+    }
+    .timeline-label {
+      font-family:'JetBrains Mono',monospace; font-size:8px;
+      letter-spacing:3px; text-transform:uppercase; color:var(--dim);
+      margin-bottom:10px;
+    }
+    .timeline-track { display:flex; gap:3px; overflow-x:auto; scrollbar-width:none; padding-bottom:2px; }
+    .timeline-track::-webkit-scrollbar { display:none; }
+    .tl-pill {
+      display:flex; flex-direction:column; align-items:center;
+      min-width:80px; padding:8px 10px;
+      border:1px solid var(--border); background:var(--surface);
+      font-family:'JetBrains Mono',monospace;
+      text-decoration:none; color:inherit; transition:border-color .15s;
+      flex-shrink:0;
+    }
+    .tl-pill:hover { border-color:var(--border-hi); }
+    .tl-pill.done   { opacity:.5; }
+    .tl-pill.live   { border-color:rgba(255,140,0,.5); background:rgba(255,140,0,.06); }
+    .tl-pill.next   { border-color:rgba(var(--accent-rgb),.4); background:rgba(var(--accent-rgb),.04); }
+    .tl-series {
+      font-size:6.5px; letter-spacing:1.5px; text-transform:uppercase;
+      color:var(--dim); margin-bottom:3px;
+    }
+    .tl-name { font-size:8px; letter-spacing:1px; text-align:center; color:var(--muted); }
+    .tl-status {
+      font-size:7px; letter-spacing:1px; margin-top:4px; text-transform:uppercase;
+    }
+    .tl-status.done   { color:var(--green); }
+    .tl-status.live   { color:var(--orange); }
+    .tl-status.next   { color:var(--accent); }
+    .tl-status.upcoming { color:var(--dim); }
+
+    /* Main grid */
+    .hub-main {
+      display:grid; grid-template-columns:1fr 340px; gap:2px;
+      padding:var(--pad); padding-top:24px; padding-bottom:80px;
+    }
+
+    /* Feed */
+    .hub-feed {}
+
+    /* Lead card */
+    .lead-card {
+      display:grid; grid-template-columns:1fr 220px;
+      border:1px solid var(--border); margin-bottom:2px;
+      cursor:pointer; transition:border-color .2s; overflow:hidden;
+      text-decoration:none; color:inherit;
+    }
+    .lead-card:hover { border-color:rgba(var(--accent-rgb),.4); }
+    .lead-card-body { padding:28px 32px 28px; }
+    .lead-card-eyebrow {
+      font-family:'JetBrains Mono',monospace; font-size:8px;
+      letter-spacing:2px; text-transform:uppercase;
+      color:var(--accent); opacity:.75; margin-bottom:10px;
+    }
+    .lead-card-h2 {
+      font-family:'Bebas Neue',display;
+      font-size:clamp(28px,3.5vw,44px);
+      letter-spacing:1.5px; line-height:.95; margin-bottom:10px;
+    }
+    .lead-card-h2 .acc { color:var(--accent); }
+    .lead-card-summary {
+      font-size:12px; color:var(--muted); line-height:1.75;
+      font-weight:300; margin-bottom:16px;
+    }
+    .lead-card-footer {
+      display:flex; align-items:center; justify-content:space-between;
+    }
+    .lead-card-winner {
+      font-family:'JetBrains Mono',monospace; font-size:9px; color:var(--text);
+    }
+    .lead-card-cta {
+      font-family:'JetBrains Mono',monospace; font-size:8px;
+      letter-spacing:2px; text-transform:uppercase; color:var(--accent);
+      opacity:.6; transition:opacity .18s;
+    }
+    .lead-card:hover .lead-card-cta { opacity:1; }
+    .lead-card-aside {
+      display:flex; flex-direction:column; justify-content:flex-end;
+      padding:24px; background:rgba(var(--accent-rgb),.04);
+      border-left:1px solid var(--border); position:relative; overflow:hidden;
+    }
+    .lead-aside-num {
+      font-family:'Bebas Neue',display; font-size:96px;
+      color:rgba(var(--accent-rgb),.08); line-height:1;
+      position:absolute; top:10px; right:-8px; letter-spacing:-4px;
+    }
+    .lead-aside-name {
+      font-family:'Bebas Neue',display; font-size:28px;
+      letter-spacing:1px; color:var(--accent); position:relative; z-index:1;
+    }
+    .lead-aside-team {
+      font-family:'JetBrains Mono',monospace; font-size:9px;
+      color:var(--muted); margin-top:4px; position:relative; z-index:1;
+    }
+
+    /* Story grid */
+    .story-grid-wrap {
+      display:grid; grid-template-columns:1fr 1fr; gap:2px; margin-bottom:2px;
+    }
+    .story-card-new {
+      background:var(--surface); border:1px solid var(--border);
+      padding:18px 20px; cursor:pointer; transition:border-color .18s;
+      text-decoration:none; color:inherit; display:block;
+    }
+    .story-card-new:hover { border-color:var(--border-hi); }
+    .sc-eyebrow {
+      font-family:'JetBrains Mono',monospace; font-size:7.5px;
+      letter-spacing:2px; text-transform:uppercase;
+      margin-bottom:7px; opacity:.7;
+    }
+    .sc-h { font-family:'Bebas Neue',display; font-size:18px; letter-spacing:.5px; margin-bottom:6px; }
+    .sc-summary {
+      font-size:11.5px; color:var(--muted); line-height:1.7;
+      font-weight:300; margin-bottom:12px;
+    }
+    .sc-footer-row { display:flex; align-items:center; justify-content:space-between; }
+    .sc-result { font-family:'JetBrains Mono',monospace; font-size:9px; color:var(--text); }
+    .sc-link {
+      font-family:'JetBrains Mono',monospace; font-size:7.5px;
+      letter-spacing:1.5px; text-transform:uppercase; opacity:.5;
+    }
+
+    /* "Upcoming" card variant */
+    .story-card-new.upcoming { opacity:.6; }
+    .story-card-new.analyzing { border-color:rgba(255,140,0,.3); }
+
+    /* Aside */
     .hub-aside { display:flex; flex-direction:column; gap:2px; }
 
-    .hub-divider { border:none; border-top:1px solid var(--border); margin:24px 0 16px; }
-
-    .hub-section-label {
-      font-family:'JetBrains Mono',monospace;
-      font-size:8px; letter-spacing:3px; text-transform:uppercase;
-      color:var(--dim); margin-bottom:12px;
-      display:flex; align-items:center; gap:10px;
+    /* Quick nav */
+    .quick-nav-grid { display:grid; grid-template-columns:1fr 1fr; gap:2px; }
+    .quick-nav-btn {
+      display:flex; flex-direction:column; align-items:flex-start;
+      padding:14px 16px; background:var(--surface); border:1px solid var(--border);
+      text-decoration:none; color:inherit; transition:border-color .18s;
     }
-    .hub-section-label::after { content:''; flex:1; height:1px; background:var(--border); }
-
-    .series-detail-grid { display:grid; grid-template-columns:1fr 1fr; gap:2px; }
-
-    .aside-link {
-      display:flex; align-items:center; justify-content:space-between;
-      padding:9px 14px;
-      background:var(--bg-2); border:1px solid var(--border);
-      font-family:'JetBrains Mono',monospace; font-size:9px; color:var(--muted);
-      text-decoration:none; transition:border-color .18s;
+    .quick-nav-btn:hover { border-color:var(--border-hi); }
+    .qn-label {
+      font-family:'JetBrains Mono',monospace; font-size:8px;
+      letter-spacing:2px; text-transform:uppercase; color:var(--dim); margin-bottom:4px;
     }
-    .aside-link:hover { border-color:var(--border-hi); }
+    .qn-title { font-family:'Bebas Neue',display; font-size:15px; letter-spacing:.5px; }
+    .qn-arrow { font-size:10px; color:var(--accent); margin-top:8px; opacity:.6; }
+
+    /* About card */
+    .about-card { background:var(--surface); border:1px solid var(--border); padding:18px 20px; }
+
+    /* Coming soon series */
+    .coming-soon-strip { display:flex; gap:2px; flex-wrap:wrap; }
+    .coming-series {
+      padding:6px 14px; border:1px solid var(--border); opacity:.35;
+      font-family:'JetBrains Mono',monospace; font-size:8px;
+      letter-spacing:2px; text-transform:uppercase; color:var(--muted);
+    }
 
     @media(max-width:1100px) {
-      .hub-grid { grid-template-columns:1fr; }
-      .hub-aside { order:2; }
+      .hub-hero { grid-template-columns:1fr; }
+      .hub-hero-right { margin-top:24px; }
     }
-    @media(max-width:700px) {
-      .series-detail-grid { grid-template-columns:1fr; }
+    @media(max-width:900px) {
+      .hub-main { grid-template-columns:1fr; }
+      .hub-aside { order:2; }
+      .lead-card { grid-template-columns:1fr; }
+      .lead-card-aside { display:none; }
+      .story-grid-wrap { grid-template-columns:1fr; }
     }
   </style>
 </head>
 <body>
 
-  <!-- Background with F1 teal as default until a lead story is found -->
-  <div class="bg-radial-acc" style="--accent-rgb:39,244,210"></div>
+  <div class="bg-radial-acc" id="bg-radial" style="--accent-rgb:39,244,210"></div>
   <div class="bg-checker"></div>
 
   <!-- NAV -->
@@ -65,138 +267,24 @@
     <a class="nav-logo" href="index.html">APEX<span class="dot">.</span>ANALYTICS</a>
     <div class="nav-links">
       <a class="nav-link active" href="index.html">Hub</a>
-      <a class="nav-link" href="standings.html?series=f1">F1</a>
-      <a class="nav-link" href="standings.html?series=nascar-cup">Cup</a>
-      <a class="nav-link" href="standings.html?series=nascar-xfinity">Xfinity</a>
-      <a class="nav-link" href="standings.html?series=nascar-trucks">Trucks</a>
+      <a class="nav-link" href="standings.html?series=f1">Standings</a>
+      <a class="nav-link" href="season.html?series=f1">Season Stats</a>
     </div>
   </nav>
 
-  <div class="hub-outer">
-
-    <!-- MASTHEAD -->
-    <div class="hub-masthead">
-      <div>
-        <div class="masthead-week" id="masthead-week">Loading…</div>
-        <h1 class="masthead-h1">This Week<br>in <span class="acc">Racing</span></h1>
-        <p class="masthead-tagline">F1 · NASCAR Cup · Xfinity · Trucks</p>
-      </div>
-      <div class="masthead-stats">
-        <div>
-          <div class="mstat-v" id="races-done-count">—</div>
-          <div class="mstat-l">Races Analysed</div>
-        </div>
-        <div>
-          <div class="mstat-v">4</div>
-          <div class="mstat-l">Series</div>
-        </div>
-      </div>
+  <div class="hub" id="hub-root">
+    <!-- Populated entirely by initHubPageV2() -->
+    <div style="padding:80px var(--pad);opacity:.25;font-family:'JetBrains Mono',monospace;font-size:9px;color:var(--dim)">
+      Loading…
     </div>
+  </div>
 
-    <!-- SERIES TABS -->
-    <div class="series-tabs">
-      <button class="series-tab active" data-series="f1">Formula 1</button>
-      <button class="series-tab" data-series="nascar-cup">Cup Series</button>
-      <button class="series-tab" data-series="nascar-xfinity">Xfinity</button>
-      <button class="series-tab" data-series="nascar-trucks">Trucks</button>
-    </div>
-
-    <!-- MAIN GRID -->
-    <div class="hub-grid">
-
-      <!-- LEFT: feed + series overview -->
-      <div>
-
-        <!-- Lead story -->
-        <div id="lead-story" style="margin-bottom:2px">
-          <div style="height:180px;background:var(--surface);border:1px solid var(--border);
-                      display:flex;align-items:center;justify-content:center;">
-            <span style="font-family:'JetBrains Mono',monospace;font-size:9px;color:var(--dim)">Loading…</span>
-          </div>
-        </div>
-
-        <!-- Story grid -->
-        <div id="story-grid" class="story-grid"></div>
-
-        <hr class="hub-divider">
-
-        <!-- Per-series panels (tab-controlled) -->
-        <div data-series-panel="f1">
-          <div class="hub-section-label">Formula 1 · 2026</div>
-          <div class="series-detail-grid">
-            <div id="mini-standings-f1"></div>
-            <div id="schedule-list-f1"></div>
-          </div>
-        </div>
-
-        <div data-series-panel="nascar-cup">
-          <div class="hub-section-label">NASCAR Cup Series · 2026</div>
-          <div class="series-detail-grid">
-            <div id="mini-standings-nascar-cup"></div>
-            <div id="schedule-list-nascar-cup"></div>
-          </div>
-        </div>
-
-        <div data-series-panel="nascar-xfinity">
-          <div class="hub-section-label">NASCAR Xfinity Series · 2026</div>
-          <div class="series-detail-grid">
-            <div id="mini-standings-nascar-xfinity"></div>
-            <div id="schedule-list-nascar-xfinity"></div>
-          </div>
-        </div>
-
-        <div data-series-panel="nascar-trucks">
-          <div class="hub-section-label">NASCAR Craftsman Truck Series · 2026</div>
-          <div class="series-detail-grid">
-            <div id="mini-standings-nascar-trucks"></div>
-            <div id="schedule-list-nascar-trucks"></div>
-          </div>
-        </div>
-
-      </div><!-- /left -->
-
-      <!-- RIGHT: aside -->
-      <div class="hub-aside">
-
-        <div style="background:var(--surface);border:1px solid var(--border);padding:18px 20px">
-          <div style="font-family:'Bebas Neue',display;font-size:14px;letter-spacing:2px;margin-bottom:12px;color:var(--text)">Series Standings</div>
-          <div style="display:flex;flex-direction:column;gap:2px">
-            <a class="aside-link" href="standings.html?series=f1">
-              <span>Formula 1</span><span style="color:var(--f1-acc)">→</span>
-            </a>
-            <a class="aside-link" href="standings.html?series=nascar-cup">
-              <span>Cup Series</span><span style="color:var(--cup)">→</span>
-            </a>
-            <a class="aside-link" href="standings.html?series=nascar-xfinity">
-              <span>Xfinity</span><span style="color:var(--xfinity)">→</span>
-            </a>
-            <a class="aside-link" href="standings.html?series=nascar-trucks">
-              <span>Trucks</span><span style="color:var(--trucks)">→</span>
-            </a>
-          </div>
-        </div>
-
-        <div style="background:var(--surface);border:1px solid var(--border);padding:18px 20px">
-          <div style="font-family:'Bebas Neue',display;font-size:14px;letter-spacing:2px;margin-bottom:10px;color:var(--text)">About APEX</div>
-          <p style="font-size:12px;color:var(--muted);line-height:1.75;font-weight:300">
-            Deep race analysis across Formula 1 and all three NASCAR national series. Full field results, strategy breakdowns, championship tracking, and season archives — updated after every event.
-          </p>
-        </div>
-
-      </div><!-- /aside -->
-
-    </div><!-- /hub-grid -->
-
-  </div><!-- /hub-outer -->
-
-  <!-- FOOTER -->
   <footer class="apex-footer" style="position:relative;z-index:1">
     <div class="foot-logo">APEX<span class="dot">.</span>ANALYTICS</div>
-    <div class="foot-copy">Motorsport Intelligence · F1 · NASCAR Cup · Xfinity · Trucks</div>
+    <div class="foot-copy">Motorsport Intelligence · F1 · More series coming</div>
   </footer>
 
   <script src="assets/apex.js"></script>
-  <script>initHubPage();</script>
-
+  <script>initHubPageV2();</script>
 </body>
 </html>

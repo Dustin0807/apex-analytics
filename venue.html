@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Circuit Profile — APEX Analytics</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500&family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
+  <link rel="stylesheet" href="assets/apex.css">
+  <style>
+    .venue-page { position:relative; z-index:1; }
+
+    .venue-hero {
+      padding: 48px var(--pad) 44px;
+      border-bottom: 1px solid var(--border);
+      display: grid;
+      grid-template-columns: 1fr 380px;
+      gap: 48px;
+      align-items: end;
+      position: relative;
+      overflow: hidden;
+    }
+    .venue-hero-bg {
+      position:absolute; inset:0; z-index:0;
+      background: radial-gradient(ellipse 60% 80% at 90% 50%, rgba(var(--accent-rgb),.04), transparent);
+    }
+    .venue-hero-bg-word {
+      position:absolute; right:-20px; top:-20px;
+      font-family:'Bebas Neue',display; font-size:260px; line-height:1;
+      color:rgba(255,255,255,.018); pointer-events:none; letter-spacing:-8px;
+    }
+    .venue-hero-content { position:relative; z-index:1; }
+    .venue-eyebrow {
+      font-family:'JetBrains Mono',monospace; font-size:9px;
+      letter-spacing:3px; text-transform:uppercase;
+      color:var(--accent); opacity:.75; margin-bottom:12px;
+    }
+    .venue-h1 {
+      font-family:'Bebas Neue',display;
+      font-size:clamp(48px,6vw,84px);
+      letter-spacing:2px; line-height:.9; margin-bottom:12px;
+    }
+    .venue-h1 .acc { color:var(--accent); }
+    .venue-location {
+      font-size:14px; color:var(--muted); font-weight:300; margin-bottom:16px;
+    }
+    .venue-tier-badge {
+      display:inline-flex; align-items:center; gap:8px;
+      padding:5px 14px; border:1px solid;
+      font-family:'JetBrains Mono',monospace; font-size:8px;
+      letter-spacing:2px; text-transform:uppercase;
+    }
+    .tier-1 { color:#FFD700; border-color:rgba(255,215,0,.35); }
+    .tier-2 { color:var(--muted); border-color:var(--border-hi); }
+    .tier-3 { color:var(--dim); border-color:var(--border); }
+
+    /* Venue fact grid */
+    .venue-facts {
+      position:relative; z-index:1;
+      display:grid; grid-template-columns:1fr 1fr; gap:2px;
+    }
+    .vf-cell {
+      background:rgba(255,255,255,.03); border:1px solid var(--border);
+      padding:14px 16px;
+    }
+    .vf-v {
+      font-family:'Bebas Neue',display; font-size:26px;
+      letter-spacing:1px; color:var(--accent); line-height:1;
+    }
+    .vf-l {
+      font-family:'JetBrains Mono',monospace; font-size:8px;
+      letter-spacing:2px; text-transform:uppercase;
+      color:var(--dim); margin-top:3px;
+    }
+
+    /* Page layout */
+    .venue-layout {
+      display:grid; grid-template-columns:1fr 320px; gap:2px;
+      padding:var(--pad); padding-top:32px; padding-bottom:80px;
+      max-width:var(--max-w); margin:0 auto;
+    }
+    .venue-main {}
+    .venue-side { display:flex; flex-direction:column; gap:2px; }
+
+    /* Strategy profile */
+    .strat-grid { display:grid; grid-template-columns:1fr 1fr; gap:2px; margin-top:2px; }
+    .strat-cell {
+      background:var(--surface); border:1px solid var(--border); padding:16px 18px;
+    }
+    .strat-label {
+      font-family:'JetBrains Mono',monospace; font-size:8px;
+      letter-spacing:2px; text-transform:uppercase; color:var(--dim); margin-bottom:8px;
+    }
+    .strat-value { font-size:13px; color:var(--muted); line-height:1.65; font-weight:300; }
+    .strat-value strong { color:var(--text); font-weight:500; }
+
+    /* SC probability indicator */
+    .sc-bar-wrap { margin-top:6px; }
+    .sc-bar-track {
+      height:4px; background:var(--bg-2); border-radius:2px; overflow:hidden;
+    }
+    .sc-bar-fill { height:100%; border-radius:2px; }
+
+    /* Winners table */
+    .winners-table { width:100%; border-collapse:collapse; }
+    .winners-table th {
+      font-family:'JetBrains Mono',monospace; font-size:8px;
+      letter-spacing:2px; text-transform:uppercase; color:var(--dim);
+      padding:8px 12px; text-align:left; border-bottom:1px solid var(--border);
+    }
+    .winners-table td {
+      padding:10px 12px; border-bottom:1px solid rgba(255,255,255,.02);
+      vertical-align:middle;
+    }
+    .winners-table tr:hover td { background:rgba(255,255,255,.014); }
+    .wt-year {
+      font-family:'Bebas Neue',display; font-size:22px;
+      color:var(--dim); letter-spacing:1px;
+    }
+    .wt-year.current { color:var(--accent); }
+    .wt-winner { font-weight:500; font-size:13px; }
+    .wt-team { font-family:'JetBrains Mono',monospace; font-size:9px; color:var(--muted); }
+    .wt-pole { font-family:'JetBrains Mono',monospace; font-size:9px; color:var(--dim); }
+
+    /* Legendary moments */
+    .moment-card {
+      background:var(--surface); border:1px solid var(--border);
+      padding:20px 22px; margin-bottom:2px;
+      position:relative; overflow:hidden;
+    }
+    .moment-year {
+      font-family:'Bebas Neue',display; font-size:64px;
+      color:rgba(var(--accent-rgb),.08); position:absolute;
+      right:16px; top:8px; line-height:1; pointer-events:none;
+    }
+    .moment-title {
+      font-family:'Bebas Neue',display; font-size:20px;
+      letter-spacing:.5px; margin-bottom:8px; position:relative; z-index:1;
+    }
+    .moment-year-label {
+      font-family:'JetBrains Mono',monospace; font-size:8px;
+      letter-spacing:2px; text-transform:uppercase; color:var(--accent);
+      opacity:.7; margin-bottom:6px;
+    }
+    .moment-body {
+      font-size:13px; color:var(--muted); line-height:1.75; font-weight:300;
+      position:relative; z-index:1; max-width:580px;
+    }
+
+    /* Side card */
+    .venue-side-card {
+      background:var(--surface); border:1px solid var(--border);
+    }
+    .vsc-head {
+      padding:12px 16px; border-bottom:1px solid var(--border);
+      font-family:'JetBrains Mono',monospace; font-size:8px;
+      letter-spacing:3px; text-transform:uppercase; color:var(--dim);
+    }
+    .vsc-body { padding:16px; }
+
+    /* Characteristics prose */
+    .circuit-chars {
+      font-size:13px; color:var(--muted); line-height:1.8; font-weight:300;
+    }
+
+    @media(max-width:900px) {
+      .venue-hero { grid-template-columns:1fr; }
+      .venue-layout { grid-template-columns:1fr; }
+      .venue-side { order:2; }
+      .strat-grid { grid-template-columns:1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="bg-radial-acc" id="bg-radial" style="--accent-rgb:39,244,210"></div>
+  <div class="bg-checker"></div>
+
+  <nav class="apex-nav">
+    <a class="nav-logo" href="index.html">APEX<span class="dot">.</span>ANALYTICS</a>
+    <div id="nav-breadcrumb" class="nav-breadcrumb"><a href="index.html">Home</a></div>
+    <div class="nav-links">
+      <a class="nav-link" href="index.html">Hub</a>
+      <a class="nav-link" href="standings.html?series=f1">Standings</a>
+      <a class="nav-link active" href="#">Circuit</a>
+    </div>
+  </nav>
+
+  <div class="venue-page" id="venue-page">
+    <div style="padding:80px var(--pad);opacity:.25;font-family:'JetBrains Mono',monospace;font-size:9px;color:var(--dim)">Loading circuit profile…</div>
+  </div>
+
+  <footer class="apex-footer" style="position:relative;z-index:1">
+    <div class="foot-logo">APEX<span class="dot">.</span>ANALYTICS</div>
+    <div class="foot-copy" id="footer-copy">APEX Analytics</div>
+  </footer>
+
+  <script src="assets/apex.js"></script>
+  <script>initVenuePage();</script>
+</body>
+</html>

@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Driver Profile — APEX Analytics</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500&family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
+  <link rel="stylesheet" href="assets/apex.css">
+  <style>
+
+    /* ── COMPETITOR PAGE LAYOUT ───────────────────────────── */
+    .comp-page { position:relative; z-index:1; }
+
+    /* Hero */
+    .comp-hero {
+      display:grid;
+      grid-template-columns: 320px 1fr;
+      gap:0;
+      min-height:420px;
+      position:relative;
+      overflow:hidden;
+      border-bottom:1px solid var(--border);
+    }
+
+    .comp-hero-photo {
+      position:relative;
+      background:var(--surface);
+      overflow:hidden;
+    }
+    .comp-hero-photo img {
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      object-position:top center;
+      display:block;
+    }
+    .comp-hero-photo-overlay {
+      position:absolute;
+      inset:0;
+      background:linear-gradient(to right, transparent 60%, var(--bg));
+    }
+
+    .comp-hero-body {
+      padding:44px 48px 44px 32px;
+      display:flex;
+      flex-direction:column;
+      justify-content:flex-end;
+      position:relative;
+    }
+
+    /* Massive background number */
+    .comp-hero-bg-num {
+      position:absolute;
+      right:-20px;
+      bottom:-30px;
+      font-family:'Bebas Neue',display;
+      font-size:280px;
+      line-height:1;
+      color:rgba(255,255,255,.028);
+      pointer-events:none;
+      user-select:none;
+      letter-spacing:-10px;
+    }
+
+    .comp-hero-team-row {
+      display:flex;
+      align-items:center;
+      gap:12px;
+      margin-bottom:16px;
+    }
+    .comp-team-logo-sm {
+      width:48px;
+      height:48px;
+      object-fit:contain;
+    }
+    .comp-team-name {
+      font-family:'JetBrains Mono',monospace;
+      font-size:9px;
+      letter-spacing:3px;
+      text-transform:uppercase;
+      color:var(--muted);
+    }
+    .comp-team-dot {
+      width:8px; height:8px; border-radius:50%;
+      flex-shrink:0;
+    }
+
+    .comp-hero-flag { font-size:28px; margin-bottom:8px; }
+
+    .comp-hero-name {
+      font-family:'Bebas Neue',display;
+      font-size:clamp(52px,6vw,88px);
+      letter-spacing:2px;
+      line-height:.9;
+      margin-bottom:6px;
+    }
+    .comp-hero-name .acc { color:var(--accent); }
+
+    .comp-hero-number {
+      font-family:'JetBrains Mono',monospace;
+      font-size:11px;
+      color:var(--accent);
+      letter-spacing:3px;
+      margin-bottom:16px;
+      opacity:.8;
+    }
+
+    .comp-hero-bio {
+      font-size:13px;
+      color:var(--muted);
+      line-height:1.75;
+      max-width:540px;
+      font-weight:300;
+    }
+
+    /* Stats bar */
+    .comp-stats-bar {
+      display:grid;
+      grid-template-columns:repeat(6,1fr);
+      border-bottom:1px solid var(--border);
+      background:var(--bg-2);
+    }
+    .comp-sb-cell {
+      padding:14px 20px;
+      border-right:1px solid var(--border);
+    }
+    .comp-sb-cell:last-child { border-right:none; }
+    .comp-sb-v {
+      font-family:'Bebas Neue',display;
+      font-size:32px;
+      letter-spacing:1px;
+      color:var(--accent);
+      line-height:1;
+    }
+    .comp-sb-l {
+      font-family:'JetBrains Mono',monospace;
+      font-size:8px;
+      letter-spacing:2px;
+      text-transform:uppercase;
+      color:var(--dim);
+      margin-top:4px;
+    }
+
+    /* Main content layout */
+    .comp-content {
+      display:grid;
+      grid-template-columns:1fr 340px;
+      gap:2px;
+      padding:var(--pad);
+      padding-top:32px;
+      padding-bottom:80px;
+      max-width:var(--max-w);
+      margin:0 auto;
+    }
+    .comp-main {}
+    .comp-side { display:flex; flex-direction:column; gap:2px; }
+
+    /* Section */
+    .comp-section {
+      margin-bottom:2px;
+    }
+
+    /* Results grid */
+    .results-grid {
+      display:flex;
+      flex-wrap:wrap;
+      gap:3px;
+    }
+    .rg-cell {
+      width:52px;
+      height:52px;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:center;
+      border:1px solid var(--border);
+      position:relative;
+      cursor:default;
+      transition:transform .12s, border-color .12s;
+      background:var(--surface);
+    }
+    .rg-cell:hover {
+      transform:scale(1.08);
+      z-index:5;
+      border-color:rgba(var(--accent-rgb),.4);
+    }
+    .rg-cell.pos-1  { background:rgba(255,215,0,.15);   border-color:rgba(255,215,0,.4); }
+    .rg-cell.pos-2  { background:rgba(192,192,192,.12); border-color:rgba(192,192,192,.35); }
+    .rg-cell.pos-3  { background:rgba(205,127,50,.12);  border-color:rgba(205,127,50,.35); }
+    .rg-cell.pos-pts { background:rgba(39,244,210,.06); border-color:rgba(39,244,210,.2); }
+    .rg-cell.pos-out { background:rgba(255,255,255,.02);border-color:rgba(255,255,255,.06); }
+    .rg-cell.pos-dnf { background:rgba(232,0,45,.1);    border-color:rgba(232,0,45,.3); }
+    .rg-cell.pos-dns { background:rgba(100,100,120,.1); border-color:rgba(100,100,120,.25); }
+    .rg-cell.upcoming{ background:rgba(255,255,255,.01);border-color:var(--border);opacity:.35; }
+
+    .rg-pos {
+      font-family:'Bebas Neue',display;
+      font-size:22px;
+      line-height:1;
+    }
+    .rg-venue {
+      font-family:'JetBrains Mono',monospace;
+      font-size:6.5px;
+      color:var(--dim);
+      text-transform:uppercase;
+      letter-spacing:.5px;
+      margin-top:2px;
+    }
+    .rg-tooltip {
+      display:none;
+      position:absolute;
+      bottom:calc(100% + 6px);
+      left:50%;
+      transform:translateX(-50%);
+      background:var(--bg-2);
+      border:1px solid var(--border-hi);
+      padding:6px 10px;
+      white-space:nowrap;
+      font-family:'JetBrains Mono',monospace;
+      font-size:9px;
+      color:var(--text);
+      z-index:100;
+      pointer-events:none;
+    }
+    .rg-cell:hover .rg-tooltip { display:block; }
+
+    /* Teammate comparison */
+    .tm-header {
+      display:grid;
+      grid-template-columns:1fr auto 1fr;
+      align-items:center;
+      gap:16px;
+      padding:20px 20px 16px;
+      border-bottom:1px solid var(--border);
+    }
+    .tm-driver { display:flex; flex-direction:column; }
+    .tm-driver-name {
+      font-family:'Bebas Neue',display;
+      font-size:20px;
+      letter-spacing:1px;
+    }
+    .tm-driver-team {
+      font-family:'JetBrains Mono',monospace;
+      font-size:8px;
+      color:var(--dim);
+      letter-spacing:1px;
+      text-transform:uppercase;
+    }
+    .tm-vs {
+      font-family:'Bebas Neue',display;
+      font-size:18px;
+      color:var(--dim);
+      text-align:center;
+    }
+
+    .tm-metric {
+      display:grid;
+      grid-template-columns:1fr auto 1fr;
+      align-items:center;
+      padding:10px 20px;
+      border-bottom:1px solid rgba(255,255,255,.02);
+    }
+    .tm-metric:last-child { border-bottom:none; }
+    .tm-val {
+      font-family:'Bebas Neue',display;
+      font-size:24px;
+      letter-spacing:1px;
+    }
+    .tm-val.leader { color:var(--accent); }
+    .tm-val.right  { text-align:right; }
+    .tm-label {
+      font-family:'JetBrains Mono',monospace;
+      font-size:8px;
+      color:var(--dim);
+      text-align:center;
+      letter-spacing:1.5px;
+      text-transform:uppercase;
+    }
+
+    /* Bar comparison */
+    .tm-bar-row {
+      display:grid;
+      grid-template-columns:1fr 100px 1fr;
+      align-items:center;
+      gap:4px;
+      padding:8px 20px;
+      border-bottom:1px solid rgba(255,255,255,.02);
+    }
+    .tm-bar-left  { display:flex; justify-content:flex-end; }
+    .tm-bar-right { display:flex; justify-content:flex-start; }
+    .tm-bar-seg {
+      height:6px;
+      border-radius:2px;
+      min-width:2px;
+      transition:width .3s;
+    }
+    .tm-bar-label {
+      font-family:'JetBrains Mono',monospace;
+      font-size:7.5px;
+      color:var(--dim);
+      text-align:center;
+      letter-spacing:1px;
+      text-transform:uppercase;
+    }
+
+    /* Career grid */
+    .career-grid {
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:2px;
+    }
+    .career-cell {
+      background:var(--surface);
+      border:1px solid var(--border);
+      padding:16px 18px;
+    }
+    .career-v {
+      font-family:'Bebas Neue',display;
+      font-size:40px;
+      letter-spacing:1px;
+      color:var(--accent);
+      line-height:1;
+    }
+    .career-l {
+      font-family:'JetBrains Mono',monospace;
+      font-size:8px;
+      letter-spacing:2px;
+      text-transform:uppercase;
+      color:var(--dim);
+      margin-top:4px;
+    }
+    .career-note {
+      font-family:'JetBrains Mono',monospace;
+      font-size:9px;
+      color:var(--muted);
+      margin-top:6px;
+      line-height:1.6;
+    }
+
+    /* Circuit record table */
+    .circuit-table { width:100%; border-collapse:collapse; }
+    .circuit-table th {
+      font-family:'JetBrains Mono',monospace;
+      font-size:8px;
+      letter-spacing:2px;
+      text-transform:uppercase;
+      color:var(--dim);
+      padding:8px 12px;
+      text-align:left;
+      border-bottom:1px solid var(--border);
+    }
+    .circuit-table td {
+      padding:9px 12px;
+      border-bottom:1px solid rgba(255,255,255,.02);
+      font-size:12px;
+      vertical-align:middle;
+    }
+    .circuit-table tr:hover td { background:rgba(255,255,255,.014); }
+    .ct-venue { font-weight:500; }
+    .ct-tier {
+      font-family:'JetBrains Mono',monospace;
+      font-size:7px;
+      padding:2px 6px;
+      border:1px solid;
+      letter-spacing:1px;
+      text-transform:uppercase;
+    }
+    .ct-tier.t1 { color:#FFD700; border-color:rgba(255,215,0,.3); }
+    .ct-tier.t2 { color:var(--muted); border-color:var(--border); }
+    .ct-tier.t3 { color:var(--dim); border-color:rgba(255,255,255,.06); }
+    .ct-result {
+      font-family:'Bebas Neue',display;
+      font-size:18px;
+    }
+    .ct-result.win    { color:#FFD700; }
+    .ct-result.podium { color:#C0C0C0; }
+    .ct-result.points { color:var(--accent); }
+    .ct-result.none   { color:var(--dim); }
+
+    /* Sidebar card */
+    .side-card {
+      background:var(--surface);
+      border:1px solid var(--border);
+    }
+    .side-card-head {
+      padding:14px 18px;
+      border-bottom:1px solid var(--border);
+      font-family:'JetBrains Mono',monospace;
+      font-size:8px;
+      letter-spacing:3px;
+      text-transform:uppercase;
+      color:var(--dim);
+    }
+    .side-card-body { padding:16px 18px; }
+
+    /* Responsive */
+    @media(max-width:1000px) {
+      .comp-hero { grid-template-columns:200px 1fr; }
+    }
+    @media(max-width:768px) {
+      .comp-hero { grid-template-columns:1fr; min-height:auto; }
+      .comp-hero-photo { height:280px; }
+      .comp-hero-body { padding:24px; }
+      .comp-stats-bar { grid-template-columns:repeat(3,1fr); }
+      .comp-content { grid-template-columns:1fr; }
+      .comp-side { order:2; }
+      .career-grid { grid-template-columns:repeat(2,1fr); }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="bg-radial-acc" id="bg-radial" style="--accent-rgb:39,244,210"></div>
+  <div class="bg-checker"></div>
+
+  <!-- NAV -->
+  <nav class="apex-nav">
+    <a class="nav-logo" href="index.html">APEX<span class="dot">.</span>ANALYTICS</a>
+    <div id="nav-breadcrumb" class="nav-breadcrumb">
+      <a href="index.html">Home</a>
+    </div>
+    <div class="nav-links">
+      <a class="nav-link" href="index.html">Hub</a>
+      <a class="nav-link" href="standings.html?series=f1">Standings</a>
+      <a class="nav-link active" href="#">Driver</a>
+    </div>
+  </nav>
+
+  <div class="comp-page" id="comp-page">
+    <!-- Populated by apex.js: initCompetitorPage() -->
+    <div style="padding:80px var(--pad);opacity:.25;font-family:'JetBrains Mono',monospace;font-size:9px;color:var(--dim)">
+      Loading driver profile…
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="apex-footer" style="position:relative;z-index:1">
+    <div class="foot-logo">APEX<span class="dot">.</span>ANALYTICS</div>
+    <div class="foot-copy" id="footer-copy">APEX Analytics</div>
+  </footer>
+
+  <script src="assets/apex.js"></script>
+  <script>initCompetitorPage();</script>
+</body>
+</html>

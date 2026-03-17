@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Driver Comparison — APEX Analytics</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500&family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
+  <link rel="stylesheet" href="assets/apex.css">
+  <style>
+    .cmp-page { position:relative; z-index:1; max-width:var(--max-w); margin:0 auto; padding:var(--pad); padding-bottom:80px; }
+
+    .cmp-selector {
+      display:grid; grid-template-columns:1fr auto 1fr; gap:16px;
+      align-items:end; padding:32px 0 24px;
+      border-bottom:1px solid var(--border); margin-bottom:32px;
+    }
+    .cmp-sel-group { display:flex; flex-direction:column; gap:8px; }
+    .cmp-sel-label {
+      font-family:'JetBrains Mono',monospace; font-size:8px;
+      letter-spacing:3px; text-transform:uppercase; color:var(--dim);
+    }
+    .cmp-sel-select {
+      background:var(--bg-2); border:1px solid var(--border);
+      color:var(--text); padding:10px 14px;
+      font-family:'JetBrains Mono',monospace; font-size:10px;
+      letter-spacing:1px; width:100%;
+    }
+    .cmp-sel-select:focus { outline:none; border-color:rgba(var(--accent-rgb),.5); }
+    .cmp-vs-btn {
+      padding:10px 24px; background:rgba(var(--accent-rgb),.1);
+      border:1px solid rgba(var(--accent-rgb),.3); color:var(--accent);
+      font-family:'JetBrains Mono',monospace; font-size:9px;
+      letter-spacing:2px; text-transform:uppercase; cursor:pointer; transition:all .18s;
+      white-space:nowrap;
+    }
+    .cmp-vs-btn:hover { background:rgba(var(--accent-rgb),.2); }
+
+    /* Driver headers */
+    .cmp-heads {
+      display:grid; grid-template-columns:1fr auto 1fr; gap:0;
+      margin-bottom:2px;
+    }
+    .cmp-head {
+      padding:20px 24px; background:var(--surface); border:1px solid var(--border);
+      display:flex; flex-direction:column; gap:6px; position:relative; overflow:hidden;
+    }
+    .cmp-head-num {
+      position:absolute; right:-10px; top:-10px;
+      font-family:'Bebas Neue',display; font-size:120px;
+      color:rgba(255,255,255,.025); line-height:1; pointer-events:none;
+    }
+    .cmp-head-name {
+      font-family:'Bebas Neue',display; font-size:36px; letter-spacing:1px; line-height:1;
+    }
+    .cmp-head-team {
+      font-family:'JetBrains Mono',monospace; font-size:9px; color:var(--muted);
+      letter-spacing:1px;
+    }
+    .cmp-head.right { text-align:right; }
+    .cmp-head.right .cmp-head-num { right:auto; left:-10px; }
+    .cmp-vs-divider {
+      display:flex; align-items:center; justify-content:center;
+      background:var(--bg-2); border-top:1px solid var(--border);
+      border-bottom:1px solid var(--border);
+      font-family:'Bebas Neue',display; font-size:28px; color:var(--dim);
+      padding:0 20px;
+    }
+
+    /* Metric rows */
+    .cmp-section-label {
+      font-family:'JetBrains Mono',monospace; font-size:8px;
+      letter-spacing:3px; text-transform:uppercase; color:var(--dim);
+      padding:16px 0 8px; border-bottom:1px solid var(--border); margin-bottom:2px;
+    }
+    .cmp-row {
+      display:grid; grid-template-columns:1fr 140px 1fr;
+      align-items:center; background:var(--surface); border:1px solid var(--border);
+      margin-bottom:2px; padding:12px 20px; gap:16px;
+    }
+    .cmp-row:hover { background:rgba(255,255,255,.02); }
+    .cmp-row-val {
+      font-family:'Bebas Neue',display; font-size:28px; letter-spacing:1px;
+      transition:color .2s;
+    }
+    .cmp-row-val.right { text-align:right; }
+    .cmp-row-val.winner { font-size:34px; }
+    .cmp-row-mid {
+      text-align:center;
+      font-family:'JetBrains Mono',monospace; font-size:8px;
+      letter-spacing:2px; text-transform:uppercase; color:var(--dim);
+      line-height:1.6;
+    }
+
+    /* Bar visualization rows */
+    .cmp-bar-row {
+      display:grid; grid-template-columns:1fr 140px 1fr;
+      align-items:center; background:var(--surface); border:1px solid var(--border);
+      margin-bottom:2px; padding:14px 20px; gap:16px;
+    }
+    .cmp-bar-side { display:flex; align-items:center; gap:8px; }
+    .cmp-bar-side.right { flex-direction:row-reverse; }
+    .cmp-bar-track {
+      flex:1; height:5px; background:var(--bg-2); border-radius:2px; overflow:hidden;
+    }
+    .cmp-bar-fill { height:100%; border-radius:2px; transition:width .5s; }
+    .cmp-bar-num {
+      font-family:'Bebas Neue',display; font-size:20px; letter-spacing:1px;
+      min-width:30px; text-align:center; flex-shrink:0;
+    }
+
+    /* Results comparison grid */
+    .cmp-results-grid {
+      display:grid; grid-template-columns:1fr auto 1fr; gap:2px; margin-bottom:2px;
+    }
+    .cmp-rg-col { display:flex; flex-wrap:wrap; gap:2px; }
+    .cmp-rg-col.right { justify-content:flex-end; }
+    .cmp-rg-cell {
+      width:40px; height:40px; display:flex; flex-direction:column;
+      align-items:center; justify-content:center;
+      border:1px solid var(--border); background:var(--surface); font-size:11px;
+    }
+    .cmp-rg-pos { font-family:'Bebas Neue',display; font-size:16px; line-height:1; }
+    .cmp-rg-r   { font-family:'JetBrains Mono',monospace; font-size:5.5px; color:var(--dim); }
+    .cmp-rg-cell.p1  { background:rgba(255,215,0,.15);   border-color:rgba(255,215,0,.4); }
+    .cmp-rg-cell.p2  { background:rgba(192,192,192,.12); border-color:rgba(192,192,192,.35); }
+    .cmp-rg-cell.p3  { background:rgba(205,127,50,.12);  border-color:rgba(205,127,50,.35); }
+    .cmp-rg-cell.pts { background:rgba(39,244,210,.06);  border-color:rgba(39,244,210,.2); }
+    .cmp-rg-cell.dnf { background:rgba(232,0,45,.1);     border-color:rgba(232,0,45,.3); }
+    .cmp-rg-mid {
+      display:flex; align-items:center; justify-content:center;
+      background:var(--bg-2); border-top:1px solid var(--border);
+      border-bottom:1px solid var(--border); width:40px;
+      font-family:'JetBrains Mono',monospace; font-size:7px;
+      color:var(--dim); writing-mode:vertical-rl; letter-spacing:1px;
+      text-transform:uppercase;
+    }
+
+    /* Chart area */
+    .cmp-charts { display:grid; grid-template-columns:1fr 1fr; gap:2px; margin-top:2px; }
+    .cmp-chart-card {
+      background:var(--surface); border:1px solid var(--border); padding:16px;
+    }
+    .cmp-chart-label {
+      font-family:'JetBrains Mono',monospace; font-size:8px;
+      letter-spacing:2px; text-transform:uppercase; color:var(--dim); margin-bottom:12px;
+    }
+
+    @media(max-width:768px) {
+      .cmp-selector { grid-template-columns:1fr; }
+      .cmp-heads,
+      .cmp-row,
+      .cmp-bar-row { grid-template-columns:1fr; gap:4px; }
+      .cmp-vs-divider { display:none; }
+      .cmp-charts { grid-template-columns:1fr; }
+      .cmp-results-grid { grid-template-columns:1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="bg-radial-acc" id="bg-radial" style="--accent-rgb:39,244,210"></div>
+  <div class="bg-checker"></div>
+
+  <nav class="apex-nav">
+    <a class="nav-logo" href="index.html">APEX<span class="dot">.</span>ANALYTICS</a>
+    <div id="nav-breadcrumb" class="nav-breadcrumb"><a href="index.html">Home</a></div>
+    <div class="nav-links">
+      <a class="nav-link" href="index.html">Hub</a>
+      <a class="nav-link" href="standings.html?series=f1">Standings</a>
+      <a class="nav-link active" href="#">Compare</a>
+    </div>
+  </nav>
+
+  <div id="compare-page" style="position:relative;z-index:1"></div>
+
+  <footer class="apex-footer" style="position:relative;z-index:1">
+    <div class="foot-logo">APEX<span class="dot">.</span>ANALYTICS</div>
+    <div class="foot-copy" id="footer-copy">APEX Analytics</div>
+  </footer>
+
+  <script src="assets/apex.js"></script>
+  <script>initComparePage();</script>
+</body>
+</html>

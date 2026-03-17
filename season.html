@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Season Statistics — APEX Analytics</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500&family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
+  <link rel="stylesheet" href="assets/apex.css">
+  <style>
+    .season-page { position:relative; z-index:1; padding:var(--pad); padding-bottom:80px; }
+
+    .season-header { padding:32px 0 24px; border-bottom:1px solid var(--border); }
+    .season-h1 {
+      font-family:'Bebas Neue',display; font-size:clamp(36px,5vw,64px);
+      letter-spacing:2px; line-height:1; margin-bottom:8px;
+    }
+    .season-sub { font-family:'JetBrains Mono',monospace; font-size:9px; color:var(--dim); letter-spacing:2px; }
+
+    /* View switcher */
+    .view-switcher { display:flex; gap:2px; padding:20px 0 0; }
+    .view-btn {
+      padding:9px 20px; background:none; border:1px solid var(--border);
+      color:var(--dim); font-family:'JetBrains Mono',monospace;
+      font-size:8px; letter-spacing:2px; text-transform:uppercase;
+      cursor:pointer; transition:all .18s;
+    }
+    .view-btn:hover { color:var(--muted); border-color:var(--border-hi); }
+    .view-btn.active {
+      color:var(--accent); border-color:rgba(var(--accent-rgb),.4);
+      background:rgba(var(--accent-rgb),.06);
+    }
+
+    /* Content panels */
+    .view-panel { display:none; margin-top:24px; }
+    .view-panel.active { display:block; }
+
+    /* ── VIEW 1: LEAGUE TABLE ── */
+    .league-table { width:100%; border-collapse:collapse; }
+    .league-table th {
+      font-family:'JetBrains Mono',monospace; font-size:8px;
+      letter-spacing:2px; text-transform:uppercase; color:var(--dim);
+      padding:8px 12px; text-align:right; border-bottom:1px solid var(--border);
+      cursor:pointer; user-select:none; transition:color .15s;
+    }
+    .league-table th:first-child,
+    .league-table th:nth-child(2),
+    .league-table th:nth-child(3) { text-align:left; }
+    .league-table th:hover { color:var(--accent); }
+    .league-table th.sorted { color:var(--accent); }
+    .league-table td {
+      padding:10px 12px; border-bottom:1px solid rgba(255,255,255,.02);
+      vertical-align:middle; text-align:right;
+    }
+    .league-table td:first-child,
+    .league-table td:nth-child(2),
+    .league-table td:nth-child(3) { text-align:left; }
+    .league-table tr:hover td { background:rgba(255,255,255,.014); }
+    .league-table tr.leader td { background:rgba(var(--accent-rgb),.04); }
+    .lt-pos { font-family:'Bebas Neue',display; font-size:22px; color:var(--dim); width:32px; }
+    .lt-pos.p1 { color:var(--accent); }
+    .lt-driver { font-weight:500; }
+    .lt-team { font-family:'JetBrains Mono',monospace; font-size:9px; color:var(--dim); }
+    .lt-num { font-family:'Bebas Neue',display; font-size:20px; letter-spacing:1px; }
+    .lt-num.hi { color:var(--accent); }
+    .lt-bar-cell { width:80px; }
+    .lt-bar { height:3px; border-radius:1px; max-width:80px; }
+
+    /* ── VIEW 2: FORM TABLE ── */
+    .form-table { width:100%; border-collapse:collapse; }
+    .form-table th {
+      font-family:'JetBrains Mono',monospace; font-size:8px; letter-spacing:2px;
+      text-transform:uppercase; color:var(--dim); padding:8px 12px;
+      text-align:left; border-bottom:1px solid var(--border);
+    }
+    .form-table td {
+      padding:10px 12px; border-bottom:1px solid rgba(255,255,255,.02); vertical-align:middle;
+    }
+    .form-table tr:hover td { background:rgba(255,255,255,.014); }
+    .form-dots { display:flex; gap:3px; align-items:center; }
+    .form-dot {
+      width:24px; height:24px; border-radius:2px;
+      display:flex; align-items:center; justify-content:center;
+      font-family:'Bebas Neue',display; font-size:13px;
+    }
+    .fd-win    { background:rgba(255,215,0,.2);    color:#FFD700; }
+    .fd-pod    { background:rgba(192,192,192,.15);  color:#C0C0C0; }
+    .fd-pts    { background:rgba(39,244,210,.1);    color:#27F4D2; }
+    .fd-out    { background:rgba(255,255,255,.04);  color:var(--dim); }
+    .fd-dnf    { background:rgba(232,0,45,.12);     color:#E8002D; }
+    .fd-dns    { background:rgba(100,100,120,.1);   color:var(--dim); }
+    .fd-none   { background:rgba(255,255,255,.02);  color:var(--dim); }
+    .form-trend {
+      font-family:'JetBrains Mono',monospace; font-size:9px;
+      padding:2px 8px; border:1px solid; letter-spacing:1px;
+    }
+    .trend-up   { color:#00D47C; border-color:rgba(0,212,124,.3); }
+    .trend-down { color:#E8002D; border-color:rgba(232,0,45,.3); }
+    .trend-flat { color:var(--dim); border-color:var(--border); }
+
+    /* ── VIEW 3: GRID / RESULTS MATRIX ── */
+    .grid-matrix { overflow-x:auto; }
+    .grid-matrix table { border-collapse:collapse; min-width:100%; }
+    .gm-th-driver {
+      font-family:'JetBrains Mono',monospace; font-size:8px;
+      color:var(--dim); padding:6px 10px; text-align:right;
+      border-bottom:1px solid var(--border); letter-spacing:1px;
+      white-space:nowrap; position:sticky; left:0; background:var(--bg);
+    }
+    .gm-th-round {
+      font-family:'JetBrains Mono',monospace; font-size:7.5px;
+      color:var(--dim); padding:6px 4px; text-align:center;
+      border-bottom:1px solid var(--border); letter-spacing:.5px;
+      min-width:36px;
+    }
+    .gm-row-name {
+      font-size:12px; font-weight:500; padding:5px 10px;
+      position:sticky; left:0; background:var(--bg-2);
+      border-right:1px solid var(--border); white-space:nowrap;
+    }
+    .gm-cell {
+      width:36px; height:36px; text-align:center; vertical-align:middle;
+      font-family:'Bebas Neue',display; font-size:14px;
+      border:1px solid rgba(255,255,255,.02);
+    }
+    .gm-1   { background:rgba(255,215,0,.22);  color:#FFD700; }
+    .gm-2   { background:rgba(192,192,192,.18); color:#C0C0C0; }
+    .gm-3   { background:rgba(205,127,50,.18);  color:#CD7F32; }
+    .gm-pts { background:rgba(39,244,210,.1);   color:#27F4D2; }
+    .gm-out { background:rgba(255,255,255,.02); color:#4A4A66; }
+    .gm-dnf { background:rgba(232,0,45,.15);    color:#E8002D; }
+    .gm-dns { background:rgba(100,100,120,.1);  color:#666688; }
+    .gm-tbd { background:rgba(255,255,255,.01); color:#2A2A3A; }
+
+    /* ── VIEW 4: CHAMPIONSHIP TRAJECTORIES ── */
+    .traj-controls { display:flex; gap:8px; flex-wrap:wrap; margin-bottom:16px; }
+    .traj-toggle {
+      display:flex; align-items:center; gap:6px; cursor:pointer;
+      padding:4px 10px; border:1px solid var(--border);
+      font-family:'JetBrains Mono',monospace; font-size:8px;
+      letter-spacing:1px; text-transform:uppercase; transition:all .15s;
+    }
+    .traj-toggle.active { border-color:rgba(var(--accent-rgb),.4); }
+    .traj-dot { width:8px; height:8px; border-radius:50%; flex-shrink:0; }
+    .traj-chart-card {
+      background:var(--surface); border:1px solid var(--border); padding:16px;
+    }
+
+    @media(max-width:700px) {
+      .view-switcher { flex-wrap:wrap; }
+    }
+  </style>
+</head>
+<body>
+  <div class="bg-radial-acc" id="bg-radial" style="--accent-rgb:39,244,210"></div>
+  <div class="bg-checker"></div>
+
+  <nav class="apex-nav">
+    <a class="nav-logo" href="index.html">APEX<span class="dot">.</span>ANALYTICS</a>
+    <div id="nav-breadcrumb" class="nav-breadcrumb"><a href="index.html">Home</a></div>
+    <div class="nav-links">
+      <a class="nav-link" href="index.html">Hub</a>
+      <a class="nav-link" href="standings.html?series=f1">Standings</a>
+      <a class="nav-link active" href="#">Season Stats</a>
+    </div>
+  </nav>
+
+  <div class="season-page" id="season-page">
+    <div style="opacity:.25;font-family:'JetBrains Mono',monospace;font-size:9px;color:var(--dim)">Loading season stats…</div>
+  </div>
+
+  <footer class="apex-footer" style="position:relative;z-index:1">
+    <div class="foot-logo">APEX<span class="dot">.</span>ANALYTICS</div>
+    <div class="foot-copy" id="footer-copy">APEX Analytics</div>
+  </footer>
+
+  <script src="assets/apex.js"></script>
+  <script>initSeasonPage();</script>
+</body>
+</html>
