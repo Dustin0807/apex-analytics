@@ -186,7 +186,7 @@ function renderHero(race, series) {
   return `
     <div class="hero-bg-word">${(race.location || race.venue || '').split(',')[0].toUpperCase().slice(0,4)}</div>
     <div>
-      <div class="hero-eyebrow">${series.name} · Round ${race.round} · ${race.venue} · ${fmtDate(race.date)}</div>
+      <div class="hero-eyebrow">${series.name} · Round ${race.round} · ${race.venue_id ? `<a href="venue.html?series=${race.series_id || 'f1'}&id=${race.venue_id}" style="color:inherit;text-decoration:none;border-bottom:1px solid rgba(255,255,255,.2);transition:border-color .15s" onmouseover="this.style.borderColor='var(--accent)'" onmouseout="this.style.borderColor='rgba(255,255,255,.2)'">${race.venue}</a>` : race.venue} · ${fmtDate(race.date)}</div>
       <h1 class="hero-h1">${titleHtml}</h1>
       <p class="hero-deck">${race.summary || 'Race analysis coming soon.'}</p>
       <div class="hero-chips">${chips.join('')}</div>
@@ -795,9 +795,11 @@ async function initRacePage() {
     <span class="sep">/</span>
     <a href="standings.html?series=${p.series}&year=${year}">${series.short} ${year}</a>
     <span class="sep">/</span>
-    <span class="current">R${race.round} · ${race.name}</span>`;
+    <span class="current">R${race.round} · ${race.name}</span>
+    ${race.venue_id ? `<span class="sep">/</span><a href="venue.html?series=${p.series}&id=${race.venue_id}" style="color:var(--dim);font-family:'JetBrains Mono',monospace;font-size:8px;letter-spacing:1px;opacity:.6;transition:opacity .15s" onmouseover="this.style.opacity=1" onmouseout="this.style.opacity=.6">Circuit →</a>` : ''}`;
 
-  /* hero */
+  /* hero — inject series id so renderHero can build venue link */
+  race.series_id = p.series;
   const heroEl = $('race-hero');
   if (heroEl) heroEl.innerHTML = renderHero(race, series);
 
@@ -987,7 +989,9 @@ async function initStandingsPage() {
       <div class="si-flag">${r.flag || '🏁'}</div>
       <div>
         <div class="si-name">${r.name}</div>
-        <div class="si-sub">${r.venue}</div>
+        <div class="si-sub">${r.venue_id
+          ? `<a href="venue.html?series=${p.series}&id=${r.venue_id}" onclick="event.stopPropagation()" style="color:inherit;text-decoration:none;opacity:.7;border-bottom:1px solid transparent;transition:border-color .15s" onmouseover="this.style.borderColor='var(--accent)'" onmouseout="this.style.borderColor='transparent'">${r.venue}</a>`
+          : r.venue}</div>
       </div>
       ${badge}
     </div>`;
@@ -1220,7 +1224,9 @@ async function initHubPage() {
           <div class="si-flag">${r.flag || '🏁'}</div>
           <div>
             <div class="si-name">${r.name}</div>
-            <div class="si-sub">${r.venue}</div>
+            <div class="si-sub">${r.venue_id
+              ? `<a href="venue.html?series=${sid}&id=${r.venue_id}" onclick="event.stopPropagation()" style="color:inherit;text-decoration:none;opacity:.7;border-bottom:1px solid transparent;transition:border-color .15s" onmouseover="this.style.borderColor='var(--accent)'" onmouseout="this.style.borderColor='transparent'">${r.venue}</a>`
+              : r.venue}</div>
           </div>
           ${badge}
         </div>`;
@@ -1606,7 +1612,9 @@ function renderCircuitHistory(driver, venues, schedule) {
 
     return `<tr>
       <td>
-        <div class="ct-venue">${race.venue || race.name}</div>
+        <div class="ct-venue">${race.venue_id
+          ? `<a href="venue.html?series=f1&id=${race.venue_id}" style="color:inherit;text-decoration:none;border-bottom:1px solid transparent;transition:border-color .15s" onmouseover="this.style.borderColor='var(--accent)'" onmouseout="this.style.borderColor='transparent'">${race.venue || race.name}</a>`
+          : (race.venue || race.name)}</div>
         ${venue ? `<div style="font-size:10px;color:var(--dim);font-family:'JetBrains Mono',monospace;margin-top:2px">${venue.location?.split(',')[1]?.trim() || ''}</div>` : ''}
       </td>
       <td><span class="ct-tier ${tierCls}">${tierLbl}</span></td>
@@ -1675,14 +1683,23 @@ function renderCompetitorSidebar(driver, allDrivers, seriesData) {
       <div class="side-card-body">
         <div style="font-family:'Bebas Neue',display;font-size:20px;letter-spacing:1px">${nextRace.name}</div>
         <div style="font-family:'JetBrains Mono',monospace;font-size:9px;color:var(--dim);margin-top:4px">
-          ${nextRace.venue} · ${fmtDate(nextRace.date)}
+          ${nextRace.venue_id
+            ? `<a href="venue.html?series=f1&id=${nextRace.venue_id}" style="color:inherit;text-decoration:none;border-bottom:1px solid transparent;transition:border-color .15s" onmouseover="this.style.borderColor='var(--accent)'" onmouseout="this.style.borderColor='transparent'">${nextRace.venue}</a>`
+            : nextRace.venue} · ${fmtDate(nextRace.date)}
         </div>
-        <a href="race.html?series=f1&round=${nextRace.round}"
-           style="display:inline-block;margin-top:12px;font-family:'JetBrains Mono',monospace;
-                  font-size:8px;letter-spacing:2px;text-transform:uppercase;
-                  color:var(--accent);text-decoration:none;opacity:.7">
-          Race Preview →
-        </a>
+        <div style="display:flex;gap:8px;margin-top:12px">
+          <a href="race.html?series=f1&round=${nextRace.round}"
+             style="font-family:'JetBrains Mono',monospace;font-size:8px;letter-spacing:2px;
+                    text-transform:uppercase;color:var(--accent);text-decoration:none;opacity:.7">
+            Preview →
+          </a>
+          ${nextRace.venue_id ? `
+          <a href="venue.html?series=f1&id=${nextRace.venue_id}"
+             style="font-family:'JetBrains Mono',monospace;font-size:8px;letter-spacing:2px;
+                    text-transform:uppercase;color:var(--dim);text-decoration:none;opacity:.7">
+            Circuit →
+          </a>` : ''}
+        </div>
       </div>
     </div>` : '';
 
@@ -2518,7 +2535,12 @@ async function initSeasonPage() {
       </tr>`;
     }).join('');
 
-  const roundHeaders = schedule.map(r => `<th class="gm-th-round">${(r.venue||r.name||'').slice(0,3).toUpperCase()}</th>`).join('');
+  const roundHeaders = schedule.map(r => {
+    const label = (r.venue||r.name||'').slice(0,3).toUpperCase();
+    return r.venue_id
+      ? `<th class="gm-th-round"><a href="venue.html?series=${p.series}&id=${r.venue_id}" style="color:inherit;text-decoration:none;opacity:.8" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color=''">${label}</a></th>`
+      : `<th class="gm-th-round">${label}</th>`;
+  }).join('');
 
   const matrix = `
     <div class="grid-matrix">
@@ -2933,4 +2955,102 @@ function nameToId(name) {
     .normalize('NFD').replace(/[\u0300-\u036f]/g, '') // strip accents
     .split(' ').reverse().join('-')
     .replace(/[^a-z0-9-]/g, '');
+}
+
+/* ══════════════════════════════════════════════════════════
+   CIRCUITS INDEX PAGE
+   URL: circuits.html?series=f1&year=2026
+══════════════════════════════════════════════════════════ */
+
+async function initCircuitsPage() {
+  const p    = params();
+  const year = p.year || new Date().getFullYear();
+
+  const [config, venuesData, seriesData] = await Promise.all([
+    loadJSON('data/config.json'),
+    loadJSON(`data/venues-${p.series || 'f1'}-${year}.json`),
+    loadJSON(`data/${p.series || 'f1'}-${year}.json`),
+  ]);
+  if (!config || !venuesData) return;
+
+  const series = config.series[p.series || 'f1'];
+  setAccent(series?.accent || '#27F4D2');
+  document.title = `F1 ${year} Circuits — APEX Analytics`;
+
+  // Build round→result map from seriesData
+  const raceResults = {};
+  (seriesData?.schedule || []).forEach(r => {
+    if (r.complete && r.venue_id) {
+      raceResults[r.venue_id] = {
+        winner: r.race?.winner,
+        round:  r.round,
+        margin: r.race?.margin,
+      };
+    }
+  });
+
+  // Group venues by tier, sort by round number within tier
+  const venues = venuesData.venues;
+  const byTier = { 1:[], 2:[], 3:[] };
+  venues.forEach(v => {
+    const tier = v.tier || 3;
+    byTier[tier].push(v);
+  });
+  // Sort each tier by 2026 round number
+  Object.values(byTier).forEach(arr => {
+    arr.sort((a,b) => (a['2026_race']?.round||99) - (b['2026_race']?.round||99));
+  });
+
+  const tierNames = { 1:'Iconic Circuits', 2:'Established Venues', 3:'Modern Circuits' };
+
+  const renderCard = (v) => {
+    const round    = v['2026_race']?.round;
+    const result   = raceResults[v.id];
+    const tierCls  = `t${v.tier}`;
+    const bgWord   = v.short.toUpperCase().slice(0,4);
+
+    return `
+      <a href="venue.html?series=${p.series||'f1'}&id=${v.id}" class="circuit-card ${tierCls}">
+        <div class="cc-bg-word">${bgWord}</div>
+        <div class="cc-round">${round ? `Round ${round} · ` : ''}${v.flag} ${v.country}</div>
+        <div class="cc-name">${v.name}</div>
+        <div class="cc-location">${v.location}</div>
+        <div class="cc-facts">
+          <span><strong>${v.lap_length_km}km</strong> lap</span>
+          <span><strong>${v.turns}</strong> turns</span>
+          <span><strong>${v.drs_zones}</strong> DRS</span>
+          <span>Since <strong>${v.first_f1_gp}</strong></span>
+        </div>
+        ${result ? `
+        <div class="cc-result">
+          🏆 <span class="winner">${result.winner}</span>
+          ${result.margin ? `<span style="color:var(--dim)"> · ${result.margin}</span>` : ''}
+        </div>` : round ? `
+        <div class="cc-result" style="color:var(--dim)">
+          R${round} · ${fmtDate(seriesData?.schedule?.find(r=>r.round===round)?.date||'')}
+        </div>` : ''}
+        <div class="cc-cta">Circuit Guide →</div>
+      </a>`;
+  };
+
+  const sections = [1, 2, 3].map(tier => {
+    if (!byTier[tier].length) return '';
+    const labelCls = `t${tier}`;
+    const tierLabel = { 1:'⭐ Iconic', 2:'Established', 3:'Modern' }[tier];
+    return `
+      <div class="tier-label ${labelCls}">${tierLabel} — ${tierNames[tier]}</div>
+      <div class="circuits-grid">
+        ${byTier[tier].map(renderCard).join('')}
+      </div>`;
+  }).join('');
+
+  document.getElementById('circuits-page').innerHTML = `
+    <div class="circuits-header">
+      <h1 class="circuits-h1">F1 <span class="acc">${year}</span> Circuits</h1>
+      <div class="circuits-sub">${venues.length} venues · Formula 1 World Championship</div>
+    </div>
+    ${sections}`;
+
+  const foot = $('footer-copy');
+  if (foot) foot.textContent = `F1 ${year} · ${venues.length} Circuits`;
 }

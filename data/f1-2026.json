@@ -874,7 +874,8 @@
           "headline": "Piastri's Cruel DNS",
           "body": "Oscar Piastri crashed at Turn 4 on the sighting lap \u2014 before the race had even started \u2014 becoming only the fourth driver in F1 history to retire before reaching the grid. At his home race, in front of his home crowd, with McLaren having a legitimate top-5 car. He scored zero points while team-mate Norris scored 10. The championship deficit had nothing to do with racing."
         }
-      ]
+      ],
+      "venue_id": "albert-park"
     },
     {
       "round": 2,
@@ -1650,7 +1651,8 @@
           "headline": "War on the Calendar",
           "body": "The cancellation of Bahrain and Saudi Arabia is the most significant geopolitical impact on Formula 1 since Russia 2022. Both events typically generate combined hosting fees of approximately $100 million \u2014 money that will not flow in 2026. For the teams, each loses several million in prize money distribution. The sport confirmed it would not return to either until circumstances allow, without specifying a timeline."
         }
-      ]
+      ],
+      "venue_id": "shanghai"
     },
     {
       "round": 3,
@@ -1664,7 +1666,8 @@
       "laps": 53,
       "distance_km": 307.5,
       "complete": false,
-      "sprint_weekend": false
+      "sprint_weekend": false,
+      "venue_id": "suzuka"
     },
     {
       "round": 4,
@@ -1677,7 +1680,8 @@
       "time_utc": "20:00",
       "complete": false,
       "sprint_weekend": true,
-      "note": "First race after five-week gap due to Bahrain/Saudi cancellations. Originally R6."
+      "note": "First race after five-week gap due to Bahrain/Saudi cancellations. Originally R6.",
+      "venue_id": "miami"
     }
   ]
 }
